@@ -1,0 +1,23 @@
+Problem Being Solved:
+    Creating, sorting, and shuffling flashcards becomes more complicated as the content continues to grow.
+
+Application Goal:
+    A quick and easy way to upload new content, filter content for focused study.  Renders the appropriate character-sets one at a time (in this case: Romanji/Hiragana/Katakana/Kanji).
+
+1.0 Requirements
+    Create entry-point
+    Create mock-data
+    Entry-point
+        User selects desired "default" character-set for current "round"
+    Create Content Organism:
+        1) Render appropriate "selected" character-set (must support unicode characters)
+        2) User exposes subsequent character-sets
+        3) User must be able to cancel the "round"
+
+Backlog
+    Update README
+    User can upload new JSON content
+    User can filter on specific metadata
+    User can connect to a database to upload the content (if properly formatted)
+    User can enter content via keyboard
+    User-entered content is compared to the appropriate content, indicates correct/incorrect
