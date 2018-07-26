@@ -1,9 +1,25 @@
 import React, { Component } from 'react';
 
 class Card extends Component {
+    constructor(props) {
+        super(props);
+
+        this.handleClick = this.handleClick.bind(this);
+
+        this.state = {
+            display: 'none'
+        }
+    }
+
+    handleClick(e) {
+        this.setState((prevState, props) => {
+            return {display: e};
+        });
+    }
+
     render() {
         let active = this._buildActive(),
-            translationsArr = this._buildTranslations(),
+            translationsArr = this.props.data.langData,
             translations = this._processTranslations(translationsArr);
 
         return (
@@ -26,21 +42,26 @@ class Card extends Component {
         return activeCardData.value;
     }
 
-    _buildTranslations() {
-        let langData = this.props.data.langData,
-            filterByMode = (item) => {
-                if (item.id !== this.props.mode) {
-                    return true;
-                }
-            },
-            translations = langData.filter(filterByMode);
-
-        return translations;
-    }
-
     _processTranslations(translationsArr) {
         return translationsArr.map(function(translationData, idx) {
-            return <div key={idx}>{translationData.value}</div>
+            let translations;
+            
+            if (translationData.id === this.state.display) {
+                translations = (
+                    <div key={idx} onClick={() => this.handleClick(translationData.id) }>
+                        {translationData.value}
+                    </div>
+                );
+            } else {
+                translations = (
+                    <div key={idx} className="hide" onClick={() => this.handleClick(translationData.id) }>
+                        {translationData.value}
+                    </div>
+                );
+            }
+            
+            
+            return translations;
         }, this);
     }
 }
