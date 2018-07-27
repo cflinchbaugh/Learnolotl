@@ -1,3 +1,18 @@
 .card {
     color: blue;
 }
+
+.active-wrapper,
+.translations-wrapper,
+.reveal-wrapper {
+    margin-bottom: 20px;
+}
+
+.translations-wrapper {
+    min-height: 50px;
+}
+
+.reveal-button:hover {
+    cursor: pointer;
+    background: green;
+}

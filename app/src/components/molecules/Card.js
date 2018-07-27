@@ -21,15 +21,19 @@ class Card extends Component {
     render() {
         let active = this._buildActive(),
             translationsArr = this.props.data.langData,
-            translations = this._processTranslations(translationsArr);
+            translations = this._processTranslations(translationsArr),
+            reveal = this._processReveal(translationsArr);
 
         return (
             <div className="card">
-                <div>
+                <div className="active-wrapper">
                     Active: {active}
                 </div>
-                <div>
+                <div className="translations-wrapper">
                     Translations: {translations}
+                </div>
+                <div className="reveal-wrapper">
+                    Reveal: {reveal}
                 </div>
             </div>
         )
@@ -49,13 +53,13 @@ class Card extends Component {
             
             if (translationData.id === this.state.display) {
                 translations = (
-                    <div key={idx} onClick={() => this.handleClick(translationData.id) }>
+                    <div key={idx} className="translation ">
                         {translationData.value}
                     </div>
                 );
             } else {
                 translations = (
-                    <div key={idx} className="hide" onClick={() => this.handleClick(translationData.id) }>
+                    <div key={idx} className="translation hide">
                         {translationData.value}
                     </div>
                 );
@@ -63,6 +67,29 @@ class Card extends Component {
             
             
             return translations;
+        }, this);
+    }
+
+    _processReveal(translationsArr) {
+        return translationsArr.map(function(translationData, idx) {
+            let reveal;
+            
+            if (translationData.id === this.state.display) {
+                reveal = (
+                    <div key={idx} className="active reveal-button">
+                    {translationData.id}
+                    </div>
+                );
+            } else {
+                reveal = (
+                    <div key={idx} className="inactive reveal-button" onClick={() => this.handleClick(translationData.id) }>
+                    {translationData.id}
+                    </div>
+                );
+            }
+            
+            
+            return reveal;
         }, this);
     }
 }
