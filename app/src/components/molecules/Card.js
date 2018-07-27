@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import styles from './Card.css';
 
 class Card extends Component {
     constructor(props) {
@@ -23,7 +24,7 @@ class Card extends Component {
             translations = this._processTranslations(translationsArr);
 
         return (
-            <div className="card-wrapper">
+            <div className="card">
                 <div>
                     Active: {active}
                 </div>
