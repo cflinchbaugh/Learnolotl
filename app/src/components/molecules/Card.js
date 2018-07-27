@@ -27,13 +27,13 @@ class Card extends Component {
         return (
             <div className="card">
                 <div className="active-wrapper">
-                    Active: {active}
+                    {active}
                 </div>
                 <div className="translations-wrapper">
-                    Translations: {translations}
+                    {translations}
                 </div>
                 <div className="reveal-wrapper">
-                    Reveal: {reveal}
+                    {reveal}
                 </div>
             </div>
         )
@@ -76,13 +76,13 @@ class Card extends Component {
             
             if (translationData.id === this.state.display) {
                 reveal = (
-                    <div key={idx} className="active reveal-button">
+                    <div key={idx} className="reveal-button active">
                     {translationData.id}
                     </div>
                 );
             } else {
                 reveal = (
-                    <div key={idx} className="inactive reveal-button" onClick={() => this.handleClick(translationData.id) }>
+                    <div key={idx} className="reveal-button" onClick={() => this.handleClick(translationData.id) }>
                     {translationData.id}
                     </div>
                 );

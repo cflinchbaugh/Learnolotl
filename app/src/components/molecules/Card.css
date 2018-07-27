@@ -1,18 +1,39 @@
 .card {
     color: blue;
+    width: 100%;
 }
 
 .active-wrapper,
 .translations-wrapper,
 .reveal-wrapper {
     margin-bottom: 20px;
+    text-align: center;
+}
+
+.active-wrapper,
+.translations-wrapper {
+    font-size: 2em;
 }
 
 .translations-wrapper {
-    min-height: 50px;
+    min-height: 60px;
+}
+
+.reveal-button {
+    display: inline-block;
+    min-width: 100px;
+    margin: 20px;
+    padding: 10px;
+    background: rgb(219, 212, 212);
+    border-radius: 5px;
+    transition: background-color 0.25s;
 }
 
 .reveal-button:hover {
     cursor: pointer;
-    background: green;
+    background-color: rgb(204, 222, 241);
+}
+
+.reveal-button.active {
+    background-color: rgba(38, 184, 228, 0.616)
 }
