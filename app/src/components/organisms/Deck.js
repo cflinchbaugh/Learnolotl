@@ -22,7 +22,7 @@ class Deck extends Component {
     _buildDeck() {
         return this.props.deckData.cardData.map(function(cardData, idx) {
             return <Card 
-                mode='english'
+                mode='hiragana'
                 data={cardData}
                 key={idx}/>
         }, this);
