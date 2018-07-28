@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import DeckNavigation from '../organisms/DeckNavigation';
+import styles from './Flashcards.css';
 
 class Fashcards extends Component {
 
@@ -21,7 +22,7 @@ class Fashcards extends Component {
             <div>
                 <h1>Flashcards</h1>
 
-                <div>
+                <div className="deck-navigation-placeholder">
                     <DeckNavigation {...data}/>
                 </div>
             </div>

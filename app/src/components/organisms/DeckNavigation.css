@@ -1,0 +1,26 @@
+.deck-navigation {
+    display: flex;
+    justify-content: center;
+}
+/* .navigation,
+.deck {
+    display: flex;
+    justify-content: center;
+} */
+
+.navigation {
+    background: blue;
+    color: white;
+    border-radius: 25px;
+    padding: 5px;
+    transition: background-color 0.25s;
+}
+
+.navigation:hover {
+    background-color: rgb(106, 135, 214);
+    cursor: pointer;
+}
+
+.card {
+    background-color: red;
+}
