@@ -97,15 +97,31 @@ class Fashcards extends Component {
     }
 
     _validateIdx(idx, responseLen) {
-        let validatedIdx;
+        let validatedIdx = idx;
         
         // Lower-bound check
-        validatedIdx = (idx < 0) ? 0 : idx;
+        if (idx < 0) {
+            validatedIdx = 0;
+            
+            this._reboundIdx(validatedIdx);
+        }
 
         // Upper-bound check
-        validatedIdx = (idx >= responseLen) ? responseLen : idx;
-
+        if (idx >= responseLen) {
+            validatedIdx = (responseLen - 1);
+            
+            this._reboundIdx(validatedIdx);
+        }
+        
         return validatedIdx;
+    }
+
+    _reboundIdx(validIdx) {
+        console.warn('Out of bounds: resetting to ' + validIdx);
+
+        this.setState((state) => ({
+            idx: validIdx
+        }));
     }
 
     handleClickNext() {
