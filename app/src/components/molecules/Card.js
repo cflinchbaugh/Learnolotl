@@ -6,16 +6,10 @@ class Card extends Component {
         super(props);
 
         this.handleClick = this.handleClick.bind(this);
-
-        this.state = {
-            display: 'none'
-        }
     }
 
     handleClick(e) {
-        this.setState((prevState, props) => {
-            return {display: e};
-        });
+        this.props.handleClickDisplay(e);
     }
 
     render() {
@@ -51,7 +45,7 @@ class Card extends Component {
         return translationsArr.map(function(translationData, idx) {
             let translations;
             
-            if (translationData.id === this.state.display) {
+            if (translationData.id === this.props.display) {
                 translations = (
                     <div key={idx} className="translation ">
                         {translationData.value}
@@ -74,7 +68,7 @@ class Card extends Component {
         return translationsArr.map(function(translationData, idx) {
             let reveal;
             
-            if (translationData.id === this.state.display) {
+            if (translationData.id === this.props.display) {
                 reveal = (
                     <div key={idx} className="reveal-button active">
                     {translationData.id}

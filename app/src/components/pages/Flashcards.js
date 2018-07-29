@@ -8,11 +8,13 @@ class Fashcards extends Component {
         super(props);
 
         this.state = {
-            idx: 0
+            idx: 0,
+            display: 'none'
         }
 
         this.handleClickNext = this.handleClickNext.bind(this);
         this.handleClickPrevious = this.handleClickPrevious.bind(this);
+        this.handleClickDisplay = this.handleClickDisplay.bind(this);
     }
 
     render() {
@@ -33,7 +35,7 @@ class Fashcards extends Component {
         let data = {
             deckData: this._buildDeckData(),
             handleClickNext: this.handleClickNext,
-            handleClickPrevious: this.handleClickPrevious,
+            handleClickPrevious: this.handleClickPrevious
         }
 
         return data;
@@ -43,7 +45,9 @@ class Fashcards extends Component {
     _buildDeckData() {
         let deckData = {
                 mode: 'english',
-                cardData: this.fetch(this.state.idx)
+                cardData: this.fetch(this.state.idx),
+                display: this.state.display,
+                handleClickDisplay: this.handleClickDisplay
             };
 
         return deckData;
@@ -127,16 +131,26 @@ class Fashcards extends Component {
     handleClickNext() {
         let updatedIdx = this.state.idx += 1;
 
-        this.setState((state) => ({
-            idx: updatedIdx
-        }));
+        this._updateNavigationState(updatedIdx);
+        
     }
     handleClickPrevious() {
         let updatedIdx = this.state.idx -= 1;
 
+        this._updateNavigationState(updatedIdx);
+    }
+    
+    _updateNavigationState(updatedIdx) {
         this.setState((state) => ({
-            idx: updatedIdx
+            idx: updatedIdx,
+            display: 'none'     //To avoid showing the answer immediately
         }));
+    }
+
+    handleClickDisplay(e) {
+        this.setState((prevState, props) => {
+            return {display: e};
+        });
     }
 }
 
