@@ -2,7 +2,7 @@ import React from 'react';
 import { IndexRoute, Router, Route, hashHistory } from "react-router";
 import App from './containers/App';
 import Home from './components/pages/Home';
-import Flashcards from './components/pages/Flashcards';
+import Learn from './components/pages/Learn';
 import About from './components/pages/About';
 
 
@@ -12,8 +12,8 @@ export default (
             <IndexRoute component={Home}/>
         </Route>
         
-        <Route path="/flashcards" component={App}>
-            <IndexRoute component={Flashcards}/>
+        <Route path="/learn" component={App}>
+            <IndexRoute component={Learn}/>
         </Route>
 
         <Route path="/about" component={App}>

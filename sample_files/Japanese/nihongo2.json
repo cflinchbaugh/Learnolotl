@@ -1,0 +1,19 @@
+{
+    "results": [
+       {
+           "metadata": ["101"],
+            "langData": [
+                {
+                    "id": "english",
+                    "value": "you"
+                }, {
+                    "id": "romaji",
+                    "value": "anata"
+                }, {
+                    "id": "hiragana",
+                    "value": "\u3041\u306A\u305F"
+                }
+            ]
+        }
+    ]
+}

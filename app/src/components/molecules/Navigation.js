@@ -6,7 +6,7 @@ class Navigation extends Component {
         return (
             <div>
                 <Link to="/">Home</Link>
-                <Link to="/flashcards">Flashcards</Link>
+                <Link to="/learn">Learn</Link>
                 <Link to="/about">About</Link>
             </div>
         )

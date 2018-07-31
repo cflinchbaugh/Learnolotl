@@ -9,7 +9,7 @@ const StyleWrapper = styled.div`
     }
 `
 
-class Fashcards extends Component {
+class FlashCards extends Component {
 
     constructor(props) {
         super(props);
@@ -37,6 +37,8 @@ class Fashcards extends Component {
                 </div>
             </div>
             </StyleWrapper>
+
+            // <div>Flashcards Go Here</div>
         );
     }
 
@@ -68,44 +70,15 @@ class Fashcards extends Component {
         // digivolution in no time
     fetch(idx) {
         let results = [],
-            response = [
-                {
-                    metadata: ['101'],
-                    langData: [
-                        {
-                            id: 'english',
-                            value: 'I'
-                        }, {
-                            id: 'romaji',
-                            value: 'watashi'
-                        }, {
-                            id: 'hiragana',
-                            value: '\u308E\u305F\u3057'
-                        }
-                    ]
-                }, {
-                    metadata: ['101'],
-                    langData: [
-                        {
-                            id: 'english',
-                            value: 'you'
-                        }, {
-                            id: 'romaji',
-                            value: 'anata'
-                        }, {
-                            id: 'hiragana',
-                            value: '\u3041\u306A\u305F'
-                        }
-                    ]
-                }
-            ],
+            response = this.props.cardData,
             validatedIdx = this._validateIdx(idx, response.length);
             
 
         // Build response, return an array so we can potentially
             // send more than one card at a time
-        results.push(response[validatedIdx]);
-
+            if (typeof(response[validatedIdx]) !== 'undefined') {
+                results.push(response[validatedIdx]);
+            }
         return results;
     }
 
@@ -120,7 +93,7 @@ class Fashcards extends Component {
         }
 
         // Upper-bound check
-        if (idx >= responseLen) {
+        if (idx >= responseLen && idx !== 0) {
             validatedIdx = (responseLen - 1);
             
             this._reboundIdx(validatedIdx);
@@ -163,4 +136,4 @@ class Fashcards extends Component {
     }
 }
 
-export default Fashcards;
+export default FlashCards;
