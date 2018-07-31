@@ -1,6 +1,13 @@
 import React, { Component } from 'react';
 import DeckNavigation from '../organisms/DeckNavigation';
-import styles from './Flashcards.css';
+import styled from 'styled-components';
+
+const StyleWrapper = styled.div`
+    .deck-navigation-placeholder {
+        margin: auto;
+        width: 700px;
+    }
+`
 
 class Fashcards extends Component {
 
@@ -21,13 +28,15 @@ class Fashcards extends Component {
         let data = this._buildData();
 
         return (
-            <div>
+            <StyleWrapper>
+            <div className="flashcards">
                 <h1>Flashcards</h1>
 
                 <div className="deck-navigation-placeholder">
                     <DeckNavigation {...data}/>
                 </div>
             </div>
+            </StyleWrapper>
         );
     }
 

@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import Card from '../molecules/Card';
-import Styles from './Deck.css';
 
 class Deck extends Component {
     render() {

@@ -1,5 +1,50 @@
 import React, { Component } from 'react';
-import styles from './Card.css';
+import styled from 'styled-components';
+
+const StyleWrapper = styled.div`
+    background-color: yellow;
+    transition: background-color 0.25s;
+
+    &:hover {
+        background-color: orange;
+        cursor: pointer;
+    }
+
+    .active-wrapper,
+    .translations-wrapper,
+    .reveal-wrapper {
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .active-wrapper,
+    .translations-wrapper {
+        font-size: 2em;
+    }
+
+    .translations-wrapper {
+        min-height: 60px;
+    }
+
+    .reveal-button {
+        display: inline-block;
+        min-width: 100px;
+        margin: 20px;
+        padding: 10px;
+        background: rgb(219, 212, 212);
+        border-radius: 5px;
+        transition: background-color 0.25s;
+    }
+
+    .reveal-button:hover {
+        cursor: pointer;
+        background-color: rgb(204, 222, 241);
+    }
+
+    .reveal-button.active {
+        background-color: rgba(38, 184, 228, 0.616)
+    }
+`;
 
 class Card extends Component {
     constructor(props) {
@@ -19,17 +64,19 @@ class Card extends Component {
             reveal = this._processReveal(translationsArr);
 
         return (
-            <div className="card">
-                <div className="active-wrapper">
-                    {active}
+            <StyleWrapper>
+                <div className="card">
+                    <div className="active-wrapper">
+                        {active}
+                    </div>
+                    <div className="translations-wrapper">
+                        {translations}
+                    </div>
+                    <div className="reveal-wrapper">
+                        {reveal}
+                    </div>
                 </div>
-                <div className="translations-wrapper">
-                    {translations}
-                </div>
-                <div className="reveal-wrapper">
-                    {reveal}
-                </div>
-            </div>
+            </StyleWrapper>
         )
     }
 

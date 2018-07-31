@@ -1,24 +1,51 @@
 import React, { Component } from 'react';
 import Deck from '../organisms/Deck';
-import styles from './DeckNavigation.css';
+import styled from 'styled-components';
+
+const StyleWrapper = styled.div`
+.deck-navigation {
+    display: flex;
+    justify-content: center;
+}
+/* .navigation,
+.deck {
+    display: flex;
+    justify-content: center;
+} */
+
+.navigation {
+    background: red;
+    color: white;
+    border-radius: 25px;
+    padding: 5px;
+    transition: background-color 0.25s;
+}
+
+.navigation:hover {
+    background-color: rgb(106, 135, 214);
+    cursor: pointer;
+}
+`
 
 class DeckNavigation extends Component {
 
     render() {
         return (
-            <div className="deck-navigation">
-                <div className="navigation previous" onClick={this.props.handleClickPrevious}>
-                    Previous
-                </div>
+            <StyleWrapper>
+                <div className="deck-navigation">
+                    <div className="navigation previous" onClick={this.props.handleClickPrevious}>
+                        Previous
+                    </div>
 
-                <div className="deck">
-                    <Deck deckData={this.props.deckData}/>
-                </div>
+                    <div className="deck">
+                        <Deck deckData={this.props.deckData}/>
+                    </div>
 
-                <div className="navigation next" onClick={this.props.handleClickNext}>
-                    Next
+                    <div className="navigation next" onClick={this.props.handleClickNext}>
+                        Next
+                    </div>
                 </div>
-            </div>
+            </StyleWrapper>
         );
     }
 
