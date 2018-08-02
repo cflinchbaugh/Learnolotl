@@ -6,23 +6,18 @@ const StyleWrapper = styled.div`
 .deck-navigation {
     display: flex;
     justify-content: center;
+    background: rgb(2,0,36);  //fallback
+    background: linear-gradient(117deg, rgba(2,0,36,1) 0%, rgba(152,16,138,1) 35%, rgba(40,121,224,1) 83%, rgba(0,212,255,1) 100%);
+    min-height: 500px;
 }
-/* .navigation,
-.deck {
-    display: flex;
-    justify-content: center;
-} */
 
 .navigation {
-    background: red;
-    color: white;
     border-radius: 25px;
     padding: 5px;
     transition: background-color 0.25s;
 }
 
 .navigation:hover {
-    background-color: rgb(106, 135, 214);
     cursor: pointer;
 }
 `
