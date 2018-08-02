@@ -1,17 +1,11 @@
 import React, { Component } from 'react';
-import Navigation from '../components/molecules/Navigation';
+//Global Styles pulled in here
 import Fonts from '../styles/fonts.css';
 import Util from '../styles/util.css';
+import Router from './Router';
 
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <Navigation/>
-        {this.props.children}
-      </div>
-    );
-  }
-}
-
-export default App;
+export default(
+  <div className="App">
+    <Router/>
+  </div>
+);
