@@ -24,11 +24,18 @@ class Uploader extends Component {
 
     _buildMergedCardData(fileData) {
         let mergedCardData = this.props.cardData,
-            parsedData = JSON.parse(fileData);
+            parsedData;
+    
+            try {
+                parsedData = JSON.parse(fileData);
+                
+                parsedData.results.map( (dataEntry, idx) => {
+                    mergedCardData.push(dataEntry);
+                });
+            } catch (error) {
+                console.error("Invalid uploaded file, file content was not parsable JSON.  Full error: " + error);
+            }
 
-        parsedData.results.map( (dataEntry, idx) => {
-            mergedCardData.push(dataEntry);
-        });
 
         return mergedCardData;
     }
