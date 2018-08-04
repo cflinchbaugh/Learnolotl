@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
+import ActiveItem from '../atoms/ActiveItem';
+import RevealOptions from './RevealOptions';
 
 const StyleWrapper = styled.div`
     .active-wrapper,
@@ -9,32 +11,9 @@ const StyleWrapper = styled.div`
         text-align: center;
     }
 
-    .active-wrapper,
-    .translations-wrapper {
-        font-size: 2em;
-    }
 
     .translations-wrapper {
         min-height: 60px;
-    }
-
-    .reveal-button {
-        display: inline-block;
-        min-width: 100px;
-        margin: 20px;
-        padding: 10px;
-        background: rgb(219, 212, 212);
-        border-radius: 5px;
-        transition: background-color 0.25s;
-    }
-
-    .reveal-button:hover {
-        cursor: pointer;
-        background-color: rgb(204, 222, 241);
-    }
-
-    .reveal-button.active {
-        background-color: rgba(38, 184, 228, 0.616)
     }
 `;
 
@@ -50,81 +29,56 @@ class Card extends Component {
     }
 
     render() {
-        let active = this._buildActive(),
+        let activeValue = this._processActiveValue(),
             translationsArr = this.props.data.langData,
-            translations = this._processTranslations(translationsArr),
-            reveal = this._processReveal(translationsArr);
+            translationValue = this._processTranslationValue(translationsArr);
 
         return (
             <StyleWrapper>
                 <div className="card">
                     <div className="active-wrapper">
-                        {active}
+                        <ActiveItem value={activeValue}/>
                     </div>
                     <div className="translations-wrapper">
-                        {translations}
+                        <ActiveItem value={translationValue}/>
                     </div>
                     <div className="reveal-wrapper">
-                        {reveal}
+                        <RevealOptions optionsArray={translationsArr} 
+                            handleClickOption={this.handleClick}/>
                     </div>
                 </div>
             </StyleWrapper>
         )
     }
 
-    _buildActive() {
-        let activeCardData = this.props.data.langData.find(function(obj) {
+    _processActiveValue() {
+        let activeCardData;
+        
+        // Loop over all langData, 
+            // return the one currently active 
+            // (determined by current MODE)
+        activeCardData = this.props.data.langData.find(function(obj) {
             return obj.id === this.props.mode; 
         }, this);
 
+        //Return the value
         return activeCardData.value;
     }
 
-    _processTranslations(translationsArr) {
+    _processTranslationValue(translationsArr) {
+        // Loop over all possible translations,
+            // return the one that is currently displayed
+
         return translationsArr.map(function(translationData, idx) {
-            let translations;
+            let translation = '';
             
             if (translationData.id === this.props.display) {
-                translations = (
-                    <div key={idx} className="translation ">
-                        {translationData.value}
-                    </div>
-                );
-            } else {
-                translations = (
-                    <div key={idx} className="translation hide">
-                        {translationData.value}
-                    </div>
-                );
+                translation = translationData.value
             }
-            
-            
-            return translations;
+            return translation;
         }, this);
     }
 
-    _processReveal(translationsArr) {
-        return translationsArr.map(function(translationData, idx) {
-            let reveal;
-            
-            if (translationData.id === this.props.display) {
-                reveal = (
-                    <div key={idx} className="reveal-button active">
-                    {translationData.id}
-                    </div>
-                );
-            } else {
-                reveal = (
-                    <div key={idx} className="reveal-button" onClick={() => this.handleClick(translationData.id) }>
-                    {translationData.id}
-                    </div>
-                );
-            }
-            
-            
-            return reveal;
-        }, this);
-    }
 }
 
 export default Card
