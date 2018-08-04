@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import ActiveItem from '../atoms/ActiveItem';
 import RevealItem from '../atoms/RevealItem';
 import RevealOptions from './RevealOptions';
+import { CSSTransition, TransitionGroup } from 'react-transition-group'
 
 const StyleWrapper = styled.div`
     .active-wrapper,
@@ -22,17 +23,36 @@ class Card extends Component {
     constructor(props) {
         super(props);
 
-        this.handleClick = this.handleClick.bind(this);
+        this.state = {
+            revealItem: [{
+                value: ''
+            }]
+        };
+
+        this.handleRevealClick = this.handleRevealClick.bind(this);
     }
 
-    handleClick(e) {
+    handleRevealClick(e) {
         this.props.handleClickDisplay(e);
+
+        let i = 0,
+            translationsArr = this.props.data.langData,
+            updatedState = [];
+
+        for ( ; i < translationsArr.length; i++) {
+            if (translationsArr[i].id === e) {
+                updatedState.push(translationsArr[i]);
+            }
+        }
+
+        this.setState(state => ({
+            revealItem: updatedState
+        }));
     }
 
     render() {
         let activeValue = this._processActiveValue(),
-            translationsArr = this.props.data.langData,
-            translationValue = this._processTranslationValue(translationsArr);
+            translationsArr = this.props.data.langData;
 
         return (
             <StyleWrapper>
@@ -40,17 +60,34 @@ class Card extends Component {
                     <div className="active-wrapper">
                         <ActiveItem value={activeValue}/>
                     </div>
-                    <div className="translations-wrapper">
-                        <RevealItem value={translationValue}/>
-                    </div>
+
+                    <TransitionGroup className="dangerzone">
+                        {this.state.revealItem.map(({ id, value }) => (
+                            <CSSTransition
+                                key={id}
+                                timeout={300}
+                                classNames="fade" 
+                            
+                            >
+                                <div className="translations-wrapper">
+                                    <RevealItem value={value}/>
+                                </div>
+                            </CSSTransition>
+                        ))}
+                    </TransitionGroup>
+
                     <div className="reveal-wrapper">
+
                         <RevealOptions optionsArray={translationsArr} 
-                            handleClickOption={this.handleClick}/>
+                            handleClickOption={this.handleRevealClick}
+                            />
                     </div>
+
                 </div>
             </StyleWrapper>
         )
     }
+
 
     _processActiveValue() {
         let activeCardData;
@@ -66,20 +103,7 @@ class Card extends Component {
         return activeCardData.value;
     }
 
-    _processTranslationValue(translationsArr) {
-        // Loop over all possible translations,
-            // return the one that is currently displayed
-
-        return translationsArr.map(function(translationData, idx) {
-            let translation = '';
-            
-            if (translationData.id === this.props.display) {
-                translation = translationData.value
-            }
-            return translation;
-        }, this);
-    }
-
+   
 }
 
 export default Card
