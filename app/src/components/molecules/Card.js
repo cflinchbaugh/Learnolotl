@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 import ActiveItem from '../atoms/ActiveItem';
+import RevealItem from '../atoms/RevealItem';
 import RevealOptions from './RevealOptions';
 
 const StyleWrapper = styled.div`
@@ -40,7 +41,7 @@ class Card extends Component {
                         <ActiveItem value={activeValue}/>
                     </div>
                     <div className="translations-wrapper">
-                        <ActiveItem value={translationValue}/>
+                        <RevealItem value={translationValue}/>
                     </div>
                     <div className="reveal-wrapper">
                         <RevealOptions optionsArray={translationsArr} 
