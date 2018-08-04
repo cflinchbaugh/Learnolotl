@@ -25,7 +25,8 @@ class Card extends Component {
 
         this.state = {
             revealItem: [{
-                value: ''
+                id: '',
+                value: '',
             }]
         };
 
