@@ -1,0 +1,25 @@
+Button Selector
+    Functional Goals:
+        Supports multiple options
+        Selected option is indicated
+        Un-selecting any/all options
+        UX must be quick
+
+    Style Goals:
+        When inactive, selector is inobtrusive in order to avoid drawing attention from the learning objective
+        When active, selector is prominent and adds flare to the application
+
+
+    States:
+        Inactive
+        Active: Displaying Options
+            Option is present but not Selected
+            Option is actively being Selected
+            Option is present and has been Selected
+            
+            Clear option is present but not selected
+            Clear option is actively being Selected
+            
+
+    Notes:
+        This is an area with potential to add a moment of delight but should not be excessive since it will potentially be interacted with multiple times per card.

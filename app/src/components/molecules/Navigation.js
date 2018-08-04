@@ -1,13 +1,23 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router';
+import { NavLink } from 'react-router-dom';
+import styled from 'styled-components';
+
+const NavLinkStyled = styled(NavLink)`
+    &.${(props) => props.activeClassName } {
+        color: green;
+    }
+`
+NavLinkStyled.defaultProps = {
+    activeClassName: 'active'
+};
 
 class Navigation extends Component {
     render() {
         return (
             <div>
-                <Link to="/">Home</Link>
-                <Link to="/learn">Learn</Link>
-                <Link to="/about">About</Link>
+                <NavLinkStyled exact to="/">Home</NavLinkStyled>
+                <NavLinkStyled to="/learn">Learn</NavLinkStyled>
+                <NavLinkStyled to="/about">About</NavLinkStyled>
             </div>
         )
     }

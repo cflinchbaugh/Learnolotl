@@ -2,14 +2,6 @@ import React, { Component } from 'react';
 import styled from 'styled-components';
 
 const StyleWrapper = styled.div`
-    background-color: yellow;
-    transition: background-color 0.25s;
-
-    &:hover {
-        background-color: orange;
-        cursor: pointer;
-    }
-
     .active-wrapper,
     .translations-wrapper,
     .reveal-wrapper {

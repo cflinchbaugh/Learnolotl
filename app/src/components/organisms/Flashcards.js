@@ -3,10 +3,6 @@ import DeckNavigation from '../organisms/DeckNavigation';
 import styled from 'styled-components';
 
 const StyleWrapper = styled.div`
-    .deck-navigation-placeholder {
-        margin: auto;
-        width: 700px;
-    }
 `
 
 class FlashCards extends Component {
