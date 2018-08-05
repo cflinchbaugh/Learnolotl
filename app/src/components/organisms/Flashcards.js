@@ -33,8 +33,6 @@ class FlashCards extends Component {
                 </div>
             </div>
             </StyleWrapper>
-
-            // <div>Flashcards Go Here</div>
         );
     }
 
