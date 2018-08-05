@@ -1,0 +1,159 @@
+{
+    "results": [
+        {
+           "metadata": ["P:Lesson 2"],
+            "langData": [
+                {
+                    "id": "english",
+                    "value": "Good morning"
+                }, {
+                    "id": "romaji",
+                    "value": "ohayou gozaimasu"
+                }, {
+                    "id": "hiragana",
+                    "value": "おはよう ございます"
+                }
+            ]
+        }, {
+            "metadata": ["P:Lesson 2"],
+             "langData": [
+                {
+                    "id": "english",
+                    "value": "How are you?"
+                }, {
+                    "id": "romaji",
+                    "value": "ikaga desu ka"
+                }, {
+                    "id": "hiragana",
+                    "value": "いかが ですか"
+                }
+             ]
+        }, {
+            "metadata": ["P:Lesson 2"],
+             "langData": [
+                {
+                    "id": "english",
+                    "value": "Fine (health)"
+                }, {
+                    "id": "romaji",
+                    "value": "genki"
+                }, {
+                    "id": "hiragana",
+                    "value": "げんき"
+                }
+            ]
+        }, {
+            "metadata": ["P:Lesson 2"],
+             "langData": [
+                {
+                    "id": "english",
+                    "value": "Thanks to you"
+                }, {
+                    "id": "romaji",
+                    "value": "okagesama de"
+                }, {
+                    "id": "hiragana",
+                    "value": "おかげさま で"
+                }
+            ]
+        }, {
+            "metadata": ["P:Lesson 2"],
+             "langData": [
+                {
+                    "id": "english",
+                    "value": "Good afternoon (Hello)"
+                }, {
+                    "id": "romaji",
+                    "value": "konnichi wa"
+                }, {
+                    "id": "hiragana",
+                    "value": "こんにちは"
+                }
+            ]
+        }, {
+            "metadata": ["P:Lesson 2"],
+             "langData": [
+                {
+                    "id": "english",
+                    "value": "Goodbye"
+                }, {
+                    "id": "romaji",
+                    "value": "Sayounara"
+                }, {
+                    "id": "hiragana",
+                    "value": "さようなら"
+                }
+            ]
+        }, {
+            "metadata": ["P:Lesson 2"],
+             "langData": [
+                {
+                    "id": "english",
+                    "value": "Isn't it? / Don't you? / Aren't you?"
+                }, {
+                    "id": "romaji",
+                    "value": "ne"
+                }, {
+                    "id": "hiragana",
+                    "value": "ね"
+                }
+            ]
+        }, {
+            "metadata": ["P:Lesson 2"],
+             "langData": [
+                {
+                    "id": "english",
+                    "value": "Thank you"
+                }, {
+                    "id": "romaji",
+                    "value": "arigatou"
+                }, {
+                    "id": "hiragana",
+                    "value": "ありがとう"
+                }
+            ]
+        }, {
+            "metadata": ["P:Lesson 2"],
+             "langData": [
+                {
+                    "id": "english",
+                    "value": "Thank you very much"
+                }, {
+                    "id": "romaji",
+                    "value": "arigatou gozaimasu"
+                }, {
+                    "id": "hiragana",
+                    "value": "ありがとう ございます"
+                }
+            ]
+        }, {
+            "metadata": ["P:Lesson 2"],
+             "langData": [
+                {
+                    "id": "english",
+                    "value": "Skilled"
+                }, {
+                    "id": "romaji",
+                    "value": "jouzu"
+                }, {
+                    "id": "hiragana",
+                    "value": "じようず"
+                }
+            ]
+        }, {
+            "metadata": ["P:Lesson 2"],
+             "langData": [
+                {
+                    "id": "english",
+                    "value": "Not Skilled"
+                }, {
+                    "id": "romaji",
+                    "value": "jouzu ja arimasen"
+                }, {
+                    "id": "hiragana",
+                    "value": "じようず じ や ありません"
+                }
+            ]
+        }
+    ]
+}
