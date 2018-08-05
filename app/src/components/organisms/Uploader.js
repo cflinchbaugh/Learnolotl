@@ -1,9 +1,13 @@
 import React, { Component } from 'react';
 
 class Uploader extends Component {
-    // handleFileUpload(e) {
-    //     this.props.handleFileUpload(e);
-    // }
+    constructor(props) {
+        super(props);
+
+        this.state = {
+            defaultData: true
+        }
+    }
 
     handleFileUpload(e) {
         let files = e.target.files,
@@ -23,19 +27,22 @@ class Uploader extends Component {
     }
 
     _buildMergedCardData(fileData) {
-        let mergedCardData = this.props.cardData,
+        let mergedCardData = this.state.defaultData ? [] : this.props.cardData,
             parsedData;
-    
-            try {
-                parsedData = JSON.parse(fileData);
-                
-                parsedData.results.map( (dataEntry, idx) => {
-                    mergedCardData.push(dataEntry);
-                });
-            } catch (error) {
-                console.error("Invalid uploaded file, file content was not parsable JSON.  Full error: " + error);
-            }
+        
+        try {
+            parsedData = JSON.parse(fileData);
+            
+            parsedData.results.map( (dataEntry, idx) => {
+                mergedCardData.push(dataEntry);
+            });
+        } catch (error) {
+            console.error("Invalid uploaded file, file content was not parsable JSON.  Full error: " + error);
+        }
 
+        this.setState((state) => {
+            defaultData: false
+        });
 
         return mergedCardData;
     }
