@@ -1,0 +1,187 @@
+{
+    "results": [
+        {
+            "metadata": ["Lesson 1"],
+            "langData": [
+                {
+                    "id": "english",
+                    "value": "Excuse Me"
+                }, {
+                    "id": "romaji",
+                    "value": "Sumimasen"
+                }, {
+                    "id": "hiragana",
+                    "value": "すみません"
+                }
+            ]
+        }, {
+            "metadata": ["Lesson 1"],
+            "langData": [
+                {
+                    "id": "english",
+                    "value": "English Language"
+                }, {
+                    "id": "romaji",
+                    "value": "Eigo"
+                }, {
+                    "id": "hiragana",
+                    "value": "えいご"
+                }
+            ]
+        }, {
+            "metadata": ["Lesson 1"],
+            "langData": [
+                {
+                    "id": "english",
+                    "value": "To understand"
+                }, {
+                    "id": "romaji",
+                    "value": "wakarimasu"
+                }, {
+                    "id": "hiragana",
+                    "value": "わかります"
+                }
+            ]
+        }, {
+            "metadata": ["Lesson 1"],
+            "langData": [
+                {
+                    "id": "english",
+                    "value": "'?'; used at the end of a sentence to form a question"
+                }, {
+                    "id": "romaji",
+                    "value": "ka"
+                }, {
+                    "id": "hiragana",
+                    "value": "か"
+                }
+            ]
+        }, {
+            "metadata": ["Lesson 1"],
+            "langData": [
+                {
+                    "id": "english",
+                    "value": "No"
+                }, {
+                    "id": "romaji",
+                    "value": "iie"
+                }, {
+                    "id": "hiragana",
+                    "value": "いいえ"
+                }
+            ]
+        }, {
+            "metadata": ["Lesson 1"],
+            "langData": [
+                {
+                    "id": "english",
+                    "value": "I"
+                }, {
+                    "id": "romaji",
+                    "value": "watashi"
+                }, {
+                    "id": "hiragana",
+                    "value": "わたし"
+                }
+            ]
+        }, {
+            "metadata": ["Lesson 1"],
+            "langData": [
+                {
+                    "id": "english",
+                    "value": "I don't know/understand"
+                }, {
+                    "id": "romaji",
+                    "value": "wakarimasen"
+                }, {
+                    "id": "hiragana",
+                    "value": "わかりません"
+                }
+            ]
+        }, {
+            "metadata": ["Lesson 1"],
+            "langData": [
+                {
+                    "id": "english",
+                    "value": "Japanese language"
+                }, {
+                    "id": "romaji",
+                    "value": "nihongo"
+                }, {
+                    "id": "hiragana",
+                    "value": "にほんご"
+                }
+            ]
+        }, {
+            "metadata": ["Lesson 1"],
+            "langData": [
+                {
+                    "id": "english",
+                    "value": "A few, a little"
+                }, {
+                    "id": "romaji",
+                    "value": "sukoshi"
+                }, {
+                    "id": "hiragana",
+                    "value": "すこし"
+                }
+            ]
+        }, {
+            "metadata": ["Lesson 1"],
+            "langData": [
+                {
+                    "id": "english",
+                    "value": "American (nationality)"
+                }, {
+                    "id": "romaji",
+                    "value": "amerika-jin"
+                }, {
+                    "id": "hiragana",
+                    "value": "アメリカじん"
+                }
+            ]
+        }, {
+            "metadata": ["Lesson 1"],
+            "langData": [
+                {
+                    "id": "english",
+                    "value": "You"
+                }, {
+                    "id": "romaji",
+                    "value": "anata"
+                }, {
+                    "id": "hiragana",
+                    "value": "あなた"
+                }
+            ]
+        }, {
+            "metadata": ["Lesson 1"],
+            "langData": [
+                {
+                    "id": "english",
+                    "value": "Is/Are"
+                }, {
+                    "id": "romaji",
+                    "value": "desu"
+                }, {
+                    "id": "hiragana",
+                    "value": "です"
+                }
+            ]
+        }, {
+            "metadata": ["Lesson 1"],
+            "langData": [
+                {
+                    "id": "english",
+                    "value": "Yes"
+                }, {
+                    "id": "romaji",
+                    "value": "hai"
+                }, {
+                    "id": "hiragana",
+                    "value": "はい"
+                }
+            ]
+        }
+    ]
+}
