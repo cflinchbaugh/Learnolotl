@@ -62,7 +62,7 @@ class Card extends Component {
                         <ActiveItem value={activeValue}/>
                     </div>
 
-                    <TransitionGroup className="dangerzone">
+                    <TransitionGroup className="reveal-wrapper">
                         {this.state.revealItem.map(({ id, value }) => (
                             <CSSTransition
                                 key={id}
