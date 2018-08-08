@@ -10,6 +10,7 @@ const StyleWrapper = styled.div`
         background: rgb(219, 212, 212);
         border-radius: 5px;
         transition: background-color 0.25s;
+        text-align: center;
     }
 
     .reveal-button:hover {

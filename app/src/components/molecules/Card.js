@@ -13,7 +13,6 @@ const StyleWrapper = styled.div`
         text-align: center;
     }
 
-
     .translations-wrapper {
         min-height: 60px;
     }
@@ -77,7 +76,7 @@ class Card extends Component {
                         ))}
                     </TransitionGroup>
 
-                    <div className="reveal-wrapper">
+                    <div className="reveal-options-wrapper">
 
                         <RevealOptions optionsArray={translationsArr} 
                             handleClickOption={this.handleRevealClick}

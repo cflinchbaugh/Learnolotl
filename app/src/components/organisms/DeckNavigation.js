@@ -6,8 +6,6 @@ const StyleWrapper = styled.div`
 .deck-navigation {
     display: flex;
     justify-content: center;
-    background: rgb(2,0,36);  //fallback
-    background: linear-gradient(117deg, rgba(2,0,36,1) 0%, rgba(152,16,138,1) 35%, rgba(40,121,224,1) 83%, rgba(0,212,255,1) 100%);
     min-height: 350px;
 }
 
