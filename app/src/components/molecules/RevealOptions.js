@@ -3,25 +3,15 @@ import styled from 'styled-components';
 import Button from '../atoms/Button';
 
 const StyleWrapper = styled.div`
-    .reveal-button {
-        display: inline-block;
-        min-width: 100px;
-        margin: 20px;
-        padding: 10px;
-        background: rgb(219, 212, 212);
-        border-radius: 5px;
-        transition: background-color 0.25s;
-        text-align: center;
+    .RevealOptions >* {
+        float: left;
+        margin-right: 2em;
     }
 
-    .reveal-button:hover {
-        cursor: pointer;
-        background-color: rgb(204, 222, 241);
+    .RevealOptions >*:last-child {
+        margin-right: 0;
     }
 
-    .reveal-button.active {
-        background-color: rgba(38, 184, 228, 0.616)
-    }
 `;
 
 class RevealOptions extends Component {    

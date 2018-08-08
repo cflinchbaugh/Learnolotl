@@ -5,11 +5,11 @@ const StyleWrapper = styled.div`
     .button {
         background-color: ${props => props.theme.secondary};
         color: ${props => props.theme.secondaryColor};
-        transition: all 0.25s; 
+        transition: all 0.35s; 
         display: inline-block;
-        border-radius: 10px;
-        padding: 5px 10px;
-        box-shadow: 1px 8px 19px 3px rgba(61,55,61,0.48);
+        border-radius: 15px;
+        padding: 8px 20px;
+        box-shadow: 1px 8px 19px 3px rgba(61,55,61,0.25);
 
         &:hover {
             cursor: pointer;
