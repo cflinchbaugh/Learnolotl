@@ -43,18 +43,40 @@ class Learn extends Component {
                      ]
                 }
             ],
-            display: 'none'
+            display: 'none',
+            defaultData: true
         }
 
         this.handleFileUpload = this.handleFileUpload.bind(this);
     }
 
     handleFileUpload(updatedCardData) {
-         this.setState((state) => ({
-            cardData: updatedCardData
-        }));
+        if (this.state.defaultData) {
+            this.setState((state) => ({
+                cardData: updatedCardData,
+                defaultData: false
+            }));
+        } else {
+            let mergedCardData = this._mergeCardData(updatedCardData);
+            
+            this.setState((state) => ({
+                cardData: mergedCardData
+            }));
+        }
+
+        console.log(this.state.cardData);
     }
 
+    _mergeCardData(updatedCardData) {
+        let mergedData = this.state.cardData,
+            i = 0;
+
+        for ( ; i < updatedCardData.length; i++) {
+            mergedData.push(updatedCardData[i]);
+        }
+
+        return mergedData;
+    }
 
     render() {
         let uploaderData = {

@@ -11,40 +11,33 @@ class Uploader extends Component {
 
     handleFileUpload(e) {
         let files = e.target.files,
-            reader = new FileReader();
+            i = 0;
 
-        // TODO: Verify files[0] exists, 
-        // I'm seeing errors if the user cancels the file explorer
+        for ( ; i < files.length; i++) { //for multiple files          
+            ( (file) => {
+                let reader = new FileReader();
 
-        reader.readAsText(files[0]);
+                reader.onload = (e) => {
+                    // Async code, as files complete loading we handle them individually,
+                        // do not try to aggregate, just handle the new file
+                        // by parsing it, grabbing the results, and sending the data up
 
-        reader.onload = (e)=> {
-            let fileData = e.target.result,
-                updatedCardData = this._buildMergedCardData(fileData);
+                    let processedFileData = [],
+                        j,
+                        fileDataArr;
 
-            this.props.handleFileUpload(updatedCardData);
+                    fileDataArr = JSON.parse(e.target.result).results;
+
+                    for (j = 0; j < fileDataArr.length; j++) {
+                        processedFileData.push(fileDataArr[j]);
+                    }
+
+                    this.props.handleFileUpload(processedFileData);
+                }
+                             
+                reader.readAsText(file, "UTF-8");
+            })(files[i]);
         }
-    }
-
-    _buildMergedCardData(fileData) {
-        let mergedCardData = this.state.defaultData ? [] : this.props.cardData,
-            parsedData;
-        
-        try {
-            parsedData = JSON.parse(fileData);
-            
-            parsedData.results.map( (dataEntry, idx) => {
-                mergedCardData.push(dataEntry);
-            });
-        } catch (error) {
-            console.error("Invalid uploaded file, file content was not parsable JSON.  Full error: " + error);
-        }
-
-        this.setState((state) => {
-            defaultData: false
-        });
-
-        return mergedCardData;
     }
 
     render() {
@@ -55,7 +48,8 @@ class Uploader extends Component {
                 <input 
                     type="file" 
                     name="file" 
-                    onChange={(e)=>this.handleFileUpload(e)} />
+                    onChange={(e)=>this.handleFileUpload(e)} 
+                    multiple="multiple"/>
             </div>
         );
     }
