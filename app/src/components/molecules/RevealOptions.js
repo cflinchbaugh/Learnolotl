@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
+import Button from '../atoms/Button';
 
 const StyleWrapper = styled.div`
     .reveal-button {
@@ -26,19 +27,20 @@ const StyleWrapper = styled.div`
 class RevealOptions extends Component {    
     _processReveal(translationsArr) {
         return translationsArr.map(function(translationData, idx) {
-            let reveal;
+            let reveal,
+                buttonData = {
+                    label: translationData.id
+                }
             
             if (translationData.id === this.props.display) {
                 reveal = (
-                    <div key={idx} className="reveal-button active">
-                    {translationData.id}
-                    </div>
+                    <Button key={idx} {...buttonData}/>
                 );
-            } else {
+            } else {    
+                buttonData.onClickFunction = (() => this.handleClick(translationData.id));
+                
                 reveal = (
-                    <div key={idx} className="reveal-button" onClick={() => this.handleClick(translationData.id) }>
-                    {translationData.id}
-                    </div>
+                    <Button key={idx} {...buttonData}/>
                 );
             }
             

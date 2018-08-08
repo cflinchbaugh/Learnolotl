@@ -1,6 +1,7 @@
 let dark = '#000000',
     light = '#ffffff';
 
+//Example use: ${props => props.theme.primaryColor};
 
 export default {
     // Primary
@@ -14,12 +15,12 @@ export default {
         primaryDarkColor: light,
 
     //Secondary
-        secondary: '#1de9b6',
+        secondary: '#80cbc4',
         secondaryColor: dark,
         
-        secondaryLight: '#6effe8',
+        secondaryLight: '#b2fef7',
         secondaryLightColor: dark,
         
-        secondaryDark: '#00b686',
+        secondaryDark: '#4f9a94',
         secondaryDarkColor: dark
 };
