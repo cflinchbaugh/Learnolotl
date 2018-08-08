@@ -22,17 +22,9 @@ class Uploader extends Component {
                         // do not try to aggregate, just handle the new file
                         // by parsing it, grabbing the results, and sending the data up
 
-                    let processedFileData = [],
-                        j,
-                        fileDataArr;
+                    let fileDataArr = JSON.parse(e.target.result).results;
 
-                    fileDataArr = JSON.parse(e.target.result).results;
-
-                    for (j = 0; j < fileDataArr.length; j++) {
-                        processedFileData.push(fileDataArr[j]);
-                    }
-
-                    this.props.handleFileUpload(processedFileData);
+                    this.props.handleFileUpload(fileDataArr);
                 }
                              
                 reader.readAsText(file, "UTF-8");
