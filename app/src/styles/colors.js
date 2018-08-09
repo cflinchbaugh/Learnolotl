@@ -5,7 +5,7 @@ let dark = '#000000',
 
 export default {
     // Primary
-        primary: '#724dff',
+        primary: '#7c4dff',
         primaryColor: light,
 
         primaryLight: '#b47cff',
@@ -13,6 +13,9 @@ export default {
 
         primaryDark: '#3f1dcb',
         primaryDarkColor: light,
+
+        primaryDarkMedium: '#5835e8',
+        primaryDarkMediumColor: light,
 
     //Secondary
         secondary: '#80cbc4',
