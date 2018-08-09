@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import styled from 'styled-components';
 
 const StyleWrapper = styled.div`
@@ -8,16 +8,14 @@ const StyleWrapper = styled.div`
         0px 18px 23px rgba(0,0,0,0.1);
 `;
 
-class RevealItem extends Component {
-    render() {
-        return (
-            <StyleWrapper>
-                <div className="active-item">
-                    { this.props.value }
-                </div>
-            </StyleWrapper>
-        )
-    }
+function RevealItem (props) {
+    return (
+        <StyleWrapper>
+            <div className="active-item">
+                { props.value }
+            </div>
+        </StyleWrapper>
+    )
 }
 
 export default RevealItem
