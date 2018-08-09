@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import Flashcards from '../organisms/Flashcards';
 import Uploader from '../organisms/Uploader';
 
 import { Link } from 'react-router-dom';
@@ -81,9 +80,6 @@ class Learn extends Component {
     render() {
         let uploaderData = {
             handleFileUpload: this.handleFileUpload,
-            cardData: this.state.cardData
-        },
-        flashcardsData = {
             cardData: this.state.cardData
         }
 

@@ -105,13 +105,13 @@ class FlashCards extends Component {
     }
 
     handleClickNext() {
-        let updatedIdx = this.state.idx += 1;
+        let updatedIdx = this.state.idx + 1;
 
         this._updateNavigationState(updatedIdx);
         
     }
     handleClickPrevious() {
-        let updatedIdx = this.state.idx -= 1;
+        let updatedIdx = this.state.idx - 1;
 
         this._updateNavigationState(updatedIdx);
     }

@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 //Global Styles pulled in here
 import Fonts from '../styles/fonts.css';
 import Util from '../styles/util.css';

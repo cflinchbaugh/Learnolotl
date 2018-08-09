@@ -21,7 +21,7 @@ class RevealOptions extends Component {
                 buttonData = {};
 
             if (translationData.id === this.props.display) {
-                buttonData.label = translationData.id + ' X',
+                buttonData.label = translationData.id + ' X';
                 buttonData.onClickFunction = (() => this.handleClick('none'));
 
                 reveal = (
