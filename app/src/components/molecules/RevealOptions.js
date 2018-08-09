@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
-import Button from '../atoms/Button';
+import CancelPop from './buttons/CancelPop';
 
 const StyleWrapper = styled.div`
     .RevealOptions >* {
@@ -18,24 +18,22 @@ class RevealOptions extends Component {
     _processReveal(translationsArr) {
         return translationsArr.map(function(translationData, idx) {
             let reveal,
-                buttonData = {};
-
-            if (translationData.id === this.props.display) {
-                buttonData.label = translationData.id + ' X';
-                buttonData.onClickFunction = (() => this.handleClick('none'));
-
-                reveal = (
-                    <Button key={idx} {...buttonData}/>
-                );
-            } else {
-                buttonData.label = translationData.id
-                buttonData.onClickFunction = (() => this.handleClick(translationData.id));
+                buttonData = {
+                    label: translationData.id,
+                    onClickFunction: '',
+                    showX: false
+                };
                 
-                reveal = (
-                    <Button key={idx} {...buttonData}/>
-                );
+            if (translationData.id === this.props.display) {
+                buttonData.onClickFunction = (() => this.handleClick('none'));
+                buttonData.showX = true
+            } else {
+                buttonData.onClickFunction = (() => this.handleClick(translationData.id));
             }
             
+            reveal = (
+                <CancelPop key={idx} {...buttonData}/>
+            );
             
             return reveal;
         }, this);

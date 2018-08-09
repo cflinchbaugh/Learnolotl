@@ -10,10 +10,29 @@
     }
     .fade-exit {
         opacity: 1;
-        transform: scale(1) translateY(0%);
+        transform: scale(1);
     }
     .fade-exit-active {
         opacity: 0.01;
-        transform: scale(0.9) translateY(50%);
-        transition: all 150ms ease-out;
+        transition: all 100ms ease-out;
+    }
+
+/* Pop */
+    .pop-enter {
+        opacity: 0.01;
+        transform: scale(0.9);
+    }
+    .pop-enter-active {
+        opacity: 1;
+        transform: scale(1);
+        transition: all 200ms ease-out;
+    }
+    .pop-exit {
+        opacity: 1;
+        transform: scale(1.65);
+    }
+    .pop-exit-active {
+        opacity: 0.01;
+        transform: scale(0.5);
+        transition: all 100ms;
     }
