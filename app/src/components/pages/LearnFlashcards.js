@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Flashcards from '../organisms/Flashcards';
+import Flashcards from 'organisms/Flashcards';
 
 
 class LearnFlashcards extends Component {

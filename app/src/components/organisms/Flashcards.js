@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import DeckNavigation from '../organisms/DeckNavigation';
+import DeckNavigation from 'organisms/DeckNavigation';
 import styled from 'styled-components';
 
 const StyleWrapper = styled.div`

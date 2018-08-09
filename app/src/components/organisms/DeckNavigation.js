@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Deck from '../organisms/Deck';
+import Deck from 'organisms/Deck';
 import styled from 'styled-components';
 
 const StyleWrapper = styled.div`

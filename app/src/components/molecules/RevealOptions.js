@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
-import CancelPop from './buttons/CancelPop';
+import CancelPop from 'molecules/buttons/CancelPop';
 
 const StyleWrapper = styled.div`
     .RevealOptions >* {

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 import { CSSTransition } from 'react-transition-group'
-import Button from '../../atoms/Button';
+import Button from 'atoms/Button';
 
 const StyleWrapper = styled.div`
     .cancel-icon-wrapper {

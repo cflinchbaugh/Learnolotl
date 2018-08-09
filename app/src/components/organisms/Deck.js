@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Card from '../molecules/Card';
+import Card from 'molecules/Card';
 import styled from 'styled-components';
 
 const StyleWrapper = styled.div`

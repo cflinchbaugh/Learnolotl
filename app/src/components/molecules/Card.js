@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
-import ActiveItem from '../atoms/ActiveItem';
-import RevealItem from '../atoms/RevealItem';
-import RevealOptions from './RevealOptions';
+import ActiveItem from 'atoms/ActiveItem';
+import RevealItem from 'atoms/RevealItem';
+import RevealOptions from 'molecules/RevealOptions';
 import { CSSTransition, TransitionGroup } from 'react-transition-group'
 
 const StyleWrapper = styled.div`

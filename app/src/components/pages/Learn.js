@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Uploader from '../organisms/Uploader';
+import Uploader from 'organisms/Uploader';
 
 import { Link } from 'react-router-dom';
 
