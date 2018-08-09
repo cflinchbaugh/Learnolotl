@@ -9,6 +9,11 @@ const StyleWrapper = styled.div`
     min-height: 350px;
 }
 
+.deck {
+    width: 80%;
+    display: flex;
+}
+
 .navigation {
     border-radius: 25px;
     padding: 5px;

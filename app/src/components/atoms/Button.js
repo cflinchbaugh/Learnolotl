@@ -10,6 +10,7 @@ const StyleWrapper = styled.div`
         border-radius: 15px;
         padding: 8px 20px;
         box-shadow: 1px 8px 19px 3px rgba(61,55,61,0.25);
+        user-select: none;
 
         &:hover {
             cursor: pointer;

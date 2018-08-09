@@ -13,6 +13,10 @@ const StyleWrapper = styled.div`
         text-align: center;
     }
 
+    .reveal-wrapper {
+        min-height: 200px;
+    }
+
     .translations-wrapper {
         min-height: 60px;
     }
@@ -78,9 +82,11 @@ class Card extends Component {
 
                     <div className="reveal-options-wrapper">
 
-                        <RevealOptions optionsArray={translationsArr} 
+                        <RevealOptions
+                            display={this.props.display}
+                            optionsArray={translationsArr} 
                             handleClickOption={this.handleRevealClick}
-                            />
+                        />
                     </div>
 
                 </div>

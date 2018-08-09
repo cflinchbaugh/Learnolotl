@@ -18,15 +18,17 @@ class RevealOptions extends Component {
     _processReveal(translationsArr) {
         return translationsArr.map(function(translationData, idx) {
             let reveal,
-                buttonData = {
-                    label: translationData.id
-                }
-            
+                buttonData = {};
+
             if (translationData.id === this.props.display) {
+                buttonData.label = translationData.id + ' X',
+                buttonData.onClickFunction = (() => this.handleClick('none'));
+
                 reveal = (
                     <Button key={idx} {...buttonData}/>
                 );
-            } else {    
+            } else {
+                buttonData.label = translationData.id
                 buttonData.onClickFunction = (() => this.handleClick(translationData.id));
                 
                 reveal = (
