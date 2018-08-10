@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
-import Button from 'atoms/Button';
+import Button from 'atoms/buttons/Button';
 
 const StyleWrapper = styled.div`
     .button-navigation {
