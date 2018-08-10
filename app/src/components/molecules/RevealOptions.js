@@ -3,6 +3,10 @@ import styled from 'styled-components';
 import CancelPop from 'molecules/buttons/CancelPop';
 
 const StyleWrapper = styled.div`
+    .RevealOptions {
+        margin: auto;
+    }
+    
     .RevealOptions >* {
         float: left;
         margin-right: 2em;
@@ -44,7 +48,7 @@ class RevealOptions extends Component {
         
         return (
             <StyleWrapper>
-                <div className="RevealOptions">
+                <div className="RevealOptions clearfix">
                     {reveal}
                 </div>
             </StyleWrapper>

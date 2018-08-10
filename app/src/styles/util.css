@@ -5,3 +5,9 @@ body {
 .hide {
     display: none;
 }
+
+.clearfix {
+    content: "";
+    clear: both;
+    display: table;
+}
