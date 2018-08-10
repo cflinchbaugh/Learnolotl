@@ -4,6 +4,10 @@ let dark = '#000000',
 //Example use: ${props => props.theme.primaryColor};
 
 export default {
+    // Base
+    dark: dark,
+    light: light,
+
     // Primary
         primary: '#7c4dff',
         primaryColor: light,
