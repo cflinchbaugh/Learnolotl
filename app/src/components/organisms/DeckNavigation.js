@@ -1,28 +1,29 @@
 import React, { Component } from 'react';
 import Deck from 'organisms/Deck';
 import styled from 'styled-components';
+import NavigationButton from 'atoms/buttons/NavigationArrow';
 
 const StyleWrapper = styled.div`
     .deck-navigation {
-        display: flex;
         justify-content: center;
         min-height: 350px;
     }
 
     .deck {
-        width: 80%;
+        width: 100%;
         display: flex;
+        margin-bottom: 15px;
     }
 
-    .navigation {
-        border-radius: 25px;
-        width: 10%;
-        transition: background-color 0.25s;
+    .navigation-wrapper {
+        text-align: center;
     }
 
-    .navigation:hover {
-        cursor: pointer;
-}
+    .navigation-button-wrapper {
+        display: inline-block;
+        margin: 0 10px;
+    }
+
 `
 
 class DeckNavigation extends Component {
@@ -31,16 +32,23 @@ class DeckNavigation extends Component {
         return (
             <StyleWrapper>
                 <div className="deck-navigation">
-                    <div className="navigation previous" onClick={this.props.handleClickPrevious}>
-                        Previous
-                    </div>
 
                     <div className="deck">
                         <Deck deckData={this.props.deckData}/>
                     </div>
 
-                    <div className="navigation next" onClick={this.props.handleClickNext}>
-                        Next
+                    <div className="navigation-wrapper">
+                        <div className="navigation-button-wrapper">
+                            <NavigationButton 
+                                type="previous"
+                                onClickFunction={this.props.handleClickPrevious}/>
+                        </div>
+
+                        <div className="navigation-button-wrapper">
+                            <NavigationButton 
+                                type="next"
+                                onClickFunction={this.props.handleClickNext}/>
+                        </div>
                     </div>
                 </div>
             </StyleWrapper>

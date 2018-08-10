@@ -6,6 +6,8 @@ import RevealOptions from 'molecules/RevealOptions';
 import { CSSTransition, TransitionGroup } from 'react-transition-group'
 
 const StyleWrapper = styled.div`
+    padding: 0 0 20px 0;
+    
     .active-wrapper,
     .translations-wrapper,
     .reveal-wrapper {
@@ -20,6 +22,11 @@ const StyleWrapper = styled.div`
     .translations-wrapper {
         min-height: 60px;
     }
+
+    .content {
+        min-height: 550px;
+    }
+
 `;
 
 class Card extends Component {
@@ -61,27 +68,28 @@ class Card extends Component {
         return (
             <StyleWrapper>
                 <div className="card">
-                    <div className="active-wrapper">
-                        <ActiveItem value={activeValue}/>
+                    <div className="content">
+                        <div className="active-wrapper">
+                            <ActiveItem value={activeValue}/>
+                        </div>
+
+                        <TransitionGroup className="reveal-wrapper">
+                            {this.state.revealItem.map(({ id, value }) => (
+                                <CSSTransition
+                                    key={id}
+                                    timeout={300}
+                                    classNames="fade-in-vanish-out" 
+                                
+                                >
+                                    <div className="translations-wrapper">
+                                        <RevealItem value={value}/>
+                                    </div>
+                                </CSSTransition>
+                            ))}
+                        </TransitionGroup>
                     </div>
 
-                    <TransitionGroup className="reveal-wrapper">
-                        {this.state.revealItem.map(({ id, value }) => (
-                            <CSSTransition
-                                key={id}
-                                timeout={300}
-                                classNames="fade-in-vanish-out" 
-                            
-                            >
-                                <div className="translations-wrapper">
-                                    <RevealItem value={value}/>
-                                </div>
-                            </CSSTransition>
-                        ))}
-                    </TransitionGroup>
-
                     <div className="reveal-options-wrapper">
-
                         <RevealOptions
                             display={this.props.display}
                             optionsArray={translationsArr} 
