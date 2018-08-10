@@ -8,21 +8,32 @@ const StyleWrapper = styled.div`
         float right;
     }
 
-    .cancel {
+    .cancel,
+    .echo {
         display: flex;
         justify-content: center;
         align-items: center;
 
-        background-color: red;
         color: white;
         border-radius: 200px;
-        height: 24px;
-        width: 24px;
         font-size: 15px;
         position: absolute;
         margin-top: -49px;
         margin-left: -14px;
+        height: 24px;
+        width: 24px;
     }
+    
+    .cancel {
+        background-color: red;
+    }
+
+    .echo {
+        background-color: red;
+        position: absolute;
+        opacity: 0.1;
+    }
+
 
 `;
 
@@ -42,6 +53,15 @@ class CancelPop extends Component {
                         unmountOnExit
                     >
                         <div className='cancel'>x</div>
+                    </CSSTransition>
+
+                    <CSSTransition
+                        in={showX}
+                        timeout={200}
+                        classNames="pop-echo" 
+                        unmountOnExit
+                    >
+                        <div className='echo'></div>
                     </CSSTransition>
                 </div>
             </StyleWrapper>

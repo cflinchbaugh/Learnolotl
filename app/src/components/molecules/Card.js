@@ -70,7 +70,7 @@ class Card extends Component {
                             <CSSTransition
                                 key={id}
                                 timeout={300}
-                                classNames="fade" 
+                                classNames="fade-in-vanish-out" 
                             
                             >
                                 <div className="translations-wrapper">
