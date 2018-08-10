@@ -3,25 +3,25 @@ import Deck from 'organisms/Deck';
 import styled from 'styled-components';
 
 const StyleWrapper = styled.div`
-.deck-navigation {
-    display: flex;
-    justify-content: center;
-    min-height: 350px;
-}
+    .deck-navigation {
+        display: flex;
+        justify-content: center;
+        min-height: 350px;
+    }
 
-.deck {
-    width: 80%;
-    display: flex;
-}
+    .deck {
+        width: 80%;
+        display: flex;
+    }
 
-.navigation {
-    border-radius: 25px;
-    padding: 5px;
-    transition: background-color 0.25s;
-}
+    .navigation {
+        border-radius: 25px;
+        width: 10%;
+        transition: background-color 0.25s;
+    }
 
-.navigation:hover {
-    cursor: pointer;
+    .navigation:hover {
+        cursor: pointer;
 }
 `
 
