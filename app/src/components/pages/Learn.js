@@ -3,6 +3,9 @@ import Uploader from 'organisms/Uploader';
 
 import { Link } from 'react-router-dom';
 
+import { connect } from 'react-redux';
+import { createCard } from '../../actions/cardActions';
+
 
 class Learn extends Component {
     constructor(props) {
@@ -47,6 +50,7 @@ class Learn extends Component {
         }
 
         this.handleFileUpload = this.handleFileUpload.bind(this);
+        this.reduxTest = this.reduxTest.bind(this);
     }
 
     handleFileUpload(updatedCardData) {
@@ -77,6 +81,11 @@ class Learn extends Component {
         return mergedData;
     }
 
+    reduxTest() {
+        this.props.createCard({});
+        console.log('called createCard');
+    }
+
     render() {
         let uploaderData = {
             handleFileUpload: this.handleFileUpload,
@@ -85,16 +94,17 @@ class Learn extends Component {
 
         return (
             <div>
-                <Uploader {...uploaderData} />
+                <div onClick={this.reduxTest}>Click me</div>
+                {/* <Uploader {...uploaderData} />
                 
                 <Link to={{
                     pathname: '/learn/flashcards',
                     state: {...this.state}
                     
-                    }}>Flashcards</Link>
+                    }}>Flashcards</Link> */}
             </div>
         );
     }
 }
 
-export default Learn;
+export default connect(null, { createCard })(Learn);
