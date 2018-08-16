@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import DeckNavigation from 'organisms/DeckNavigation';
 import styled from 'styled-components';
+import { connect } from 'react-redux';
 
 const StyleWrapper = styled.div`
 `
@@ -63,6 +64,7 @@ class FlashCards extends Component {
         // I'm pretty sure it can reach Mega-level 
         // digivolution in no time
     fetch(idx) {
+        console.log(this.props);
         let results = [],
             response = this.props.cardData,
             validatedIdx = this._validateIdx(idx, response.length);
@@ -130,4 +132,8 @@ class FlashCards extends Component {
     }
 }
 
-export default FlashCards;
+const mapStateToProps = state => ({
+    items: state.cards.items
+});
+
+export default  connect(mapStateToProps, {  })(FlashCards);

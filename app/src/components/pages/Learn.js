@@ -50,24 +50,25 @@ class Learn extends Component {
         }
 
         this.handleFileUpload = this.handleFileUpload.bind(this);
-        this.reduxTest = this.reduxTest.bind(this);
     }
 
     handleFileUpload(updatedCardData) {
-        if (this.state.defaultData) {
-            this.setState((state) => ({
-                cardData: updatedCardData,
-                defaultData: false
-            }));
-        } else {
-            let mergedCardData = this._mergeCardData(updatedCardData);
+        this.props.createCard(updatedCardData);
+        
+        // if (this.state.defaultData) {
+        //     this.setState((state) => ({
+        //         cardData: updatedCardData,
+        //         defaultData: false
+        //     }));
+        // } else {
+        //     let mergedCardData = this._mergeCardData(updatedCardData);
             
-            this.setState((state) => ({
-                cardData: mergedCardData
-            }));
-        }
+        //     this.setState((state) => ({
+        //         cardData: mergedCardData
+        //     }));
+        // }
 
-        console.log(this.state.cardData);
+        // console.log(this.state.cardData);
     }
 
     _mergeCardData(updatedCardData) {
@@ -81,11 +82,6 @@ class Learn extends Component {
         return mergedData;
     }
 
-    reduxTest() {
-        this.props.createCard({});
-        console.log('called createCard');
-    }
-
     render() {
         let uploaderData = {
             handleFileUpload: this.handleFileUpload,
@@ -94,14 +90,13 @@ class Learn extends Component {
 
         return (
             <div>
-                <div onClick={this.reduxTest}>Click me</div>
-                {/* <Uploader {...uploaderData} />
+                <Uploader {...uploaderData} />
                 
                 <Link to={{
                     pathname: '/learn/flashcards',
                     state: {...this.state}
                     
-                    }}>Flashcards</Link> */}
+                    }}>Flashcards</Link>
             </div>
         );
     }
