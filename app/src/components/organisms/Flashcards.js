@@ -66,7 +66,7 @@ class FlashCards extends Component {
     fetch(idx) {
         console.log(this.props);
         let results = [],
-            response = this.props.cardData,
+            response = this.props.items,
             validatedIdx = this._validateIdx(idx, response.length);
             
 

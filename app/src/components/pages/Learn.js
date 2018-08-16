@@ -12,39 +12,6 @@ class Learn extends Component {
         super(props);
 
         this.state = {
-            cardData: [
-                {
-                    "metadata": ["101"],
-                    "langData": [
-                        {
-                            "id": "english",
-                            "value": "I"
-                        }, {
-                            "id": "romaji",
-                            "value": "watashi"
-                        }, {
-                            "id": "hiragana",
-                            "value": "\u308E\u305F\u3057"
-                        }
-                    ]
-                },
-        
-                {
-                    "metadata": ["101"],
-                     "langData": [
-                         {
-                             "id": "english",
-                             "value": "you"
-                         }, {
-                             "id": "romaji",
-                             "value": "anata"
-                         }, {
-                             "id": "hiragana",
-                             "value": "\u3041\u306A\u305F"
-                         }
-                     ]
-                }
-            ],
             display: 'none',
             defaultData: true
         }
@@ -54,21 +21,6 @@ class Learn extends Component {
 
     handleFileUpload(updatedCardData) {
         this.props.createCard(updatedCardData);
-        
-        // if (this.state.defaultData) {
-        //     this.setState((state) => ({
-        //         cardData: updatedCardData,
-        //         defaultData: false
-        //     }));
-        // } else {
-        //     let mergedCardData = this._mergeCardData(updatedCardData);
-            
-        //     this.setState((state) => ({
-        //         cardData: mergedCardData
-        //     }));
-        // }
-
-        // console.log(this.state.cardData);
     }
 
     _mergeCardData(updatedCardData) {
