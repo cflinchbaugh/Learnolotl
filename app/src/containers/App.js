@@ -7,10 +7,15 @@ import Router from './Router';
 import {styled, ThemeProvider} from 'styled-components';
 import theme from 'styles/colors';
 
+import { Provider } from 'react-redux';
+import store from './store';
+
 export default(
-  <ThemeProvider theme={theme}>
-    <div className="App">
-      <Router/>
-    </div>
-  </ThemeProvider>
+  <Provider store={store}>
+    <ThemeProvider theme={theme}>
+      <div className="App">
+        <Router/>
+      </div>
+    </ThemeProvider>
+  </Provider>
 );

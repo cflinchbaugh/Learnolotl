@@ -3,45 +3,15 @@ import Uploader from 'organisms/Uploader';
 
 import { Link } from 'react-router-dom';
 
+import { connect } from 'react-redux';
+import { createCard } from '../../actions/cardActions';
+
 
 class Learn extends Component {
     constructor(props) {
         super(props);
 
         this.state = {
-            cardData: [
-                {
-                    "metadata": ["101"],
-                    "langData": [
-                        {
-                            "id": "english",
-                            "value": "I"
-                        }, {
-                            "id": "romaji",
-                            "value": "watashi"
-                        }, {
-                            "id": "hiragana",
-                            "value": "\u308E\u305F\u3057"
-                        }
-                    ]
-                },
-        
-                {
-                    "metadata": ["101"],
-                     "langData": [
-                         {
-                             "id": "english",
-                             "value": "you"
-                         }, {
-                             "id": "romaji",
-                             "value": "anata"
-                         }, {
-                             "id": "hiragana",
-                             "value": "\u3041\u306A\u305F"
-                         }
-                     ]
-                }
-            ],
             display: 'none',
             defaultData: true
         }
@@ -50,20 +20,7 @@ class Learn extends Component {
     }
 
     handleFileUpload(updatedCardData) {
-        if (this.state.defaultData) {
-            this.setState((state) => ({
-                cardData: updatedCardData,
-                defaultData: false
-            }));
-        } else {
-            let mergedCardData = this._mergeCardData(updatedCardData);
-            
-            this.setState((state) => ({
-                cardData: mergedCardData
-            }));
-        }
-
-        console.log(this.state.cardData);
+        this.props.createCard(updatedCardData);
     }
 
     _mergeCardData(updatedCardData) {
@@ -97,4 +54,4 @@ class Learn extends Component {
     }
 }
 
-export default Learn;
+export default connect(null, { createCard })(Learn);
