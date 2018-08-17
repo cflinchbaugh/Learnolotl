@@ -1,0 +1,19 @@
+{
+    "results": [
+        {
+           "metadata": ["Hiragana"],
+            "langData": [
+                {
+                    "id": "english",
+                    "value": "a"
+                }, {
+                    "id": "romaji",
+                    "value": "a"
+                }, {
+                    "id": "hiragana",
+                    "value": "あ"
+                }
+            ]
+        }
+    ]
+}
