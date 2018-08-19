@@ -1,7 +1,7 @@
 {
     "results": [
         {
-           "metadata": ["Hiragana"],
+            "metadata": ["Hiragana"],
             "langData": [
                 {
                     "id": "english",
@@ -12,6 +12,62 @@
                 }, {
                     "id": "hiragana",
                     "value": "あ"
+                }
+            ]
+        }, {
+            "metadata": ["Hiragana"],
+            "langData": [
+                {
+                    "id": "english",
+                    "value": "i"
+                }, {
+                    "id": "romaji",
+                    "value": "i"
+                }, {
+                    "id": "hiragana",
+                    "value": ""
+                }
+            ]
+        }, {
+            "metadata": ["Hiragana"],
+            "langData": [
+                {
+                    "id": "english",
+                    "value": "u"
+                }, {
+                    "id": "romaji",
+                    "value": "u"
+                }, {
+                    "id": "hiragana",
+                    "value": ""
+                }
+            ]
+        }, {
+            "metadata": ["Hiragana"],
+            "langData": [
+                {
+                    "id": "english",
+                    "value": "e"
+                }, {
+                    "id": "romaji",
+                    "value": "e"
+                }, {
+                    "id": "hiragana",
+                    "value": ""
+                }
+            ]
+        }, {
+            "metadata": ["Hiragana"],
+            "langData": [
+                {
+                    "id": "english",
+                    "value": "o"
+                }, {
+                    "id": "romaji",
+                    "value": "o"
+                }, {
+                    "id": "hiragana",
+                    "value": ""
                 }
             ]
         }
