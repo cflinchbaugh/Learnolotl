@@ -41,9 +41,13 @@ export default function(state = initialState, action) {
     console.log(action.type);
     switch(action.type) {
         case NEW_CARDS:
+            /* Does not currently check for duplicates, 
+            simply appends the new cards onto the items array */
+            let mergedCards = [...state.items, ...action.payload];
+
             return {
                 ...state,
-                items: action.payload
+                items: mergedCards
             }
         
         default: 
