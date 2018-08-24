@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 
 import { connect } from 'react-redux';
 import { createCard } from '../../actions/cardActions';
-
+import PropTypes from 'prop-types';
 
 class Learn extends Component {
     constructor(props) {
@@ -13,14 +13,29 @@ class Learn extends Component {
 
         this.state = {
             display: 'none',
-            defaultData: true
+            defaultData: true,
+            uploadedIds: []
         }
 
         this.handleFileUpload = this.handleFileUpload.bind(this);
     }
 
-    handleFileUpload(updatedCardData) {
-        this.props.createCard(updatedCardData);
+    handleFileUpload(uploadedCardData) {
+        let updatedCardData = uploadedCardData;
+
+        // Determine if file was already added to avoid duplicates
+        if (this.state.uploadedIds.indexOf(updatedCardData.fileId) === -1) {
+            let updatedUploadedIds = this.state.uploadedIds;
+                updatedUploadedIds.push(updatedCardData.fileId);
+
+            this.setState({
+                uploadedIds: updatedUploadedIds
+            });
+            this.props.createCard(updatedCardData.fileDataArr);
+        } else {
+            console.warn('File skipped because it was previosly added');
+        }
+
     }
 
     _mergeCardData(updatedCardData) {
@@ -54,4 +69,9 @@ class Learn extends Component {
     }
 }
 
-export default connect(null, { createCard })(Learn);
+
+const mapStateToProps = state => ({
+    items: state.cards.items
+});
+
+export default connect(mapStateToProps, { createCard })(Learn);
