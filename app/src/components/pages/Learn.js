@@ -6,6 +6,7 @@ import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { createCard } from '../../actions/cardActions';
 import PropTypes from 'prop-types';
+import Listing from 'molecules/Listing';
 
 class Learn extends Component {
     constructor(props) {
@@ -58,6 +59,8 @@ class Learn extends Component {
         return (
             <div>
                 <Uploader {...uploaderData} />
+
+                <Listing {...this.state} />
                 
                 <Link to={{
                     pathname: '/learn/flashcards',
