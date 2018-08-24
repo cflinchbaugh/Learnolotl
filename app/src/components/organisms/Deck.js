@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Card from 'molecules/Card';
 import styled from 'styled-components';
+import { connect } from 'react-redux';
 
 const StyleWrapper = styled.div`
     margin: auto;
@@ -26,11 +27,15 @@ class Deck extends Component {
             return <Card 
                 mode='hiragana'
                 data={cardData}
-                display={this.props.deckData.display}
+                display={this.props.display}
                 handleClickDisplay={this.props.deckData.handleClickDisplay}
                 key={idx}/>
         }, this);
     }
 }
 
-export default Deck
+const mapStateToProps = state => ({
+    display: state.cards.flashCardDisplay
+});
+
+export default connect(mapStateToProps, { })(Deck);

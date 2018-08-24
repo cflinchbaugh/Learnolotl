@@ -4,6 +4,8 @@ import ActiveItem from 'atoms/ActiveItem';
 import RevealItem from 'atoms/RevealItem';
 import RevealOptions from 'molecules/RevealOptions';
 import { CSSTransition, TransitionGroup } from 'react-transition-group'
+import { revealOption } from '../../actions/cardActions';
+import { connect } from 'react-redux';
 
 const StyleWrapper = styled.div`
     padding: 0 0 20px 0;
@@ -59,6 +61,8 @@ class Card extends Component {
         this.setState(state => ({
             revealItem: updatedState
         }));
+
+        this.props.revealOption(updatedState);
     }
 
     render() {
@@ -74,7 +78,7 @@ class Card extends Component {
                         </div>
 
                         <TransitionGroup className="reveal-wrapper">
-                            {this.state.revealItem.map(({ id, value }) => (
+                            {this.props.revealItem.map(({ id, value }) => (
                                 <CSSTransition
                                     key={id}
                                     timeout={300}
@@ -120,4 +124,8 @@ class Card extends Component {
    
 }
 
-export default Card
+const mapStateToProps = state => ({
+    revealItem: state.cards.revealOption
+});
+
+export default connect(mapStateToProps, { revealOption })(Card);

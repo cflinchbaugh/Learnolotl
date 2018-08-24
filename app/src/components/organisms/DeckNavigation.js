@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import Deck from 'organisms/Deck';
 import styled from 'styled-components';
 import NavigationButton from 'atoms/buttons/NavigationArrow';
+import { connect } from 'react-redux';
+import { fetchCard } from '../../actions/cardActions';
 
 const StyleWrapper = styled.div`
     .deck-navigation {
@@ -27,6 +29,51 @@ const StyleWrapper = styled.div`
 `
 
 class DeckNavigation extends Component {
+    constructor(props) {
+        super(props);
+
+        this.handleClickNext = this.handleClickNext.bind(this);
+        this.handleClickPrevious = this.handleClickPrevious.bind(this);
+    }
+
+    handleClickNext() {
+        let updatedIdx = this.props.idx + 1,
+            validatedIdx = this._validateIdx(updatedIdx);
+
+        this.props.fetchCard(validatedIdx);
+    }
+
+    handleClickPrevious() {
+        let updatedIdx = this.props.idx - 1,
+            validatedIdx = this._validateIdx(updatedIdx);
+
+        this.props.fetchCard(validatedIdx);
+    }
+
+    _validateIdx(idx, responseLen = this.props.items.length) {
+        let validatedIdx = idx;
+        
+        // Lower-bound check
+        if (idx < 0) {
+            validatedIdx = 0;
+            
+            this._reboundIdx(validatedIdx);
+        }
+
+        // Upper-bound check
+        if (idx >= responseLen && idx !== 0) {
+            validatedIdx = (responseLen - 1);
+            
+            this._reboundIdx(validatedIdx);
+        }
+        
+        return validatedIdx;
+    }
+
+    _reboundIdx(validIdx) {
+        console.warn('Out of bounds: resetting to ' + validIdx);
+    }
+
 
     render() {
         return (
@@ -41,13 +88,13 @@ class DeckNavigation extends Component {
                         <div className="navigation-button-wrapper">
                             <NavigationButton 
                                 type="previous"
-                                onClickFunction={this.props.handleClickPrevious}/>
+                                onClickFunction={this.handleClickPrevious}/>
                         </div>
 
                         <div className="navigation-button-wrapper">
                             <NavigationButton 
                                 type="next"
-                                onClickFunction={this.props.handleClickNext}/>
+                                onClickFunction={this.handleClickNext}/>
                         </div>
                     </div>
                 </div>
@@ -58,4 +105,9 @@ class DeckNavigation extends Component {
    
 }
 
-export default DeckNavigation;
+const mapStateToProps = state => ({
+    items: state.cards.items,
+    idx: state.cards.flashCardIdx
+});
+
+export default connect(mapStateToProps, { fetchCard })(DeckNavigation);

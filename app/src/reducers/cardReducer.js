@@ -1,4 +1,4 @@
-import { FETCH_CARDS, NEW_CARDS } from '../actions/types';
+import { FETCH_CARDS, NEW_CARDS, REVEAL_OPTION } from '../actions/types';
 
 const initialState = {
     items: [
@@ -17,39 +17,57 @@ const initialState = {
                 }
             ]
         },
-
         {
             "metadata": ["101"],
-             "langData": [
-                 {
-                     "id": "english",
-                     "value": "you"
-                 }, {
-                     "id": "romaji",
-                     "value": "anata"
-                 }, {
-                     "id": "hiragana",
-                     "value": "\u3041\u306A\u305F"
-                 }
-             ]
+            "langData": [
+                {
+                    "id": "english",
+                    "value": "you"
+                }, {
+                    "id": "romaji",
+                    "value": "anata"
+                }, {
+                    "id": "hiragana",
+                    "value": "\u3041\u306A\u305F"
+                }
+            ]
         }
     ],
-    card: {}
+    card: {},
+    flashCardIdx: 0,
+    display: 'none',
+    revealOption: [{
+        id: '',
+        value: '',
+    }]
 }
 
 export default function(state = initialState, action) {
-    console.log(action.type);
     switch(action.type) {
         case NEW_CARDS:
-            /* Does not currently check for duplicates, 
-            simply appends the new cards onto the items array */
             let mergedCards = [...state.items, ...action.payload];
 
             return {
                 ...state,
                 items: mergedCards
             }
-        
+
+        case FETCH_CARDS:
+            return {
+                ...state,
+                revealOption: [{
+                    id: '',
+                    value: '',
+                }],
+                flashCardIdx: action.payload
+            }
+
+        case REVEAL_OPTION:
+            return {
+                ...state,
+                revealOption: action.payload
+            }
+
         default: 
             return state;
     }
