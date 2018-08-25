@@ -35,34 +35,22 @@ class Card extends Component {
     constructor(props) {
         super(props);
 
-        this.state = {
-            revealItem: [{
-                id: '',
-                value: '',
-            }]
-        };
-
         this.handleRevealClick = this.handleRevealClick.bind(this);
     }
 
     handleRevealClick(e) {
-        this.props.handleClickDisplay(e);
 
         let i = 0,
             translationsArr = this.props.data.langData,
-            updatedState = [];
+            updatedRevealOptionData = [];
 
         for ( ; i < translationsArr.length; i++) {
             if (translationsArr[i].id === e) {
-                updatedState.push(translationsArr[i]);
+                updatedRevealOptionData.push(translationsArr[i]);
             }
         }
 
-        this.setState(state => ({
-            revealItem: updatedState
-        }));
-
-        this.props.revealOption(updatedState);
+        this.props.revealOption(updatedRevealOptionData);
     }
 
     render() {

@@ -28,7 +28,6 @@ class Deck extends Component {
                 mode='hiragana'
                 data={cardData}
                 display={this.props.display}
-                handleClickDisplay={this.props.deckData.handleClickDisplay}
                 key={idx}/>
         }, this);
     }

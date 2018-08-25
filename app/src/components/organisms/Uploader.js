@@ -1,14 +1,6 @@
 import React, { Component } from 'react';
 
 class Uploader extends Component {
-    constructor(props) {
-        super(props);
-
-        this.state = {
-            defaultData: true
-        }
-    }
-
     handleFileUpload(e) {
         let files = e.target.files,
             i = 0;

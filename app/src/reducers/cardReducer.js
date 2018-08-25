@@ -1,4 +1,4 @@
-import { FETCH_CARDS, NEW_CARDS, REVEAL_OPTION } from '../actions/types';
+import { FETCH_CARDS, NEW_CARDS, REVEAL_OPTION, UPDATE_FILE_IDS } from '../actions/types';
 
 const initialState = {
     items: [
@@ -39,10 +39,12 @@ const initialState = {
     revealOption: [{
         id: '',
         value: '',
-    }]
+    }],
+    uploadedIds: []
 }
 
 export default function(state = initialState, action) {
+    console.log(action.type);
     switch(action.type) {
         case NEW_CARDS:
             let mergedCards = [...state.items, ...action.payload];
@@ -68,6 +70,11 @@ export default function(state = initialState, action) {
                 revealOption: action.payload
             }
 
+        case UPDATE_FILE_IDS:
+            return {
+                ...state,
+                uploadedIds: action.payload
+            }
         default: 
             return state;
     }

@@ -1,4 +1,4 @@
-import { FETCH_CARDS, NEW_CARDS, REVEAL_OPTION } from './types';
+import { FETCH_CARDS, NEW_CARDS, REVEAL_OPTION, UPDATE_FILE_IDS } from './types';
 
 export const createCard = (cardData) => dispatch => {
     dispatch({
@@ -17,6 +17,13 @@ export const fetchCard = (idx) => dispatch => {
 export const revealOption = (option) => dispatch => {
     dispatch({
         type: REVEAL_OPTION,
+        payload: option
+    });
+}
+
+export const updateFileIds = (option) => dispatch => {
+    dispatch({
+        type: UPDATE_FILE_IDS,
         payload: option
     });
 }

@@ -8,12 +8,6 @@ const StyleWrapper = styled.div`
 
 class LearnFlashcards extends Component {
 
-    constructor(props) {
-        super(props);
-
-        this.handleClickDisplay = this.handleClickDisplay.bind(this);
-    }
-
     render() {
         let data = this._buildData();
 
@@ -40,12 +34,11 @@ class LearnFlashcards extends Component {
     }
 
     _buildDeckData() {
-        console.log(this.props.display);
+
         let deckData = {
                 mode: 'english',
                 cardData: this.fetch(this.props.idx),
-                display: this.props.display,
-                handleClickDisplay: this.handleClickDisplay
+                display: this.props.display
             };
 
         return deckData;
@@ -56,12 +49,9 @@ class LearnFlashcards extends Component {
         // I'm pretty sure it can reach Mega-level 
         // digivolution in no time
     fetch(idx) {
-        // console.log(this.props);
         let results = [],
             response = this.props.items,
-            // validatedIdx = this._validateIdx(idx, response.length);
             validatedIdx = idx;
-            
 
         // Build response, return an array so we can potentially
             // send more than one card at a time
@@ -69,15 +59,6 @@ class LearnFlashcards extends Component {
                 results.push(response[validatedIdx]);
             }
         return results;
-    }
-
-    
-    handleClickDisplay(e) {
-        // console.log(e);
-        
-        // this.setState((prevState, props) => {
-        //     return {display: e};
-        // });
     }
 }
 

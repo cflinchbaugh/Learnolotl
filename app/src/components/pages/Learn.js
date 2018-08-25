@@ -5,18 +5,13 @@ import { Link } from 'react-router-dom';
 
 import { connect } from 'react-redux';
 import { createCard } from '../../actions/cardActions';
+import { updateFileIds } from '../../actions/cardActions';
 import PropTypes from 'prop-types';
 import Listing from 'molecules/Listing';
 
 class Learn extends Component {
     constructor(props) {
         super(props);
-
-        this.state = {
-            display: 'none',
-            defaultData: true,
-            uploadedIds: []
-        }
 
         this.handleFileUpload = this.handleFileUpload.bind(this);
     }
@@ -25,13 +20,11 @@ class Learn extends Component {
         let updatedCardData = uploadedCardData;
 
         // Determine if file was already added to avoid duplicates
-        if (this.state.uploadedIds.indexOf(updatedCardData.fileId) === -1) {
-            let updatedUploadedIds = this.state.uploadedIds;
-                updatedUploadedIds.push(updatedCardData.fileId);
+        if (this.props.uploadedIds.indexOf(updatedCardData.fileId) === -1) {
+            //Pushes new value into array immutably, necessary for the changes to trigger a render
+            let updatedUploadedIds = [...this.props.uploadedIds, updatedCardData.fileId];  
 
-            this.setState({
-                uploadedIds: updatedUploadedIds
-            });
+            this.props.updateFileIds(updatedUploadedIds);
             this.props.createCard(updatedCardData.fileDataArr);
         } else {
             console.warn('File skipped because it was previosly added');
@@ -52,8 +45,7 @@ class Learn extends Component {
 
     render() {
         let uploaderData = {
-            handleFileUpload: this.handleFileUpload,
-            cardData: this.state.cardData
+            handleFileUpload: this.handleFileUpload
         }
 
         return (
@@ -62,11 +54,9 @@ class Learn extends Component {
 
                 <Listing {...this.state} />
                 
-                <Link to={{
-                    pathname: '/learn/flashcards',
-                    state: {...this.state}
-                    
-                    }}>Flashcards</Link>
+                <Link to={{pathname: '/learn/flashcards'}}>
+                    Flashcards
+                </Link>
             </div>
         );
     }
@@ -74,7 +64,8 @@ class Learn extends Component {
 
 
 const mapStateToProps = state => ({
-    items: state.cards.items
+    items: state.cards.items,
+    uploadedIds: state.cards.uploadedIds
 });
 
-export default connect(mapStateToProps, { createCard })(Learn);
+export default connect(mapStateToProps, { createCard, updateFileIds })(Learn);

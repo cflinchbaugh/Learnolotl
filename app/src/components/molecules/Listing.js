@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
+import { connect } from 'react-redux';
 
 const StyleWrapper = styled.div`
     padding: 10px 20px;
@@ -35,4 +36,8 @@ class Listing extends Component {
 
 }
 
-export default Listing
+const mapStateToProps = state => ({
+    uploadedIds: state.cards.uploadedIds
+});
+
+export default connect(mapStateToProps, { })(Listing);
