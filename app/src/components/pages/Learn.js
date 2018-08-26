@@ -45,14 +45,15 @@ class Learn extends Component {
 
     render() {
         let uploaderData = {
-            handleFileUpload: this.handleFileUpload
-        }
+                handleFileUpload: this.handleFileUpload
+            },
+            fileListing = this.props.sampleData ? <div>Sample Data</div> : <Listing {...this.state} />;
 
         return (
             <div>
                 <Uploader {...uploaderData} />
 
-                <Listing {...this.state} />
+                {fileListing}
                 
                 <Link to={{pathname: '/learn/flashcards'}}>
                     Flashcards
@@ -65,7 +66,9 @@ class Learn extends Component {
 
 const mapStateToProps = state => ({
     items: state.cards.items,
-    uploadedIds: state.cards.uploadedIds
+    uploadedIds: state.cards.uploadedIds,
+    sampleData: state.cards.sampleData
+
 });
 
 export default connect(mapStateToProps, { createCard, updateFileIds })(Learn);

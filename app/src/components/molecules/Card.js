@@ -83,7 +83,7 @@ class Card extends Component {
 
                     <div className="reveal-options-wrapper">
                         <RevealOptions
-                            display={this.props.display}
+                            display={this.props.flashCardDisplay}
                             optionsArray={translationsArr} 
                             handleClickOption={this.handleRevealClick}
                         />
@@ -113,7 +113,8 @@ class Card extends Component {
 }
 
 const mapStateToProps = state => ({
-    revealItem: state.cards.revealOption
+    revealItem: state.cards.revealOption,
+    flashCardDisplay: state.cards.flashCardsDisplay
 });
 
 export default connect(mapStateToProps, { revealOption })(Card);

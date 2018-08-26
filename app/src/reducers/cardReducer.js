@@ -36,6 +36,7 @@ const initialState = {
     card: {},
     flashCardIdx: 0,
     display: 'none',
+    sampleData: true,
     revealOption: [{
         id: '',
         value: '',
@@ -51,7 +52,8 @@ export default function(state = initialState, action) {
 
             return {
                 ...state,
-                items: mergedCards
+                items: mergedCards,
+                sampleData: false
             }
 
         case FETCH_CARDS:
