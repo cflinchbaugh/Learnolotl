@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 import CancelPop from 'molecules/buttons/CancelPop';
+import { connect } from 'react-redux';
 
 const StyleWrapper = styled.div`
     .RevealOptions {
@@ -26,9 +27,10 @@ class RevealOptions extends Component {
                     label: translationData.id,
                     onClickFunction: '',
                     showX: false
-                };
-                
-            if (translationData.id === this.props.display) {
+                },
+                displayDataId = this.props.flashCardDisplay[0] ? this.props.flashCardDisplay[0].id: false;
+
+            if (translationData.id === displayDataId) {
                 buttonData.onClickFunction = (() => this.handleClick('none'));
                 buttonData.showX = true
             } else {
@@ -61,4 +63,8 @@ class RevealOptions extends Component {
 
 }
 
-export default RevealOptions
+const mapStateToProps = state => ({
+    flashCardDisplay: state.cards.revealOption
+});
+
+export default connect(mapStateToProps, {  })(RevealOptions);
