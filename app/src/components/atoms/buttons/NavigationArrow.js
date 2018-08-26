@@ -23,13 +23,10 @@ function Button (props) {
     let arrow = props.type === 'next' ? '=>' : '<=';
 
     return (
-        <StyleWrapper>
-            <div className="navigation-button" 
-                onClick={ props.onClickFunction } 
-                onMouseOver={ props.onMouseOverFunction }
-            >
+        <StyleWrapper 
+            className="navigation-button"
+            onClick={ props.onClickFunction } >
                 {arrow}
-            </div>
         </StyleWrapper>
     )
 }
