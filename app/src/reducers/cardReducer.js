@@ -4,31 +4,37 @@ const initialState = {
     items: [
         {
             "metadata": ["101"],
-            "langData": [
+            "revealOptionData": [
                 {
                     "id": "english",
-                    "value": "I"
+                    "value": "I",
+                    "type": "text"
                 }, {
                     "id": "romaji",
-                    "value": "watashi"
+                    "value": "watashi",
+                    "type": "text"
                 }, {
                     "id": "hiragana",
-                    "value": "\u308E\u305F\u3057"
+                    "value": "\u308E\u305F\u3057",
+                    "type": "text"
                 }
             ]
         },
         {
             "metadata": ["101"],
-            "langData": [
+            "revealOptionData": [
                 {
                     "id": "english",
-                    "value": "you"
+                    "value": "you",
+                    "type": "text"
                 }, {
                     "id": "romaji",
-                    "value": "anata"
+                    "value": "anata",
+                    "type": "text"
                 }, {
                     "id": "hiragana",
-                    "value": "\u3041\u306A\u305F"
+                    "value": "\u3041\u306A\u305F",
+                    "type": "text"
                 }
             ]
         }

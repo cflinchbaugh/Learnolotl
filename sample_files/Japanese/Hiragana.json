@@ -3,72 +3,87 @@
     "results": [
         {
             "metadata": ["Hiragana"],
-            "langData": [
+            "revealOptionData": [
                 {
                     "id": "english",
-                    "value": "a"
+                    "value": "a",
+                    "type": "text"
                 }, {
                     "id": "romaji",
-                    "value": "a"
+                    "value": "a",
+                    "type": "text"
                 }, {
                     "id": "hiragana",
-                    "value": "あ"
+                    "value": "あ",
+                    "type": "text"
                 }
             ]
         }, {
             "metadata": ["Hiragana"],
-            "langData": [
+            "revealOptionData": [
                 {
                     "id": "english",
-                    "value": "i"
+                    "value": "i",
+                    "type": "text"
                 }, {
                     "id": "romaji",
-                    "value": "i"
+                    "value": "i",
+                    "type": "text"
                 }, {
                     "id": "hiragana",
-                    "value": ""
+                    "value": "",
+                    "type": "text"
                 }
             ]
         }, {
             "metadata": ["Hiragana"],
-            "langData": [
+            "revealOptionData": [
                 {
                     "id": "english",
-                    "value": "u"
+                    "value": "u",
+                    "type": "text"
                 }, {
                     "id": "romaji",
-                    "value": "u"
+                    "value": "u",
+                    "type": "text"
                 }, {
                     "id": "hiragana",
-                    "value": ""
+                    "value": "",
+                    "type": "text"
                 }
             ]
         }, {
             "metadata": ["Hiragana"],
-            "langData": [
+            "revealOptionData": [
                 {
                     "id": "english",
-                    "value": "e"
+                    "value": "e",
+                    "type": "text"
                 }, {
                     "id": "romaji",
-                    "value": "e"
+                    "value": "e",
+                    "type": "text"
                 }, {
                     "id": "hiragana",
-                    "value": ""
+                    "value": "",
+                    "type": "text"
                 }
             ]
         }, {
             "metadata": ["Hiragana"],
-            "langData": [
+            "revealOptionData": [
                 {
                     "id": "english",
-                    "value": "o"
+                    "value": "o",
+                    "type": "text"
                 }, {
                     "id": "romaji",
-                    "value": "o"
+                    "value": "o",
+                    "type": "text"
                 }, {
                     "id": "hiragana",
-                    "value": ""
+                    "value": "",
+                    "type": "text"
                 }
             ]
         }

@@ -41,7 +41,7 @@ class Card extends Component {
     handleRevealClick(e) {
 
         let i = 0,
-            translationsArr = this.props.data.langData,
+            translationsArr = this.props.data.revealOptionData,
             updatedRevealOptionData = [];
 
         for ( ; i < translationsArr.length; i++) {
@@ -55,7 +55,7 @@ class Card extends Component {
 
     render() {
         let activeValue = this._processActiveValue(),
-            translationsArr = this.props.data.langData;
+            translationsArr = this.props.data.revealOptionData;
 
         return (
             <StyleWrapper>
@@ -98,10 +98,10 @@ class Card extends Component {
     _processActiveValue() {
         let activeCardData;
         
-        // Loop over all langData, 
+        // Loop over all revealOptionData, 
             // return the one currently active 
             // (determined by current MODE)
-        activeCardData = this.props.data.langData.find(function(obj) {
+        activeCardData = this.props.data.revealOptionData.find(function(obj) {
             return obj.id === this.props.mode; 
         }, this);
 

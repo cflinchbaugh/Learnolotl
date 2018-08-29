@@ -3,156 +3,189 @@
     "results": [
         {
            "metadata": ["P:Lesson 2"],
-            "langData": [
+            "revealOptionData": [
                 {
                     "id": "english",
-                    "value": "Good morning"
+                    "value": "Good morning",
+                    "type": "text"
                 }, {
                     "id": "romaji",
-                    "value": "ohayou gozaimasu"
+                    "value": "ohayou gozaimasu",
+                    "type": "text"
                 }, {
                     "id": "hiragana",
-                    "value": "おはよう ございます"
+                    "value": "おはよう ございます",
+                    "type": "text"
                 }
             ]
         }, {
             "metadata": ["P:Lesson 2"],
-             "langData": [
+             "revealOptionData": [
                 {
                     "id": "english",
-                    "value": "How are you?"
+                    "value": "How are you?",
+                    "type": "text"
                 }, {
                     "id": "romaji",
-                    "value": "ikaga desu ka"
+                    "value": "ikaga desu ka",
+                    "type": "text"
                 }, {
                     "id": "hiragana",
-                    "value": "いかが ですか"
+                    "value": "いかが ですか",
+                    "type": "text"
                 }
              ]
         }, {
             "metadata": ["P:Lesson 2"],
-             "langData": [
+             "revealOptionData": [
                 {
                     "id": "english",
-                    "value": "Fine (health)"
+                    "value": "Fine (health)",
+                    "type": "text"
                 }, {
                     "id": "romaji",
-                    "value": "genki"
+                    "value": "genki",
+                    "type": "text"
                 }, {
                     "id": "hiragana",
-                    "value": "げんき"
+                    "value": "げんき",
+                    "type": "text"
                 }
             ]
         }, {
             "metadata": ["P:Lesson 2"],
-             "langData": [
+             "revealOptionData": [
                 {
                     "id": "english",
-                    "value": "Thanks to you"
+                    "value": "Thanks to you",
+                    "type": "text"
                 }, {
                     "id": "romaji",
-                    "value": "okagesama de"
+                    "value": "okagesama de",
+                    "type": "text"
                 }, {
                     "id": "hiragana",
-                    "value": "おかげさま で"
+                    "value": "おかげさま で",
+                    "type": "text"
                 }
             ]
         }, {
             "metadata": ["P:Lesson 2"],
-             "langData": [
+             "revealOptionData": [
                 {
                     "id": "english",
-                    "value": "Good afternoon (Hello)"
+                    "value": "Good afternoon (Hello)",
+                    "type": "text"
                 }, {
                     "id": "romaji",
-                    "value": "konnichi wa"
+                    "value": "konnichi wa",
+                    "type": "text"
                 }, {
                     "id": "hiragana",
-                    "value": "こんにちは"
+                    "value": "こんにちは",
+                    "type": "text"
                 }
             ]
         }, {
             "metadata": ["P:Lesson 2"],
-             "langData": [
+             "revealOptionData": [
                 {
                     "id": "english",
-                    "value": "Goodbye"
+                    "value": "Goodbye",
+                    "type": "text"
                 }, {
                     "id": "romaji",
-                    "value": "Sayounara"
+                    "value": "Sayounara",
+                    "type": "text"
                 }, {
                     "id": "hiragana",
-                    "value": "さようなら"
+                    "value": "さようなら",
+                    "type": "text"
                 }
             ]
         }, {
             "metadata": ["P:Lesson 2"],
-             "langData": [
+             "revealOptionData": [
                 {
                     "id": "english",
-                    "value": "Isn't it? / Don't you? / Aren't you?"
+                    "value": "Isn't it? / Don't you? / Aren't you?",
+                    "type": "text"
                 }, {
                     "id": "romaji",
-                    "value": "ne"
+                    "value": "ne",
+                    "type": "text"
                 }, {
                     "id": "hiragana",
-                    "value": "ね"
+                    "value": "ね",
+                    "type": "text"
                 }
             ]
         }, {
             "metadata": ["P:Lesson 2"],
-             "langData": [
+             "revealOptionData": [
                 {
                     "id": "english",
-                    "value": "Thank you"
+                    "value": "Thank you",
+                    "type": "text"
                 }, {
                     "id": "romaji",
-                    "value": "arigatou"
+                    "value": "arigatou",
+                    "type": "text"
                 }, {
                     "id": "hiragana",
-                    "value": "ありがとう"
+                    "value": "ありがとう",
+                    "type": "text"
                 }
             ]
         }, {
             "metadata": ["P:Lesson 2"],
-             "langData": [
+             "revealOptionData": [
                 {
                     "id": "english",
-                    "value": "Thank you very much"
+                    "value": "Thank you very much",
+                    "type": "text"
                 }, {
                     "id": "romaji",
-                    "value": "arigatou gozaimasu"
+                    "value": "arigatou gozaimasu",
+                    "type": "text"
                 }, {
                     "id": "hiragana",
-                    "value": "ありがとう ございます"
+                    "value": "ありがとう ございます",
+                    "type": "text"
                 }
             ]
         }, {
             "metadata": ["P:Lesson 2"],
-             "langData": [
+             "revealOptionData": [
                 {
                     "id": "english",
-                    "value": "Skilled"
+                    "value": "Skilled",
+                    "type": "text"
                 }, {
                     "id": "romaji",
-                    "value": "jouzu"
+                    "value": "jouzu",
+                    "type": "text"
                 }, {
                     "id": "hiragana",
-                    "value": "じようず"
+                    "value": "じようず",
+                    "type": "text"
                 }
             ]
         }, {
             "metadata": ["P:Lesson 2"],
-             "langData": [
+             "revealOptionData": [
                 {
                     "id": "english",
-                    "value": "Not Skilled"
+                    "value": "Not Skilled",
+                    "type": "text"
                 }, {
                     "id": "romaji",
-                    "value": "jouzu ja arimasen"
+                    "value": "jouzu ja arimasen",
+                    "type": "text"
                 }, {
                     "id": "hiragana",
-                    "value": "じようず じ や ありません"
+                    "value": "じようず じ や ありません",
+                    "type": "text"
                 }
             ]
         }

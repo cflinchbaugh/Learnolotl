@@ -3,184 +3,223 @@
     "results": [
         {
             "metadata": ["P:Lesson 1"],
-            "langData": [
+            "revealOptionData": [
                 {
                     "id": "english",
-                    "value": "Excuse Me"
+                    "value": "Excuse Me",
+                    "type": "text"
                 }, {
                     "id": "romaji",
-                    "value": "Sumimasen"
+                    "value": "Sumimasen",
+                    "type": "text"
                 }, {
                     "id": "hiragana",
-                    "value": "すみません"
+                    "value": "すみません",
+                    "type": "text"
                 }
             ]
         }, {
             "metadata": ["P:Lesson 1"],
-            "langData": [
+            "revealOptionData": [
                 {
                     "id": "english",
-                    "value": "English Language"
+                    "value": "English Language",
+                    "type": "text"
                 }, {
                     "id": "romaji",
-                    "value": "Eigo"
+                    "value": "Eigo",
+                    "type": "text"
                 }, {
                     "id": "hiragana",
-                    "value": "えいご"
+                    "value": "えいご",
+                    "type": "text"
                 }
             ]
         }, {
             "metadata": ["P:Lesson 1"],
-            "langData": [
+            "revealOptionData": [
                 {
                     "id": "english",
-                    "value": "To understand"
+                    "value": "To understand",
+                    "type": "text"
                 }, {
                     "id": "romaji",
-                    "value": "wakarimasu"
+                    "value": "wakarimasu",
+                    "type": "text"
                 }, {
                     "id": "hiragana",
-                    "value": "わかります"
+                    "value": "わかります",
+                    "type": "text"
                 }
             ]
         }, {
             "metadata": ["P:Lesson 1"],
-            "langData": [
+            "revealOptionData": [
                 {
                     "id": "english",
-                    "value": "'?'; used at the end of a sentence to form a question"
+                    "value": "'?'; used at the end of a sentence to form a question",
+                    "type": "text"
                 }, {
                     "id": "romaji",
-                    "value": "ka"
+                    "value": "ka",
+                    "type": "text"
                 }, {
                     "id": "hiragana",
-                    "value": "か"
+                    "value": "か",
+                    "type": "text"
                 }
             ]
         }, {
             "metadata": ["P:Lesson 1"],
-            "langData": [
+            "revealOptionData": [
                 {
                     "id": "english",
-                    "value": "No"
+                    "value": "No",
+                    "type": "text"
                 }, {
                     "id": "romaji",
-                    "value": "iie"
+                    "value": "iie",
+                    "type": "text"
                 }, {
                     "id": "hiragana",
-                    "value": "いいえ"
+                    "value": "いいえ",
+                    "type": "text"
                 }
             ]
         }, {
             "metadata": ["P:Lesson 1"],
-            "langData": [
+            "revealOptionData": [
                 {
                     "id": "english",
-                    "value": "I"
+                    "value": "I",
+                    "type": "text"
                 }, {
                     "id": "romaji",
-                    "value": "watashi"
+                    "value": "watashi",
+                    "type": "text"
                 }, {
                     "id": "hiragana",
-                    "value": "わたし"
+                    "value": "わたし",
+                    "type": "text"
                 }
             ]
         }, {
             "metadata": ["P:Lesson 1"],
-            "langData": [
+            "revealOptionData": [
                 {
                     "id": "english",
-                    "value": "I don't know/understand"
+                    "value": "I don't know/understand",
+                    "type": "text"
                 }, {
                     "id": "romaji",
-                    "value": "wakarimasen"
+                    "value": "wakarimasen",
+                    "type": "text"
                 }, {
                     "id": "hiragana",
-                    "value": "わかりません"
+                    "value": "わかりません",
+                    "type": "text"
                 }
             ]
         }, {
             "metadata": ["P:Lesson 1"],
-            "langData": [
+            "revealOptionData": [
                 {
                     "id": "english",
-                    "value": "Japanese language"
+                    "value": "Japanese language",
+                    "type": "text"
                 }, {
                     "id": "romaji",
-                    "value": "nihongo"
+                    "value": "nihongo",
+                    "type": "text"
                 }, {
                     "id": "hiragana",
-                    "value": "にほんご"
+                    "value": "にほんご",
+                    "type": "text"
                 }
             ]
         }, {
             "metadata": ["P:Lesson 1"],
-            "langData": [
+            "revealOptionData": [
                 {
                     "id": "english",
-                    "value": "A few, a little"
+                    "value": "A few, a little",
+                    "type": "text"
                 }, {
                     "id": "romaji",
-                    "value": "sukoshi"
+                    "value": "sukoshi",
+                    "type": "text"
                 }, {
                     "id": "hiragana",
-                    "value": "すこし"
+                    "value": "すこし",
+                    "type": "text"
                 }
             ]
         }, {
             "metadata": ["P:Lesson 1"],
-            "langData": [
+            "revealOptionData": [
                 {
                     "id": "english",
-                    "value": "American (nationality)"
+                    "value": "American (nationality)",
+                    "type": "text"
                 }, {
                     "id": "romaji",
-                    "value": "amerika-jin"
+                    "value": "amerika-jin",
+                    "type": "text"
                 }, {
                     "id": "hiragana",
-                    "value": "アメリカじん"
+                    "value": "アメリカじん",
+                    "type": "text"
                 }
             ]
         }, {
             "metadata": ["P:Lesson 1"],
-            "langData": [
+            "revealOptionData": [
                 {
                     "id": "english",
-                    "value": "You"
+                    "value": "You",
+                    "type": "text"
                 }, {
                     "id": "romaji",
-                    "value": "anata"
+                    "value": "anata",
+                    "type": "text"
                 }, {
                     "id": "hiragana",
-                    "value": "あなた"
+                    "value": "あなた",
+                    "type": "text"
                 }
             ]
         }, {
             "metadata": ["P:Lesson 1"],
-            "langData": [
+            "revealOptionData": [
                 {
                     "id": "english",
-                    "value": "Is/Are"
+                    "value": "Is/Are",
+                    "type": "text"
                 }, {
                     "id": "romaji",
-                    "value": "desu"
+                    "value": "desu",
+                    "type": "text"
                 }, {
                     "id": "hiragana",
-                    "value": "です"
+                    "value": "です",
+                    "type": "text"
                 }
             ]
         }, {
             "metadata": ["P:Lesson 1"],
-            "langData": [
+            "revealOptionData": [
                 {
                     "id": "english",
-                    "value": "Yes"
+                    "value": "Yes",
+                    "type": "text"
                 }, {
                     "id": "romaji",
-                    "value": "hai"
+                    "value": "hai",
+                    "type": "text"
                 }, {
                     "id": "hiragana",
-                    "value": "はい"
+                    "value": "はい",
+                    "type": "text"
                 }
             ]
         }
