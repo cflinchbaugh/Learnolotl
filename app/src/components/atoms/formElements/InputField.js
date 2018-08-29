@@ -8,7 +8,8 @@ const StyleWrapper = styled.div`
 function InputField (props) {
     let inputData = {
         placeholder: props.placeholder,
-        value: props.value
+        value: props.value,
+        onChange: props.onChange
     }
 
     return (

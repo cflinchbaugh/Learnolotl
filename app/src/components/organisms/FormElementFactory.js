@@ -20,8 +20,11 @@ class FormElementFactory extends Component {
     }
 
     _buildFormElements() {
-        console.log("Props: " + this.props);
-        return <InputField />
+        return this.props.formElements.map((element, idx) => {
+            if (element.type === 'input') {
+                return <InputField key={idx} {...element.data}/>
+            }
+        });
     }
 }
 
