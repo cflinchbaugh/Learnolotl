@@ -8,6 +8,7 @@ import Navigation from '../components/molecules/Navigation';
 import Home from '../components/pages/Home';
 import Learn from '../components/pages/Learn';
 import LearnFlashcards from '../components/pages/LearnFlashcards';
+import Build from '../components/pages/Build';
 import About from '../components/pages/About';
 
 const StyleWrapper = styled.div`
@@ -29,6 +30,7 @@ class Router extends Component {
                     <Route path="/learn" exact component={Learn}/>
                     <Route path="/learn/flashcards" component={LearnFlashcards}/>
 
+                    <Route path="/build" component={Build}/>
                     <Route path="/about" component={About}/>
                 </StyleWrapper>
             </div>
