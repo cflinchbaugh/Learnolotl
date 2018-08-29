@@ -24,12 +24,12 @@ const StyleWrapper = styled.div`
 function Button (props) {
     return (
         <StyleWrapper>
-            <div className="button" 
+            <button className="button" 
                 onClick={ props.onClickFunction } 
                 onMouseOver={ props.onMouseOverFunction }
             >
                 { props.label }
-            </div>
+            </button>
         </StyleWrapper>
     )
 }
