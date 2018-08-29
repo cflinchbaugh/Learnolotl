@@ -2,7 +2,7 @@
     "id": "Japanese-P-Lesson002",
     "results": [
         {
-           "metadata": ["P:Lesson 2"],
+            "metadata": ["P:Lesson 2"],
             "revealOptionData": [
                 {
                     "id": "english",
@@ -20,7 +20,7 @@
             ]
         }, {
             "metadata": ["P:Lesson 2"],
-             "revealOptionData": [
+            "revealOptionData": [
                 {
                     "id": "english",
                     "value": "How are you?",
@@ -37,7 +37,7 @@
              ]
         }, {
             "metadata": ["P:Lesson 2"],
-             "revealOptionData": [
+            "revealOptionData": [
                 {
                     "id": "english",
                     "value": "Fine (health)",
@@ -54,7 +54,7 @@
             ]
         }, {
             "metadata": ["P:Lesson 2"],
-             "revealOptionData": [
+            "revealOptionData": [
                 {
                     "id": "english",
                     "value": "Thanks to you",
@@ -71,7 +71,7 @@
             ]
         }, {
             "metadata": ["P:Lesson 2"],
-             "revealOptionData": [
+            "revealOptionData": [
                 {
                     "id": "english",
                     "value": "Good afternoon (Hello)",
@@ -88,7 +88,7 @@
             ]
         }, {
             "metadata": ["P:Lesson 2"],
-             "revealOptionData": [
+            "revealOptionData": [
                 {
                     "id": "english",
                     "value": "Goodbye",
@@ -105,7 +105,7 @@
             ]
         }, {
             "metadata": ["P:Lesson 2"],
-             "revealOptionData": [
+            "revealOptionData": [
                 {
                     "id": "english",
                     "value": "Isn't it? / Don't you? / Aren't you?",
@@ -122,7 +122,7 @@
             ]
         }, {
             "metadata": ["P:Lesson 2"],
-             "revealOptionData": [
+            "revealOptionData": [
                 {
                     "id": "english",
                     "value": "Thank you",
@@ -139,7 +139,7 @@
             ]
         }, {
             "metadata": ["P:Lesson 2"],
-             "revealOptionData": [
+            "revealOptionData": [
                 {
                     "id": "english",
                     "value": "Thank you very much",
@@ -156,7 +156,7 @@
             ]
         }, {
             "metadata": ["P:Lesson 2"],
-             "revealOptionData": [
+            "revealOptionData": [
                 {
                     "id": "english",
                     "value": "Skilled",
@@ -173,7 +173,7 @@
             ]
         }, {
             "metadata": ["P:Lesson 2"],
-             "revealOptionData": [
+            "revealOptionData": [
                 {
                     "id": "english",
                     "value": "Not Skilled",
