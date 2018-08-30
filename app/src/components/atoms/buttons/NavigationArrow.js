@@ -20,13 +20,15 @@ const StyleWrapper = styled.div`
 `
 
 function Button (props) {
-    let arrow = props.type === 'next' ? '=>' : '<=';
+    let arrow = props.type === 'next' ? '=>' : '<=',
+        navigationArrowData ={
+            className: 'navigation-button',
+            onClick: props.onClickFunction
+        }
 
     return (
-        <StyleWrapper 
-            className="navigation-button"
-            onClick={ props.onClickFunction } >
-                {arrow}
+        <StyleWrapper {...navigationArrowData} >
+            {arrow}
         </StyleWrapper>
     )
 }

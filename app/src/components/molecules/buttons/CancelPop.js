@@ -39,28 +39,32 @@ const StyleWrapper = styled.div`
 
 class CancelPop extends Component {
     render() {
-        let {showX, ...rest} = this.props;
+        let {showX, ...rest} = this.props,
+            popAnimationData = {
+                classNames: "pop",
+                in: showX,
+                timeout: 300,
+                unmountOnExit: true
+            },
+            popEchoAnimationData = {
+                classNames: "pop-echo",
+                in: showX,
+                timeout: 200,
+                unmountOnExit: true
+            }
 
         return (
             <StyleWrapper>
                 <Button {...rest}/>
 
                 <div className="cancel-icon-wrapper">
-                    <CSSTransition
-                        in={showX}
-                        timeout={300}
-                        classNames="pop" 
-                        unmountOnExit
-                    >
-                        <div className='cancel'>x</div>
+                    <CSSTransition {...popAnimationData} >
+                        <div className='cancel'>
+                            x
+                        </div>
                     </CSSTransition>
 
-                    <CSSTransition
-                        in={showX}
-                        timeout={200}
-                        classNames="pop-echo" 
-                        unmountOnExit
-                    >
+                    <CSSTransition {...popEchoAnimationData} >
                         <div className='echo'></div>
                     </CSSTransition>
                 </div>

@@ -39,7 +39,6 @@ class Card extends Component {
     }
 
     handleRevealClick(e) {
-
         let i = 0,
             translationsArr = this.props.data.revealOptionData,
             updatedRevealOptionData = [];
@@ -55,7 +54,17 @@ class Card extends Component {
 
     render() {
         let activeValue = this._processActiveValue(),
-            translationsArr = this.props.data.revealOptionData;
+            translationsArr = this.props.data.revealOptionData,
+            fadeInVanishOutAnimationData = {
+                timeout: 300,
+                classNames: "fade-in-vanish-out" 
+            },
+            revealOptionsData = {
+                display: this.props.flashCardDisplay,
+                optionsArray: translationsArr,
+                handleClickOption: this.handleRevealClick
+            }
+
 
         return (
             <StyleWrapper>
@@ -66,12 +75,9 @@ class Card extends Component {
                         </div>
 
                         <TransitionGroup className="reveal-wrapper">
-                            {this.props.revealItem.map(({ id, value }) => (
-                                <CSSTransition
-                                    key={id}
-                                    timeout={300}
-                                    classNames="fade-in-vanish-out" 
-                                
+                            {this.props.revealItem.map( ({ id, value }) => (
+                                <CSSTransition key={id}
+                                    {...fadeInVanishOutAnimationData}
                                 >
                                     <div className="translations-wrapper">
                                         <RevealItem value={value}/>
@@ -82,11 +88,7 @@ class Card extends Component {
                     </div>
 
                     <div className="reveal-options-wrapper">
-                        <RevealOptions
-                            display={this.props.flashCardDisplay}
-                            optionsArray={translationsArr} 
-                            handleClickOption={this.handleRevealClick}
-                        />
+                        <RevealOptions {...revealOptionsData} />
                     </div>
 
                 </div>
