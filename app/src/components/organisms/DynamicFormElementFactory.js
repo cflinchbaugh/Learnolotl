@@ -9,18 +9,9 @@ const StyleWrapper = styled.div`
 `
 
 class DynamicFormElementFactory extends Component {
-    constructor(props) {
-        super(props);
-
-        this.addInputField = this.addInputField.bind(this);
-    }
-    
-    addInputField() {
-        
-    }
 
     render() {
-        let buttonData = {
+        let addInputButtonData = {
                 label: 'Add Input',
                 onClickFunction: this.props.addInputField
             }
@@ -28,7 +19,7 @@ class DynamicFormElementFactory extends Component {
         return (
             <StyleWrapper>
                 <FormElementFactory {...this.props}/>
-                <Button {...buttonData}/>
+                <Button {...addInputButtonData}/>
             </StyleWrapper>
 
         )

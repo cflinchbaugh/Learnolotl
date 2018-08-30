@@ -6,15 +6,9 @@ const StyleWrapper = styled.div`
 `
 
 function InputField (props) {
-    let inputData = {
-        placeholder: props.placeholder,
-        value: props.value,
-        onChange: props.onChange
-    }
-
     return (
         <StyleWrapper>
-           <input {...inputData}></input>
+           <input {...props}></input>
         </StyleWrapper>
     )
 }

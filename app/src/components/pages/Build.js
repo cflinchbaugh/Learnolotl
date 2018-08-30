@@ -6,24 +6,24 @@ class Build extends Component {
     constructor(props) {
         super(props);
 
-        this.handleInputChange = this.handleInputChange.bind(this);
         this.addInputField = this.addInputField.bind(this);
+        this.submitForm = this.submitForm.bind(this);
 
         this.state = {
             formElements: [
                 {
                     type: 'input',
                     data: {
+                        id: 'first',
                         placeholder: 'First',
-                        value: 'value',
-                        onChange: this.handleInputChange
+                        value: 'value'
                     }
                 }, {
                     type: 'input',
                     data: {
+                        id: 'second',
                         placeholder: 'Second',
-                        value: '',
-                        onChange: this.handleInputChange
+                        value: ''
                     }
                 }
             ]
@@ -34,9 +34,9 @@ class Build extends Component {
         let newInput = {
                 type: 'input',
                 data: {
+                    id: 'asdf',
                     placeholder: 'placeholder',
-                    value: '',
-                    onChange: this.handleInputChange
+                    value: ''
                 }
             },
             updatedFormElements = [...this.state.formElements, newInput];
@@ -48,8 +48,8 @@ class Build extends Component {
         })
     }
 
-    handleInputChange(e) {
-        console.log(e.currentTarget.value);
+    submitForm(formState) {
+        console.log(formState);
     }
     
     render() {
@@ -59,6 +59,7 @@ class Build extends Component {
 
                 <DynamicFormElementFactory 
                     addInputField={this.addInputField}
+                    submitForm={this.submitForm}
                     {...this.state}/>
             </div>
         );
