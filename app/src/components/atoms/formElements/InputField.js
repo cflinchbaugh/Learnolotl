@@ -8,7 +8,8 @@ const StyleWrapper = styled.div`
 function InputField (props) {
     return (
         <StyleWrapper>
-           <input {...props}></input>
+            <div>{props.label}</div>
+            <input {...props}></input>
         </StyleWrapper>
     )
 }

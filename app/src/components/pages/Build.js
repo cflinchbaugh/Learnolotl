@@ -14,15 +14,17 @@ class Build extends Component {
                 {
                     type: 'input',
                     data: {
-                        id: 'first',
-                        placeholder: 'First',
-                        value: 'value'
+                        id: 'revealOption',
+                        label: 'ID',
+                        placeholder: 'Button Label',
+                        value: ''
                     }
                 }, {
                     type: 'input',
                     data: {
-                        id: 'second',
-                        placeholder: 'Second',
+                        id: 'revealOption',
+                        label: 'Value',
+                        placeholder: 'Text revealed when button is clicked',
                         value: ''
                     }
                 }
@@ -31,15 +33,25 @@ class Build extends Component {
     }
     
     addInputField() {
-        let newInput = {
+        let newId = {
                 type: 'input',
                 data: {
-                    id: 'asdf',
-                    placeholder: 'placeholder',
+                    id: 'revealOption',
+                    placeholder: 'ID',
+                    label: 'Button Label',
                     value: ''
                 }
             },
-            updatedFormElements = [...this.state.formElements, newInput];
+            newValue = {
+                type: 'input',
+                data: {
+                    id: 'revealOption',
+                    label: 'Value',
+                    placeholder: 'Text revealed when button is clicked',
+                    value: ''
+                }
+            },
+            updatedFormElements = [...this.state.formElements, newId, newValue];
 
         this.setState( (prevState, props) => {
             return {

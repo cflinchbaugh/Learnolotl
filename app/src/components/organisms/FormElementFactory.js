@@ -52,15 +52,15 @@ class FormElementFactory extends Component {
     _buildFormElements() {
         return this.props.formElements.map((element, idx) => {
             if (element.type === 'input') {
-                let id = element.data.id + idx;
+                let id = element.data.id + idx,
+                    inputFieldData = {
+                        key: idx,
+                        id: id,
+                        onChange: this.handleFormElementChange
+                    }
 
-                return <InputField 
-                    {...element.data}
-                    onChange={this.handleFormElementChange}
-                    key={idx} 
-                    id={id}             //Set id after ...element.data so we can 
-                                        //add a the idx to the passed in prop and render it
-                    />
+                //inputFieldData must come after ...element.data to override the passed in id with the id+idx
+                return <InputField {...element.data} {...inputFieldData}/>
             }
         });
     }
