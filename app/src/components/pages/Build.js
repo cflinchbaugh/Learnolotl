@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-// import InputField from 'atoms/formElements/InputField';
-import DynamicFormElementFactory from 'organisms/DynamicFormElementFactory';
+import CardBuilder from 'organisms/CardBuilder';
 
 class Build extends Component {
     constructor(props) {
@@ -69,7 +68,7 @@ class Build extends Component {
             <div>
                 <h1>Build</h1>
 
-                <DynamicFormElementFactory 
+                <CardBuilder 
                     addInputField={this.addInputField}
                     submitForm={this.submitForm}
                     {...this.state}/>
