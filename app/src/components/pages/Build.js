@@ -17,7 +17,7 @@ class Build extends Component {
                 {
                     type: 'input',
                     data: {
-                        id: 'revealOption',
+                        id: 'revealOptionId',
                         label: 'ID',
                         placeholder: 'Button Label',
                         value: ''
@@ -25,7 +25,7 @@ class Build extends Component {
                 }, {
                     type: 'input',
                     data: {
-                        id: 'revealOption',
+                        id: 'revealOptionValue',
                         label: 'Value',
                         placeholder: 'Text revealed when button is clicked',
                         value: ''
@@ -43,7 +43,7 @@ class Build extends Component {
         let newId = {
                 type: 'input',
                 data: {
-                    id: 'revealOption',
+                    id: 'revealOptionId',
                     placeholder: 'ID',
                     label: 'Button Label',
                     value: ''
@@ -52,7 +52,7 @@ class Build extends Component {
             newValue = {
                 type: 'input',
                 data: {
-                    id: 'revealOption',
+                    id: 'revealOptionValue',
                     label: 'Value',
                     placeholder: 'Text revealed when button is clicked',
                     value: ''

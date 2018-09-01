@@ -45,7 +45,7 @@ class FormElementFactory extends Component {
     _buildFormElements() {
         return this.props.formElements.map((element, idx) => {
             if (element.type === 'input') {
-                let id = element.data.id + idx,
+                let id = idx,
                     processedValue = this._processValue(id),
                     inputFieldData = {
                         key: idx,
