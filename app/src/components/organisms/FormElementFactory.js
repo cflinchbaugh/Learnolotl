@@ -35,8 +35,7 @@ class FormElementFactory extends Component {
 
     handleFormElementChange(e) {
         let formElement = e.currentTarget;
-        console.log(formElement.value);
-
+// TODO: Update the store
         this.setState( (prevState, props) => {
             return {
                 [formElement.id]: formElement.value
@@ -53,16 +52,28 @@ class FormElementFactory extends Component {
         return this.props.formElements.map((element, idx) => {
             if (element.type === 'input') {
                 let id = element.data.id + idx,
+                    processedValue = this._processValue(id),
                     inputFieldData = {
                         key: idx,
                         id: id,
-                        onChange: this.handleFormElementChange
+                        onChange: this.handleFormElementChange,
+                        value: processedValue
                     }
 
-                //inputFieldData must come after ...element.data to override the passed in id with the id+idx
+                    //inputFieldData must come after ...element.data to override the passed in id with the id+idx
                 return <InputField {...element.data} {...inputFieldData}/>
             }
         });
+    }
+
+    _processValue(id) {
+        let processedValue = this.state !== null ? this.state[id] : '';
+
+        if (typeof(processedValue) === 'undefined') {
+            processedValue = '';
+        }
+
+        return processedValue;
     }
 }
 
