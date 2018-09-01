@@ -10,7 +10,7 @@ class Build extends Component {
 
         this.addInputField = this.addInputField.bind(this);
         this.nextCard = this.nextCard.bind(this);
-        this.handleFileIdChange = this.handleFileIdChange.bind(this);
+        
 
         this.state = {
             formElements: [
@@ -31,8 +31,7 @@ class Build extends Component {
                         value: ''
                     }
                 }
-            ],
-            fileName: ''
+            ]
 
         }
     }
@@ -73,24 +72,10 @@ class Build extends Component {
 
    
 
-    handleFileIdChange(e) {
-        let updatedFileId = e.currentTarget.value;
-
-        this.setState( (prevState, props) => {
-            return {
-                fileName: updatedFileId
-            };
-        })
-
-    }
+    
     
     render() {
-        let idInputFieldData = {
-                label: 'File Name',
-                onChange: this.handleFileIdChange,
-                value: this.state.fileName
-            },
-            cardBuildData = {
+        let cardBuildData = {
                 addInputField: this.addInputField,
                 submitForm: this.nextCard,
                 ...this.state
@@ -99,7 +84,7 @@ class Build extends Component {
         return (
             <div>
                 <h1>Build</h1>
-                <InputField {...idInputFieldData}/>
+                
 
                 <CardBuilder {...cardBuildData}/>
             </div>
