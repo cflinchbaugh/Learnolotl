@@ -63,14 +63,28 @@ class CardBuilder extends Component {
 
     exportFile(e) {
         e.preventDefault();
-        
+
+        let exportData = this._buildExportData(),
+            dataStr = JSON.stringify(exportData),
+            dataUri = 'data:application/json;charset=utf-8,' + encodeURIComponent(dataStr);
+        console.log(exportData);
+
+        let exportFileDefaultName = 'data.json';
+    
+        let linkElement = document.createElement('a');
+        linkElement.setAttribute('href', dataUri);
+        linkElement.setAttribute('download', exportFileDefaultName);
+        linkElement.click();
+    }
+
+    _buildExportData() {
         let builtResultsData = this._processBuildData(),
             exportData = {
                 id: this.state.fileName,
                 results: builtResultsData
             }
         
-        console.log(exportData);
+        return exportData;
     }
 
     _processBuildData() {

@@ -53,7 +53,7 @@ const initialState = {
 export default function(state = initialState, action) {
     switch(action.type) {
         case NEW_CARDS:
-            let mergedCards = [...state.items, ...action.payload];
+            let mergedCards = state.sampleData ? action.payload : [...state.items, ...action.payload];
 
             return {
                 ...state,
