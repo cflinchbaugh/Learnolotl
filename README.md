@@ -19,3 +19,6 @@ Version: Pre-Alpha
 
 4. Build
     + Export JSON (**In Progress**)
+    
+5. About
+    + {No Features Slated}
