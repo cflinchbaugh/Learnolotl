@@ -51,7 +51,6 @@ const initialState = {
 }
 
 export default function(state = initialState, action) {
-    console.log(action.type);
     switch(action.type) {
         case NEW_CARDS:
             let mergedCards = [...state.items, ...action.payload];

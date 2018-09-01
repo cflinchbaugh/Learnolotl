@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import CardBuilder from 'organisms/CardBuilder';
 import InputField from '../atoms/formElements/InputField';
+import { connect } from 'react-redux';
+import { buildCard } from '../../actions/buildActions';
 
 class Build extends Component {
     constructor(props) {
@@ -35,7 +37,9 @@ class Build extends Component {
         }
     }
     
-    addInputField() {
+    addInputField(e) {
+        e.preventDefault();
+
         let newId = {
                 type: 'input',
                 data: {
@@ -64,9 +68,10 @@ class Build extends Component {
     }
 
     nextCard(formState) {
-        debugger;
-        console.log(formState);
+        this.props.buildCard(formState);
     }
+
+   
 
     handleFileIdChange(e) {
         let updatedFileId = e.currentTarget.value;
@@ -102,4 +107,8 @@ class Build extends Component {
     }
 }
 
-export default Build;
+const mapStateToProps = state => ({
+
+});
+
+export default connect(mapStateToProps, { buildCard })(Build);

@@ -24,29 +24,23 @@ class FormElementFactory extends Component {
         
         return (
             <StyleWrapper>
-                <form onSubmit={this.handleSubmitForm.bind(this)}>
-                    {builtFormElements}
-                    <Button {...submitButtonData}/>
-                </form>
+                {builtFormElements}
+                <Button {...submitButtonData}/>
             </StyleWrapper>
 
         )
     }
 
     handleFormElementChange(e) {
-        let formElement = e.currentTarget;
-// TODO: Update the store
-        this.setState( (prevState, props) => {
-            return {
+        let formElement = e.currentTarget,
+            formElementData = {
                 [formElement.id]: formElement.value
-            };
-        })
+            }
+
+        this.props.handleInputChange(formElementData);
     }
 
-    handleSubmitForm(e) {
-        e.preventDefault();
-        this.props.submitForm(this.state);
-    }
+    
 
     _buildFormElements() {
         return this.props.formElements.map((element, idx) => {
@@ -67,7 +61,7 @@ class FormElementFactory extends Component {
     }
 
     _processValue(id) {
-        let processedValue = this.state !== null ? this.state[id] : '';
+        let processedValue = this.props.formElementData !== null ? this.props.formElementData[id] : '';
 
         if (typeof(processedValue) === 'undefined') {
             processedValue = '';

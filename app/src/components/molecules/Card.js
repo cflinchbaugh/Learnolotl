@@ -30,7 +30,8 @@ const StyleWrapper = styled.div`
     }
 
 `;
-
+// TODO: Content min-height, is this necessary?
+    // It's not lookin' so good on large-format monitors
 class Card extends Component {
     constructor(props) {
         super(props);
