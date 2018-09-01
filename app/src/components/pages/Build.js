@@ -1,12 +1,14 @@
 import React, { Component } from 'react';
 import CardBuilder from 'organisms/CardBuilder';
+import InputField from '../atoms/formElements/InputField';
 
 class Build extends Component {
     constructor(props) {
         super(props);
 
         this.addInputField = this.addInputField.bind(this);
-        this.submitForm = this.submitForm.bind(this);
+        this.nextCard = this.nextCard.bind(this);
+        this.handleFileIdChange = this.handleFileIdChange.bind(this);
 
         this.state = {
             formElements: [
@@ -27,7 +29,9 @@ class Build extends Component {
                         value: ''
                     }
                 }
-            ]
+            ],
+            fileName: ''
+
         }
     }
     
@@ -59,19 +63,40 @@ class Build extends Component {
         })
     }
 
-    submitForm(formState) {
+    nextCard(formState) {
+        debugger;
         console.log(formState);
+    }
+
+    handleFileIdChange(e) {
+        let updatedFileId = e.currentTarget.value;
+
+        this.setState( (prevState, props) => {
+            return {
+                fileName: updatedFileId
+            };
+        })
+
     }
     
     render() {
+        let idInputFieldData = {
+                label: 'File Name',
+                onChange: this.handleFileIdChange,
+                value: this.state.fileName
+            },
+            cardBuildData = {
+                addInputField: this.addInputField,
+                submitForm: this.nextCard,
+                ...this.state
+            }
+
         return (
             <div>
                 <h1>Build</h1>
+                <InputField {...idInputFieldData}/>
 
-                <CardBuilder 
-                    addInputField={this.addInputField}
-                    submitForm={this.submitForm}
-                    {...this.state}/>
+                <CardBuilder {...cardBuildData}/>
             </div>
         );
     }

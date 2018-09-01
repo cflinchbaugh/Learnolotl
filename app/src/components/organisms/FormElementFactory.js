@@ -18,7 +18,7 @@ class FormElementFactory extends Component {
     render() {
         let builtFormElements = this._buildFormElements(),
             submitButtonData = {
-                label: 'Submit',
+                label: 'Next Card',
                 type: 'submit'
             }
         
