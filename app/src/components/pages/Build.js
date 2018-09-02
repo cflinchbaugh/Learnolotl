@@ -15,10 +15,12 @@ class Build extends Component {
         this.saveFormat = this.saveFormat.bind(this);
         this.exportFile = this.exportFile.bind(this);
         this._processBuildData = this._processBuildData.bind(this);
+        this.handelFileIdChange = this.handelFileIdChange.bind(this);
 
         this.state = {
             cardFormat: undefined,
-            revealOptionData: []
+            revealOptionData: [],
+            fileId: ''
         }
     }
 
@@ -54,19 +56,34 @@ class Build extends Component {
             },
             renderedBuilder = this.state.cardFormat === undefined ? 
                 <CardFormatBuilder {...cardFormatBuilderData}/> : 
-                <span>
+                (<span>
                     <CardBuilder {...cardBuildData}/>
                     <Button {...exportButtonData}/>
-                </span>
+                </span>),
+            fileIdData = {
+                label: 'Filename',
+                onChange: this.handelFileIdChange,
+                value: this.state.fileId
+            }
 
         return (
             <div>
                 <h1>Build</h1>
-                
+                <InputField {...fileIdData} />
                 {renderedBuilder}
                 
             </div>
         );
+    }
+
+    handelFileIdChange(e) {
+        let id = e.currentTarget.value;
+
+        this.setState( (prevState, props) => {
+            return {
+                fileId: id
+            }
+        });
     }
 
     exportFile(e) {
@@ -76,7 +93,7 @@ class Build extends Component {
             dataStr = JSON.stringify(exportData),
             dataUri = 'data:application/json;charset=utf-8,' + encodeURIComponent(dataStr);
 
-        let exportFileDefaultName = 'data.json';
+        let exportFileDefaultName = this.state.fileId + '.json';
     
         let linkElement = document.createElement('a');
         linkElement.setAttribute('href', dataUri);
@@ -87,7 +104,7 @@ class Build extends Component {
     _buildExportData() {
         let builtResultsData = this._processBuildData(),
             exportData = {
-                id: this.state.fileName,
+                id: this.state.fileId,
                 results: builtResultsData
             }
         
