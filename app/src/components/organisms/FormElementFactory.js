@@ -16,16 +16,11 @@ class FormElementFactory extends Component {
     }
 
     render() {
-        let builtFormElements = this._buildFormElements(),
-            submitButtonData = {
-                label: 'Next Card',
-                type: 'submit'
-            }
+        let builtFormElements = this._buildFormElements();
         
         return (
             <StyleWrapper>
                 {builtFormElements}
-                <Button {...submitButtonData}/>
             </StyleWrapper>
 
         )
