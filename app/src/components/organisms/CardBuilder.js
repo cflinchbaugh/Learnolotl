@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import { connect } from 'react-redux';
 
 import InputField from '../atoms/formElements/InputField';
-import DynamicFormElementFactory from './DynamicFormElementFactory';
+import FormElementFactory from './FormElementFactory';
 import Button from 'atoms/buttons/Button';
 
 const StyleWrapper = styled.div`
@@ -30,25 +30,45 @@ class CardBuilder extends Component {
                 onChange: this.handleFileIdChange,
                 value: this.state.fileName
             },
-            dynamicFormElementFactoryData = {
+            formElementFactoryData = {
                 handleInputChange: this.handleInputChange,
-                formElementData: this.state.formElementData
+                formElementData: this.state.formElementData,
+                formElements: this._buildFormElements()
             },
             exportButtonData = {
                 label: 'Export File',
                 onClickFunction: this.exportFile
             }
 
+                {/* <InputField {...idInputFieldData}/> */}
         return (
             <StyleWrapper>
-                <InputField {...idInputFieldData}/>
                 <form onSubmit={this.handleSubmitForm.bind(this)}>
-                    <DynamicFormElementFactory {...dynamicFormElementFactoryData} {...this.props}/>
+                    <FormElementFactory {...formElementFactoryData} {...this.props}/>
                     <Button {...exportButtonData}/>
                 </form>
             </StyleWrapper>
 
         )
+    }
+
+    _buildFormElements() {
+        let cardFormat = this.props.cardFormat,
+            formElements = [];
+
+        for (var propt in cardFormat) {
+            formElements.push({
+                type: 'input',
+                data: {
+                    id: 'revealOptionId',
+                    label: cardFormat[propt],
+                    placeholder: '',
+                    value: ''
+                }
+            })
+        }
+
+        return formElements;
     }
 
     handleFileIdChange(e) {

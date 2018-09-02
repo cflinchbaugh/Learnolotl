@@ -9,7 +9,7 @@ const StyleWrapper = styled.div`
 class LearnFlashcards extends Component {
 
     render() {
-        let data = this._buildData();
+        let deckNavigationData = this._buildDeckNavigationData();
 
         return (
             <StyleWrapper>
@@ -17,31 +17,22 @@ class LearnFlashcards extends Component {
                 <h1>Flashcards</h1>
 
                 <div className="deck-navigation-placeholder">
-                    <DeckNavigation {...data}/>
+                    <DeckNavigation {...deckNavigationData}/>
                 </div>
             </div>
             </StyleWrapper>
         );
     }
 
-    _buildData() {
+    _buildDeckNavigationData() {
         let data = {
-            deckData: this._buildDeckData()
+            deckData: {
+                cardData: this.fetch(this.props.idx),
+                display: this.props.display
+            }
         }
 
         return data;
-
-    }
-
-    _buildDeckData() {
-
-        let deckData = {
-                mode: 'english',
-                cardData: this.fetch(this.props.idx),
-                display: this.props.display
-            };
-
-        return deckData;
     }
 
     // Obviously this is not a real fetch right now,

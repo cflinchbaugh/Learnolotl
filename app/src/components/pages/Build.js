@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import CardFormatBuilder from 'organisms/CardFormatBuilder';
 import CardBuilder from 'organisms/CardBuilder';
 import InputField from '../atoms/formElements/InputField';
 import { connect } from 'react-redux';
@@ -8,85 +9,53 @@ class Build extends Component {
     constructor(props) {
         super(props);
 
-        this.addInputField = this.addInputField.bind(this);
+        
         this.nextCard = this.nextCard.bind(this);
+        this.saveFormat = this.saveFormat.bind(this);
         
 
         this.state = {
-            formElements: [
-                {
-                    type: 'input',
-                    data: {
-                        id: 'revealOptionId',
-                        label: 'ID',
-                        placeholder: 'Button Label',
-                        value: ''
-                    }
-                }, {
-                    type: 'input',
-                    data: {
-                        id: 'revealOptionValue',
-                        label: 'Value',
-                        placeholder: 'Text revealed when button is clicked',
-                        value: ''
-                    }
-                }
-            ]
+            cardFormat: undefined
 
         }
     }
     
-    addInputField(e) {
-        e.preventDefault();
-
-        let newId = {
-                type: 'input',
-                data: {
-                    id: 'revealOptionId',
-                    placeholder: 'ID',
-                    label: 'Button Label',
-                    value: ''
-                }
-            },
-            newValue = {
-                type: 'input',
-                data: {
-                    id: 'revealOptionValue',
-                    label: 'Value',
-                    placeholder: 'Text revealed when button is clicked',
-                    value: ''
-                }
-            },
-            updatedFormElements = [...this.state.formElements, newId, newValue];
-
-        this.setState( (prevState, props) => {
-            return {
-                formElements: updatedFormElements
-            };
-        })
-    }
+    
 
     nextCard(formState) {
         this.props.buildCard(formState);
     }
 
    
-
+    saveFormat(format) {
+        console.log(format);
+        this.setState( (prevState, props) => {
+            return {
+                cardFormat: format
+            }
+        });
+    }
     
     
     render() {
-        let cardBuildData = {
-                addInputField: this.addInputField,
-                submitForm: this.nextCard,
+        let cardFormatBuilderData = {
+                saveFormat: this.saveFormat,
                 ...this.state
-            }
+            },
+            cardBuildData = {
+                submitForm: this.nextCard,
+                cardFormat: this.state.cardFormat,
+                ...this.state
+            },
+            renderedBuilder = this.state.cardFormat === undefined ? 
+                <CardFormatBuilder {...cardFormatBuilderData}/> : <CardBuilder {...cardBuildData}/>
 
         return (
             <div>
                 <h1>Build</h1>
                 
-
-                <CardBuilder {...cardBuildData}/>
+                {renderedBuilder}
+                
             </div>
         );
     }
