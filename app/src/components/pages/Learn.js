@@ -8,6 +8,7 @@ import { createCard } from '../../actions/cardActions';
 import { updateFileIds } from '../../actions/cardActions';
 import PropTypes from 'prop-types';
 import Listing from 'molecules/Listing';
+import Select from 'atoms/formElements/Select';
 
 class Learn extends Component {
     constructor(props) {
@@ -47,13 +48,22 @@ class Learn extends Component {
         let uploaderData = {
                 handleFileUpload: this.handleFileUpload
             },
-            fileListing = this.props.sampleData ? <div>Sample Data</div> : <Listing {...this.state} />;
+            fileListing = this.props.sampleData ? <div>Sample Data</div> : <Listing {...this.state} />,
+            modeSelectData = {
+                label: 'Mode',
+                options: [{
+                    id: 'english',
+                    value: 'English'
+                }]
+            }
 
         return (
             <div>
                 <Uploader {...uploaderData} />
 
                 {fileListing}
+
+                <Select {...modeSelectData} />
                 
                 <Link to={{pathname: '/learn/flashcards'}}>
                     Flashcards

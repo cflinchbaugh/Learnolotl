@@ -23,9 +23,10 @@ class Deck extends Component {
     }
 
     _buildDeck() {
+        console.log(this.props);
         return this.props.deckData.cardData.map(function(cardData, idx) {
             return <Card 
-                mode='english'
+                mode={this.props.deckData.mode}
                 data={cardData}
                 display={this.props.display}
                 key={idx}/>
