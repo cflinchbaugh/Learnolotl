@@ -18,7 +18,7 @@ Version: Pre-Alpha
     + Navigate Between Flashcards
 
 4. Build
-    + Export JSON (**In Progress**)
+    + Export JSON
     
 5. About
     + {No Features Slated}
