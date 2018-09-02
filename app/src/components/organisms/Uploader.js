@@ -17,7 +17,8 @@ class Uploader extends Component {
                     let parsedData = JSON.parse(e.target.result),
                         processedUploadData = {
                             fileId: parsedData.id,
-                            fileDataArr: parsedData.results
+                            fileDataArr: parsedData.results,
+                            format: parsedData.format
                         };
 
                     this.props.handleFileUpload(processedUploadData);

@@ -15,6 +15,17 @@ class Learn extends Component {
         super(props);
 
         this.handleFileUpload = this.handleFileUpload.bind(this);
+        this._handleModeChange = this._handleModeChange.bind(this);
+
+        this.state = {
+            modeOptions: [{
+                id: 'english',
+                value: 'English'
+            }, {
+                id: 'dangerzone',
+                value: 'Archer'
+            }]
+        }
     }
 
     handleFileUpload(uploadedCardData) {
@@ -27,10 +38,28 @@ class Learn extends Component {
 
             this.props.updateFileIds(updatedUploadedIds);
             this.props.createCard(updatedCardData.fileDataArr);
+
+            this._updateMode(updatedCardData.format)
+            
         } else {
             console.warn('File skipped because it was previosly added');
         }
 
+    }
+
+    _updateMode(formatData) {
+        let updatedModeOptions = [];
+        console.log(formatData);
+        for (var property in formatData) {
+            updatedModeOptions.push({
+                id: formatData[property],
+                value: formatData[property]
+            });
+        }
+
+        this.setState({
+            modeOptions: updatedModeOptions
+        })
     }
 
     _mergeCardData(updatedCardData) {
@@ -51,10 +80,9 @@ class Learn extends Component {
             fileListing = this.props.sampleData ? <div>Sample Data</div> : <Listing {...this.state} />,
             modeSelectData = {
                 label: 'Mode',
-                options: [{
-                    id: 'english',
-                    value: 'English'
-                }]
+                id: 'mode',
+                options: this.state.modeOptions,
+                handleChange: this._handleModeChange
             }
 
         return (
@@ -65,12 +93,27 @@ class Learn extends Component {
 
                 <Select {...modeSelectData} />
                 
-                <Link to={{pathname: '/learn/flashcards'}}>
+                <Link to={{
+                    pathname: '/learn/flashcards',
+                    state: {
+                        mode: this.state.selectedMode
+                    }    
+                }}>
                     Flashcards
                 </Link>
             </div>
         );
     }
+
+    _handleModeChange(e) {
+        let updatedMode = e.currentTarget.value;
+console.log(updatedMode);
+        this.setState({
+            selectedMode: updatedMode
+        });
+    }
+
+   
 }
 
 

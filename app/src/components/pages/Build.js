@@ -105,7 +105,8 @@ class Build extends Component {
         let builtResultsData = this._processBuildData(),
             exportData = {
                 id: this.state.fileId,
-                results: builtResultsData
+                results: builtResultsData,
+                format: this.state.cardFormat
             }
         
         return exportData;

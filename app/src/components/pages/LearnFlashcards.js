@@ -27,7 +27,7 @@ class LearnFlashcards extends Component {
     _buildDeckNavigationData() {
         let data = {
             deckData: {
-                mode: 'english',
+                mode: this.props.location.state.mode,
                 cardData: this.fetch(this.props.idx),
                 display: this.props.display
             }

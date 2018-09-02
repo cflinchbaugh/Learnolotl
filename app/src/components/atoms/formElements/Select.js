@@ -17,7 +17,7 @@ function Select (props) {
     return (
         <StyleWrapper>
             <div>{props.label}</div>
-            <select>
+            <select id={props.id} onChange={props.handleChange}>
                 {options}
             </select>
         </StyleWrapper>
