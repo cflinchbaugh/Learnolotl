@@ -34,13 +34,13 @@ Software is feature complete but likely to contain a number of known or unknown 
 5. About
     + {No Features Slated}
 
-##Motivation
+## Motivation
 <a name="motivation"></a>
 
 A passion project built primarily to assist with my own study of the Japanese language, but designed to be flexible and practical for several learning use-cases.
 
 
-##Technologies
+## Technologies
 <a name="technologies"></a>
 
 + [React](#https://github.com/facebook/react)
