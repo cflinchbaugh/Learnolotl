@@ -100,12 +100,12 @@ class Card extends Component {
 
     _processActiveValue() {
         let activeCardData;
-        
+
         // Loop over all revealOptionData, 
             // return the one currently active 
             // (determined by current MODE)
         activeCardData = this.props.data.revealOptionData.find(function(obj) {
-            return obj.id === this.props.mode; 
+            return obj.id.toLowerCase() === this.props.mode.toLowerCase();
         }, this);
 
         //Return the value

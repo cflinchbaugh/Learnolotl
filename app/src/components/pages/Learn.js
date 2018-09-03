@@ -53,17 +53,18 @@ class Learn extends Component {
 
     _updateMode(formatData) {
         let updatedModeOptions = [];
-        console.log(formatData);
+        
         for (var property in formatData) {
             updatedModeOptions.push({
                 id: formatData[property],
                 value: formatData[property]
             });
         }
-
+        
         this.setState({
-            modeOptions: updatedModeOptions
-        })
+            modeOptions: updatedModeOptions,
+            mode: updatedModeOptions[0].id
+        });
     }
 
     _mergeCardData(updatedCardData) {
