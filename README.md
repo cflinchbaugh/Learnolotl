@@ -1,6 +1,6 @@
 # [Level-Up](https://reactjs.org/) &middot; [![GitHub license](https://img.shields.io/badge/version-BETA-yellow.svg)]() [![PRs blocked](https://img.shields.io/badge/license-MIT-blue.svg)]() [![PRs blocked](https://img.shields.io/badge/PRs-blocked-red.svg)]()
 
-##Table of Contents
+## Table of Contents
 [Status](#status)<br/>
 [Features](#features)<br/>
 [Motivation](#motivation)<br/>
