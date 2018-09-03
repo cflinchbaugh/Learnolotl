@@ -22,9 +22,13 @@ class Learn extends Component {
                 id: 'english',
                 value: 'English'
             }, {
-                id: 'dangerzone',
-                value: 'Archer'
-            }]
+                id: 'romaji',
+                value: 'Romaji'
+            }, {
+                id: 'hiragana',
+                value: 'Hiragana'
+            }],
+            mode: 'english'
         }
     }
 
@@ -96,7 +100,7 @@ class Learn extends Component {
                 <Link to={{
                     pathname: '/learn/flashcards',
                     state: {
-                        mode: this.state.selectedMode
+                        mode: this.state.mode
                     }    
                 }}>
                     Flashcards
@@ -109,7 +113,7 @@ class Learn extends Component {
         let updatedMode = e.currentTarget.value;
 console.log(updatedMode);
         this.setState({
-            selectedMode: updatedMode
+            mode: updatedMode
         });
     }
 
