@@ -1,193 +1,219 @@
 {
-    "id": "Japanese-P-Lesson002",
+    "id": "P-Lesson002",
     "results": [
         {
-            "metadata": ["P:Lesson 2"],
             "revealOptionData": [
                 {
-                    "id": "english",
+                    "id": "English",
                     "value": "Good morning",
                     "type": "text"
-                }, {
-                    "id": "romaji",
+                },
+                {
+                    "id": "Romaji",
                     "value": "ohayou gozaimasu",
                     "type": "text"
-                }, {
-                    "id": "hiragana",
+                },
+                {
+                    "id": "Hiragana",
                     "value": "おはよう ございます",
                     "type": "text"
                 }
             ]
-        }, {
-            "metadata": ["P:Lesson 2"],
+        },
+        {
             "revealOptionData": [
                 {
-                    "id": "english",
+                    "id": "English",
                     "value": "How are you?",
                     "type": "text"
-                }, {
-                    "id": "romaji",
+                },
+                {
+                    "id": "Romaji",
                     "value": "ikaga desu ka",
                     "type": "text"
-                }, {
-                    "id": "hiragana",
+                },
+                {
+                    "id": "Hiragana",
                     "value": "いかが ですか",
                     "type": "text"
                 }
-             ]
-        }, {
-            "metadata": ["P:Lesson 2"],
+            ]
+        },
+        {
             "revealOptionData": [
                 {
-                    "id": "english",
+                    "id": "English",
                     "value": "Fine (health)",
                     "type": "text"
-                }, {
-                    "id": "romaji",
+                },
+                {
+                    "id": "Romaji",
                     "value": "genki",
                     "type": "text"
-                }, {
-                    "id": "hiragana",
+                },
+                {
+                    "id": "Hiragana",
                     "value": "げんき",
                     "type": "text"
                 }
             ]
-        }, {
-            "metadata": ["P:Lesson 2"],
+        },
+        {
             "revealOptionData": [
                 {
-                    "id": "english",
+                    "id": "English",
                     "value": "Thanks to you",
                     "type": "text"
-                }, {
-                    "id": "romaji",
+                },
+                {
+                    "id": "Romaji",
                     "value": "okagesama de",
                     "type": "text"
-                }, {
-                    "id": "hiragana",
+                },
+                {
+                    "id": "Hiragana",
                     "value": "おかげさま で",
                     "type": "text"
                 }
             ]
-        }, {
-            "metadata": ["P:Lesson 2"],
+        },
+        {
             "revealOptionData": [
                 {
-                    "id": "english",
+                    "id": "English",
                     "value": "Good afternoon (Hello)",
                     "type": "text"
-                }, {
-                    "id": "romaji",
+                },
+                {
+                    "id": "Romaji",
                     "value": "konnichi wa",
                     "type": "text"
-                }, {
-                    "id": "hiragana",
+                },
+                {
+                    "id": "Hiragana",
                     "value": "こんにちは",
                     "type": "text"
                 }
             ]
-        }, {
-            "metadata": ["P:Lesson 2"],
+        },
+        {
             "revealOptionData": [
                 {
-                    "id": "english",
+                    "id": "English",
                     "value": "Goodbye",
                     "type": "text"
-                }, {
-                    "id": "romaji",
+                },
+                {
+                    "id": "Romaji",
                     "value": "Sayounara",
                     "type": "text"
-                }, {
-                    "id": "hiragana",
+                },
+                {
+                    "id": "Hiragana",
                     "value": "さようなら",
                     "type": "text"
                 }
             ]
-        }, {
-            "metadata": ["P:Lesson 2"],
+        },
+        {
             "revealOptionData": [
                 {
-                    "id": "english",
+                    "id": "English",
                     "value": "Isn't it? / Don't you? / Aren't you?",
                     "type": "text"
-                }, {
-                    "id": "romaji",
+                },
+                {
+                    "id": "Romaji",
                     "value": "ne",
                     "type": "text"
-                }, {
-                    "id": "hiragana",
+                },
+                {
+                    "id": "Hiragana",
                     "value": "ね",
                     "type": "text"
                 }
             ]
-        }, {
-            "metadata": ["P:Lesson 2"],
+        },
+        {
             "revealOptionData": [
                 {
-                    "id": "english",
+                    "id": "English",
                     "value": "Thank you",
                     "type": "text"
-                }, {
-                    "id": "romaji",
+                },
+                {
+                    "id": "Romaji",
                     "value": "arigatou",
                     "type": "text"
-                }, {
-                    "id": "hiragana",
+                },
+                {
+                    "id": "Hiragana",
                     "value": "ありがとう",
                     "type": "text"
                 }
             ]
-        }, {
-            "metadata": ["P:Lesson 2"],
+        },
+        {
             "revealOptionData": [
                 {
-                    "id": "english",
+                    "id": "English",
                     "value": "Thank you very much",
                     "type": "text"
-                }, {
-                    "id": "romaji",
+                },
+                {
+                    "id": "Romaji",
                     "value": "arigatou gozaimasu",
                     "type": "text"
-                }, {
-                    "id": "hiragana",
+                },
+                {
+                    "id": "Hiragana",
                     "value": "ありがとう ございます",
                     "type": "text"
                 }
             ]
-        }, {
-            "metadata": ["P:Lesson 2"],
+        },
+        {
             "revealOptionData": [
                 {
-                    "id": "english",
+                    "id": "English",
                     "value": "Skilled",
                     "type": "text"
-                }, {
-                    "id": "romaji",
+                },
+                {
+                    "id": "Romaji",
                     "value": "jouzu",
                     "type": "text"
-                }, {
-                    "id": "hiragana",
+                },
+                {
+                    "id": "Hiragana",
                     "value": "じようず",
                     "type": "text"
                 }
             ]
-        }, {
-            "metadata": ["P:Lesson 2"],
+        },
+        {
             "revealOptionData": [
                 {
-                    "id": "english",
+                    "id": "English",
                     "value": "Not Skilled",
                     "type": "text"
-                }, {
-                    "id": "romaji",
+                },
+                {
+                    "id": "Romaji",
                     "value": "jouzu ja arimasen",
                     "type": "text"
-                }, {
-                    "id": "hiragana",
+                },
+                {
+                    "id": "Hiragana",
                     "value": "じようず じ や ありません",
                     "type": "text"
                 }
             ]
         }
-    ]
+    ],
+    "format": {
+        "0": "English",
+        "1": "Romaji",
+        "2": "Hiragana"
+    }
 }

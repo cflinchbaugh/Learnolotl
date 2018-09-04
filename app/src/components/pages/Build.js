@@ -122,7 +122,8 @@ class Build extends Component {
             for (var i = 0; i < keysLen; i++) {
                 revealOptionDataArray.push({
                     'id': this.state.cardFormat[i],
-                    'value': this.state.revealOptionData[y].formElementData[i]
+                    'value': this.state.revealOptionData[y].formElementData[i],
+                    'type': 'text'
                 });
             }
 
