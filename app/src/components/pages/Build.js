@@ -19,17 +19,12 @@ class Build extends Component {
 
         this.state = {
             cardFormat: undefined,
-            revealOptionData: [],
             fileId: ''
         }
     }
 
     nextCard(formState) {
-        this.setState( (prevState, props) => {
-            return {
-                revealOptionData: [...this.state.revealOptionData, formState]
-            }
-        });
+        this.props.buildCard(formState);
     }
    
     saveFormat(format) {
@@ -114,15 +109,16 @@ class Build extends Component {
 
     _processBuildData() {
         let buildData = [],
-            keysLen = Object.keys(this.state.revealOptionData[0].formElementData).length;
+            keys =  typeof(this.props.revealOptionData[0]) !== 'undefined' ? this.props.revealOptionData[0].formElementData : [],
+            keysLen = Object.keys(keys).length;
 
-        for (var y = 0; y < this.state.revealOptionData.length; y++) {
+        for (var y = 0; y < this.props.revealOptionData.length; y++) {
             let revealOptionDataArray = [];
                 
             for (var i = 0; i < keysLen; i++) {
                 revealOptionDataArray.push({
                     'id': this.state.cardFormat[i],
-                    'value': this.state.revealOptionData[y].formElementData[i],
+                    'value': this.props.revealOptionData[y].formElementData[i],
                     'type': 'text'
                 });
             }
@@ -137,7 +133,7 @@ class Build extends Component {
 }
 
 const mapStateToProps = state => ({
-
+    revealOptionData: state.build.revealOptionData
 });
 
 export default connect(mapStateToProps, { buildCard })(Build);
