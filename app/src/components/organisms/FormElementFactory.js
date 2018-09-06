@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 import styled from 'styled-components';
 import { connect } from 'react-redux';
 
-import Button from 'atoms/buttons/Button';
-import InputField from 'atoms/formElements/InputField';
+import Button from 'buttons/Button';
+import InputField from 'formElements/InputField';
 
 const StyleWrapper = styled.div`
 `

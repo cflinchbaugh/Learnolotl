@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Deck from 'organisms/Deck';
 import styled from 'styled-components';
-import NavigationButton from 'atoms/buttons/NavigationArrow';
+import NavigationButton from 'buttons/NavigationArrow.js';
 import { connect } from 'react-redux';
 import { fetchCard } from '../../actions/cardActions';
 

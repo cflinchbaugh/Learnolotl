@@ -19,7 +19,7 @@ const StyleWrapper = styled.div`
     }
 `
 
-function Button (props) {
+function NavigationArrowButton (props) {
     let arrow = props.type === 'next' ? '=>' : '<=',
         navigationArrowData ={
             className: 'navigation-button',
@@ -33,4 +33,4 @@ function Button (props) {
     )
 }
 
-export default Button
+export default NavigationArrowButton

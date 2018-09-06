@@ -1,0 +1,23 @@
+import React, { Component } from 'react';
+import styled from 'styled-components';
+
+import DeckNavigation from 'organisms/DeckNavigation';
+
+const StyleWrapper = styled.div`
+`
+
+function LearnFlashcards(props) {
+    return (
+        <StyleWrapper>
+        <div className="flashcards">
+            <h1>Flashcards</h1>
+
+            <div className="deck-navigation-placeholder">
+                <DeckNavigation {...props.deckNavigationData}/>
+            </div>
+        </div>
+        </StyleWrapper>
+    );
+}
+
+export default LearnFlashcards;

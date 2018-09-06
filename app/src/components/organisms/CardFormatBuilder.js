@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import { connect } from 'react-redux';
 
 import DynamicFormElementFactory from './DynamicFormElementFactory';
-import Button from 'atoms/buttons/Button';
+import Button from 'buttons/Button';
 
 const StyleWrapper = styled.div`
 `

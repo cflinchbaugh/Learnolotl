@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Card from 'molecules/Card';
+import CardWrapper from 'cards/CardWrapper';
 import styled from 'styled-components';
 import { connect } from 'react-redux';
 
@@ -25,7 +25,7 @@ class Deck extends Component {
     _buildDeck() {
         console.log(this.props);
         return this.props.deckData.cardData.map(function(cardData, idx) {
-            return <Card 
+            return <CardWrapper 
                 mode={this.props.deckData.mode}
                 data={cardData}
                 display={this.props.display}

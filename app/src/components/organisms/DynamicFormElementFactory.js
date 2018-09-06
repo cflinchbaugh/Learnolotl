@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import styled from 'styled-components';
 import { connect } from 'react-redux';
 
-import Button from 'atoms/buttons/Button';
+import Button from 'buttons/Button';
 import FormElementFactory from './FormElementFactory';
 
 const StyleWrapper = styled.div`

@@ -1,26 +1,14 @@
 import React, { Component } from 'react';
-import DeckNavigation from 'organisms/DeckNavigation';
-import styled from 'styled-components';
 import { connect } from 'react-redux';
+import LearnFlashcards from './LearnFlashcards';
 
-const StyleWrapper = styled.div`
-`
 
-class LearnFlashcards extends Component {
-
+class LearnFlashcardsContainer extends Component {
     render() {
         let deckNavigationData = this._buildDeckNavigationData();
 
         return (
-            <StyleWrapper>
-            <div className="flashcards">
-                <h1>Flashcards</h1>
-
-                <div className="deck-navigation-placeholder">
-                    <DeckNavigation {...deckNavigationData}/>
-                </div>
-            </div>
-            </StyleWrapper>
+            <LearnFlashcards {...deckNavigationData} />
         );
     }
 
@@ -60,4 +48,4 @@ const mapStateToProps = state => ({
     display: state.cards.flashCardDisplay
 });
 
-export default connect(mapStateToProps, { })(LearnFlashcards);
+export default connect(mapStateToProps, { })(LearnFlashcardsContainer);

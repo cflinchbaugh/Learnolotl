@@ -1,15 +1,16 @@
 import React, { Component } from 'react';
+
+import { connect } from 'react-redux';
+import { buildCard } from '../../../actions/buildActions';
+
+import Build from './Build';
 import CardFormatBuilder from 'organisms/CardFormatBuilder';
 import CardBuilder from 'organisms/CardBuilder';
-import InputField from '../atoms/formElements/InputField';
-import { connect } from 'react-redux';
-import { buildCard } from '../../actions/buildActions';
-import Button from 'atoms/buttons/Button';
+import Button from 'buttons/Button';
 
-class Build extends Component {
+class BuildContainer extends Component {
     constructor(props) {
         super(props);
-
         
         this.nextCard = this.nextCard.bind(this);
         this.saveFormat = this.saveFormat.bind(this);
@@ -59,14 +60,17 @@ class Build extends Component {
                 label: 'Filename',
                 onChange: this.handelFileIdChange,
                 value: this.state.fileId
+            },
+            buildData = {
+                fileIdData: {...fileIdData},
             }
+
+            
 
         return (
             <div>
-                <h1>Build</h1>
-                <InputField {...fileIdData} />
+                <Build {...buildData}/>
                 {renderedBuilder}
-                
             </div>
         );
     }
@@ -136,4 +140,4 @@ const mapStateToProps = state => ({
     revealOptionData: state.build.revealOptionData
 });
 
-export default connect(mapStateToProps, { buildCard })(Build);
+export default connect(mapStateToProps, { buildCard })(BuildContainer);

@@ -1,16 +1,14 @@
 import React, { Component } from 'react';
-import Uploader from 'organisms/Uploader';
-
 import { Link } from 'react-router-dom';
 
 import { connect } from 'react-redux';
-import { createCard } from '../../actions/cardActions';
-import { updateFileIds } from '../../actions/cardActions';
-import PropTypes from 'prop-types';
-import Listing from 'molecules/Listing';
-import Select from 'atoms/formElements/Select';
+import { createCard } from '../../../actions/cardActions';
+import { updateFileIds } from '../../../actions/cardActions';
 
-class Learn extends Component {
+import Listing from 'listings/Listing';
+import Learn from './Learn';
+
+class LearnContainer extends Component {
     constructor(props) {
         super(props);
 
@@ -79,25 +77,35 @@ class Learn extends Component {
     }
 
     render() {
-        let uploaderData = {
-                handleFileUpload: this.handleFileUpload
-            },
-            fileListing = this.props.sampleData ? <div>Sample Data</div> : <Listing {...this.state} />,
-            modeSelectData = {
-                label: 'Mode',
-                id: 'mode',
-                options: this.state.modeOptions,
-                handleChange: this._handleModeChange
+        let fileListing = this.props.sampleData ? 
+                <div>Sample Data</div> :
+                <Listing {...this.state} />,
+            learnData = {
+                uploaderData: {
+                    handleFileUpload: this.handleFileUpload
+                },
+                fileListingData: {
+                    fileListing
+                },
+                modeSelectData: {
+                    label: 'Mode',
+                    id: 'mode',
+                    options: this.state.modeOptions,
+                    handleChange: this._handleModeChange
+                },
+                linkData: {
+                    to: {
+                        pathname: '/learn/flashcards',
+                        state: {
+                            mode: this.state.mode
+                        }
+                    }
+                }
             }
 
         return (
             <div>
-                <Uploader {...uploaderData} />
-
-                {fileListing}
-
-                <Select {...modeSelectData} />
-                
+                <Learn {...learnData}/>
                 <Link to={{
                     pathname: '/learn/flashcards',
                     state: {
@@ -129,4 +137,4 @@ const mapStateToProps = state => ({
 
 });
 
-export default connect(mapStateToProps, { createCard, updateFileIds })(Learn);
+export default connect(mapStateToProps, { createCard, updateFileIds })(LearnContainer);

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
-import CancelPop from 'molecules/buttons/CancelPop';
+import CancelPop from 'buttons/CancelPopButton';
 import { connect } from 'react-redux';
 
 const StyleWrapper = styled.div`
