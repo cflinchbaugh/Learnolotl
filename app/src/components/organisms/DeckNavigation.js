@@ -74,7 +74,6 @@ class DeckNavigation extends Component {
         console.warn('Out of bounds: resetting to ' + validIdx);
     }
 
-
     render() {
         return (
             <StyleWrapper>

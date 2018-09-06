@@ -5,23 +5,15 @@ import LearnFlashcards from './LearnFlashcards';
 
 class LearnFlashcardsContainer extends Component {
     render() {
-        let deckNavigationData = this._buildDeckNavigationData();
-
-        return (
-            <LearnFlashcards {...deckNavigationData} />
-        );
-    }
-
-    _buildDeckNavigationData() {
-        let data = {
-            deckData: {
-                mode: this.props.location.state.mode,
-                cardData: this.fetch(this.props.idx),
-                display: this.props.display
-            }
+        let deckData = {
+            mode: this.props.location.state.mode,
+            cardData: this.fetch(this.props.idx),
+            display: this.props.display
         }
 
-        return data;
+        return (
+            <LearnFlashcards deckNavigationData={deckData} />
+        );
     }
 
     // Obviously this is not a real fetch right now,

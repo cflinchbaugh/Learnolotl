@@ -13,7 +13,7 @@ function LearnFlashcards(props) {
             <h1>Flashcards</h1>
 
             <div className="deck-navigation-placeholder">
-                <DeckNavigation {...props.deckNavigationData}/>
+                <DeckNavigation deckData={props.deckNavigationData}/>
             </div>
         </div>
         </StyleWrapper>

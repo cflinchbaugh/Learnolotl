@@ -1,11 +1,11 @@
-import React, { Component } from 'react';
+import React from 'react';
 
 function About (props) {
     return (
         <div>
             <h1>About</h1>
             <div>
-                <p>Version: 0.0.0</p>
+                <p>Version: BETA</p>
                 <p>
                     <a target="_blank" rel="noopener noreferrer" href="https://github.com/cflinchbaugh/level-up">GitHub Repo</a>
                 </p>

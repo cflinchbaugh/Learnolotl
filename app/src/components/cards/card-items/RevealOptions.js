@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
-import CancelPop from 'buttons/CancelPopButton';
 import { connect } from 'react-redux';
+
+import CancelPop from 'buttons/CancelPopButton';
 
 const StyleWrapper = styled.div`
     .RevealOptions {

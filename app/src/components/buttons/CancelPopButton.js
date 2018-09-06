@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 import { CSSTransition } from 'react-transition-group'
+
 import Button from 'buttons/Button';
 
 const StyleWrapper = styled.div`

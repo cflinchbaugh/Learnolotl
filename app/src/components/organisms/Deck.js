@@ -23,7 +23,6 @@ class Deck extends Component {
     }
 
     _buildDeck() {
-        console.log(this.props);
         return this.props.deckData.cardData.map(function(cardData, idx) {
             return <CardWrapper 
                 mode={this.props.deckData.mode}
