@@ -44,26 +44,33 @@ class LearnContainer extends Component {
         if (this.props.uploadedIds.indexOf(updatedCardData.fileId) === -1) {
             
             //Pushes new value into array immutably, necessary for the changes to trigger a render
-            let updatedUploadedIds = [...this.props.uploadedIds, updatedCardData.fileId],
+            let updatedUploadedIds,
                 updatedModeOptions = this._processMode(updatedCardData.format),
                 formatValid = this._validateFormat(uploadedCardData);
 
             if (formatValid || this.props.sampleData) {
+                updatedUploadedIds = [...this.props.uploadedIds, updatedCardData.fileId];
+                
                 this.setState({
                     modeOptions: updatedModeOptions,
                     mode: updatedModeOptions[0].id,
                     format: uploadedCardData.format
                 });
+
                 this.props.updateFileIds(updatedUploadedIds);
                 this.props.createCard(updatedCardData.fileDataArr);
+
             } else {
                 if (window.confirm("Replace uploaded cards with new format?")) {
+                    updatedUploadedIds = [updatedCardData.fileId];
+
                     this.setState({
                         modeOptions: updatedModeOptions,
                         mode: updatedModeOptions[0].id,
                         format: uploadedCardData.format
                     });
-                    this.props.replaceFileIds([updatedCardData.fileId]);
+
+                    this.props.replaceFileIds(updatedUploadedIds);
                     this.props.replaceCards(updatedCardData.fileDataArr);
                 } else {
                     console.warn('File not uploaded');
