@@ -1,4 +1,10 @@
-import { FETCH_CARDS, NEW_CARDS, REVEAL_OPTION, UPDATE_FILE_IDS } from '../actions/types';
+import { 
+    FETCH_CARDS, 
+    NEW_CARDS,
+    REPLACE_CARDS, 
+    REVEAL_OPTION, 
+    UPDATE_FILE_IDS,
+    REPLACE_FILE_IDS } from '../actions/types';
 
 const initialState = {
     items: [
@@ -61,6 +67,12 @@ export default function(state = initialState, action) {
                 sampleData: false
             }
 
+        case REPLACE_CARDS:
+            return {
+                ...state,
+                items: action.payload
+            }
+
         case FETCH_CARDS:
             return {
                 ...state,
@@ -78,6 +90,11 @@ export default function(state = initialState, action) {
             }
 
         case UPDATE_FILE_IDS:
+            return {
+                ...state,
+                uploadedIds: action.payload
+            }
+        case REPLACE_FILE_IDS:
             return {
                 ...state,
                 uploadedIds: action.payload

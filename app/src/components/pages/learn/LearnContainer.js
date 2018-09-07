@@ -3,7 +3,9 @@ import { Link } from 'react-router-dom';
 
 import { connect } from 'react-redux';
 import { createCard } from '../../../actions/cardActions';
+import { replaceCards } from '../../../actions/cardActions';
 import { updateFileIds } from '../../../actions/cardActions';
+import { replaceFileIds } from '../../../actions/cardActions';
 
 import Listing from 'listings/Listing';
 import Learn from './Learn';
@@ -26,7 +28,12 @@ class LearnContainer extends Component {
                 id: 'hiragana',
                 value: 'Hiragana'
             }],
-            mode: 'english'
+            mode: 'english',
+            "format": {
+                "0": "English",
+                "1": "Romaji",
+                "2": "Hiragana"
+            }
         }
     }
 
@@ -35,18 +42,57 @@ class LearnContainer extends Component {
 
         // Determine if file was already added to avoid duplicates
         if (this.props.uploadedIds.indexOf(updatedCardData.fileId) === -1) {
-            //Pushes new value into array immutably, necessary for the changes to trigger a render
-            let updatedUploadedIds = [...this.props.uploadedIds, updatedCardData.fileId];  
-
-            this.props.updateFileIds(updatedUploadedIds);
-            this.props.createCard(updatedCardData.fileDataArr);
-
-            this._updateMode(updatedCardData.format)
             
+            //Pushes new value into array immutably, necessary for the changes to trigger a render
+            let updatedUploadedIds = [...this.props.uploadedIds, updatedCardData.fileId],
+                updatedModeOptions = this._processMode(updatedCardData.format),
+                formatValid = this._validateFormat(uploadedCardData);
+
+            if (formatValid || this.props.sampleData) {
+                this.setState({
+                    modeOptions: updatedModeOptions,
+                    mode: updatedModeOptions[0].id,
+                    format: uploadedCardData.format
+                });
+                this.props.updateFileIds(updatedUploadedIds);
+                this.props.createCard(updatedCardData.fileDataArr);
+            } else {
+                if (window.confirm("Replace uploaded cards with new format?")) {
+                    this.setState({
+                        modeOptions: updatedModeOptions,
+                        mode: updatedModeOptions[0].id,
+                        format: uploadedCardData.format
+                    });
+                    this.props.replaceFileIds([updatedCardData.fileId]);
+                    this.props.replaceCards(updatedCardData.fileDataArr);
+                } else {
+                    console.warn('File not uploaded');
+                }
+            }
+
         } else {
             console.warn('File skipped because it was previosly added');
         }
+    }
 
+    _validateFormat(uploadedCardData) {
+        let stringifiedCurrentFormat = JSON.stringify(this.state.format),
+            stringifiedUploadedFormat = JSON.stringify(uploadedCardData.format);
+
+        return stringifiedCurrentFormat === stringifiedUploadedFormat;
+    }
+
+    _processMode(formatData) {
+        let updatedModeOptions = [];
+        
+        for (var property in formatData) {
+            updatedModeOptions.push({
+                id: formatData[property],
+                value: formatData[property]
+            });
+        }
+
+        return updatedModeOptions;
     }
 
     _updateMode(formatData) {
@@ -120,7 +166,7 @@ class LearnContainer extends Component {
 
     _handleModeChange(e) {
         let updatedMode = e.currentTarget.value;
-console.log(updatedMode);
+
         this.setState({
             mode: updatedMode
         });
@@ -137,4 +183,4 @@ const mapStateToProps = state => ({
 
 });
 
-export default connect(mapStateToProps, { createCard, updateFileIds })(LearnContainer);
+export default connect(mapStateToProps, { createCard, replaceCards, updateFileIds, replaceFileIds })(LearnContainer);

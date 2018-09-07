@@ -8,7 +8,7 @@ function Learn (props) {
         <div>
             <Uploader {...props.uploaderData} />
 
-            {props.fileListing}
+            {props.fileListingData.fileListing}
 
             <Select {...props.modeSelectData} />
             
