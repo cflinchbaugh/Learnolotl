@@ -14,18 +14,35 @@ class Uploader extends Component {
                         // do not try to aggregate, just handle the new file
                         // by parsing it, grabbing the results, and sending the data up
 
-                    let parsedData = JSON.parse(e.target.result),
+                    let parsedData = this._validateJSON(e.target.result),
+                        processedUploadData;
+                        
+                    if (parsedData) {
                         processedUploadData = {
                             fileId: parsedData.id,
                             fileDataArr: parsedData.results,
                             format: parsedData.format
                         };
-
-                    this.props.handleFileUpload(processedUploadData);
+                        
+                        this.props.handleFileUpload(processedUploadData);
+                    }   
                 }
                              
                 reader.readAsText(file, "UTF-8");
             })(files[i]);
+        }
+    }
+
+    _validateJSON(data) {
+        try {
+            let parsedData = JSON.parse(data);
+            
+            return parsedData;
+        } catch(e) {
+            
+            alert('Invalid file upload!  File must be valid .json.  File ignored.');
+            
+            return null;
         }
     }
 
