@@ -4,7 +4,10 @@ import {
     REVEAL_OPTION,
     UPDATE_FILE_IDS,
     REPLACE_FILE_IDS,
-    REPLACE_CARDS } from './types';
+    REPLACE_CARDS,
+    UPDATE_MODE,
+    UPDATE_MODE_OPTIONS,
+    UPDATE_FORMAT } from './types';
 
 export const createCard = (cardData) => dispatch => {
     dispatch({
@@ -44,6 +47,26 @@ export const updateFileIds = (option) => dispatch => {
 export const replaceFileIds = (option) => dispatch => {
     dispatch({
         type: REPLACE_FILE_IDS,
+        payload: option
+    });
+}
+
+export const updateMode = (option) => dispatch => {
+    dispatch({
+        type: UPDATE_MODE,
+        payload: option
+    });
+}
+
+export const updateModeOptions = (option) => dispatch => {
+    dispatch({
+        type: UPDATE_MODE_OPTIONS,
+        payload: option
+    });
+}
+export const updateFormat = (option) => dispatch => {
+    dispatch({
+        type: UPDATE_FORMAT,
         payload: option
     });
 }

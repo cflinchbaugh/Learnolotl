@@ -4,7 +4,10 @@ import {
     REPLACE_CARDS, 
     REVEAL_OPTION, 
     UPDATE_FILE_IDS,
-    REPLACE_FILE_IDS } from '../actions/types';
+    REPLACE_FILE_IDS,
+    UPDATE_MODE,
+    UPDATE_MODE_OPTIONS,
+    UPDATE_FORMAT } from '../actions/types';
 
 const initialState = {
     items: [
@@ -53,7 +56,25 @@ const initialState = {
         id: '',
         value: '',
     }],
-    uploadedIds: []
+    uploadedIds: [],
+    mode: 'english',
+    modeOptions: [
+        {
+            id: 'english',
+            value: 'English'
+        }, {
+            id: 'romaji',
+            value: 'Romaji'
+        }, {
+            id: 'hiragana',
+            value: 'Hiragana'
+        }
+    ],
+    format: {
+        "0": "English",
+        "1": "Romaji",
+        "2": "Hiragana"
+    }
 }
 
 export default function(state = initialState, action) {
@@ -98,6 +119,21 @@ export default function(state = initialState, action) {
             return {
                 ...state,
                 uploadedIds: action.payload
+            }
+        case UPDATE_MODE:
+            return {
+                ...state,
+                mode: action.payload
+            }
+        case UPDATE_MODE_OPTIONS:
+            return {
+                ...state,
+                modeOptions: action.payload
+            }
+        case UPDATE_FORMAT:
+            return {
+                ...state,
+                format: action.payload
             }
         default: 
             return state;

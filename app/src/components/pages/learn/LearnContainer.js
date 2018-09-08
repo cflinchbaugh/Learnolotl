@@ -6,6 +6,9 @@ import { createCard } from '../../../actions/cardActions';
 import { replaceCards } from '../../../actions/cardActions';
 import { updateFileIds } from '../../../actions/cardActions';
 import { replaceFileIds } from '../../../actions/cardActions';
+import { updateMode } from '../../../actions/cardActions';
+import { updateModeOptions } from '../../../actions/cardActions';
+import { updateFormat } from '../../../actions/cardActions';
 
 import Listing from 'listings/Listing';
 import Learn from './Learn';
@@ -16,25 +19,6 @@ class LearnContainer extends Component {
 
         this.handleFileUpload = this.handleFileUpload.bind(this);
         this._handleModeChange = this._handleModeChange.bind(this);
-
-        this.state = {
-            modeOptions: [{
-                id: 'english',
-                value: 'English'
-            }, {
-                id: 'romaji',
-                value: 'Romaji'
-            }, {
-                id: 'hiragana',
-                value: 'Hiragana'
-            }],
-            mode: 'english',
-            "format": {
-                "0": "English",
-                "1": "Romaji",
-                "2": "Hiragana"
-            }
-        }
     }
 
     handleFileUpload(uploadedCardData) {
@@ -51,12 +35,9 @@ class LearnContainer extends Component {
             if (formatValid || this.props.sampleData) {
                 updatedUploadedIds = [...this.props.uploadedIds, updatedCardData.fileId];
                 
-                this.setState({
-                    modeOptions: updatedModeOptions,
-                    mode: updatedModeOptions[0].id,
-                    format: uploadedCardData.format
-                });
-
+                this.props.updateFormat(uploadedCardData.format);
+                this.props.updateModeOptions(updatedModeOptions);
+                this.props.updateMode(updatedModeOptions[0].id);
                 this.props.updateFileIds(updatedUploadedIds);
                 this.props.createCard(updatedCardData.fileDataArr);
 
@@ -64,12 +45,8 @@ class LearnContainer extends Component {
                 if (window.confirm("Replace uploaded cards with new format?")) {
                     updatedUploadedIds = [updatedCardData.fileId];
 
-                    this.setState({
-                        modeOptions: updatedModeOptions,
-                        mode: updatedModeOptions[0].id,
-                        format: uploadedCardData.format
-                    });
-
+                    this.props.updateFormat(uploadedCardData.format);
+                    this.props.updateMode(updatedModeOptions[0].id);
                     this.props.replaceFileIds(updatedUploadedIds);
                     this.props.replaceCards(updatedCardData.fileDataArr);
                 } else {
@@ -83,7 +60,7 @@ class LearnContainer extends Component {
     }
 
     _validateFormat(uploadedCardData) {
-        let stringifiedCurrentFormat = JSON.stringify(this.state.format),
+        let stringifiedCurrentFormat = JSON.stringify(this.props.format),
             stringifiedUploadedFormat = JSON.stringify(uploadedCardData.format);
 
         return stringifiedCurrentFormat === stringifiedUploadedFormat;
@@ -111,28 +88,15 @@ class LearnContainer extends Component {
                 value: formatData[property]
             });
         }
-        
-        this.setState({
-            modeOptions: updatedModeOptions,
-            mode: updatedModeOptions[0].id
-        });
-    }
-
-    _mergeCardData(updatedCardData) {
-        let mergedData = this.state.cardData,
-            i = 0;
-
-        for ( ; i < updatedCardData.length; i++) {
-            mergedData.push(updatedCardData[i]);
-        }
-
-        return mergedData;
+       
+        this.props.updateModeOptions(updatedModeOptions);
+        this.props.updateMode(updatedModeOptions[0].id);
     }
 
     render() {
         let fileListing = this.props.sampleData ? 
                 <div>Sample Data</div> :
-                <Listing {...this.state} />,
+                <Listing />,
             learnData = {
                 uploaderData: {
                     handleFileUpload: this.handleFileUpload
@@ -143,14 +107,14 @@ class LearnContainer extends Component {
                 modeSelectData: {
                     label: 'Mode',
                     id: 'mode',
-                    options: this.state.modeOptions,
+                    options: this.props.modeOptions,
                     handleChange: this._handleModeChange
                 },
                 linkData: {
                     to: {
                         pathname: '/learn/flashcards',
                         state: {
-                            mode: this.state.mode
+                            mode: this.props.mode
                         }
                     }
                 }
@@ -162,7 +126,7 @@ class LearnContainer extends Component {
                 <Link to={{
                     pathname: '/learn/flashcards',
                     state: {
-                        mode: this.state.mode
+                        mode: this.props.mode
                     }    
                 }}>
                     Flashcards
@@ -174,9 +138,7 @@ class LearnContainer extends Component {
     _handleModeChange(e) {
         let updatedMode = e.currentTarget.value;
 
-        this.setState({
-            mode: updatedMode
-        });
+        this.props.updateMode(updatedMode);
     }
 
    
@@ -186,8 +148,11 @@ class LearnContainer extends Component {
 const mapStateToProps = state => ({
     items: state.cards.items,
     uploadedIds: state.cards.uploadedIds,
-    sampleData: state.cards.sampleData
+    sampleData: state.cards.sampleData,
+    mode: state.cards.mode,
+    modeOptions: state.cards.modeOptions,
+    format: state.cards.format
 
 });
 
-export default connect(mapStateToProps, { createCard, replaceCards, updateFileIds, replaceFileIds })(LearnContainer);
+export default connect(mapStateToProps, { createCard, replaceCards, updateFileIds, replaceFileIds, updateMode, updateModeOptions, updateFormat })(LearnContainer);
