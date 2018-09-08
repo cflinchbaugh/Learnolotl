@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 import { connect } from 'react-redux';
+import { updateFormatFormElementData, updateFormatFormElements } from '../../actions/buildActions';
 
 import DynamicFormElementFactory from './DynamicFormElementFactory';
 import Button from 'buttons/Button';
@@ -16,20 +17,7 @@ class CardFormatBuilder extends Component {
         this.saveFormat = this.saveFormat.bind(this);
         this.addInputField = this.addInputField.bind(this);
 
-        this.state = {
-            formElementData: {},
-            formElements: [
-                {
-                    type: 'input',
-                    data: {
-                        id: 'revealOptionId',
-                        label: 'Button Label',
-                        placeholder: '',
-                        value: ''
-                    }
-                }
-            ]
-        }
+       
     }
 
     addInputField(e) {
@@ -44,21 +32,18 @@ class CardFormatBuilder extends Component {
                     value: ''
                 }
             },
-            updatedFormElements = [...this.state.formElements, newId];
+            updatedFormElements = [...this.props.formatFormElements, newId];
 
-        this.setState( (prevState, props) => {
-            return {
-                formElements: updatedFormElements
-            };
-        })
+        
+        this.props.updateFormatFormElements(updatedFormElements);
     }
 
     render() {
         let dynamicFormElementFactoryData = {
                 handleInputChange: this.handleInputChange,
-                formElementData: this.state.formElementData,
+                formElementData: this.props.formatFormElementData,
                 addInputField: this.addInputField,
-                formElements: this.state.formElements
+                formElements: this.props.formatFormElements
                 
             },
             saveFormatButtonData = {
@@ -76,17 +61,13 @@ class CardFormatBuilder extends Component {
     }
 
     saveFormat() {
-        this.props.saveFormat(this.state.formElementData);
+        this.props.saveFormat(this.props.formatFormElementData);
     }
 
-    handleInputChange(formElementData) {
-        let mergedData = {...this.state.formElementData, ...formElementData}
+    handleInputChange(formatFormElementData) {
+        let mergedData = {...this.props.formatFormElementData, ...formatFormElementData}
 
-        this.setState( (prevState, props) => {
-            return {
-                formElementData: mergedData
-            };
-        });
+        this.props.updateFormatFormElementData(mergedData);
     }
 
     
@@ -94,7 +75,9 @@ class CardFormatBuilder extends Component {
 }
 
 const mapStateToProps = state => ({
-    buildResults: state.build.results
+    buildResults: state.build.results,
+    formatFormElements: state.build.formatFormElements,
+    formatFormElementData: state.build.formatFormElementData
 });
 
-export default connect(mapStateToProps, { })(CardFormatBuilder);
+export default connect(mapStateToProps, { updateFormatFormElementData, updateFormatFormElements })(CardFormatBuilder);

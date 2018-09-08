@@ -1,11 +1,26 @@
 import { BUILD_CARD,
 UPDATE_FILE_NAME,
-UPDATE_FORM_ELEMENT_DATA } from '../actions/types';
+UPDATE_FORM_ELEMENT_DATA,
+UPDATE_FORMAT_FORM_ELEMENT_DATA,
+UPDATE_FORMAT_FORM_ELEMENTS } from '../actions/types';
 
 const initialState = {
     revealOptionData: [],
     fileName: '',
-    formElementData: {}
+    formElementData: {},
+    formatFormElementData: {},
+    formatFormElements: [
+        {
+            type: 'input',
+            data: {
+                id: 'revealOptionId',
+                label: 'Button Label',
+                placeholder: '',
+                value: ''
+            }
+        }
+    ],
+    
 }
 
 export default function(state = initialState, action) {
@@ -26,6 +41,16 @@ export default function(state = initialState, action) {
             return {
                 ...state,
                 formElementData: action.payload
+            }
+        case UPDATE_FORMAT_FORM_ELEMENT_DATA:
+            return {
+                ...state,
+                formatFormElementData: action.payload
+            }
+        case UPDATE_FORMAT_FORM_ELEMENTS:
+            return {
+                ...state,
+                formatFormElements: action.payload
             }
 
         default: 
