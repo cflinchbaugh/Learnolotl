@@ -11,6 +11,8 @@ export const buildCard = (cardData) => dispatch => {
         type: BUILD_CARD,
         payload: cardData
     });
+
+    return Promise.resolve();
 };
 export const updateFileName = (fileName) => dispatch => {
     dispatch({

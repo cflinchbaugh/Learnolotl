@@ -18,6 +18,8 @@ class CardBuilder extends Component {
 
         this.handleInputChange = this.handleInputChange.bind(this);
         this.handleFileIdChange = this.handleFileIdChange.bind(this);
+        this.handleSubmitForm = this.handleSubmitForm.bind(this);
+        this._handleExportData = this._handleExportData.bind(this);
 
     }
 
@@ -30,17 +32,30 @@ class CardBuilder extends Component {
             nextCardButtonData = {
                 label: 'Next Card',
                 type: 'submit'
+            },
+            exportButtonData = {
+                label: 'Export File',
+                type: 'submit',
+                onClickFunction: this._handleExportData
             }
 
         return (
             <StyleWrapper>
-                <form onSubmit={this.handleSubmitForm.bind(this)}>
+                <form onSubmit={this.handleSubmitForm}>
                     <FormElementFactory {...formElementFactoryData} {...this.props}/>
                     <Button {...nextCardButtonData}/>
+                    <Button {...exportButtonData}/>
                 </form>
             </StyleWrapper>
 
         )
+    }
+
+    _handleExportData(e) {
+        this.props.submitForm(this.props)
+            .then( () => {
+                this.props.exportFile();
+            })
     }
 
     _buildFormElements() {

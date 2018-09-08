@@ -21,7 +21,7 @@ class BuildContainer extends Component {
     }
 
     nextCard(formState) {
-        this.props.buildCard(formState);
+        return this.props.buildCard(formState);
     }
    
     saveFormat(format) {
@@ -36,17 +36,14 @@ class BuildContainer extends Component {
             cardBuildData = {
                 submitForm: this.nextCard,
                 cardFormat: this.props.cardFormat,
+                exportFile: this.exportFile,
                 ...this.props
-            },
-            exportButtonData = {
-                label: 'Export File',
-                onClickFunction: this.exportFile
             },
             renderedBuilder = this.props.cardFormat === undefined ? 
                 <CardFormatBuilder {...cardFormatBuilderData}/> : 
                 (<span>
                     <CardBuilder {...cardBuildData}/>
-                    <Button {...exportButtonData}/>
+                    
                 </span>),
             fileIdData = {
                 label: 'Filename',
@@ -73,9 +70,7 @@ class BuildContainer extends Component {
         this.props.updateBuildFileId(id);
     }
 
-    exportFile(e) {
-        e.preventDefault();
-
+    exportFile() {
         let exportData = this._buildExportData(),
             dataStr = JSON.stringify(exportData),
             dataUri = 'data:application/json;charset=utf-8,' + encodeURIComponent(dataStr);
