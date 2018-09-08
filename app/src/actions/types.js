@@ -11,3 +11,5 @@ export const UPDATE_FORMAT = 'UPDATE_FORMAT';
 
 //BuildActions
 export const BUILD_CARD = 'BUILD_CARD';
+export const UPDATE_FILE_NAME = 'UPDATE_FILE_NAME';
+export const UPDATE_FORM_ELEMENT_DATA = 'UPDATE_FORM_ELEMENT_DATA';

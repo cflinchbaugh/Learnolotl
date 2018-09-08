@@ -1,7 +1,11 @@
-import { BUILD_CARD } from '../actions/types';
+import { BUILD_CARD,
+UPDATE_FILE_NAME,
+UPDATE_FORM_ELEMENT_DATA } from '../actions/types';
 
 const initialState = {
-    revealOptionData: []
+    revealOptionData: [],
+    fileName: '',
+    formElementData: {}
 }
 
 export default function(state = initialState, action) {
@@ -12,6 +16,16 @@ export default function(state = initialState, action) {
             return {
                 ...state,
                 revealOptionData: mergedResults
+            }
+        case UPDATE_FILE_NAME:
+            return {
+                ...state,
+                fileName: action.payload
+            }
+        case UPDATE_FORM_ELEMENT_DATA:
+            return {
+                ...state,
+                formElementData: action.payload
             }
 
         default: 

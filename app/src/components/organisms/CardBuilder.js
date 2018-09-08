@@ -1,9 +1,13 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
+
 import { connect } from 'react-redux';
+import { updateFileName } from '../../actions/buildActions';
+import { updateFormElementData } from '../../actions/buildActions';
 
 import FormElementFactory from './FormElementFactory';
 import Button from 'buttons/Button';
+
 
 const StyleWrapper = styled.div`
 `
@@ -15,16 +19,12 @@ class CardBuilder extends Component {
         this.handleInputChange = this.handleInputChange.bind(this);
         this.handleFileIdChange = this.handleFileIdChange.bind(this);
 
-        this.state = {
-            formElementData: {},
-            fileName: ''
-        }
     }
 
     render() {
         let formElementFactoryData = {
                 handleInputChange: this.handleInputChange,
-                formElementData: this.state.formElementData,
+                formElementData: this.props.formElementData,
                 formElements: this._buildFormElements()
             },
             nextCardButtonData = {
@@ -65,39 +65,30 @@ class CardBuilder extends Component {
     handleFileIdChange(e) {
         let updatedFileId = e.currentTarget.value;
 
-        this.setState( (prevState, props) => {
-            return {
-                fileName: updatedFileId
-            };
-        })
+        this.props.updateFileName(updatedFileId)
     }
 
     handleSubmitForm(e) {
         e.preventDefault();
-        this.props.submitForm(this.state);
-        this._resetState();
+        this.props.submitForm(this.props);
+        
+        //Clear formElementData
+        this.props.updateFormElementData({});
     }
 
-    _resetState() {
-        this.setState({
-            formElementData: {}
-        });
-    }
 
     handleInputChange(formElementData) {
-        let mergedData = {...this.state.formElementData, ...formElementData}
+        let mergedData = {...this.props.formElementData, ...formElementData}
 
-        this.setState( (prevState, props) => {
-            return {
-                formElementData: mergedData
-            };
-        });
+        this.props.updateFormElementData(mergedData);
     }
 
 }
 
 const mapStateToProps = state => ({
-    buildResults: state.build.results
+    buildResults: state.build.results,
+    formElementData: state.build.formElementData,
+    fileName: state.build.fileName
 });
 
-export default connect(mapStateToProps, { })(CardBuilder);
+export default connect(mapStateToProps, { updateFileName, updateFormElementData })(CardBuilder);
