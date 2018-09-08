@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 import { connect } from 'react-redux';
-import { buildCard } from '../../../actions/buildActions';
+import { buildCard, updateBuildFileId } from '../../../actions/buildActions';
 
 import Build from './Build';
 import CardFormatBuilder from 'organisms/CardFormatBuilder';
@@ -19,8 +19,7 @@ class BuildContainer extends Component {
         this.handelFileIdChange = this.handelFileIdChange.bind(this);
 
         this.state = {
-            cardFormat: undefined,
-            fileId: ''
+            cardFormat: undefined
         }
     }
 
@@ -59,7 +58,7 @@ class BuildContainer extends Component {
             fileIdData = {
                 label: 'Filename',
                 onChange: this.handelFileIdChange,
-                value: this.state.fileId
+                value: this.props.fileId
             },
             buildData = {
                 fileIdData: {...fileIdData},
@@ -78,11 +77,7 @@ class BuildContainer extends Component {
     handelFileIdChange(e) {
         let id = e.currentTarget.value;
 
-        this.setState( (prevState, props) => {
-            return {
-                fileId: id
-            }
-        });
+        this.props.updateBuildFileId(id);
     }
 
     exportFile(e) {
@@ -92,7 +87,7 @@ class BuildContainer extends Component {
             dataStr = JSON.stringify(exportData),
             dataUri = 'data:application/json;charset=utf-8,' + encodeURIComponent(dataStr);
 
-        let exportFileDefaultName = this.state.fileId + '.json';
+        let exportFileDefaultName = this.props.fileId + '.json';
     
         let linkElement = document.createElement('a');
         linkElement.setAttribute('href', dataUri);
@@ -103,7 +98,7 @@ class BuildContainer extends Component {
     _buildExportData() {
         let builtResultsData = this._processBuildData(),
             exportData = {
-                id: this.state.fileId,
+                id: this.props.fileId,
                 results: builtResultsData,
                 format: this.state.cardFormat
             }
@@ -137,7 +132,8 @@ class BuildContainer extends Component {
 }
 
 const mapStateToProps = state => ({
-    revealOptionData: state.build.revealOptionData
+    revealOptionData: state.build.revealOptionData,
+    fileId: state.build.fileId
 });
 
-export default connect(mapStateToProps, { buildCard })(BuildContainer);
+export default connect(mapStateToProps, { buildCard, updateBuildFileId })(BuildContainer);

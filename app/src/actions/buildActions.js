@@ -2,7 +2,8 @@ import { BUILD_CARD,
 UPDATE_FILE_NAME,
 UPDATE_FORM_ELEMENT_DATA,
 UPDATE_FORMAT_FORM_ELEMENT_DATA,
-UPDATE_FORMAT_FORM_ELEMENTS } from './types';
+UPDATE_FORMAT_FORM_ELEMENTS,
+UPDATE_BUILD_FILE_ID } from './types';
 
 export const buildCard = (cardData) => dispatch => {
     dispatch({
@@ -32,5 +33,11 @@ export const updateFormatFormElements = (formElementData) => dispatch => {
     dispatch({
         type: UPDATE_FORMAT_FORM_ELEMENTS,
         payload: formElementData
+    });
+};
+export const updateBuildFileId = (buildFileId) => dispatch => {
+    dispatch({
+        type: UPDATE_BUILD_FILE_ID,
+        payload: buildFileId
     });
 };
