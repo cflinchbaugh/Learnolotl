@@ -108,7 +108,8 @@ class LearnContainer extends Component {
                     label: 'Mode',
                     id: 'mode',
                     options: this.props.modeOptions,
-                    handleChange: this._handleModeChange
+                    handleChange: this._handleModeChange,
+                    selected: this.props.mode
                 },
                 linkData: {
                     to: {

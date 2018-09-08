@@ -7,8 +7,13 @@ const StyleWrapper = styled.div`
 
 function Select (props) {
     let options = props.options.map( (option, idx) => {
+            let optionData = {
+                key: idx,
+                value: option.id
+            }
+
             return (
-                <option key={idx} value={option.id}>
+                <option {...optionData}>
                     {option.value}
                 </option>
             );
@@ -17,7 +22,7 @@ function Select (props) {
     return (
         <StyleWrapper>
             <div>{props.label}</div>
-            <select id={props.id} onChange={props.handleChange}>
+            <select id={props.id} onChange={props.handleChange} value={props.selected}>
                 {options}
             </select>
         </StyleWrapper>
