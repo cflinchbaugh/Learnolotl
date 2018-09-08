@@ -3,7 +3,8 @@ UPDATE_FILE_NAME,
 UPDATE_FORM_ELEMENT_DATA,
 UPDATE_FORMAT_FORM_ELEMENT_DATA,
 UPDATE_FORMAT_FORM_ELEMENTS,
-UPDATE_BUILD_FILE_ID } from '../actions/types';
+UPDATE_BUILD_FILE_ID,
+UPDATE_BUILD_CARD_FORMAT } from '../actions/types';
 
 const initialState = {
     revealOptionData: [],
@@ -21,7 +22,8 @@ const initialState = {
             }
         }
     ],
-    fileId: ''
+    fileId: '',
+    cardFormat: undefined
     
 }
 
@@ -58,6 +60,11 @@ export default function(state = initialState, action) {
             return {
                 ...state,
                 fileId: action.payload
+            }
+        case UPDATE_BUILD_CARD_FORMAT:
+            return {
+                ...state,
+                cardFormat: action.payload
             }
 
         default: 

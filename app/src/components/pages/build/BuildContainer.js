@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 import { connect } from 'react-redux';
-import { buildCard, updateBuildFileId } from '../../../actions/buildActions';
+import { buildCard, updateBuildFileId, updateBuildCardFormat } from '../../../actions/buildActions';
 
 import Build from './Build';
 import CardFormatBuilder from 'organisms/CardFormatBuilder';
@@ -18,9 +18,6 @@ class BuildContainer extends Component {
         this._processBuildData = this._processBuildData.bind(this);
         this.handelFileIdChange = this.handelFileIdChange.bind(this);
 
-        this.state = {
-            cardFormat: undefined
-        }
     }
 
     nextCard(formState) {
@@ -28,28 +25,24 @@ class BuildContainer extends Component {
     }
    
     saveFormat(format) {
-        this.setState( (prevState, props) => {
-            return {
-                cardFormat: format
-            }
-        });
+        this.props.updateBuildCardFormat(format);
     }
     
     render() {
         let cardFormatBuilderData = {
                 saveFormat: this.saveFormat,
-                ...this.state
+                ...this.props
             },
             cardBuildData = {
                 submitForm: this.nextCard,
-                cardFormat: this.state.cardFormat,
-                ...this.state
+                cardFormat: this.props.cardFormat,
+                ...this.props
             },
             exportButtonData = {
                 label: 'Export File',
                 onClickFunction: this.exportFile
             },
-            renderedBuilder = this.state.cardFormat === undefined ? 
+            renderedBuilder = this.props.cardFormat === undefined ? 
                 <CardFormatBuilder {...cardFormatBuilderData}/> : 
                 (<span>
                     <CardBuilder {...cardBuildData}/>
@@ -100,7 +93,7 @@ class BuildContainer extends Component {
             exportData = {
                 id: this.props.fileId,
                 results: builtResultsData,
-                format: this.state.cardFormat
+                format: this.props.cardFormat
             }
         
         return exportData;
@@ -116,7 +109,7 @@ class BuildContainer extends Component {
                 
             for (var i = 0; i < keysLen; i++) {
                 revealOptionDataArray.push({
-                    'id': this.state.cardFormat[i],
+                    'id': this.props.cardFormat[i],
                     'value': this.props.revealOptionData[y].formElementData[i],
                     'type': 'text'
                 });
@@ -133,7 +126,8 @@ class BuildContainer extends Component {
 
 const mapStateToProps = state => ({
     revealOptionData: state.build.revealOptionData,
-    fileId: state.build.fileId
+    fileId: state.build.fileId,
+    cardFormat: state.build.cardFormat
 });
 
-export default connect(mapStateToProps, { buildCard, updateBuildFileId })(BuildContainer);
+export default connect(mapStateToProps, { buildCard, updateBuildFileId, updateBuildCardFormat })(BuildContainer);
