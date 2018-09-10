@@ -3,10 +3,9 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { buildCard, updateBuildFileId, updateBuildCardFormat } from '../../../actions/buildActions';
 
-import Build from './Build';
+import CardFileNameBuilder from 'organisms/CardFileNameBuilder';
 import CardFormatBuilder from 'organisms/CardFormatBuilder';
 import CardBuilder from 'organisms/CardBuilder';
-import Button from 'buttons/Button';
 
 class BuildContainer extends Component {
     constructor(props) {
@@ -17,7 +16,6 @@ class BuildContainer extends Component {
         this.exportFile = this.exportFile.bind(this);
         this._processBuildData = this._processBuildData.bind(this);
         this.handelFileIdChange = this.handelFileIdChange.bind(this);
-
     }
 
     nextCard(formState) {
@@ -39,12 +37,6 @@ class BuildContainer extends Component {
                 exportFile: this.exportFile,
                 ...this.props
             },
-            renderedBuilder = this.props.cardFormat === undefined ? 
-                <CardFormatBuilder {...cardFormatBuilderData}/> : 
-                (<span>
-                    <CardBuilder {...cardBuildData}/>
-                    
-                </span>),
             fileIdData = {
                 label: 'Filename',
                 onChange: this.handelFileIdChange,
@@ -58,8 +50,9 @@ class BuildContainer extends Component {
 
         return (
             <div>
-                <Build {...buildData}/>
-                {renderedBuilder}
+                <CardFileNameBuilder {...buildData}/>
+                <CardFormatBuilder {...cardFormatBuilderData}/>
+                <CardBuilder {...cardBuildData}/>
             </div>
         );
     }

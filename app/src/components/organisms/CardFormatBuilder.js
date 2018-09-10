@@ -53,6 +53,14 @@ class CardFormatBuilder extends Component {
 
         return (
             <StyleWrapper>
+                    <h2>Card Format</h2>
+                    <p>
+                        Here we configure the format each of the cards will have.
+                        <br/>
+                        <br/>
+                        The button labels you build here will be the options clicked to show the hidden answers.  Every card in this set will have the same format, so be sure to include all the options, even if some cards might not have them (like "Hint" or "Misc.").
+                    </p>
+                        
                     <DynamicFormElementFactory {...dynamicFormElementFactoryData}/>
                     <Button {...saveFormatButtonData}/>
             </StyleWrapper>
