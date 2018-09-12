@@ -10,7 +10,7 @@
 <a name="status"></a>
 Current Version: Beta<br/>
 All slated features for v1.0.0 are present and currently undergoing testing.
-Software is feature complete but likely to contain a number of known or unknown bugs.
+Software is feature complete for v1.0 but likely to contain a number of known or unknown bugs.
 
 ## Feature Status
 <a name="features"></a>
