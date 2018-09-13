@@ -1,0 +1,1454 @@
+{
+    "id": "Japanese-Syllabary",
+    "results": [
+        {
+            "revealOptionData": [
+                {
+                    "id": "Romaji",
+                    "value": "a",
+                    "type": "text"
+                },
+                {
+                    "id": "Hiragana",
+                    "value": "あ",
+                    "type": "text"
+                },
+                {
+                    "id": "Katana",
+                    "value": "ア",
+                    "type": "text"
+                }
+            ]
+        },
+        {
+            "revealOptionData": [
+                {
+                    "id": "Romaji",
+                    "value": "i",
+                    "type": "text"
+                },
+                {
+                    "id": "Hiragana",
+                    "value": "い",
+                    "type": "text"
+                },
+                {
+                    "id": "Katana",
+                    "value": "イ",
+                    "type": "text"
+                }
+            ]
+        },
+        {
+            "revealOptionData": [
+                {
+                    "id": "Romaji",
+                    "value": "u",
+                    "type": "text"
+                },
+                {
+                    "id": "Hiragana",
+                    "value": "う",
+                    "type": "text"
+                },
+                {
+                    "id": "Katana",
+                    "value": "ウ",
+                    "type": "text"
+                }
+            ]
+        },
+        {
+            "revealOptionData": [
+                {
+                    "id": "Romaji",
+                    "value": "e",
+                    "type": "text"
+                },
+                {
+                    "id": "Hiragana",
+                    "value": "え",
+                    "type": "text"
+                },
+                {
+                    "id": "Katana",
+                    "value": "エ",
+                    "type": "text"
+                }
+            ]
+        },
+        {
+            "revealOptionData": [
+                {
+                    "id": "Romaji",
+                    "value": "o",
+                    "type": "text"
+                },
+                {
+                    "id": "Hiragana",
+                    "value": "お",
+                    "type": "text"
+                },
+                {
+                    "id": "Katana",
+                    "value": "オ",
+                    "type": "text"
+                }
+            ]
+        },
+        {
+            "revealOptionData": [
+                {
+                    "id": "Romaji",
+                    "value": "ka",
+                    "type": "text"
+                },
+                {
+                    "id": "Hiragana",
+                    "value": "か",
+                    "type": "text"
+                },
+                {
+                    "id": "Katana",
+                    "value": "カ",
+                    "type": "text"
+                }
+            ]
+        },
+        {
+            "revealOptionData": [
+                {
+                    "id": "Romaji",
+                    "value": "ki",
+                    "type": "text"
+                },
+                {
+                    "id": "Hiragana",
+                    "value": "き",
+                    "type": "text"
+                },
+                {
+                    "id": "Katana",
+                    "value": "キ",
+                    "type": "text"
+                }
+            ]
+        },
+        {
+            "revealOptionData": [
+                {
+                    "id": "Romaji",
+                    "value": "ku",
+                    "type": "text"
+                },
+                {
+                    "id": "Hiragana",
+                    "value": "く",
+                    "type": "text"
+                },
+                {
+                    "id": "Katana",
+                    "value": "ク",
+                    "type": "text"
+                }
+            ]
+        },
+        {
+            "revealOptionData": [
+                {
+                    "id": "Romaji",
+                    "value": "ke",
+                    "type": "text"
+                },
+                {
+                    "id": "Hiragana",
+                    "value": "け",
+                    "type": "text"
+                },
+                {
+                    "id": "Katana",
+                    "value": "ケ",
+                    "type": "text"
+                }
+            ]
+        },
+        {
+            "revealOptionData": [
+                {
+                    "id": "Romaji",
+                    "value": "ko",
+                    "type": "text"
+                },
+                {
+                    "id": "Hiragana",
+                    "value": "こ",
+                    "type": "text"
+                },
+                {
+                    "id": "Katana",
+                    "value": "コ",
+                    "type": "text"
+                }
+            ]
+        },
+        {
+            "revealOptionData": [
+                {
+                    "id": "Romaji",
+                    "value": "ga",
+                    "type": "text"
+                },
+                {
+                    "id": "Hiragana",
+                    "value": "が",
+                    "type": "text"
+                },
+                {
+                    "id": "Katana",
+                    "value": "ガ",
+                    "type": "text"
+                }
+            ]
+        },
+        {
+            "revealOptionData": [
+                {
+                    "id": "Romaji",
+                    "value": "gi",
+                    "type": "text"
+                },
+                {
+                    "id": "Hiragana",
+                    "value": "ぎ",
+                    "type": "text"
+                },
+                {
+                    "id": "Katana",
+                    "value": "ギ",
+                    "type": "text"
+                }
+            ]
+        },
+        {
+            "revealOptionData": [
+                {
+                    "id": "Romaji",
+                    "value": "gu",
+                    "type": "text"
+                },
+                {
+                    "id": "Hiragana",
+                    "value": "ぐ",
+                    "type": "text"
+                },
+                {
+                    "id": "Katana",
+                    "value": "グ",
+                    "type": "text"
+                }
+            ]
+        },
+        {
+            "revealOptionData": [
+                {
+                    "id": "Romaji",
+                    "value": "ge",
+                    "type": "text"
+                },
+                {
+                    "id": "Hiragana",
+                    "value": "げ",
+                    "type": "text"
+                },
+                {
+                    "id": "Katana",
+                    "value": "ゲ",
+                    "type": "text"
+                }
+            ]
+        },
+        {
+            "revealOptionData": [
+                {
+                    "id": "Romaji",
+                    "value": "go",
+                    "type": "text"
+                },
+                {
+                    "id": "Hiragana",
+                    "value": "ご",
+                    "type": "text"
+                },
+                {
+                    "id": "Katana",
+                    "value": "ゴ",
+                    "type": "text"
+                }
+            ]
+        },
+        {
+            "revealOptionData": [
+                {
+                    "id": "Romaji",
+                    "value": "sa",
+                    "type": "text"
+                },
+                {
+                    "id": "Hiragana",
+                    "value": "さ",
+                    "type": "text"
+                },
+                {
+                    "id": "Katana",
+                    "value": "サ",
+                    "type": "text"
+                }
+            ]
+        },
+        {
+            "revealOptionData": [
+                {
+                    "id": "Romaji",
+                    "value": "si/shi",
+                    "type": "text"
+                },
+                {
+                    "id": "Hiragana",
+                    "value": "し",
+                    "type": "text"
+                },
+                {
+                    "id": "Katana",
+                    "value": "シ",
+                    "type": "text"
+                }
+            ]
+        },
+        {
+            "revealOptionData": [
+                {
+                    "id": "Romaji",
+                    "value": "su",
+                    "type": "text"
+                },
+                {
+                    "id": "Hiragana",
+                    "value": "す",
+                    "type": "text"
+                },
+                {
+                    "id": "Katana",
+                    "value": "ス",
+                    "type": "text"
+                }
+            ]
+        },
+        {
+            "revealOptionData": [
+                {
+                    "id": "Romaji",
+                    "value": "se",
+                    "type": "text"
+                },
+                {
+                    "id": "Hiragana",
+                    "value": "せ",
+                    "type": "text"
+                },
+                {
+                    "id": "Katana",
+                    "value": "セ",
+                    "type": "text"
+                }
+            ]
+        },
+        {
+            "revealOptionData": [
+                {
+                    "id": "Romaji",
+                    "value": "so",
+                    "type": "text"
+                },
+                {
+                    "id": "Hiragana",
+                    "value": "そ",
+                    "type": "text"
+                },
+                {
+                    "id": "Katana",
+                    "value": "ソ",
+                    "type": "text"
+                }
+            ]
+        },
+        {
+            "revealOptionData": [
+                {
+                    "id": "Romaji",
+                    "value": "za",
+                    "type": "text"
+                },
+                {
+                    "id": "Hiragana",
+                    "value": "ざ",
+                    "type": "text"
+                },
+                {
+                    "id": "Katana",
+                    "value": "ザ",
+                    "type": "text"
+                }
+            ]
+        },
+        {
+            "revealOptionData": [
+                {
+                    "id": "Romaji",
+                    "value": "zi/ji",
+                    "type": "text"
+                },
+                {
+                    "id": "Hiragana",
+                    "value": "じ",
+                    "type": "text"
+                },
+                {
+                    "id": "Katana",
+                    "value": "ジ",
+                    "type": "text"
+                }
+            ]
+        },
+        {
+            "revealOptionData": [
+                {
+                    "id": "Romaji",
+                    "value": "zu",
+                    "type": "text"
+                },
+                {
+                    "id": "Hiragana",
+                    "value": "ず",
+                    "type": "text"
+                },
+                {
+                    "id": "Katana",
+                    "value": "ズ",
+                    "type": "text"
+                }
+            ]
+        },
+        {
+            "revealOptionData": [
+                {
+                    "id": "Romaji",
+                    "value": "ze",
+                    "type": "text"
+                },
+                {
+                    "id": "Hiragana",
+                    "value": "ぜ",
+                    "type": "text"
+                },
+                {
+                    "id": "Katana",
+                    "value": "ゼ",
+                    "type": "text"
+                }
+            ]
+        },
+        {
+            "revealOptionData": [
+                {
+                    "id": "Romaji",
+                    "value": "zo",
+                    "type": "text"
+                },
+                {
+                    "id": "Hiragana",
+                    "value": "ぞ",
+                    "type": "text"
+                },
+                {
+                    "id": "Katana",
+                    "value": "ゾ",
+                    "type": "text"
+                }
+            ]
+        },
+        {
+            "revealOptionData": [
+                {
+                    "id": "Romaji",
+                    "value": "ta",
+                    "type": "text"
+                },
+                {
+                    "id": "Hiragana",
+                    "value": "た",
+                    "type": "text"
+                },
+                {
+                    "id": "Katana",
+                    "value": "タ",
+                    "type": "text"
+                }
+            ]
+        },
+        {
+            "revealOptionData": [
+                {
+                    "id": "Romaji",
+                    "value": "ti/chi",
+                    "type": "text"
+                },
+                {
+                    "id": "Hiragana",
+                    "value": "ち",
+                    "type": "text"
+                },
+                {
+                    "id": "Katana",
+                    "value": "チ",
+                    "type": "text"
+                }
+            ]
+        },
+        {
+            "revealOptionData": [
+                {
+                    "id": "Romaji",
+                    "value": "tu/tsu",
+                    "type": "text"
+                },
+                {
+                    "id": "Hiragana",
+                    "value": "つ",
+                    "type": "text"
+                },
+                {
+                    "id": "Katana",
+                    "value": "ツ",
+                    "type": "text"
+                }
+            ]
+        },
+        {
+            "revealOptionData": [
+                {
+                    "id": "Romaji",
+                    "value": "te",
+                    "type": "text"
+                },
+                {
+                    "id": "Hiragana",
+                    "value": "て",
+                    "type": "text"
+                },
+                {
+                    "id": "Katana",
+                    "value": "テ",
+                    "type": "text"
+                }
+            ]
+        },
+        {
+            "revealOptionData": [
+                {
+                    "id": "Romaji",
+                    "value": "to",
+                    "type": "text"
+                },
+                {
+                    "id": "Hiragana",
+                    "value": "と",
+                    "type": "text"
+                },
+                {
+                    "id": "Katana",
+                    "value": "ト",
+                    "type": "text"
+                }
+            ]
+        },
+        {
+            "revealOptionData": [
+                {
+                    "id": "Romaji",
+                    "value": "da",
+                    "type": "text"
+                },
+                {
+                    "id": "Hiragana",
+                    "value": "だ",
+                    "type": "text"
+                },
+                {
+                    "id": "Katana",
+                    "value": "ダ",
+                    "type": "text"
+                }
+            ]
+        },
+        {
+            "revealOptionData": [
+                {
+                    "id": "Romaji",
+                    "value": "di",
+                    "type": "text"
+                },
+                {
+                    "id": "Hiragana",
+                    "value": "ぢ",
+                    "type": "text"
+                },
+                {
+                    "id": "Katana",
+                    "value": "ヂ",
+                    "type": "text"
+                }
+            ]
+        },
+        {
+            "revealOptionData": [
+                {
+                    "id": "Romaji",
+                    "value": "du",
+                    "type": "text"
+                },
+                {
+                    "id": "Hiragana",
+                    "value": "づ",
+                    "type": "text"
+                },
+                {
+                    "id": "Katana",
+                    "value": "ヅ",
+                    "type": "text"
+                }
+            ]
+        },
+        {
+            "revealOptionData": [
+                {
+                    "id": "Romaji",
+                    "value": "de",
+                    "type": "text"
+                },
+                {
+                    "id": "Hiragana",
+                    "value": "で",
+                    "type": "text"
+                },
+                {
+                    "id": "Katana",
+                    "value": "デ",
+                    "type": "text"
+                }
+            ]
+        },
+        {
+            "revealOptionData": [
+                {
+                    "id": "Romaji",
+                    "value": "do",
+                    "type": "text"
+                },
+                {
+                    "id": "Hiragana",
+                    "value": "ど",
+                    "type": "text"
+                },
+                {
+                    "id": "Katana",
+                    "value": "ド",
+                    "type": "text"
+                }
+            ]
+        },
+        {
+            "revealOptionData": [
+                {
+                    "id": "Romaji",
+                    "value": "da",
+                    "type": "text"
+                },
+                {
+                    "id": "Hiragana",
+                    "value": "だ",
+                    "type": "text"
+                },
+                {
+                    "id": "Katana",
+                    "value": "ダ",
+                    "type": "text"
+                }
+            ]
+        },
+        {
+            "revealOptionData": [
+                {
+                    "id": "Romaji",
+                    "value": "di",
+                    "type": "text"
+                },
+                {
+                    "id": "Hiragana",
+                    "value": "ぢ",
+                    "type": "text"
+                },
+                {
+                    "id": "Katana",
+                    "value": "ヂ",
+                    "type": "text"
+                }
+            ]
+        },
+        {
+            "revealOptionData": [
+                {
+                    "id": "Romaji",
+                    "value": "du",
+                    "type": "text"
+                },
+                {
+                    "id": "Hiragana",
+                    "value": "づ",
+                    "type": "text"
+                },
+                {
+                    "id": "Katana",
+                    "value": "ヅ",
+                    "type": "text"
+                }
+            ]
+        },
+        {
+            "revealOptionData": [
+                {
+                    "id": "Romaji",
+                    "value": "de",
+                    "type": "text"
+                },
+                {
+                    "id": "Hiragana",
+                    "value": "で",
+                    "type": "text"
+                },
+                {
+                    "id": "Katana",
+                    "value": "デ",
+                    "type": "text"
+                }
+            ]
+        },
+        {
+            "revealOptionData": [
+                {
+                    "id": "Romaji",
+                    "value": "do",
+                    "type": "text"
+                },
+                {
+                    "id": "Hiragana",
+                    "value": "ど",
+                    "type": "text"
+                },
+                {
+                    "id": "Katana",
+                    "value": "ド",
+                    "type": "text"
+                }
+            ]
+        },
+        {
+            "revealOptionData": [
+                {
+                    "id": "Romaji",
+                    "value": "na",
+                    "type": "text"
+                },
+                {
+                    "id": "Hiragana",
+                    "value": "な",
+                    "type": "text"
+                },
+                {
+                    "id": "Katana",
+                    "value": "ナ",
+                    "type": "text"
+                }
+            ]
+        },
+        {
+            "revealOptionData": [
+                {
+                    "id": "Romaji",
+                    "value": "ni",
+                    "type": "text"
+                },
+                {
+                    "id": "Hiragana",
+                    "value": "に",
+                    "type": "text"
+                },
+                {
+                    "id": "Katana",
+                    "value": "ニ",
+                    "type": "text"
+                }
+            ]
+        },
+        {
+            "revealOptionData": [
+                {
+                    "id": "Romaji",
+                    "value": "nu",
+                    "type": "text"
+                },
+                {
+                    "id": "Hiragana",
+                    "value": "ぬ",
+                    "type": "text"
+                },
+                {
+                    "id": "Katana",
+                    "value": "ヌ",
+                    "type": "text"
+                }
+            ]
+        },
+        {
+            "revealOptionData": [
+                {
+                    "id": "Romaji",
+                    "value": "ne",
+                    "type": "text"
+                },
+                {
+                    "id": "Hiragana",
+                    "value": "ね",
+                    "type": "text"
+                },
+                {
+                    "id": "Katana",
+                    "value": "ネ",
+                    "type": "text"
+                }
+            ]
+        },
+        {
+            "revealOptionData": [
+                {
+                    "id": "Romaji",
+                    "value": "no",
+                    "type": "text"
+                },
+                {
+                    "id": "Hiragana",
+                    "value": "の",
+                    "type": "text"
+                },
+                {
+                    "id": "Katana",
+                    "value": "ノ",
+                    "type": "text"
+                }
+            ]
+        },
+        {
+            "revealOptionData": [
+                {
+                    "id": "Romaji",
+                    "value": "ha",
+                    "type": "text"
+                },
+                {
+                    "id": "Hiragana",
+                    "value": "は",
+                    "type": "text"
+                },
+                {
+                    "id": "Katana",
+                    "value": "ハ",
+                    "type": "text"
+                }
+            ]
+        },
+        {
+            "revealOptionData": [
+                {
+                    "id": "Romaji",
+                    "value": "hi",
+                    "type": "text"
+                },
+                {
+                    "id": "Hiragana",
+                    "value": "ひ",
+                    "type": "text"
+                },
+                {
+                    "id": "Katana",
+                    "value": "ヒ",
+                    "type": "text"
+                }
+            ]
+        },
+        {
+            "revealOptionData": [
+                {
+                    "id": "Romaji",
+                    "value": "hu/fu",
+                    "type": "text"
+                },
+                {
+                    "id": "Hiragana",
+                    "value": "ふ",
+                    "type": "text"
+                },
+                {
+                    "id": "Katana",
+                    "value": "フ",
+                    "type": "text"
+                }
+            ]
+        },
+        {
+            "revealOptionData": [
+                {
+                    "id": "Romaji",
+                    "value": "he",
+                    "type": "text"
+                },
+                {
+                    "id": "Hiragana",
+                    "value": "へ",
+                    "type": "text"
+                },
+                {
+                    "id": "Katana",
+                    "value": "ヘ",
+                    "type": "text"
+                }
+            ]
+        },
+        {
+            "revealOptionData": [
+                {
+                    "id": "Romaji",
+                    "value": "ho",
+                    "type": "text"
+                },
+                {
+                    "id": "Hiragana",
+                    "value": "ほ",
+                    "type": "text"
+                },
+                {
+                    "id": "Katana",
+                    "value": "ホ",
+                    "type": "text"
+                }
+            ]
+        },
+        {
+            "revealOptionData": [
+                {
+                    "id": "Romaji",
+                    "value": "ba",
+                    "type": "text"
+                },
+                {
+                    "id": "Hiragana",
+                    "value": "ば",
+                    "type": "text"
+                },
+                {
+                    "id": "Katana",
+                    "value": "バ",
+                    "type": "text"
+                }
+            ]
+        },
+        {
+            "revealOptionData": [
+                {
+                    "id": "Romaji",
+                    "value": "bi",
+                    "type": "text"
+                },
+                {
+                    "id": "Hiragana",
+                    "value": "び",
+                    "type": "text"
+                },
+                {
+                    "id": "Katana",
+                    "value": "ビ",
+                    "type": "text"
+                }
+            ]
+        },
+        {
+            "revealOptionData": [
+                {
+                    "id": "Romaji",
+                    "value": "bu",
+                    "type": "text"
+                },
+                {
+                    "id": "Hiragana",
+                    "value": "ぶ",
+                    "type": "text"
+                },
+                {
+                    "id": "Katana",
+                    "value": "ブ",
+                    "type": "text"
+                }
+            ]
+        },
+        {
+            "revealOptionData": [
+                {
+                    "id": "Romaji",
+                    "value": "be",
+                    "type": "text"
+                },
+                {
+                    "id": "Hiragana",
+                    "value": "べ",
+                    "type": "text"
+                },
+                {
+                    "id": "Katana",
+                    "value": "ベ",
+                    "type": "text"
+                }
+            ]
+        },
+        {
+            "revealOptionData": [
+                {
+                    "id": "Romaji",
+                    "value": "bo",
+                    "type": "text"
+                },
+                {
+                    "id": "Hiragana",
+                    "value": "ぼ",
+                    "type": "text"
+                },
+                {
+                    "id": "Katana",
+                    "value": "ボ",
+                    "type": "text"
+                }
+            ]
+        },
+        {
+            "revealOptionData": [
+                {
+                    "id": "Romaji",
+                    "value": "pa",
+                    "type": "text"
+                },
+                {
+                    "id": "Hiragana",
+                    "value": "ぱ",
+                    "type": "text"
+                },
+                {
+                    "id": "Katana",
+                    "value": "パ",
+                    "type": "text"
+                }
+            ]
+        },
+        {
+            "revealOptionData": [
+                {
+                    "id": "Romaji",
+                    "value": "pi",
+                    "type": "text"
+                },
+                {
+                    "id": "Hiragana",
+                    "value": "ぴ",
+                    "type": "text"
+                },
+                {
+                    "id": "Katana",
+                    "value": "ピ",
+                    "type": "text"
+                }
+            ]
+        },
+        {
+            "revealOptionData": [
+                {
+                    "id": "Romaji",
+                    "value": "pu",
+                    "type": "text"
+                },
+                {
+                    "id": "Hiragana",
+                    "value": "ぷ",
+                    "type": "text"
+                },
+                {
+                    "id": "Katana",
+                    "value": "プ",
+                    "type": "text"
+                }
+            ]
+        },
+        {
+            "revealOptionData": [
+                {
+                    "id": "Romaji",
+                    "value": "pe",
+                    "type": "text"
+                },
+                {
+                    "id": "Hiragana",
+                    "value": "ぺ",
+                    "type": "text"
+                },
+                {
+                    "id": "Katana",
+                    "value": "ペ",
+                    "type": "text"
+                }
+            ]
+        },
+        {
+            "revealOptionData": [
+                {
+                    "id": "Romaji",
+                    "value": "po",
+                    "type": "text"
+                },
+                {
+                    "id": "Hiragana",
+                    "value": "ぽ",
+                    "type": "text"
+                },
+                {
+                    "id": "Katana",
+                    "value": "ポ",
+                    "type": "text"
+                }
+            ]
+        },
+        {
+            "revealOptionData": [
+                {
+                    "id": "Romaji",
+                    "value": "ma",
+                    "type": "text"
+                },
+                {
+                    "id": "Hiragana",
+                    "value": "ま",
+                    "type": "text"
+                },
+                {
+                    "id": "Katana",
+                    "value": "マ",
+                    "type": "text"
+                }
+            ]
+        },
+        {
+            "revealOptionData": [
+                {
+                    "id": "Romaji",
+                    "value": "mi",
+                    "type": "text"
+                },
+                {
+                    "id": "Hiragana",
+                    "value": "み",
+                    "type": "text"
+                },
+                {
+                    "id": "Katana",
+                    "value": "ミ",
+                    "type": "text"
+                }
+            ]
+        },
+        {
+            "revealOptionData": [
+                {
+                    "id": "Romaji",
+                    "value": "mu",
+                    "type": "text"
+                },
+                {
+                    "id": "Hiragana",
+                    "value": "む",
+                    "type": "text"
+                },
+                {
+                    "id": "Katana",
+                    "value": "ム",
+                    "type": "text"
+                }
+            ]
+        },
+        {
+            "revealOptionData": [
+                {
+                    "id": "Romaji",
+                    "value": "me",
+                    "type": "text"
+                },
+                {
+                    "id": "Hiragana",
+                    "value": "め",
+                    "type": "text"
+                },
+                {
+                    "id": "Katana",
+                    "value": "メ",
+                    "type": "text"
+                }
+            ]
+        },
+        {
+            "revealOptionData": [
+                {
+                    "id": "Romaji",
+                    "value": "mo",
+                    "type": "text"
+                },
+                {
+                    "id": "Hiragana",
+                    "value": "も",
+                    "type": "text"
+                },
+                {
+                    "id": "Katana",
+                    "value": "モ",
+                    "type": "text"
+                }
+            ]
+        },
+        {
+            "revealOptionData": [
+                {
+                    "id": "Romaji",
+                    "value": "ya",
+                    "type": "text"
+                },
+                {
+                    "id": "Hiragana",
+                    "value": "や",
+                    "type": "text"
+                },
+                {
+                    "id": "Katana",
+                    "value": "ヤ",
+                    "type": "text"
+                }
+            ]
+        },
+        {
+            "revealOptionData": [
+                {
+                    "id": "Romaji",
+                    "value": "yu",
+                    "type": "text"
+                },
+                {
+                    "id": "Hiragana",
+                    "value": "ゆ",
+                    "type": "text"
+                },
+                {
+                    "id": "Katana",
+                    "value": "ユ",
+                    "type": "text"
+                }
+            ]
+        },
+        {
+            "revealOptionData": [
+                {
+                    "id": "Romaji",
+                    "value": "yo",
+                    "type": "text"
+                },
+                {
+                    "id": "Hiragana",
+                    "value": "よ",
+                    "type": "text"
+                },
+                {
+                    "id": "Katana",
+                    "value": "ヨ",
+                    "type": "text"
+                }
+            ]
+        },
+        {
+            "revealOptionData": [
+                {
+                    "id": "Romaji",
+                    "value": "ra",
+                    "type": "text"
+                },
+                {
+                    "id": "Hiragana",
+                    "value": "ら",
+                    "type": "text"
+                },
+                {
+                    "id": "Katana",
+                    "value": "ラ",
+                    "type": "text"
+                }
+            ]
+        },
+        {
+            "revealOptionData": [
+                {
+                    "id": "Romaji",
+                    "value": "ri",
+                    "type": "text"
+                },
+                {
+                    "id": "Hiragana",
+                    "value": "り",
+                    "type": "text"
+                },
+                {
+                    "id": "Katana",
+                    "value": "リ",
+                    "type": "text"
+                }
+            ]
+        },
+        {
+            "revealOptionData": [
+                {
+                    "id": "Romaji",
+                    "value": "ru",
+                    "type": "text"
+                },
+                {
+                    "id": "Hiragana",
+                    "value": "る",
+                    "type": "text"
+                },
+                {
+                    "id": "Katana",
+                    "value": "ル",
+                    "type": "text"
+                }
+            ]
+        },
+        {
+            "revealOptionData": [
+                {
+                    "id": "Romaji",
+                    "value": "re",
+                    "type": "text"
+                },
+                {
+                    "id": "Hiragana",
+                    "value": "れ",
+                    "type": "text"
+                },
+                {
+                    "id": "Katana",
+                    "value": "レ",
+                    "type": "text"
+                }
+            ]
+        },
+        {
+            "revealOptionData": [
+                {
+                    "id": "Romaji",
+                    "value": "ro",
+                    "type": "text"
+                },
+                {
+                    "id": "Hiragana",
+                    "value": "ろ",
+                    "type": "text"
+                },
+                {
+                    "id": "Katana",
+                    "value": "ロ",
+                    "type": "text"
+                }
+            ]
+        },
+        {
+            "revealOptionData": [
+                {
+                    "id": "Romaji",
+                    "value": "wa",
+                    "type": "text"
+                },
+                {
+                    "id": "Hiragana",
+                    "value": "わ",
+                    "type": "text"
+                },
+                {
+                    "id": "Katana",
+                    "value": "ワ",
+                    "type": "text"
+                }
+            ]
+        },
+        {
+            "revealOptionData": [
+                {
+                    "id": "Romaji",
+                    "value": "wo",
+                    "type": "text"
+                },
+                {
+                    "id": "Hiragana",
+                    "value": "を",
+                    "type": "text"
+                },
+                {
+                    "id": "Katana",
+                    "value": "ヲ",
+                    "type": "text"
+                }
+            ]
+        },
+        {
+            "revealOptionData": [
+                {
+                    "id": "Romaji",
+                    "value": "n",
+                    "type": "text"
+                },
+                {
+                    "id": "Hiragana",
+                    "value": "ん",
+                    "type": "text"
+                },
+                {
+                    "id": "Katana",
+                    "value": "ン",
+                    "type": "text"
+                }
+            ]
+        }
+    ],
+    "format": {
+        "0": "Romaji",
+        "1": "Hiragana",
+        "2": "Katana"
+    }
+}
