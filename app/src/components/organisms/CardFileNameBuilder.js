@@ -1,8 +1,13 @@
 import React from 'react';
 
 import InputField from '../formElements/InputField';
+import NavigationArrow from '../buttons/NavigationArrow';
 
 function BuildFileName (props) {
+    let navigationArrowData = {
+        type: 'next',
+        onClickFunction: props.handleBuildFileNameNext
+    }
     return (
         <div>
             <h1>Build</h1>
@@ -20,6 +25,7 @@ function BuildFileName (props) {
             </p>
 
             <InputField {...props.fileIdData} />
+            <NavigationArrow {...navigationArrowData} />
         </div>
     );
 }

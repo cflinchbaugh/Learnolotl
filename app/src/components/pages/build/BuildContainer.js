@@ -16,6 +16,12 @@ class BuildContainer extends Component {
         this.exportFile = this.exportFile.bind(this);
         this._processBuildData = this._processBuildData.bind(this);
         this.handelFileIdChange = this.handelFileIdChange.bind(this);
+        this.handleBuildFileNameNext = this.handleBuildFileNameNext.bind(this);
+        this.handleCardFormatNext = this.handleCardFormatNext.bind(this);
+
+        this.state = {
+            show: 'CardFileNameBuilder'
+        }
     }
 
     nextCard(formState) {
@@ -25,10 +31,23 @@ class BuildContainer extends Component {
     saveFormat(format) {
         this.props.updateBuildCardFormat(format);
     }
+
+    handleBuildFileNameNext() {
+        this.setState({
+            show: 'CardFormatBuilder'
+        })
+    }
+
+    handleCardFormatNext() {
+        this.setState({
+            show: 'CardBuilder'
+        })
+    }
     
     render() {
         let cardFormatBuilderData = {
                 saveFormat: this.saveFormat,
+                handleCardFormatNext: this.handleCardFormatNext,
                 ...this.props
             },
             cardBuildData = {
@@ -44,17 +63,30 @@ class BuildContainer extends Component {
             },
             buildData = {
                 fileIdData: {...fileIdData},
+                handleBuildFileNameNext: this.handleBuildFileNameNext
             }
 
-            
+        if (this.state.show === 'CardFileNameBuilder') {
+            return (
+                <div>
+                    <CardFileNameBuilder {...buildData}/>
+                </div>    
+            )
+        } else if (this.state.show === 'CardFormatBuilder') {
+            return (
+                <div>
+                    <CardFormatBuilder {...cardFormatBuilderData}/>
+                </div>
+            );
+        } else {
+            return (
+                <div>
+                    <CardBuilder {...cardBuildData}/>
+                </div>
+            );
 
-        return (
-            <div>
-                <CardFileNameBuilder {...buildData}/>
-                <CardFormatBuilder {...cardFormatBuilderData}/>
-                <CardBuilder {...cardBuildData}/>
-            </div>
-        );
+        }
+
     }
 
     handelFileIdChange(e) {
@@ -74,6 +106,10 @@ class BuildContainer extends Component {
         linkElement.setAttribute('href', dataUri);
         linkElement.setAttribute('download', exportFileDefaultName);
         linkElement.click();
+
+        this.setState({
+            show: 'CardFileNameBuilder'
+        })
     }
 
     _buildExportData() {

@@ -4,7 +4,7 @@ import { connect } from 'react-redux';
 import { updateFormatFormElementData, updateFormatFormElements } from '../../actions/buildActions';
 
 import DynamicFormElementFactory from './DynamicFormElementFactory';
-import Button from 'buttons/Button';
+import NavigationArrow from '../buttons/NavigationArrow';
 
 const StyleWrapper = styled.div`
 `
@@ -47,7 +47,7 @@ class CardFormatBuilder extends Component {
                 
             },
             saveFormatButtonData = {
-                label: 'Save Format',
+                type: 'next',
                 onClickFunction: this.saveFormat
             }
 
@@ -62,7 +62,7 @@ class CardFormatBuilder extends Component {
                     </p>
                         
                     <DynamicFormElementFactory {...dynamicFormElementFactoryData}/>
-                    <Button {...saveFormatButtonData}/>
+                    <NavigationArrow {...saveFormatButtonData}/>
             </StyleWrapper>
 
         )
@@ -70,6 +70,7 @@ class CardFormatBuilder extends Component {
 
     saveFormat() {
         this.props.saveFormat(this.props.formatFormElementData);
+        this.props.handleCardFormatNext();
     }
 
     handleInputChange(formatFormElementData) {
