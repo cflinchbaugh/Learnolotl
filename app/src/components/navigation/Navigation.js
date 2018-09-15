@@ -35,7 +35,6 @@ function Navigation () {
     return (
         <StyleWrapper>
             <div className="navigation-wrapper">
-                <NavLinkStyled exact to="/">Home</NavLinkStyled>
                 <NavLinkStyled to="/learn">Learn</NavLinkStyled>
                 <NavLinkStyled to="/build">Build</NavLinkStyled>
                 <NavLinkStyled to="/about">About</NavLinkStyled>

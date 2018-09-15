@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 
-import DeckNavigation from 'organisms/DeckNavigation';
+import DeckNavigation from 'learn/DeckNavigation';
 
 const StyleWrapper = styled.div`
 `

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import Deck from 'organisms/Deck';
+import Deck from 'learn/Deck';
 import styled from 'styled-components';
-import NavigationButton from 'buttons/NavigationArrow.js';
+import NavigationArrow from 'buttons/NavigationArrow.js';
 import { connect } from 'react-redux';
 import { fetchCard } from '../../actions/cardActions';
 
@@ -85,13 +85,13 @@ class DeckNavigation extends Component {
 
                     <div className="navigation-wrapper">
                         <div className="navigation-button-wrapper">
-                            <NavigationButton 
+                            <NavigationArrow 
                                 type="previous"
                                 onClickFunction={this.handleClickPrevious}/>
                         </div>
 
                         <div className="navigation-button-wrapper">
-                            <NavigationButton 
+                            <NavigationArrow 
                                 type="next"
                                 onClickFunction={this.handleClickNext}/>
                         </div>

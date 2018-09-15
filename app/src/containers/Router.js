@@ -5,7 +5,6 @@ import { BrowserRouter } from 'react-router-dom';
 import Route from 'react-router-dom/Route';
 
 import Navigation from '../components/navigation/Navigation';
-import Home from '../components/pages/Home';
 import LearnContainer from '../components/pages/learn/LearnContainer';
 import LearnFlashcardsContainer from '../components/pages/learn/LearnFlashcardsContainer'
 import BuildContainer from '../components/pages/build/BuildContainer';
@@ -25,7 +24,7 @@ class Router extends Component {
                 <Navigation/>
                 
                 <StyleWrapper>
-                    <Route path="/" exact component={Home}/>
+                    <Route path="/" exact component={LearnContainer}/>
 
                     <Route path="/learn" exact component={LearnContainer}/>
                     <Route path="/learn/flashcards" component={LearnFlashcardsContainer}/>

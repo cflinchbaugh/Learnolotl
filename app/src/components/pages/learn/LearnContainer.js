@@ -9,6 +9,7 @@ import { replaceFileIds } from '../../../actions/cardActions';
 import { updateMode } from '../../../actions/cardActions';
 import { updateModeOptions } from '../../../actions/cardActions';
 import { updateFormat } from '../../../actions/cardActions';
+import NavigationArrow from 'buttons/NavigationArrow';
 
 import Listing from 'listings/Listing';
 import Learn from './Learn';
@@ -95,7 +96,11 @@ class LearnContainer extends Component {
 
     render() {
         let fileListing = this.props.sampleData ? 
-                <div>Sample Data</div> :
+                (
+                    <div>
+                        Learn Japanese (Sample Data)
+                    </div>
+                ) :
                 <Listing />,
             learnData = {
                 uploaderData: {
@@ -130,7 +135,7 @@ class LearnContainer extends Component {
                         mode: this.props.mode
                     }    
                 }}>
-                    Flashcards
+                    <NavigationArrow type="next"/>
                 </Link>
             </div>
         );

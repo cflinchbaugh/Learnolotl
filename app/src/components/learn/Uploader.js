@@ -49,11 +49,10 @@ class Uploader extends Component {
     render() {
         return (
             <div>
-                <h1>Uploader</h1>
-
                 <input 
                     type="file" 
                     name="file" 
+                    label="Test"
                     onChange={(e)=>this.handleFileUpload(e)} 
                     multiple="multiple"/>
             </div>
