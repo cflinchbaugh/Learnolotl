@@ -5,7 +5,7 @@ import { connect } from 'react-redux';
 import { updateFileName } from '../../actions/buildActions';
 import { updateFormElementData } from '../../actions/buildActions';
 
-import FormElementFactory from './FormElementFactory';
+import FormElementFactory from 'formElements/FormElementFactory';
 import Button from 'buttons/Button';
 
 

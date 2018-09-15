@@ -3,8 +3,8 @@ import styled from 'styled-components';
 import { connect } from 'react-redux';
 import { updateFormatFormElementData, updateFormatFormElements } from '../../actions/buildActions';
 
-import DynamicFormElementFactory from './DynamicFormElementFactory';
-import NavigationArrow from '../buttons/NavigationArrow';
+import DynamicFormElementFactory from 'formElements/DynamicFormElementFactory';
+import NavigationArrow from 'buttons/NavigationArrow';
 
 const StyleWrapper = styled.div`
 `

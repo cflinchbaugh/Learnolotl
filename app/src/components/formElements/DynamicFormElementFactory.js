@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import styled from 'styled-components';
 
 import Button from 'buttons/Button';
-import FormElementFactory from './FormElementFactory';
+import FormElementFactory from 'formElements/FormElementFactory';
 
 const StyleWrapper = styled.div`
 `

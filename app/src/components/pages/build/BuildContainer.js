@@ -3,9 +3,10 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { buildCard, updateBuildFileId, updateBuildCardFormat } from '../../../actions/buildActions';
 
-import CardFileNameBuilder from 'organisms/CardFileNameBuilder';
-import CardFormatBuilder from 'organisms/CardFormatBuilder';
-import CardBuilder from 'organisms/CardBuilder';
+import BuildLandingView from 'build/BuildLandingView';
+import CardFileNameBuilder from 'build/CardFileNameBuilder';
+import CardFormatBuilder from 'build/CardFormatBuilder';
+import CardBuilder from 'build/CardBuilder';
 
 class BuildContainer extends Component {
     constructor(props) {
@@ -15,12 +16,13 @@ class BuildContainer extends Component {
         this.saveFormat = this.saveFormat.bind(this);
         this.exportFile = this.exportFile.bind(this);
         this._processBuildData = this._processBuildData.bind(this);
+        this.handleBuildLandingViewNext = this.handleBuildLandingViewNext.bind(this);
         this.handelFileIdChange = this.handelFileIdChange.bind(this);
         this.handleBuildFileNameNext = this.handleBuildFileNameNext.bind(this);
         this.handleCardFormatNext = this.handleCardFormatNext.bind(this);
 
         this.state = {
-            show: 'CardFileNameBuilder'
+            show: 'landing'
         }
     }
 
@@ -30,6 +32,12 @@ class BuildContainer extends Component {
    
     saveFormat(format) {
         this.props.updateBuildCardFormat(format);
+    }
+
+    handleBuildLandingViewNext() {
+        this.setState({
+            show: 'CardFileNameBuilder'
+        });
     }
 
     handleBuildFileNameNext() {
@@ -49,31 +57,37 @@ class BuildContainer extends Component {
     }
     
     render() {
-        let cardFormatBuilderData = {
+        let buildLandingViewData = {
+                handleBuildLandingViewNext: this.handleBuildLandingViewNext
+            },
+            cardFileNameBuilderData = {
+                fileIdData: {
+                    label: 'Filename',
+                    onChange: this.handelFileIdChange,
+                    value: this.props.fileId
+                },
+                handleBuildFileNameNext: this.handleBuildFileNameNext
+            },
+            cardFormatBuilderData = {
                 saveFormat: this.saveFormat,
                 handleCardFormatNext: this.handleCardFormatNext,
                 ...this.props
             },
-            cardBuildData = {
+            cardBuilderData = {
                 submitForm: this.nextCard,
                 cardFormat: this.props.cardFormat,
                 exportFile: this.exportFile,
                 ...this.props
-            },
-            fileIdData = {
-                label: 'Filename',
-                onChange: this.handelFileIdChange,
-                value: this.props.fileId
-            },
-            buildData = {
-                fileIdData: {...fileIdData},
-                handleBuildFileNameNext: this.handleBuildFileNameNext
             }
 
-        if (this.state.show === 'CardFileNameBuilder') {
+        if (this.state.show === 'landing') {
+            return (
+                <BuildLandingView {...buildLandingViewData}/>
+            )
+        } else if (this.state.show === 'CardFileNameBuilder') {
             return (
                 <div>
-                    <CardFileNameBuilder {...buildData}/>
+                    <CardFileNameBuilder {...cardFileNameBuilderData}/>
                 </div>    
             )
         } else if (this.state.show === 'CardFormatBuilder') {
@@ -85,7 +99,7 @@ class BuildContainer extends Component {
         } else {
             return (
                 <div>
-                    <CardBuilder {...cardBuildData}/>
+                    <CardBuilder {...cardBuilderData}/>
                 </div>
             );
 
