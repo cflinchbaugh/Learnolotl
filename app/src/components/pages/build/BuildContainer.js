@@ -33,9 +33,13 @@ class BuildContainer extends Component {
     }
 
     handleBuildFileNameNext() {
-        this.setState({
-            show: 'CardFormatBuilder'
-        })
+        if (this.props.fileId.length) {
+            this.setState({
+                show: 'CardFormatBuilder'
+            })
+        } else {
+            alert('Filename is required');
+        }
     }
 
     handleCardFormatNext() {
