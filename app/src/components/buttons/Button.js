@@ -7,6 +7,7 @@ const StyleWrapper = styled.div`
         color: ${props => props.theme.primaryColor};
         transition: all 0.35s; 
         display: inline-block;
+        border: none;
         border-radius: 15px;
         padding: 8px 20px;
         box-shadow: 1px 8px 19px 3px rgba(61,55,61,0.25);
