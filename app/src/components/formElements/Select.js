@@ -21,10 +21,12 @@ function Select (props) {
     
     return (
         <StyleWrapper>
-            <div>{props.label}</div>
-            <select id={props.id} onChange={props.handleChange} value={props.selected}>
-                {options}
-            </select>
+            <div>
+                {props.label}: 
+                <select id={props.id} onChange={props.handleChange} value={props.selected}>
+                    {options}
+                </select>
+            </div>
         </StyleWrapper>
     )
 }
