@@ -8,14 +8,8 @@ const StyleWrapper = styled.div`
 
 function LearnFlashcards(props) {
     return (
-        <StyleWrapper>
-        <div className="flashcards">
-            <h1>Flashcards</h1>
-
-            <div className="deck-navigation-placeholder">
-                <DeckNavigation deckData={props.deckNavigationData}/>
-            </div>
-        </div>
+        <StyleWrapper className="deck-navigation-placeholder">
+            <DeckNavigation deckData={props.deckNavigationData}/>
         </StyleWrapper>
     );
 }

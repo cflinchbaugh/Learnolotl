@@ -40,7 +40,7 @@ class CardBuilder extends Component {
             }
 
         return (
-            <StyleWrapper>
+            <StyleWrapper className='mdCard'>
                 <p>Now, fill in as many cards as you like!  When you're all finished, click Download and you'll have a brand new set of Memorinity cards to use in the Learn section!</p>
                 <form onSubmit={this.handleSubmitForm}>
                     <FormElementFactory {...formElementFactoryData} {...this.props}/>

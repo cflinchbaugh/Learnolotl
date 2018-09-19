@@ -9,7 +9,7 @@ function BuildFileName (props) {
         onClickFunction: props.handleBuildFileNameNext
     }
     return (
-        <div>
+        <div className='mdCard'>
             <InputField {...props.fileIdData} />
             <NavigationArrow {...navigationArrowData} />
         </div>

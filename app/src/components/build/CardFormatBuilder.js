@@ -52,7 +52,7 @@ class CardFormatBuilder extends Component {
             }
 
         return (
-            <StyleWrapper>
+            <StyleWrapper className='mdCard'>
                     <h2>Card Format</h2>
                     <p>
                         Here we configure the format each of the cards will have.

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
+
 
 import { connect } from 'react-redux';
 import { createCard } from '../../../actions/cardActions';
@@ -9,7 +9,7 @@ import { replaceFileIds } from '../../../actions/cardActions';
 import { updateMode } from '../../../actions/cardActions';
 import { updateModeOptions } from '../../../actions/cardActions';
 import { updateFormat } from '../../../actions/cardActions';
-import NavigationArrow from 'buttons/NavigationArrow';
+
 
 import Listing from 'listings/Listing';
 import Learn from './Learn';
@@ -117,27 +117,12 @@ class LearnContainer extends Component {
                     selected: this.props.mode
                 },
                 linkData: {
-                    to: {
-                        pathname: '/learn/flashcards',
-                        state: {
-                            mode: this.props.mode
-                        }
-                    }
+                    mode: this.props.mode
                 }
             }
 
         return (
-            <div>
-                <Learn {...learnData}/>
-                <Link to={{
-                    pathname: '/learn/flashcards',
-                    state: {
-                        mode: this.props.mode
-                    }    
-                }}>
-                    <NavigationArrow type="next"/>
-                </Link>
-            </div>
+            <Learn {...learnData}/>
         );
     }
 

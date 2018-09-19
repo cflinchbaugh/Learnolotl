@@ -2,7 +2,7 @@ import React from 'react';
 
 function About (props) {
     return (
-        <div>
+        <div className='mdCard'>
             <h1>About</h1>
             <div>
                 <p>Version: BETA</p>

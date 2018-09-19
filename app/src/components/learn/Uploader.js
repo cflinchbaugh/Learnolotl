@@ -1,4 +1,16 @@
 import React, { Component } from 'react';
+import styled from 'styled-components';
+
+const StyleWrapper = styled.div`
+    display: inline-block;
+    overflow: hidden;
+    background: red;
+    width: 50px;
+
+    input {
+        opacity: 0;
+    }
+`
 
 class Uploader extends Component {
     handleFileUpload(e) {
@@ -48,14 +60,14 @@ class Uploader extends Component {
 
     render() {
         return (
-            <div>
+            <StyleWrapper>
                 <input 
                     type="file" 
                     name="file" 
                     label="Test"
                     onChange={(e)=>this.handleFileUpload(e)} 
                     multiple="multiple"/>
-            </div>
+            </StyleWrapper>
         );
     }
 }

@@ -6,6 +6,7 @@ import styled from 'styled-components';
 const StyleWrapper = styled.div`
     width: 100%;
     background-color: ${props => props.theme.primary};
+    margin-bottom: 30px;
 
 `
     
