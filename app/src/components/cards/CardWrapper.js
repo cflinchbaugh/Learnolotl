@@ -15,7 +15,7 @@ class CardWrapper extends Component {
 
     render() {
         let activeValue = this._processActiveValue(),
-            translationsArr = this.props.data.revealOptionData,
+            translationsArr = this._processRevealOptions(),
             cardData = {
                 activeValue,
                 revealItem: this.props.revealItem,
@@ -33,6 +33,14 @@ class CardWrapper extends Component {
         return (
             <Card {...cardData}/>
         )
+    }
+
+    _processRevealOptions() {
+        let revealOptions = this.props.data.revealOptionData.filter( (item) => {
+            return item.id !== this.props.mode;
+        });
+
+        return revealOptions;
     }
 
     handleRevealClick(e) {
