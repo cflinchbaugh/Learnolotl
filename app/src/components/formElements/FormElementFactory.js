@@ -45,10 +45,11 @@ class FormElementFactory extends Component {
                         key: idx,
                         id: id,
                         onChange: this.handleFormElementChange,
+                        autoComplete: 'off',
                         value: processedValue
                     }
 
-                    //inputFieldData must come after ...element.data to override the passed in id with the id+idx
+                //inputFieldData must come after ...element.data to override the passed in id with the id+idx
                 return <InputField {...element.data} {...inputFieldData}/>
             }
         });
