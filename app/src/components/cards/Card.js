@@ -24,10 +24,6 @@ const StyleWrapper = styled.div`
         min-height: 60px;
     }
 
-    .content {
-        min-height: 550px;
-    }
-
 `;
 // TODO: Content min-height, is this necessary?
     // It's not lookin' so good on large-format monitors
