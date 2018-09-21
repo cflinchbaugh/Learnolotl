@@ -4,7 +4,9 @@ import styled from 'styled-components';
 import NavigationArrow from 'buttons/NavigationArrow';
 
 const StyleWrapper = styled.div`
-  
+  .navigation-button {
+      float: right;
+  }
 `
 
 function BuildLandingView (props) {
@@ -14,7 +16,7 @@ function BuildLandingView (props) {
     }
 
     return (
-        <StyleWrapper className='mdCard'>
+        <StyleWrapper className='mdCard clearfix'>
             <p>
                 Create new Memorinity cards here!
             </p>

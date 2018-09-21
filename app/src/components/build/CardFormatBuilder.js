@@ -7,6 +7,9 @@ import DynamicFormElementFactory from 'formElements/DynamicFormElementFactory';
 import NavigationArrow from 'buttons/NavigationArrow';
 
 const StyleWrapper = styled.div`
+    .navigation-button {
+        float: right;
+    }
 `
 
 class CardFormatBuilder extends Component {
@@ -16,8 +19,6 @@ class CardFormatBuilder extends Component {
         this.handleInputChange = this.handleInputChange.bind(this);
         this.saveFormat = this.saveFormat.bind(this);
         this.addInputField = this.addInputField.bind(this);
-
-       
     }
 
     addInputField(e) {
@@ -44,7 +45,6 @@ class CardFormatBuilder extends Component {
                 formElementData: this.props.formatFormElementData,
                 addInputField: this.addInputField,
                 formElements: this.props.formatFormElements
-                
             },
             saveFormatButtonData = {
                 type: 'next',
@@ -52,7 +52,7 @@ class CardFormatBuilder extends Component {
             }
 
         return (
-            <StyleWrapper className='mdCard'>
+            <StyleWrapper className='mdCard clearfix'>
                     <h2>Card Format</h2>
                     <p>
                         Here we configure the format each of the cards will have.

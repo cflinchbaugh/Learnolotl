@@ -29,7 +29,11 @@ function Learn (props) {
                 <div className="uploaded-files">
                     {props.fileListingData.fileListing}
                 </div>
-                <br/>
+
+                <div className="uploader-wrapper">
+                    <Uploader {...props.uploaderData} />
+                </div>
+
                 <Select {...props.modeSelectData} />
             
                 <Link to={{
@@ -40,10 +44,6 @@ function Learn (props) {
                     }}>
                     <NavigationArrow type="next"/>
                 </Link>
-            </div>
-
-            <div className="uploader-wrapper">
-                <Uploader {...props.uploaderData} />
             </div>
 
         </StyleWrapper>

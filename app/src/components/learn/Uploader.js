@@ -60,14 +60,14 @@ class Uploader extends Component {
 
     render() {
         return (
-            <StyleWrapper>
+            <div>
                 <input 
                     type="file" 
                     name="file" 
                     label="Test"
                     onChange={(e)=>this.handleFileUpload(e)} 
                     multiple="multiple"/>
-            </StyleWrapper>
+            </div>
         );
     }
 }

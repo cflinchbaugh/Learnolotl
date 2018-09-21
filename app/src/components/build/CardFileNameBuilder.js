@@ -1,7 +1,14 @@
 import React from 'react';
+import styled from 'styled-components';
 
 import InputField from 'formElements/InputField';
 import NavigationArrow from 'buttons/NavigationArrow';
+
+const StyleWrapper = styled.div`
+    .navigation-button {
+        float: right;
+    }
+`
 
 function BuildFileName (props) {
     let navigationArrowData = {
@@ -9,10 +16,10 @@ function BuildFileName (props) {
         onClickFunction: props.handleBuildFileNameNext
     }
     return (
-        <div className='mdCard'>
+        <StyleWrapper className='mdCard clearfix'>
             <InputField {...props.fileIdData} />
             <NavigationArrow {...navigationArrowData} />
-        </div>
+        </StyleWrapper>
     );
 }
 
