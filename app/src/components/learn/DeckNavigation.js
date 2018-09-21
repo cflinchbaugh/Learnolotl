@@ -79,7 +79,7 @@ class DeckNavigation extends Component {
             <StyleWrapper>
                 <div className="deck-navigation">
 
-                    <div className="deck mdCard">
+                    <div className="deck">
                         <Deck deckData={this.props.deckData}/>
                     </div>
 

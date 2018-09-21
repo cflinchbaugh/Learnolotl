@@ -7,6 +7,7 @@ import RevealItem from './card-items/RevealItem';
 import RevealOptions from './card-items/RevealOptions';
 
 const StyleWrapper = styled.div`
+    width: 500px;
     padding: 0 0 20px 0;
     
     .active-wrapper,
@@ -29,30 +30,27 @@ const StyleWrapper = styled.div`
     // It's not lookin' so good on large-format monitors
 function Card (props) {
     return (
-        <StyleWrapper>
-            <div className="card">
-                <div className="content">
-                    <div className="active-wrapper">
-                        <ActiveItem value={props.activeValue}/>
-                    </div>
-
-                    <TransitionGroup className="reveal-wrapper">
-                        {props.revealItem.map( ({ id, value }) => (
-                            <CSSTransition key={id}
-                                {...props.fadeInVanishOutAnimationData}
-                            >
-                                <div className="translations-wrapper">
-                                    <RevealItem value={value}/>
-                                </div>
-                            </CSSTransition>
-                        ))}
-                    </TransitionGroup>
+        <StyleWrapper className="card mdCard">
+            <div className="content">
+                <div className="active-wrapper">
+                    <ActiveItem value={props.activeValue}/>
                 </div>
 
-                <div className="reveal-options-wrapper">
-                    <RevealOptions {...props.revealOptionsData} />
-                </div>
+                <TransitionGroup className="reveal-wrapper">
+                    {props.revealItem.map( ({ id, value }) => (
+                        <CSSTransition key={id}
+                            {...props.fadeInVanishOutAnimationData}
+                        >
+                            <div className="translations-wrapper">
+                                <RevealItem value={value}/>
+                            </div>
+                        </CSSTransition>
+                    ))}
+                </TransitionGroup>
+            </div>
 
+            <div className="reveal-options-wrapper">
+                <RevealOptions {...props.revealOptionsData} />
             </div>
         </StyleWrapper>
     )

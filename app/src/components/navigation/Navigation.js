@@ -5,26 +5,23 @@ import styled from 'styled-components';
 
 const StyleWrapper = styled.div`
     width: 100%;
-    background-color: ${props => props.theme.primary};
     margin-bottom: 30px;
 
 `
     
 const NavLinkStyled = styled(NavLink)`
-    background-color: ${props => props.theme.primary};
     color: ${props => props.theme.primaryColor};
     text-decoration: none;
-    transition: background-color 0.25s;
-    padding: 10px 8px;
+    transition: color 0.25s;
+    margin: 10px 8px;
     display: inline-block;
 
     &:hover {
-        background-color: ${props => props.theme.primaryDarkMedium};
-        color: ${props => props.theme.primaryDarkMediumColor};
+        color: #47517c;
     }
 
     &.${(props) => props.activeClassName } {
-        background-color: ${props => props.theme.primaryDark};
+        color: #3c466b;
     }
 
 `
