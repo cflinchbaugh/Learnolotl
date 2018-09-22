@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import styled from 'styled-components';
 
 import { connect } from 'react-redux';
 import { buildCard, updateBuildFileId, updateBuildCardFormat } from '../../../actions/buildActions';
@@ -7,6 +8,10 @@ import BuildLandingView from 'build/BuildLandingView';
 import CardFileNameBuilder from 'build/CardFileNameBuilder';
 import CardFormatBuilder from 'build/CardFormatBuilder';
 import CardBuilder from 'build/CardBuilder';
+
+const StyleWrapper = styled.div`
+    
+`
 
 class BuildContainer extends Component {
     constructor(props) {
@@ -64,7 +69,8 @@ class BuildContainer extends Component {
                 fileIdData: {
                     label: 'Filename',
                     onChange: this.handelFileIdChange,
-                    value: this.props.fileId
+                    value: this.props.fileId,
+                    required: true
                 },
                 handleBuildFileNameNext: this.handleBuildFileNameNext
             },
@@ -82,25 +88,27 @@ class BuildContainer extends Component {
 
         if (this.state.show === 'landing') {
             return (
-                <BuildLandingView {...buildLandingViewData}/>
+                <StyleWrapper className='build-container-wrapper mdCard'>
+                    <BuildLandingView {...buildLandingViewData}/>
+                </StyleWrapper>
             )
         } else if (this.state.show === 'CardFileNameBuilder') {
             return (
-                <div>
+                <StyleWrapper className='build-container-wrapper mdCard'>
                     <CardFileNameBuilder {...cardFileNameBuilderData}/>
-                </div>    
+                </StyleWrapper>
             )
         } else if (this.state.show === 'CardFormatBuilder') {
             return (
-                <div>
+                <StyleWrapper className='build-container-wrapper mdCard'>
                     <CardFormatBuilder {...cardFormatBuilderData}/>
-                </div>
+                </StyleWrapper>
             );
         } else {
             return (
-                <div>
+                <StyleWrapper className='build-container-wrapper mdCard'>
                     <CardBuilder {...cardBuilderData}/>
-                </div>
+                </StyleWrapper>
             );
 
         }

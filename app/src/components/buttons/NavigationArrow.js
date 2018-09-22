@@ -14,7 +14,6 @@ const StyleWrapper = styled.div`
     &:hover {
         cursor: pointer;
         background-color: #566184;
-        color: ${props => props.theme.secondaryLightColor}
         box-shadow: 1px 8px 19px 3px rgba(61,55,61,0.48);
     }
 `
