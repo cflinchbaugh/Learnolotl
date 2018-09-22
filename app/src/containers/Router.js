@@ -11,7 +11,8 @@ import BuildContainer from '../components/pages/build/BuildContainer';
 import About from '../components/pages/About';
 
 const StyleWrapper = styled.div`
-    max-width: 1400px;
+    min-width: 850px;
+    max-width: 1000px;
     margin: auto;
     padding: 0 25px;
 `;
@@ -23,7 +24,7 @@ class Router extends Component {
             <div className="Router">
                 <Navigation/>
                 
-                <StyleWrapper>
+                <StyleWrapper className="route-content-wrapper">
                     <Route path="/" exact component={LearnContainer}/>
 
                     <Route path="/learn" exact component={LearnContainer}/>

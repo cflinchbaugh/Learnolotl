@@ -9,24 +9,25 @@ import NavigationArrow from 'buttons/NavigationArrow';
 const StyleWrapper = styled.div`
     text-align: center
 
-    .card-selection {
-        display: inline-block;
-        margin-bottom: 20px;
-        border-radius: 5px;
-        text-align: center;
-        padding: 50px;
-    }
-
     .navigation-button {
         float: right;
+    }
+
+    .uploaded-files-wrapper,
+    .uploader-wrapper,
+    .mode-select-wrapper {
+        margin-bottom: 20px;
+    }
+    .link-wrapper {
+        display: grid;
     }
 `
 
 function Learn (props) {
     return (
-        <StyleWrapper>
-            <div className="card-selection mdCard">
-                <div className="uploaded-files">
+        <StyleWrapper className="learn-wrapper mdCard">
+            <div className="card-selection">
+                <div className="uploaded-files-wrapper">
                     {props.fileListingData.fileListing}
                 </div>
 
@@ -34,16 +35,21 @@ function Learn (props) {
                     <Uploader {...props.uploaderData} />
                 </div>
 
-                <Select {...props.modeSelectData} />
+                <div className="mode-select-wrapper">
+                    <Select {...props.modeSelectData} />
+                </div>
             
-                <Link to={{
-                        pathname: '/learn/flashcards',
-                        state: {
-                            mode: props.linkData.mode
-                        }    
-                    }}>
-                    <NavigationArrow type="next"/>
-                </Link>
+            </div>
+
+            <div className="link-wrapper">
+            <Link to={{
+                    pathname: '/learn/flashcards',
+                    state: {
+                        mode: props.linkData.mode
+                    }    
+                }}>
+                <NavigationArrow type="next"/>
+            </Link>
             </div>
 
         </StyleWrapper>
