@@ -26,7 +26,7 @@ const StyleWrapper = styled.div`
     }
     
     .cancel {
-        background-color: red;
+        background-color: orangered;
     }
 
     .echo {
