@@ -7,6 +7,8 @@ import DynamicFormElementFactory from 'formElements/DynamicFormElementFactory';
 import NavigationArrow from 'buttons/NavigationArrow';
 
 const StyleWrapper = styled.div`
+    width: 100%;
+
     .navigation-button {
         float: right;
     }
@@ -52,7 +54,7 @@ class CardFormatBuilder extends Component {
             }
 
         return (
-            <StyleWrapper className='mdCard clearfix'>
+            <StyleWrapper className='card-format-builder-wrapper clearfix'>
                     <h2>Card Format</h2>
                     <p>
                         Here we configure the format each of the cards will have.
