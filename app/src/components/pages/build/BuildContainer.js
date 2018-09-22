@@ -6,8 +6,8 @@ import { buildCard, updateBuildFileId, updateBuildCardFormat } from '../../../ac
 
 import BuildLandingView from 'build/BuildLandingView';
 import CardFileNameBuilder from 'build/CardFileNameBuilder';
-import CardFormatBuilder from 'build/CardFormatBuilder';
-import CardBuilder from 'build/CardBuilder';
+import CardFormatBuilderContainer from 'build/CardFormatBuilderContainer';
+import CardBuilderContainer from 'build/CardBuilderContainer';
 
 const StyleWrapper = styled.div`
     
@@ -101,13 +101,13 @@ class BuildContainer extends Component {
         } else if (this.state.show === 'CardFormatBuilder') {
             return (
                 <StyleWrapper className='build-container-wrapper mdCard'>
-                    <CardFormatBuilder {...cardFormatBuilderData}/>
+                    <CardFormatBuilderContainer {...cardFormatBuilderData}/>
                 </StyleWrapper>
             );
         } else {
             return (
                 <StyleWrapper className='build-container-wrapper mdCard'>
-                    <CardBuilder {...cardBuilderData}/>
+                    <CardBuilderContainer {...cardBuilderData}/>
                 </StyleWrapper>
             );
 
