@@ -7,8 +7,7 @@ import RevealItem from './card-items/RevealItem';
 import RevealOptions from './card-items/RevealOptions';
 
 const StyleWrapper = styled.div`
-    width: 500px;
-    padding: 0 0 20px 0;
+    min-width: 750px;
     
     .active-wrapper,
     .translations-wrapper,
@@ -30,7 +29,7 @@ const StyleWrapper = styled.div`
     // It's not lookin' so good on large-format monitors
 function Card (props) {
     return (
-        <StyleWrapper className="card mdCard">
+        <StyleWrapper className="card-wrapper mdCard">
             <div className="content">
                 <div className="active-wrapper">
                     <ActiveItem value={props.activeValue}/>

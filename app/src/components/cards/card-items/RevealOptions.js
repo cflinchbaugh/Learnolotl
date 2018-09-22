@@ -50,7 +50,7 @@ class RevealOptions extends Component {
         let reveal = this._processReveal(this.props.optionsArray);
         
         return (
-            <StyleWrapper>
+            <StyleWrapper className="reveal-options-wrapper">
                 <div className="RevealOptions clearfix">
                     {reveal}
                 </div>
