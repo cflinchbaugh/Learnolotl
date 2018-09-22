@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 
-import FormElementFactory from 'formElements/FormElementFactory';
-import Button from 'buttons/Button';
+import FormElementFactory from '../formElements/FormElementFactory';
+import Button from '../buttons/Button';
 
 
 const StyleWrapper = styled.div`
