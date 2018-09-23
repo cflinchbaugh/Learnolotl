@@ -16,7 +16,7 @@ const initialState = {
             type: 'input',
             data: {
                 id: 'revealOptionId',
-                label: 'Button Label',
+                label: 'Mode',
                 placeholder: '',
                 value: ''
             }
