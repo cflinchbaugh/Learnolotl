@@ -7,8 +7,6 @@ import Select from 'formElements/Select';
 import NavigationArrow from 'buttons/NavigationArrow';
 
 const StyleWrapper = styled.div`
-    text-align: center
-
     .navigation-button {
         float: right;
     }
@@ -18,30 +16,20 @@ const StyleWrapper = styled.div`
     .mode-select-wrapper {
         margin-bottom: 20px;
     }
+
+    .card-selection {
+        text-align: center;
+    }
     .link-wrapper {
-        display: grid;
+        margin-left: auto;
+        margin-right: 0;
     }
 `
 
 function Learn (props) {
-    return (
-        <StyleWrapper className="learn-wrapper mdCard">
-            <div className="card-selection">
-                <div className="uploaded-files-wrapper">
-                    {props.fileListingData.fileListing}
-                </div>
-
-                <div className="uploader-wrapper">
-                    <Uploader {...props.uploaderData} />
-                </div>
-
-                <div className="mode-select-wrapper">
-                    <Select {...props.modeSelectData} />
-                </div>
-            
-            </div>
-
-            <div className="link-wrapper">
+    const renderUploader = props.sampleData ? '' : <Uploader {...props.uploaderData} />;
+    const renderLink = (!props.sampleData && props.uploadedIds.length) || (props.sampleData) ? 
+        (
             <Link to={{
                     pathname: '/learn/flashcards',
                     state: {
@@ -50,6 +38,35 @@ function Learn (props) {
                 }}>
                 <NavigationArrow type="next"/>
             </Link>
+        ) : '';
+    const renderModeSelector = props.sampleData || props.uploadedIds.length ?
+        (
+            <div className="mode-select-wrapper">
+                <Select {...props.modeSelectData} /> 
+            </div>
+        ) : '';
+    const renderUploadedFiles = props.uploadedIds.length ?
+        (
+            <div className="uploaded-files-wrapper">
+                {props.fileListingData.fileListing}
+            </div>
+        ) : '';
+
+    return (
+        <StyleWrapper className="learn-wrapper">
+            <div className="card-selection">
+                <div className="uploader-wrapper">
+                    {renderUploader}
+                </div>
+
+                {renderUploadedFiles}
+                
+                {renderModeSelector}
+            
+            </div>
+
+            <div className="link-wrapper clearfix">
+                {renderLink}
             </div>
 
         </StyleWrapper>
