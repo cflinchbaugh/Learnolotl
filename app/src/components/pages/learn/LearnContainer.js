@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 
-
 import { connect } from 'react-redux';
 import { createCard } from '../../../actions/cardActions';
 import { replaceCards } from '../../../actions/cardActions';
@@ -9,17 +8,29 @@ import { replaceFileIds } from '../../../actions/cardActions';
 import { updateMode } from '../../../actions/cardActions';
 import { updateModeOptions } from '../../../actions/cardActions';
 import { updateFormat } from '../../../actions/cardActions';
+import { updateLearnData } from '../../../actions/cardActions';
 
 
 import Listing from 'listings/Listing';
-import Learn from './Learn';
+import LearnSampleData from './LearnSampleData';
+import LearnLandingView from './LearnLandingView';
 
 class LearnContainer extends Component {
     constructor(props) {
         super(props);
 
+        this.handleDemoDataClick = this.handleDemoDataClick.bind(this);
+        this.handleCancelDemoDataClick = this.handleCancelDemoDataClick.bind(this);
         this.handleFileUpload = this.handleFileUpload.bind(this);
         this._handleModeChange = this._handleModeChange.bind(this);
+    }
+
+    handleDemoDataClick() {
+        this.props.updateLearnData('demo');
+    }
+
+    handleCancelDemoDataClick() {
+        this.props.updateLearnData('');
     }
 
     handleFileUpload(uploadedCardData) {
@@ -64,7 +75,8 @@ class LearnContainer extends Component {
         let stringifiedCurrentFormat = JSON.stringify(this.props.format),
             stringifiedUploadedFormat = JSON.stringify(uploadedCardData.format);
 
-        return stringifiedCurrentFormat === stringifiedUploadedFormat;
+
+        return this.props.uploadedIds.length ? stringifiedCurrentFormat === stringifiedUploadedFormat : true;
     }
 
     _processMode(formatData) {
@@ -118,12 +130,35 @@ class LearnContainer extends Component {
                 },
                 linkData: {
                     mode: this.props.mode
-                }
+                },
+                sampleData: this.props.sampleData,
+                uploadedIds: this.props.uploadedIds,
+            },
+            
+            learnSampleDataData = {
+                cancelSampleButtonData: {
+                    label: 'Cancel Japanese Demo',
+                    onClickFunction: this.handleCancelDemoDataClick
+                },
+                learnData: {...learnData}
+            },
+            learnLandingViewData = {
+                learnDataSelectData: {
+                    handleDemoDataClick: this.handleDemoDataClick
+                },
+                learnData: {...learnData}
             }
-
-        return (
-            <Learn {...learnData}/>
-        );
+            
+        if (this.props.sampleData) {
+            return (
+                <LearnSampleData {...learnSampleDataData} />
+            );    
+        } else {
+            return (
+                <LearnLandingView {...learnLandingViewData} />
+            );
+        }
+        
     }
 
     _handleModeChange(e) {
@@ -142,8 +177,9 @@ const mapStateToProps = state => ({
     sampleData: state.cards.sampleData,
     mode: state.cards.mode,
     modeOptions: state.cards.modeOptions,
-    format: state.cards.format
+    format: state.cards.format,
+    learnData: state.cards.learnData
 
 });
 
-export default connect(mapStateToProps, { createCard, replaceCards, updateFileIds, replaceFileIds, updateMode, updateModeOptions, updateFormat })(LearnContainer);
+export default connect(mapStateToProps, { createCard, replaceCards, updateFileIds, replaceFileIds, updateMode, updateModeOptions, updateFormat, updateLearnData })(LearnContainer);

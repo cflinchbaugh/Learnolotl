@@ -8,6 +8,7 @@ export const REPLACE_CARDS = 'REPLACE_CARDS';
 export const UPDATE_MODE = 'UPDATE_MODE';
 export const UPDATE_MODE_OPTIONS = 'UPDATE_MODE_OPTIONS';
 export const UPDATE_FORMAT = 'UPDATE_FORMAT';
+export const UPDATE_LEARN_DATA = 'UPDATE_LEARN_DATA';
 
 //BuildActions
 export const BUILD_CARD = 'BUILD_CARD';

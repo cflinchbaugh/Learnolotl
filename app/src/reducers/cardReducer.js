@@ -7,74 +7,25 @@ import {
     REPLACE_FILE_IDS,
     UPDATE_MODE,
     UPDATE_MODE_OPTIONS,
-    UPDATE_FORMAT } from '../actions/types';
+    UPDATE_FORMAT,
+    UPDATE_LEARN_DATA
+} from '../actions/types';
 
 const initialState = {
-    items: [
-        {
-            "metadata": ["101"],
-            "revealOptionData": [
-                {
-                    "id": "english",
-                    "value": "I",
-                    "type": "text"
-                }, {
-                    "id": "romaji",
-                    "value": "watashi",
-                    "type": "text"
-                }, {
-                    "id": "hiragana",
-                    "value": "\u308E\u305F\u3057",
-                    "type": "text"
-                }
-            ]
-        },
-        {
-            "metadata": ["101"],
-            "revealOptionData": [
-                {
-                    "id": "english",
-                    "value": "you",
-                    "type": "text"
-                }, {
-                    "id": "romaji",
-                    "value": "anata",
-                    "type": "text"
-                }, {
-                    "id": "hiragana",
-                    "value": "\u3041\u306A\u305F",
-                    "type": "text"
-                }
-            ]
-        }
-    ],
+    items: [],
     card: {},
     flashCardIdx: 0,
     display: 'none',
-    sampleData: true,
+    sampleData: false,
     revealOption: [{
         id: '',
         value: '',
     }],
     uploadedIds: [],
-    mode: 'english',
     modeOptions: [
-        {
-            id: 'english',
-            value: 'English'
-        }, {
-            id: 'romaji',
-            value: 'Romaji'
-        }, {
-            id: 'hiragana',
-            value: 'Hiragana'
-        }
     ],
-    format: {
-        "0": "English",
-        "1": "Romaji",
-        "2": "Hiragana"
-    }
+    format: { },
+    learnData: ''
 }
 
 export default function(state = initialState, action) {
@@ -134,6 +85,82 @@ export default function(state = initialState, action) {
             return {
                 ...state,
                 format: action.payload
+            }
+        case UPDATE_LEARN_DATA:
+            if (action.payload === '') {
+                return {
+                    ...state,
+                    learnData: action.payload,
+                    sampleData: false,
+                    format: {},
+                    mode: '',
+                    modeOptions: [],
+                    items: [],
+                    uploadedIds: []
+                }
+
+            } else {
+                return {
+                    ...state,
+                    learnData: action.payload,
+                    sampleData: true,
+                    format: {
+                        "0": "English",
+                        "1": "Romaji",
+                        "2": "Hiragana"
+                    },
+                    mode: 'english',
+                    modeOptions: [
+                        {
+                            id: 'english',
+                            value: 'English'
+                        }, {
+                            id: 'romaji',
+                            value: 'Romaji'
+                        }, {
+                            id: 'hiragana',
+                            value: 'Hiragana'
+                        }
+                    ],
+                    items: [
+                        {
+                            "metadata": ["101"],
+                            "revealOptionData": [
+                                {
+                                    "id": "english",
+                                    "value": "I",
+                                    "type": "text"
+                                }, {
+                                    "id": "romaji",
+                                    "value": "watashi",
+                                    "type": "text"
+                                }, {
+                                    "id": "hiragana",
+                                    "value": "\u308E\u305F\u3057",
+                                    "type": "text"
+                                }
+                            ]
+                        },
+                        {
+                            "metadata": ["101"],
+                            "revealOptionData": [
+                                {
+                                    "id": "english",
+                                    "value": "you",
+                                    "type": "text"
+                                }, {
+                                    "id": "romaji",
+                                    "value": "anata",
+                                    "type": "text"
+                                }, {
+                                    "id": "hiragana",
+                                    "value": "\u3041\u306A\u305F",
+                                    "type": "text"
+                                }
+                            ]
+                        }
+                    ]
+                }
             }
         default: 
             return state;

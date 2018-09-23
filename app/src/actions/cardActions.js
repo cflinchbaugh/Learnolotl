@@ -7,7 +7,9 @@ import {
     REPLACE_CARDS,
     UPDATE_MODE,
     UPDATE_MODE_OPTIONS,
-    UPDATE_FORMAT } from './types';
+    UPDATE_FORMAT,
+    UPDATE_LEARN_DATA
+} from './types';
 
 export const createCard = (cardData) => dispatch => {
     dispatch({
@@ -69,4 +71,11 @@ export const updateFormat = (option) => dispatch => {
         type: UPDATE_FORMAT,
         payload: option
     });
+}
+
+export const updateLearnData = (option) => dispatch => {
+    dispatch({
+        type: UPDATE_LEARN_DATA,
+        payload: option
+    })
 }
