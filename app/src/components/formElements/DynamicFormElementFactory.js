@@ -9,7 +9,7 @@ const StyleWrapper = styled.div`
 
 function DynamicFormElementFactory(props) {
     let addInputButtonData = {
-            label: 'Add Input',
+            label: 'Add Mode',
             onClickFunction: props.addInputField
         }
 
