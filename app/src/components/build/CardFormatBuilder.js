@@ -17,10 +17,7 @@ function CardFormatBuilder(props) {
         <StyleWrapper className='card-format-builder-wrapper clearfix'>
                 <h2>Card Format</h2>
                 <p>
-                    Here we configure the format each of the cards will have.
-                    <br/>
-                    <br/>
-                    The button labels you build here will be the options clicked to show the hidden answers.  Every card in this set will have the same format, so be sure to include all the options, even if some cards might not have them (like "Hint" or "Misc.").
+                    The Modes built here will show as buttons on every card, when clicked the hidden answer will appear.  In the Japanese Sample, the Modes were "English", "Romaji", and "Hiragana".
                 </p>
                     
                 <DynamicFormElementFactory {...props.dynamicFormElementFactoryData}/>

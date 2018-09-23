@@ -21,7 +21,7 @@ class CardFormatBuilderContainer extends Component {
                 data: {
                     id: 'revealOptionId',
                     placeholder: '',
-                    label: 'Button Label',
+                    label: 'Mode',
                     value: ''
                 }
             },

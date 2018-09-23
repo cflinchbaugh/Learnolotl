@@ -6,6 +6,9 @@ import Button from '../buttons/Button';
 
 
 const StyleWrapper = styled.div`
+    .export-button-wrapper {
+        text-align: center;
+    }
 `
 
 function CardBuilder (props) {
@@ -15,7 +18,10 @@ function CardBuilder (props) {
             <form onSubmit={props.handleSubmitForm}>
                 <FormElementFactory {...props.formElementFactoryData}/>
                 <Button {...props.nextCardButtonData}/>
-                <Button {...props.exportButtonData}/>
+
+                <div className="export-button-wrapper">
+                    <Button {...props.exportButtonData}/>
+                </div>
             </form>
         </StyleWrapper>
 

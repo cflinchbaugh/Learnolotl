@@ -37,7 +37,7 @@ class CardBuilderContainer extends Component {
                 type: 'submit'
             },
             exportButtonData: {
-                label: 'Export File',
+                label: 'Download',
                 type: 'next',
                 onClickFunction: this._handleExportData
             },
