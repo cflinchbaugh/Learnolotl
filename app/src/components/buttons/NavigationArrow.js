@@ -1,8 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const StyleWrapper = styled.div`
+const StyleWrapper = styled.button`
     color: orange;
+    background: transparent;
     border: solid 1px orange;
     transition: all 0.35s; 
     display: inline-block;
