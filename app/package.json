@@ -82,8 +82,14 @@
       "[/\\\\]node_modules[/\\\\].+\\.(js|jsx|mjs)$"
     ],
     "moduleNameMapper": {
-      "^react-native$": "react-native-web"
+      "^react-native$": "react-native-web",
+      "^react(.*)$": "<rootDir>/vendor/react-master$1",
+      "^config$": "<rootDir>/configs/app-config.js",
+
+      "\\.(css|less)$": "<rootDir>/__mocks__/styleMock.js",
+      "\\.(gif|ttf|eot|svg)$": "<rootDir>/__mocks__/fileMock.js"
     },
+    "modulePaths": ["/shared/vendor/modules"],
     "moduleFileExtensions": [
       "web.js",
       "js",
@@ -92,7 +98,8 @@
       "jsx",
       "node",
       "mjs"
-    ]
+    ],
+    "moduleDirectories": ["node_modules", "bower_components", "shared", "src/components"]
   },
   "babel": {
     "presets": [
