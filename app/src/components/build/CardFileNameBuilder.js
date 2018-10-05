@@ -14,9 +14,11 @@ const StyleWrapper = styled.div`
 
 function BuildFileName (props) {
     let navigationArrowData = {
-        type: 'next',
-        onClickFunction: props.handleBuildFileNameNext
-    }
+            type: 'next',
+            onClickFunction: props.handleBuildFileNameNext,
+            disabled: props.fileIdData.value.length ? false : true 
+        }
+
     return (
         <StyleWrapper className='card-file-name-builder-wrapper clearfix'>
             <InputField {...props.fileIdData} />
