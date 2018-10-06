@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`RevealOptions renders and matches snapshot 1`] = `
+<styled.div
+  className="reveal-options-wrapper"
+>
+  <div
+    className="RevealOptions clearfix"
+  >
+    
+  </div>
+</styled.div>
+`;
+
+exports[`RevealOptions renders translationData and matches snapshot 1`] = `
+<styled.div
+  className="reveal-options-wrapper"
+>
+  <div
+    className="RevealOptions clearfix"
+  >
+    <CancelPopButton
+      label="English"
+      onClickFunction={[Function]}
+      showX={false}
+    />
+    <CancelPopButton
+      label="Hiragana"
+      onClickFunction={[Function]}
+      showX={false}
+    />
+    <CancelPopButton
+      label="Romaji"
+      onClickFunction={[Function]}
+      showX={false}
+    />
+  </div>
+</styled.div>
+`;

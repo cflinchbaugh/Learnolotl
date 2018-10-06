@@ -20,7 +20,7 @@ const StyleWrapper = styled.div`
 
 `;
 
-class RevealOptions extends Component {    
+export class RevealOptions extends Component {    
     _processReveal(translationsArr) {
         return translationsArr.map(function(translationData, idx) {
             let reveal,

@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ActiveItem renders and matches snapshot 1`] = `<styled.div />`;
+
+exports[`ActiveItem renders passed in value and matches snapshot 1`] = `
+<styled.div>
+  passedInValue
+</styled.div>
+`;
