@@ -8,6 +8,7 @@ import Button from '../buttons/Button';
 const StyleWrapper = styled.div`
     .export-button-wrapper {
         text-align: center;
+        
     }
 `
 
@@ -15,6 +16,7 @@ function CardBuilder (props) {
     return (
         <StyleWrapper className='card-builder-wrapper clearfix'>
             <p>Now, fill in as many cards as you like!</p>
+            
             <form onSubmit={props.handleSubmitForm}>
                 <FormElementFactory {...props.formElementFactoryData}/>
                 <Button {...props.nextCardButtonData}/>

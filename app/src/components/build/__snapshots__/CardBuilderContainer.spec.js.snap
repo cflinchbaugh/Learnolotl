@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CardBuilderContainer renders and matches snapshot 1`] = `
+<CardBuilder
+  exportButtonData={
+    Object {
+      "label": "Download",
+      "onClickFunction": [Function],
+      "type": "next",
+    }
+  }
+  formElementFactoryData={
+    Object {
+      "formElementData": undefined,
+      "formElements": Array [],
+      "handleInputChange": [Function],
+    }
+  }
+  handleSubmitForm={[Function]}
+  nextCardButtonData={
+    Object {
+      "label": "Next Card",
+      "type": "submit",
+    }
+  }
+/>
+`;

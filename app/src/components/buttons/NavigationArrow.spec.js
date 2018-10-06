@@ -1,15 +1,26 @@
 import React from 'react';
 import {shallow} from 'enzyme';
-import NavigationArrow from '../NavigationArrow';
+import NavigationArrow from './NavigationArrow';
+import ShallowRenderer from 'react-test-renderer/shallow';
 
 describe('NavigationArrow', () => {
-  it('should call handleBuildLandingViewNext when the NavigationArrow is clicked', () => {
-    const onClickFunction = jest.fn();
+    it('renders and matches snapshot', () => {
+        const renderer = new ShallowRenderer();
 
-    const wrapper = shallow(<NavigationArrow onClickFunction={onClickFunction}/>);
+        const tree = renderer.render(
+            <NavigationArrow />
+        );
 
-        wrapper.find('.navigation-button').simulate('click');
+        expect(tree).toMatchSnapshot();
+    });
 
-        expect(onClickFunction).toHaveBeenCalled();
-  });
+    it('should call handleBuildLandingViewNext when the NavigationArrow is clicked', () => {
+        const onClickFunction = jest.fn();
+
+        const wrapper = shallow(<NavigationArrow onClickFunction={onClickFunction}/>);
+
+            wrapper.find('.navigation-button').simulate('click');
+
+            expect(onClickFunction).toHaveBeenCalled();
+    });
 });

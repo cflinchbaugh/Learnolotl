@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NavigationArrow renders and matches snapshot 1`] = `
+<styled.div
+  className="navigation-button-wrapper"
+>
+  <button
+    className="navigation-button"
+    onClick={undefined}
+  >
+    &lt;=
+  </button>
+</styled.div>
+`;

@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders and matches snapshot 1`] = `
+<div
+  className="build-landing-view-wrapper clearfix sc-bwzfXH iyuwwe"
+>
+  <p>
+    Create new Memorinity cards here!
+  </p>
+  <p>
+    You want to learn more than just the few sample cards that came with the app?  No problem! It's easy to make your own Memorinity cards and share them with others.
+  </p>
+  <div
+    className="navigation-button-wrapper sc-bdVaJa bSfISc"
+  >
+    <button
+      className="navigation-button"
+      onClick={undefined}
+    >
+      =&gt;
+    </button>
+  </div>
+</div>
+`;

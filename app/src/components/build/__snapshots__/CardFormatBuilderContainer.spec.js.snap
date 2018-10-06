@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CardFormatBuilderContainer renders and matches snapshot 1`] = `
+<CardFormatBuilder
+  dynamicFormElementFactoryData={
+    Object {
+      "addInputField": [Function],
+      "formElementData": undefined,
+      "formElements": undefined,
+      "handleInputChange": [Function],
+    }
+  }
+  saveFormatButtonData={
+    Object {
+      "onClickFunction": [Function],
+      "type": "next",
+    }
+  }
+/>
+`;

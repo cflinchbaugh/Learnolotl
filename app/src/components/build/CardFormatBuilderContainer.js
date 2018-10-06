@@ -4,7 +4,7 @@ import { connect } from 'react-redux';
 import { updateFormatFormElementData, updateFormatFormElements } from '../../actions/buildActions';
 import CardFormatBuilder from './CardFormatBuilder';
 
-class CardFormatBuilderContainer extends Component {
+export class CardFormatBuilderContainer extends Component {
     constructor(props) {
         super(props);
 

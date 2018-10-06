@@ -12,11 +12,12 @@ const StyleWrapper = styled.div`
     }
 `
 
-function BuildFileName (props) {
+function CardFileNameBuilder (props) {
     let navigationArrowData = {
             type: 'next',
             onClickFunction: props.handleBuildFileNameNext,
-            disabled: props.fileIdData.value.length ? false : true 
+            disabled: (props.fileIdData && props.fileIdData.value && props.fileIdData.value.length)
+                 ? false : true 
         }
 
     return (
@@ -27,4 +28,4 @@ function BuildFileName (props) {
     );
 }
 
-export default BuildFileName;
+export default CardFileNameBuilder;

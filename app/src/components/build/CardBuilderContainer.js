@@ -5,15 +5,13 @@ import { connect } from 'react-redux';
 import { updateFileName } from '../../actions/buildActions';
 import { updateFormElementData } from '../../actions/buildActions';
 
-import FormElementFactory from 'formElements/FormElementFactory';
-import Button from 'buttons/Button';
 import CardBuilder from './CardBuilder';
 
 
 const StyleWrapper = styled.div`
 `
 
-class CardBuilderContainer extends Component {
+export class CardBuilderContainer extends Component {
     constructor(props) {
         super(props);
 

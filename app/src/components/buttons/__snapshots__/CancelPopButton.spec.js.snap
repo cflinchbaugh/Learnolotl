@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CancelPopButton renders and matches snapshot 1`] = `
+<styled.div>
+  <Button />
+  <div
+    className="cancel-icon-wrapper"
+  >
+    <CSSTransition
+      classNames="pop"
+      in={undefined}
+      timeout={300}
+      unmountOnExit={true}
+    >
+      <div
+        className="cancel"
+      >
+        x
+      </div>
+    </CSSTransition>
+    <CSSTransition
+      classNames="pop-echo"
+      in={undefined}
+      timeout={200}
+      unmountOnExit={true}
+    >
+      <div
+        className="echo"
+      />
+    </CSSTransition>
+  </div>
+</styled.div>
+`;

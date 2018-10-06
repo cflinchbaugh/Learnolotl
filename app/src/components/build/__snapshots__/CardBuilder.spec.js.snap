@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CardBuilder renders and matches snapshot 1`] = `
+<styled.div
+  className="card-builder-wrapper clearfix"
+>
+  <p>
+    Now, fill in as many cards as you like!
+  </p>
+  <form
+    onSubmit={undefined}
+  >
+    <Connect(FormElementFactory) />
+    <Button />
+    <p>
+      When you're all finished, click Download and you'll have a brand new set of Memorinity cards to use in the Learn section!
+    </p>
+    <div
+      className="export-button-wrapper"
+    >
+      <Button />
+    </div>
+  </form>
+</styled.div>
+`;

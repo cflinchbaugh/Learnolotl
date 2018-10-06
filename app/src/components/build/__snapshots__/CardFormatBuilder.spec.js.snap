@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CardFormatBuilder renders and matches snapshot 1`] = `
+<styled.div
+  className="card-format-builder-wrapper clearfix"
+>
+  <h2>
+    Card Format
+  </h2>
+  <p>
+    The Modes built here will show as buttons on every card, when clicked the hidden answer will appear.  In the Japanese Sample, the Modes were "English", "Romaji", and "Hiragana".
+  </p>
+  <DynamicFormElementFactory />
+  <NavigationArrow />
+</styled.div>
+`;

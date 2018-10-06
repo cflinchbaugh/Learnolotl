@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CardFileNameBuilder renders and matches snapshot 1`] = `
+<styled.div
+  className="card-file-name-builder-wrapper clearfix"
+>
+  <InputField />
+  <NavigationArrow
+    disabled={true}
+    onClickFunction={undefined}
+    type="next"
+  />
+</styled.div>
+`;
