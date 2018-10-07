@@ -1,5 +1,9 @@
 # [Learnolotl](https://github.com/cflinchbaugh/Learnolotl/) &middot; [![GitHub license](https://img.shields.io/badge/version-BETA-yellow.svg)]() [![PRs blocked](https://img.shields.io/badge/license-Apache2.0-blue.svg)]() [![PRs blocked](https://img.shields.io/badge/PRs-blocked-red.svg)]()
 
+## TL;DR
+Learnolotl is the *last flashcard application you'll ever need.*<br/>
+<a href="https://cflinchbaugh.github.io/Learnolotl/">Online Demo</a><br/>
+
 ## Table of Contents
 [Description](#description)<br/>
 [Status](#status)<br/>
