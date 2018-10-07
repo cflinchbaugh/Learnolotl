@@ -52,12 +52,12 @@ A passion project built to assist with my own study of the Japanese language (bu
 ## Technologies
 <a name="technologies"></a>
 
-+ <a href="https://github.com/facebook/react">React</a>
-+ <a href="https://github.com/reduxjs/react-redux">Redux</a>
-+ <a href="https://github.com/ReactTraining/react-router">React-Router</a>
-+ <a href="https://github.com/reactjs/react-transition-group">React Transition Group</a>
-+ <a href="https://github.com/styled-components/styled-components">Styled Components</a>
-+ <a href="https://github.com/facebook/jest">Jest</a>
++ <a target="_blank" href="https://github.com/facebook/react">React</a>
++ <a target="_blank" href="https://github.com/reduxjs/react-redux">Redux</a>
++ <a target="_blank" href="https://github.com/ReactTraining/react-router">React-Router</a>
++ <a target="_blank" href="https://github.com/reactjs/react-transition-group">React Transition Group</a>
++ <a target="_blank" href="https://github.com/styled-components/styled-components">Styled Components</a>
++ <a target="_blank" href="https://github.com/facebook/jest">Jest</a>
 
 ## License
 <a name="license"></a>
@@ -65,4 +65,4 @@ Apache License 2.0
 
 Quick Summary: You can do what you like with the software, as long as you include the required notices. This permissive license contains a patent license from the contributors of the code.
 <br/>
-<a href="https://tldrlegal.com/license/apache-license-2.0-(apache-2.0)">Apache License Explained</a>
+<a target="_blank" href="https://tldrlegal.com/license/apache-license-2.0-(apache-2.0)">Apache License Explained</a>
