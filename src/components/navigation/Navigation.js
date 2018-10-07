@@ -33,9 +33,9 @@ function Navigation () {
     return (
         <StyleWrapper>
             <div className="navigation-wrapper">
-                <NavLinkStyled to="/learn">Learn</NavLinkStyled>
-                <NavLinkStyled to="/build">Build</NavLinkStyled>
-                <NavLinkStyled to="/about">About</NavLinkStyled>
+                <NavLinkStyled to="/Learnolotl/learn">Learn</NavLinkStyled>
+                <NavLinkStyled to="/Learnolotl/build">Build</NavLinkStyled>
+                <NavLinkStyled to="/Learnolotl/about">About</NavLinkStyled>
             </div>
         </StyleWrapper>
     )

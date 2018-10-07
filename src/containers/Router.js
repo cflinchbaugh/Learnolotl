@@ -26,12 +26,13 @@ class Router extends Component {
                     
                     <StyleWrapper className="route-content-wrapper">
                         <Route path="/" exact component={LearnContainer}/>
+                        <Route path="/Learnolotl/" exact component={LearnContainer}/>
 
-                        <Route path="/learn" exact component={LearnContainer}/>
-                        <Route path="/learn/flashcards" component={LearnFlashcardsContainer}/>
+                        <Route path="/Learnolotl/learn" exact component={LearnContainer}/>
+                        <Route path="/Learnolotl/learn/flashcards" component={LearnFlashcardsContainer}/>
 
-                        <Route path="/build" component={BuildContainer}/>
-                        <Route path="/about" component={About}/>
+                        <Route path="/Learnolotl/build" component={BuildContainer}/>
+                        <Route path="/Learnolotl/about" component={About}/>
                     </StyleWrapper>
                 </div>
             </BrowserRouter>
