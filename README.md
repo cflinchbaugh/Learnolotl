@@ -1,4 +1,4 @@
-# [Learnolotl](https://github.com/cflinchbaugh/Learnolotl/) &middot; [![GitHub license](https://img.shields.io/badge/version-1.0.0-yellow.svg)]() [![PRs blocked](https://img.shields.io/badge/license-MIT-blue.svg)]() [![PRs blocked](https://img.shields.io/badge/PRs-blocked-red.svg)]()
+# [Learnolotl](https://github.com/cflinchbaugh/Learnolotl/) &middot; [![GitHub license](https://img.shields.io/badge/version-1.0.0-yellow.svg)]() [![PRs blocked](https://img.shields.io/badge/license-Apache2.0-blue.svg)]() [![PRs blocked](https://img.shields.io/badge/PRs-blocked-red.svg)]()
 
 ## Table of Contents
 [Description](#description)<br/>
@@ -6,6 +6,7 @@
 [Features](#features)<br/>
 [Motivation](#motivation)<br/>
 [Technologies](#technologies)<br/>
+[License](#license)<br/>
 
 ## Description
 <a name="description"></a>
@@ -57,3 +58,10 @@ A passion project built to assist with my own study of the Japanese language (bu
 + [React Transition Group](#https://github.com/reactjs/react-transition-group)
 + [Styled Components](#https://www.styled-components.com/)
 + [Jest](#https://jestjs.io/)
+
+## License
+<a name="license"></a>
+Apache License 2.0
+
+Quick Summary: You can do what you like with the software, as long as you include the required notices. This permissive license contains a patent license from the contributors of the code.
+<br/>[Apache License Explained](#https://tldrlegal.com/license/apache-license-2.0-(apache-2.0))
