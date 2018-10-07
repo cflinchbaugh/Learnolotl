@@ -1,4 +1,4 @@
-# [Memorinity](https://github.com/cflinchbaugh/Memorinity/) &middot; [![GitHub license](https://img.shields.io/badge/version-BETA-yellow.svg)]() [![PRs blocked](https://img.shields.io/badge/license-MIT-blue.svg)]() [![PRs blocked](https://img.shields.io/badge/PRs-blocked-red.svg)]()
+# [Learnolotl](https://github.com/cflinchbaugh/Learnolotl/) &middot; [![GitHub license](https://img.shields.io/badge/version-BETA-yellow.svg)]() [![PRs blocked](https://img.shields.io/badge/license-MIT-blue.svg)]() [![PRs blocked](https://img.shields.io/badge/PRs-blocked-red.svg)]()
 
 ## Table of Contents
 [Status](#status)<br/>

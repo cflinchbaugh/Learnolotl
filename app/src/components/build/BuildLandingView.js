@@ -20,11 +20,11 @@ function BuildLandingView (props) {
     return (
         <StyleWrapper className='build-landing-view-wrapper clearfix'>
             <p>
-                Create new Memorinity cards here!
+                Create new Learnolotl cards here!
             </p>
             <p>
                 You want to learn more than just the few sample cards that came with the app?  No problem!
-                It's easy to make your own Memorinity cards and share them with others.
+                It's easy to make your own Learnolotl cards and share them with others.
             </p>
             <NavigationArrow {...navigationArrowData} />
         </StyleWrapper>

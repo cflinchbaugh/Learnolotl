@@ -22,7 +22,7 @@ function CardBuilder (props) {
                 <Button {...props.nextCardButtonData}/>
 
                 <p>
-                    When you're all finished, click Download and you'll have a brand new set of Memorinity cards to use in the Learn section!
+                    When you're all finished, click Download and you'll have a brand new set of Learnolotl cards to use in the Learn section!
                 </p>
                 
                 <div className="export-button-wrapper">
