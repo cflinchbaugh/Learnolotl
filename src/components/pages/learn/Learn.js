@@ -33,7 +33,7 @@ function Learn (props) {
     const renderLink = (!props.sampleData && props.uploadedIds.length) || (props.sampleData) ? 
         (
             <Link to={{
-                    pathname: 'Learnolotl/learn/flashcards',
+                    pathname: '/learn/flashcards',
                     state: {
                         mode: props.linkData.mode
                     }    
