@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DynamicFormElementFactory renders and matches snapshot 1`] = `
+<styled.div>
+  <Connect(FormElementFactory) />
+  <Button
+    label="Add Mode"
+    onClickFunction={undefined}
+  />
+</styled.div>
+`;

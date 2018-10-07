@@ -7,7 +7,7 @@ import InputField from 'formElements/InputField';
 const StyleWrapper = styled.div`
 `
 
-class FormElementFactory extends Component {
+export class FormElementFactory extends Component {
     constructor(props) {
         super(props);
 
@@ -21,7 +21,6 @@ class FormElementFactory extends Component {
             <StyleWrapper>
                 {builtFormElements}
             </StyleWrapper>
-
         )
     }
 
@@ -33,8 +32,6 @@ class FormElementFactory extends Component {
 
         this.props.handleInputChange(formElementData);
     }
-
-    
 
     _buildFormElements() {
         return this.props.formElements.map((element, idx) => {

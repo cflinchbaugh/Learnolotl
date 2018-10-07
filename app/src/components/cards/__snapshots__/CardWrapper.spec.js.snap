@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CardWrapper renders and matches snapshot 1`] = `
+<Card
+  activeValue={undefined}
+  fadeInVanishOutAnimationData={
+    Object {
+      "classNames": "fade-in-vanish-out",
+      "timeout": 300,
+    }
+  }
+  revealItem={Array []}
+  revealOptionsData={
+    Object {
+      "display": undefined,
+      "handleClickOption": [Function],
+      "optionsArray": Array [],
+    }
+  }
+/>
+`;

@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Select renders and matches snapshot 1`] = `
+<styled.div>
+  <div>
+    :
+    <select
+      id={undefined}
+      onChange={undefined}
+      value={undefined}
+    >
+      
+    </select>
+  </div>
+</styled.div>
+`;
+
+exports[`Select renders populated data and matches snapshot 1`] = `
+<styled.div>
+  <div>
+    DC
+    :
+    <select
+      id="DC-Selector"
+      onChange={[Function]}
+      value={undefined}
+    >
+      <option
+        value="Wayne"
+      >
+        Batman
+      </option>
+      <option
+        value="Grayson"
+      >
+        Robin
+      </option>
+    </select>
+  </div>
+</styled.div>
+`;

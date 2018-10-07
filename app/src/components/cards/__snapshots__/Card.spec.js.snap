@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Card renders and matches snapshot 1`] = `
+<styled.div
+  className="card-wrapper mdCard"
+>
+  <div
+    className="content"
+  >
+    <div
+      className="active-wrapper"
+    >
+      <ActiveItem
+        value={undefined}
+      />
+    </div>
+    <TransitionGroup
+      childFactory={[Function]}
+      className="reveal-wrapper"
+      component="div"
+    >
+      
+    </TransitionGroup>
+  </div>
+  <div
+    className="reveal-options-wrapper"
+  >
+    <Connect(RevealOptions) />
+  </div>
+</styled.div>
+`;

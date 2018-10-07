@@ -6,7 +6,7 @@ import Card from './Card';
 
 // TODO: Content min-height, is this necessary?
     // It's not lookin' so good on large-format monitors
-class CardWrapper extends Component {
+export class CardWrapper extends Component {
     constructor(props) {
         super(props);
 
