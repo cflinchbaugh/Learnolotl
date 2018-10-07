@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LearnDataSelect renders and matches snapshot 1`] = `
+<styled.div
+  className="learn-data-selectwrapper"
+>
+  <Button
+    label="Japanese Demo"
+    onClickFunction={undefined}
+  />
+</styled.div>
+`;

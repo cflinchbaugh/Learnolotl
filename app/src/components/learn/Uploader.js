@@ -64,7 +64,7 @@ class Uploader extends Component {
                 <input 
                     type="file" 
                     name="file" 
-                    label="Test"
+                    label="Uploader"
                     onChange={(e)=>this.handleFileUpload(e)} 
                     multiple="multiple"/>
             </div>

@@ -7,7 +7,7 @@ const StyleWrapper = styled.div`
     margin: auto;
 `
 
-class Deck extends Component {
+export class Deck extends Component {
     render() {
         let builtDeck = this._buildDeck(),
             deck = builtDeck.length ? builtDeck : "No Cards Loaded!";

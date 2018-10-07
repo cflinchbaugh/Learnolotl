@@ -10,7 +10,7 @@ const StyleWrapper = styled.div`
     }
 `;
 
-class Listing extends Component {    
+export class Listing extends Component {    
     _processIdListing(uploadedIds) {
         return uploadedIds.map(function(uploadedId, idx) {
             let listingItem = (

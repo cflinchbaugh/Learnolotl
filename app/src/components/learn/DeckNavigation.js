@@ -28,7 +28,7 @@ const StyleWrapper = styled.div`
 
 `
 
-class DeckNavigation extends Component {
+export class DeckNavigation extends Component {
     constructor(props) {
         super(props);
 

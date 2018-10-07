@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DeckNavigation renders and matches snapshot 1`] = `
+<styled.div>
+  <div
+    className="deck-navigation"
+  >
+    <div
+      className="deck"
+    >
+      <Connect(Deck)
+        deckData={undefined}
+      />
+    </div>
+    <div
+      className="navigation-wrapper"
+    >
+      <div
+        className="navigation-button-wrapper"
+      >
+        <NavigationArrow
+          onClickFunction={[Function]}
+          type="previous"
+        />
+      </div>
+      <div
+        className="navigation-button-wrapper"
+      >
+        <NavigationArrow
+          onClickFunction={[Function]}
+          type="next"
+        />
+      </div>
+    </div>
+  </div>
+</styled.div>
+`;

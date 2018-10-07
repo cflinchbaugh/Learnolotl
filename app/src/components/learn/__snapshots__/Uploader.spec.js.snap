@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Uploader renders and matches snapshot 1`] = `
+<div>
+  <input
+    label="Uploader"
+    multiple="multiple"
+    name="file"
+    onChange={[Function]}
+    type="file"
+  />
+</div>
+`;

@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LearnFlashcards renders and matches snapshot 1`] = `
+<styled.div
+  className="deck-navigation-placeholder"
+>
+  <Connect(DeckNavigation)
+    deckData={undefined}
+  />
+</styled.div>
+`;

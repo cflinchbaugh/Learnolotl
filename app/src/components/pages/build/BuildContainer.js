@@ -13,7 +13,7 @@ const StyleWrapper = styled.div`
     
 `
 
-class BuildContainer extends Component {
+export class BuildContainer extends Component {
     constructor(props) {
         super(props);
         

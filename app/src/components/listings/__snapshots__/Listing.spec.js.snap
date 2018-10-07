@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Listing renders and matches snapshot 1`] = `
+<styled.div>
+  
+</styled.div>
+`;
+
+exports[`Listing renders multiple items and matches snapshot 1`] = `
+<styled.div>
+  <div
+    className="listing-item"
+  >
+    Ichi
+  </div>
+  <div
+    className="listing-item"
+  >
+    Ni
+  </div>
+  <div
+    className="listing-item"
+  >
+    San
+  </div>
+  <div
+    className="listing-item"
+  >
+    Yan
+  </div>
+  <div
+    className="listing-item"
+  >
+    Go
+  </div>
+</styled.div>
+`;

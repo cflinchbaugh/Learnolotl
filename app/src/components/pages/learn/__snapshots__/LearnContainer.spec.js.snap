@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LearnContainer renders and matches snapshot 1`] = `
+<LearnLandingView
+  learnData={
+    Object {
+      "fileListingData": Object {
+        "fileListing": <Connect(Listing) />,
+      },
+      "linkData": Object {
+        "mode": undefined,
+      },
+      "modeSelectData": Object {
+        "handleChange": [Function],
+        "id": "mode",
+        "label": "Mode",
+        "options": undefined,
+        "selected": undefined,
+      },
+      "sampleData": undefined,
+      "uploadedIds": undefined,
+      "uploaderData": Object {
+        "handleFileUpload": [Function],
+      },
+    }
+  }
+  learnDataSelectData={
+    Object {
+      "handleDemoDataClick": [Function],
+    }
+  }
+/>
+`;

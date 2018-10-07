@@ -15,7 +15,7 @@ import Listing from 'listings/Listing';
 import LearnSampleData from './LearnSampleData';
 import LearnLandingView from './LearnLandingView';
 
-class LearnContainer extends Component {
+export class LearnContainer extends Component {
     constructor(props) {
         super(props);
 

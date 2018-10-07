@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BuildContainer renders and matches snapshot 1`] = `
+<styled.div
+  className="build-container-wrapper mdCard"
+>
+  <BuildLandingView
+    handleBuildLandingViewNext={[Function]}
+  />
+</styled.div>
+`;

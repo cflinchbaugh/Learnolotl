@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LearnFlashcardsContainer renders and matches snapshot 1`] = `
+<LearnFlashcards
+  deckNavigationData={
+    Object {
+      "cardData": Array [],
+      "display": undefined,
+      "mode": "test",
+    }
+  }
+/>
+`;

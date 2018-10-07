@@ -2,8 +2,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import LearnFlashcards from './LearnFlashcards';
 
-
-class LearnFlashcardsContainer extends Component {
+export class LearnFlashcardsContainer extends Component {
     render() {
         let deckData = {
             mode: this.props.location.state.mode,
@@ -27,9 +26,10 @@ class LearnFlashcardsContainer extends Component {
 
         // Build response, return an array so we can potentially
             // send more than one card at a time
-            if (typeof(response[validatedIdx]) !== 'undefined') {
-                results.push(response[validatedIdx]);
-            }
+        if (typeof(response[validatedIdx]) !== 'undefined') {
+            results.push(response[validatedIdx]);
+        }
+        
         return results;
     }
 }

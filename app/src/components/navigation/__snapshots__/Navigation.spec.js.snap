@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Navigation renders and matches snapshot 1`] = `
+<styled.div>
+  <div
+    className="navigation-wrapper"
+  >
+    <Styled(NavLink)
+      activeClassName="active"
+      to="/learn"
+    >
+      Learn
+    </Styled(NavLink)>
+    <Styled(NavLink)
+      activeClassName="active"
+      to="/build"
+    >
+      Build
+    </Styled(NavLink)>
+    <Styled(NavLink)
+      activeClassName="active"
+      to="/about"
+    >
+      About
+    </Styled(NavLink)>
+  </div>
+</styled.div>
+`;

@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Router renders and matches snapshot 1`] = `
+<BrowserRouter>
+  <div
+    className="Router"
+  >
+    <Navigation />
+    <styled.div
+      className="route-content-wrapper"
+    >
+      <Route
+        component={[Function]}
+        exact={true}
+        path="/"
+      />
+      <Route
+        component={[Function]}
+        exact={true}
+        path="/learn"
+      />
+      <Route
+        component={[Function]}
+        path="/learn/flashcards"
+      />
+      <Route
+        component={[Function]}
+        path="/build"
+      />
+      <Route
+        component={[Function]}
+        path="/about"
+      />
+    </styled.div>
+  </div>
+</BrowserRouter>
+`;

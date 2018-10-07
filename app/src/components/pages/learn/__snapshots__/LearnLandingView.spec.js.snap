@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LearnLandingView renders and matches snapshot 1`] = `
+<styled.div
+  className="learn-container-wrapper mdCard"
+>
+  <div
+    className="demo-wrapper"
+  >
+    <LearnDataSelect />
+  </div>
+  <div
+    className="uploader-wrapper"
+  >
+    <Learn />
+  </div>
+</styled.div>
+`;

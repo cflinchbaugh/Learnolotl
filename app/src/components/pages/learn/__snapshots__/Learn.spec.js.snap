@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Learn renders and matches snapshot 1`] = `
+<styled.div
+  className="learn-wrapper"
+>
+  <div
+    className="card-selection"
+  >
+    <div
+      className="uploader-wrapper"
+    >
+      <Uploader />
+    </div>
+    
+    
+  </div>
+  <div
+    className="link-wrapper clearfix"
+  />
+</styled.div>
+`;
