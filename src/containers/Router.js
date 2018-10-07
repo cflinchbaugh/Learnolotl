@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 
-import { HashRouter } from 'react-router-dom';
+import { BrowserRouter } from 'react-router-dom';
 import Route from 'react-router-dom/Route';
 
 import Navigation from '../components/navigation/Navigation';
@@ -20,7 +20,7 @@ const StyleWrapper = styled.div`
 class Router extends Component {
     render() {
         return (
-            <HashRouter>
+            <BrowserRouter>
                 <div className="Router">
                     <Navigation/>
                     
@@ -34,7 +34,7 @@ class Router extends Component {
                         <Route path="/about" component={About}/>
                     </StyleWrapper>
                 </div>
-            </HashRouter>
+            </BrowserRouter>
         );
     }
 }
