@@ -1,4 +1,4 @@
-# [Learnolotl](https://github.com/cflinchbaugh/Learnolotl/) &middot; [![GitHub license](https://img.shields.io/badge/version-1.0.0-yellow.svg)]() [![PRs blocked](https://img.shields.io/badge/license-Apache2.0-blue.svg)]() [![PRs blocked](https://img.shields.io/badge/PRs-blocked-red.svg)]()
+# [Learnolotl](https://github.com/cflinchbaugh/Learnolotl/) &middot; [![GitHub license](https://img.shields.io/badge/version-BETA-yellow.svg)]() [![PRs blocked](https://img.shields.io/badge/license-Apache2.0-blue.svg)]() [![PRs blocked](https://img.shields.io/badge/PRs-blocked-red.svg)]()
 
 ## Table of Contents
 [Description](#description)<br/>
@@ -22,7 +22,7 @@ Whether you use cards someone else made or create your own, Learnolotl is for st
 
 ## Status
 <a name="status"></a>
-Current Version: 1.0.0
+Current Version: BETA
 
 ## Feature Status
 <a name="features"></a>
