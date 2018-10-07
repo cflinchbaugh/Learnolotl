@@ -29,7 +29,7 @@ class Router extends Component {
                         <Route path="/Learnolotl/" exact component={LearnContainer}/>
 
                         <Route path="/Learnolotl/learn" exact component={LearnContainer}/>
-                        <Route path="/Learnolotl/learn/flashcards" component={LearnFlashcardsContainer}/>
+                        <Route path="/learn/flashcards" component={LearnFlashcardsContainer}/>
 
                         <Route path="/Learnolotl/build" component={BuildContainer}/>
                         <Route path="/Learnolotl/about" component={About}/>
