@@ -20,21 +20,21 @@ const StyleWrapper = styled.div`
 class Router extends Component {
     render() {
         return (
-        <HashRouter>
-            <div className="Router">
-                <Navigation/>
-                
-                <StyleWrapper className="route-content-wrapper">
-                    <Route path="/" exact component={LearnContainer}/>
+            <HashRouter>
+                <div className="Router">
+                    <Navigation/>
+                    
+                    <StyleWrapper className="route-content-wrapper">
+                        <Route path="/" exact component={LearnContainer}/>
 
-                    <Route path="/learn" exact component={LearnContainer}/>
-                    <Route path="/learn/flashcards" component={LearnFlashcardsContainer}/>
+                        <Route path="/learn" exact component={LearnContainer}/>
+                        <Route path="/learn/flashcards" component={LearnFlashcardsContainer}/>
 
-                    <Route path="/build" component={BuildContainer}/>
-                    <Route path="/about" component={About}/>
-                </StyleWrapper>
-            </div>
-        </HashRouter>
+                        <Route path="/build" component={BuildContainer}/>
+                        <Route path="/about" component={About}/>
+                    </StyleWrapper>
+                </div>
+            </HashRouter>
         );
     }
 }
