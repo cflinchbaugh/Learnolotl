@@ -8,7 +8,8 @@ import {
     UPDATE_MODE,
     UPDATE_MODE_OPTIONS,
     UPDATE_FORMAT,
-    UPDATE_LEARN_DATA
+    UPDATE_LEARN_DATA,
+    RESET_LEARN_DEMO
 } from './types';
 
 export const createCard = (cardData) => dispatch => {
@@ -77,5 +78,10 @@ export const updateLearnData = (option) => dispatch => {
     dispatch({
         type: UPDATE_LEARN_DATA,
         payload: option
+    })
+}
+export const resetLearnDemo = () => dispatch => {
+    dispatch({
+        type: RESET_LEARN_DEMO
     })
 }

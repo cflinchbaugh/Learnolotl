@@ -8,7 +8,8 @@ import {
     UPDATE_MODE,
     UPDATE_MODE_OPTIONS,
     UPDATE_FORMAT,
-    UPDATE_LEARN_DATA
+    UPDATE_LEARN_DATA,
+    RESET_LEARN_DEMO
 } from '../actions/types';
 
 const initialState = {
@@ -161,6 +162,16 @@ export default function(state = initialState, action) {
                         }
                     ]
                 }
+            }
+
+        case RESET_LEARN_DEMO:
+            return {
+                ...state,
+                items: [],
+                sampleData: false,
+                modeOptions: [],
+                learnData: '',
+                mode: ''
             }
         default: 
             return state;

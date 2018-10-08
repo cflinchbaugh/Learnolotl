@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 
 import { connect } from 'react-redux';
 import { resetBuildData } from '../../actions/buildActions';
+import { resetLearnDemo } from '../../actions/cardActions';
 
 import Navigation from './Navigation';
 
@@ -38,6 +39,7 @@ export class NavigationContainer extends Component {
 
     handleNavigationClick() {
         this.props.resetBuildData();
+        this.props.resetLearnDemo();
     }
 }
 
@@ -46,4 +48,9 @@ const mapStateToProps = state => ({
 
 });
 
-export default connect(mapStateToProps, { resetBuildData })(NavigationContainer);
+const mapStoreActions = {
+    resetBuildData,
+    resetLearnDemo
+}
+
+export default connect(mapStateToProps, mapStoreActions)(NavigationContainer);
