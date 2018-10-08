@@ -1,18 +1,18 @@
 import React from 'react';
 import {shallow} from 'enzyme';
-import Navigation from './Navigation';
+import {NavigationContainer} from './NavigationContainer';
 import ShallowRenderer from 'react-test-renderer/shallow';
 
-describe('Navigation', () => {
+describe('NavigationContainer', () => {
     it('renders and matches snapshot', () => {
         const renderer = new ShallowRenderer();
 
-        const navigationData = {
-            navigationItems: []
+        const navigationContainerData = {
+
         }
 
         const tree = renderer.render(
-            <Navigation {...navigationData}/>
+            <NavigationContainer {...navigationContainerData}/>
         );
 
         expect(tree).toMatchSnapshot();

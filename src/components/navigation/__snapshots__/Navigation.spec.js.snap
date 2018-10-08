@@ -5,24 +5,7 @@ exports[`Navigation renders and matches snapshot 1`] = `
   <div
     className="navigation-wrapper"
   >
-    <Styled(NavLink)
-      activeClassName="active"
-      to="/learn"
-    >
-      Learn
-    </Styled(NavLink)>
-    <Styled(NavLink)
-      activeClassName="active"
-      to="/build"
-    >
-      Build
-    </Styled(NavLink)>
-    <Styled(NavLink)
-      activeClassName="active"
-      to="/about"
-    >
-      About
-    </Styled(NavLink)>
+    
   </div>
 </styled.div>
 `;

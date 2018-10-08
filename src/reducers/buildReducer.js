@@ -1,10 +1,13 @@
-import { BUILD_CARD,
-UPDATE_FILE_NAME,
-UPDATE_FORM_ELEMENT_DATA,
-UPDATE_FORMAT_FORM_ELEMENT_DATA,
-UPDATE_FORMAT_FORM_ELEMENTS,
-UPDATE_BUILD_FILE_ID,
-UPDATE_BUILD_CARD_FORMAT } from '../actions/types';
+import { 
+    BUILD_CARD,
+    UPDATE_FILE_NAME,
+    UPDATE_FORM_ELEMENT_DATA,
+    UPDATE_FORMAT_FORM_ELEMENT_DATA,
+    UPDATE_FORMAT_FORM_ELEMENTS,
+    UPDATE_BUILD_FILE_ID,
+    UPDATE_BUILD_CARD_FORMAT,
+    RESET_BUILD_DATA
+} from '../actions/types';
 
 const initialState = {
     revealOptionData: [],
@@ -65,6 +68,13 @@ export default function(state = initialState, action) {
             return {
                 ...state,
                 cardFormat: action.payload
+            }
+        case RESET_BUILD_DATA:
+            return {
+                ...state,
+                fileId: '',
+                formatFormElementData: {},
+                formElementData: {}
             }
 
         default: 

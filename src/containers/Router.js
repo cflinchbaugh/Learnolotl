@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import { BrowserRouter } from 'react-router-dom';
 import Route from 'react-router-dom/Route';
 
-import Navigation from '../components/navigation/Navigation';
+import NavigationContainer from '../components/navigation/NavigationContainer';
 import LearnContainer from '../components/pages/learn/LearnContainer';
 import LearnFlashcardsContainer from '../components/pages/learn/LearnFlashcardsContainer'
 import BuildContainer from '../components/pages/build/BuildContainer';
@@ -22,7 +22,7 @@ class Router extends Component {
         return (
             <BrowserRouter>
                 <div className="Router">
-                    <Navigation/>
+                    <NavigationContainer/>
                     
                     <StyleWrapper className="route-content-wrapper">
                         <Route path="/" exact component={LearnContainer}/>

@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NavigationContainer renders and matches snapshot 1`] = `
+<Navigation
+  navigationItems={
+    Array [
+      Object {
+        "label": "Learn",
+        "onClick": [Function],
+        "to": "/Learnolotl/learn",
+      },
+      Object {
+        "label": "Build",
+        "onClick": [Function],
+        "to": "/Learnolotl/build",
+      },
+      Object {
+        "label": "About",
+        "onClick": [Function],
+        "to": "/Learnolotl/about",
+      },
+    ]
+  }
+/>
+`;

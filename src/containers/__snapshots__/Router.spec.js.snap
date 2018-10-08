@@ -5,7 +5,7 @@ exports[`Router renders and matches snapshot 1`] = `
   <div
     className="Router"
   >
-    <Navigation />
+    <Connect(NavigationContainer) />
     <styled.div
       className="route-content-wrapper"
     >
@@ -17,7 +17,12 @@ exports[`Router renders and matches snapshot 1`] = `
       <Route
         component={[Function]}
         exact={true}
-        path="/learn"
+        path="/Learnolotl/"
+      />
+      <Route
+        component={[Function]}
+        exact={true}
+        path="/Learnolotl/learn"
       />
       <Route
         component={[Function]}
@@ -25,11 +30,11 @@ exports[`Router renders and matches snapshot 1`] = `
       />
       <Route
         component={[Function]}
-        path="/build"
+        path="/Learnolotl/build"
       />
       <Route
         component={[Function]}
-        path="/about"
+        path="/Learnolotl/about"
       />
     </styled.div>
   </div>

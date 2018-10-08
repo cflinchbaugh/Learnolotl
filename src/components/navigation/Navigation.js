@@ -29,13 +29,18 @@ NavLinkStyled.defaultProps = {
     activeClassName: 'active'
 };
 
-function Navigation () {
+function Navigation(props) {
+    let navigationItems = props.navigationItems.map((itemData, idx) => {
+        return (
+            <NavLinkStyled {...itemData} key={idx}>
+                {itemData.label}
+            </NavLinkStyled> 
+        )
+    })
     return (
         <StyleWrapper>
             <div className="navigation-wrapper">
-                <NavLinkStyled to="/Learnolotl/learn">Learn</NavLinkStyled>
-                <NavLinkStyled to="/Learnolotl/build">Build</NavLinkStyled>
-                <NavLinkStyled to="/Learnolotl/about">About</NavLinkStyled>
+                {navigationItems}
             </div>
         </StyleWrapper>
     )

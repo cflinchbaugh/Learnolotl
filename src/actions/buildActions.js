@@ -1,10 +1,13 @@
-import { BUILD_CARD,
-UPDATE_FILE_NAME,
-UPDATE_FORM_ELEMENT_DATA,
-UPDATE_FORMAT_FORM_ELEMENT_DATA,
-UPDATE_FORMAT_FORM_ELEMENTS,
-UPDATE_BUILD_FILE_ID,
-UPDATE_BUILD_CARD_FORMAT } from './types';
+import { 
+    BUILD_CARD,
+    UPDATE_FILE_NAME,
+    UPDATE_FORM_ELEMENT_DATA,
+    UPDATE_FORMAT_FORM_ELEMENT_DATA,
+    UPDATE_FORMAT_FORM_ELEMENTS,
+    UPDATE_BUILD_FILE_ID,
+    UPDATE_BUILD_CARD_FORMAT,
+    RESET_BUILD_DATA
+} from './types';
 
 export const buildCard = (cardData) => dispatch => {
     dispatch({
@@ -48,5 +51,10 @@ export const updateBuildCardFormat = (buildCardFormat) => dispatch => {
     dispatch({
         type: UPDATE_BUILD_CARD_FORMAT,
         payload: buildCardFormat
+    });
+};
+export const resetBuildData = () => dispatch => {
+    dispatch({
+        type: RESET_BUILD_DATA
     });
 };
