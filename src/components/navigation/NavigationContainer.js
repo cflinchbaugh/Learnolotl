@@ -53,4 +53,9 @@ const mapStoreActions = {
     resetLearnDemo
 }
 
-export default connect(mapStateToProps, mapStoreActions)(NavigationContainer);
+// https://stackoverflow.com/questions/35053161/how-to-set-activeclassname-for-wrapper-element-of-link-or-indexlink-in-react-rou
+const allowNavigationToRerender = {
+    pure: false
+}
+
+export default connect(mapStateToProps, mapStoreActions, null, allowNavigationToRerender)(NavigationContainer);
