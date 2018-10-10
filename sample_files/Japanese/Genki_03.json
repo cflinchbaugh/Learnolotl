@@ -1,0 +1,1556 @@
+{
+    "id": "Genki_03",
+    "results": [
+        {
+            "revealOptionData": [
+                {
+                    "id": "English",
+                    "value": "movie",
+                    "type": "text"
+                },
+                {
+                    "id": "Romaji",
+                    "value": "eigo",
+                    "type": "text"
+                },
+                {
+                    "id": "Hiragana",
+                    "value": "えいご",
+                    "type": "text"
+                },
+                {
+                    "id": "Kanji*",
+                    "value": "映画",
+                    "type": "text"
+                },
+                {
+                    "id": "Notes*",
+                    "value": "N/A",
+                    "type": "text"
+                }
+            ]
+        },
+        {
+            "revealOptionData": [
+                {
+                    "id": "English",
+                    "value": "music",
+                    "type": "text"
+                },
+                {
+                    "id": "Romaji",
+                    "value": "ongaku",
+                    "type": "text"
+                },
+                {
+                    "id": "Hiragana",
+                    "value": "お​んがく",
+                    "type": "text"
+                },
+                {
+                    "id": "Kanji*",
+                    "value": "音樂",
+                    "type": "text"
+                },
+                {
+                    "id": "Notes*",
+                    "value": "N/A",
+                    "type": "text"
+                }
+            ]
+        },
+        {
+            "revealOptionData": [
+                {
+                    "id": "English",
+                    "value": "magazine",
+                    "type": "text"
+                },
+                {
+                    "id": "Romaji",
+                    "value": "zasshi",
+                    "type": "text"
+                },
+                {
+                    "id": "Hiragana",
+                    "value": "ざっし",
+                    "type": "text"
+                },
+                {
+                    "id": "Kanji*",
+                    "value": "雑誌",
+                    "type": "text"
+                },
+                {
+                    "id": "Notes*",
+                    "value": "N/A",
+                    "type": "text"
+                }
+            ]
+        },
+        {
+            "revealOptionData": [
+                {
+                    "id": "English",
+                    "value": "sports",
+                    "type": "text"
+                },
+                {
+                    "id": "Romaji",
+                    "value": "supo-tsu",
+                    "type": "text"
+                },
+                {
+                    "id": "Hiragana",
+                    "value": "スポーツ",
+                    "type": "text"
+                },
+                {
+                    "id": "Kanji*",
+                    "value": "N/A",
+                    "type": "text"
+                },
+                {
+                    "id": "Notes*",
+                    "value": "N/A",
+                    "type": "text"
+                }
+            ]
+        },
+        {
+            "revealOptionData": [
+                {
+                    "id": "English",
+                    "value": "date (romantic)",
+                    "type": "text"
+                },
+                {
+                    "id": "Romaji",
+                    "value": "de-to",
+                    "type": "text"
+                },
+                {
+                    "id": "Hiragana",
+                    "value": "デート",
+                    "type": "text"
+                },
+                {
+                    "id": "Kanji*",
+                    "value": "N/A",
+                    "type": "text"
+                },
+                {
+                    "id": "Notes*",
+                    "value": "https://japanese.stackexchange.com/questions/27726/why-is-%E3%83%87%E3%83%BC%E3%83%88-read-deito-instead-of-deeto",
+                    "type": "text"
+                }
+            ]
+        },
+        {
+            "revealOptionData": [
+                {
+                    "id": "English",
+                    "value": "tennis",
+                    "type": "text"
+                },
+                {
+                    "id": "Romaji",
+                    "value": "tenisu",
+                    "type": "text"
+                },
+                {
+                    "id": "Hiragana",
+                    "value": " テニス",
+                    "type": "text"
+                },
+                {
+                    "id": "Kanji*",
+                    "value": "N/A",
+                    "type": "text"
+                },
+                {
+                    "id": "Notes*",
+                    "value": "N/A",
+                    "type": "text"
+                }
+            ]
+        },
+        {
+            "revealOptionData": [
+                {
+                    "id": "English",
+                    "value": "TV",
+                    "type": "text"
+                },
+                {
+                    "id": "Romaji",
+                    "value": "terebi",
+                    "type": "text"
+                },
+                {
+                    "id": "Hiragana",
+                    "value": "テレビ",
+                    "type": "text"
+                },
+                {
+                    "id": "Kanji*",
+                    "value": "N/A",
+                    "type": "text"
+                },
+                {
+                    "id": "Notes*",
+                    "value": "N/A",
+                    "type": "text"
+                }
+            ]
+        },
+        {
+            "revealOptionData": [
+                {
+                    "id": "English",
+                    "value": "video tape; VCR",
+                    "type": "text"
+                },
+                {
+                    "id": "Romaji",
+                    "value": "bideo",
+                    "type": "text"
+                },
+                {
+                    "id": "Hiragana",
+                    "value": " ビデオ",
+                    "type": "text"
+                },
+                {
+                    "id": "Kanji*",
+                    "value": "N/A",
+                    "type": "text"
+                },
+                {
+                    "id": "Notes*",
+                    "value": "Google translates video tape as bideote-pu, VCR is unmentioned",
+                    "type": "text"
+                }
+            ]
+        },
+        {
+            "revealOptionData": [
+                {
+                    "id": "English",
+                    "value": "breakfast",
+                    "type": "text"
+                },
+                {
+                    "id": "Romaji",
+                    "value": "asagohan",
+                    "type": "text"
+                },
+                {
+                    "id": "Hiragana",
+                    "value": "あさごはん",
+                    "type": "text"
+                },
+                {
+                    "id": "Kanji*",
+                    "value": "朝御飯",
+                    "type": "text"
+                },
+                {
+                    "id": "Notes*",
+                    "value": "Asa literally means \"morning\", gohan means \"meal\"",
+                    "type": "text"
+                }
+            ]
+        },
+        {
+            "revealOptionData": [
+                {
+                    "id": "English",
+                    "value": "osake; alcohol",
+                    "type": "text"
+                },
+                {
+                    "id": "Romaji",
+                    "value": "osake",
+                    "type": "text"
+                },
+                {
+                    "id": "Hiragana",
+                    "value": "おさけ",
+                    "type": "text"
+                },
+                {
+                    "id": "Kanji*",
+                    "value": "お酒",
+                    "type": "text"
+                },
+                {
+                    "id": "Notes*",
+                    "value": "\"o\" is a polite prefix.  On its own, \"sake\" (without the o) means salmon",
+                    "type": "text"
+                }
+            ]
+        },
+        {
+            "revealOptionData": [
+                {
+                    "id": "English",
+                    "value": "green tea",
+                    "type": "text"
+                },
+                {
+                    "id": "Romaji",
+                    "value": "ocha",
+                    "type": "text"
+                },
+                {
+                    "id": "Hiragana",
+                    "value": "おちゃ",
+                    "type": "text"
+                },
+                {
+                    "id": "Kanji*",
+                    "value": "お茶",
+                    "type": "text"
+                },
+                {
+                    "id": "Notes*",
+                    "value": "Using the \"o\" is considered neutral, using the kanji without the \"o\" is considered intentionally impolite.  Wikipedia lists ocha as \"tea, usually green\"",
+                    "type": "text"
+                }
+            ]
+        },
+        {
+            "revealOptionData": [
+                {
+                    "id": "English",
+                    "value": "coffee",
+                    "type": "text"
+                },
+                {
+                    "id": "Romaji",
+                    "value": "ko-hi-",
+                    "type": "text"
+                },
+                {
+                    "id": "Hiragana",
+                    "value": "コーヒー (Katakana)",
+                    "type": "text"
+                },
+                {
+                    "id": "Kanji*",
+                    "value": "N/A",
+                    "type": "text"
+                },
+                {
+                    "id": "Notes*",
+                    "value": "Not shown in the Genki notes, Coffee is often written as  珈琲 on signs and menus (https://en.wikipedia.org/wiki/Ateji)",
+                    "type": "text"
+                }
+            ]
+        },
+        {
+            "revealOptionData": [
+                {
+                    "id": "English",
+                    "value": "dinner",
+                    "type": "text"
+                },
+                {
+                    "id": "Romaji",
+                    "value": "bangohan",
+                    "type": "text"
+                },
+                {
+                    "id": "Hiragana",
+                    "value": "ばんごはん",
+                    "type": "text"
+                },
+                {
+                    "id": "Kanji*",
+                    "value": "晩御飯",
+                    "type": "text"
+                },
+                {
+                    "id": "Notes*",
+                    "type": "text"
+                }
+            ]
+        },
+        {
+            "revealOptionData": [
+                {
+                    "id": "English",
+                    "value": "hamburger",
+                    "type": "text"
+                },
+                {
+                    "id": "Romaji",
+                    "value": "Hanba-ga-",
+                    "type": "text"
+                },
+                {
+                    "id": "Hiragana",
+                    "value": "ハンバーガー   /     はんばーがー",
+                    "type": "text"
+                },
+                {
+                    "id": "Kanji*",
+                    "value": "N/A",
+                    "type": "text"
+                },
+                {
+                    "id": "Notes*",
+                    "value": "Katakana is listed in the Genki notes, Hiragana is not",
+                    "type": "text"
+                }
+            ]
+        },
+        {
+            "revealOptionData": [
+                {
+                    "id": "English",
+                    "value": "lunch",
+                    "type": "text"
+                },
+                {
+                    "id": "Romaji",
+                    "value": "hirugohan",
+                    "type": "text"
+                },
+                {
+                    "id": "Hiragana",
+                    "value": " ひるごはん",
+                    "type": "text"
+                },
+                {
+                    "id": "Kanji*",
+                    "value": "昼御飯",
+                    "type": "text"
+                },
+                {
+                    "id": "Notes*",
+                    "type": "text"
+                }
+            ]
+        },
+        {
+            "revealOptionData": [
+                {
+                    "id": "English",
+                    "value": "water",
+                    "type": "text"
+                },
+                {
+                    "id": "Romaji",
+                    "value": "mizu",
+                    "type": "text"
+                },
+                {
+                    "id": "Hiragana",
+                    "value": " みず",
+                    "type": "text"
+                },
+                {
+                    "id": "Kanji*",
+                    "value": "水",
+                    "type": "text"
+                },
+                {
+                    "id": "Notes*",
+                    "value": "Historical hiragana: みづ ",
+                    "type": "text"
+                }
+            ]
+        },
+        {
+            "revealOptionData": [
+                {
+                    "id": "English",
+                    "value": "home; house",
+                    "type": "text"
+                },
+                {
+                    "id": "Romaji",
+                    "value": "ie",
+                    "type": "text"
+                },
+                {
+                    "id": "Hiragana",
+                    "value": "いえ",
+                    "type": "text"
+                },
+                {
+                    "id": "Kanji*",
+                    "value": "家",
+                    "type": "text"
+                },
+                {
+                    "id": "Notes*",
+                    "type": "text"
+                }
+            ]
+        },
+        {
+            "revealOptionData": [
+                {
+                    "id": "English",
+                    "value": "home; house; my place",
+                    "type": "text"
+                },
+                {
+                    "id": "Romaji",
+                    "value": "uchi",
+                    "type": "text"
+                },
+                {
+                    "id": "Hiragana",
+                    "value": "うち",
+                    "type": "text"
+                },
+                {
+                    "id": "Kanji*",
+                    "value": "N/A",
+                    "type": "text"
+                },
+                {
+                    "id": "Notes*",
+                    "type": "text"
+                }
+            ]
+        },
+        {
+            "revealOptionData": [
+                {
+                    "id": "English",
+                    "value": "school",
+                    "type": "text"
+                },
+                {
+                    "id": "Romaji",
+                    "value": "gakko",
+                    "type": "text"
+                },
+                {
+                    "id": "Hiragana",
+                    "value": "がっこう",
+                    "type": "text"
+                },
+                {
+                    "id": "Kanji*",
+                    "value": "学校",
+                    "type": "text"
+                },
+                {
+                    "id": "Notes*",
+                    "type": "text"
+                }
+            ]
+        },
+        {
+            "revealOptionData": [
+                {
+                    "id": "English",
+                    "value": "morning",
+                    "type": "text"
+                },
+                {
+                    "id": "Romaji",
+                    "value": "asa",
+                    "type": "text"
+                },
+                {
+                    "id": "Hiragana",
+                    "value": "あさ",
+                    "type": "text"
+                },
+                {
+                    "id": "Kanji*",
+                    "value": "朝",
+                    "type": "text"
+                },
+                {
+                    "id": "Notes*",
+                    "type": "text"
+                }
+            ]
+        },
+        {
+            "revealOptionData": [
+                {
+                    "id": "English",
+                    "value": "tomorrow",
+                    "type": "text"
+                },
+                {
+                    "id": "Romaji",
+                    "value": "ashita",
+                    "type": "text"
+                },
+                {
+                    "id": "Hiragana",
+                    "value": "あした",
+                    "type": "text"
+                },
+                {
+                    "id": "Kanji*",
+                    "value": "明日*",
+                    "type": "text"
+                },
+                {
+                    "id": "Notes*",
+                    "value": "Kanji not listed in Genki notes",
+                    "type": "text"
+                }
+            ]
+        },
+        {
+            "revealOptionData": [
+                {
+                    "id": "English",
+                    "value": "when",
+                    "type": "text"
+                },
+                {
+                    "id": "Romaji",
+                    "value": "itsu",
+                    "type": "text"
+                },
+                {
+                    "id": "Hiragana",
+                    "value": "いつ",
+                    "type": "text"
+                },
+                {
+                    "id": "Kanji*",
+                    "value": "何時*",
+                    "type": "text"
+                },
+                {
+                    "id": "Notes*",
+                    "value": "Kanji not listed in Genki notes.  Commonly used in terms of dates or days, nanji is commonly used for when in terms of time of day",
+                    "type": "text"
+                }
+            ]
+        },
+        {
+            "revealOptionData": [
+                {
+                    "id": "English",
+                    "value": "today",
+                    "type": "text"
+                },
+                {
+                    "id": "Romaji",
+                    "value": "kyou",
+                    "type": "text"
+                },
+                {
+                    "id": "Hiragana",
+                    "value": "きょう",
+                    "type": "text"
+                },
+                {
+                    "id": "Kanji*",
+                    "value": "今日",
+                    "type": "text"
+                },
+                {
+                    "id": "Notes*",
+                    "value": "",
+                    "type": "text"
+                }
+            ]
+        },
+        {
+            "revealOptionData": [
+                {
+                    "id": "English",
+                    "value": "at about",
+                    "type": "text"
+                },
+                {
+                    "id": "Romaji",
+                    "value": "~goro",
+                    "type": "text"
+                },
+                {
+                    "id": "Hiragana",
+                    "value": "~ごろ",
+                    "type": "text"
+                },
+                {
+                    "id": "Kanji*",
+                    "value": "N/A",
+                    "type": "text"
+                },
+                {
+                    "id": "Notes*",
+                    "value": "\"gozen yozi goro ni uti he kimashita\" : \"(She) came home at about 4a.m.\"",
+                    "type": "text"
+                }
+            ]
+        },
+        {
+            "revealOptionData": [
+                {
+                    "id": "English",
+                    "value": "tonight",
+                    "type": "text"
+                },
+                {
+                    "id": "Romaji",
+                    "value": "konban",
+                    "type": "text"
+                },
+                {
+                    "id": "Hiragana",
+                    "value": "こんばん",
+                    "type": "text"
+                },
+                {
+                    "id": "Kanji*",
+                    "value": "今晩",
+                    "type": "text"
+                },
+                {
+                    "id": "Notes*",
+                    "type": "text"
+                }
+            ]
+        },
+        {
+            "revealOptionData": [
+                {
+                    "id": "English",
+                    "value": "weekend",
+                    "type": "text"
+                },
+                {
+                    "id": "Romaji",
+                    "value": "shuumatsu",
+                    "type": "text"
+                },
+                {
+                    "id": "Hiragana",
+                    "value": "しゅうまつ",
+                    "type": "text"
+                },
+                {
+                    "id": "Kanji*",
+                    "value": "週末",
+                    "type": "text"
+                },
+                {
+                    "id": "Notes*",
+                    "value": "this weekend - konshuumatsu, 今週末  this week - konshuu, 今週",
+                    "type": "text"
+                }
+            ]
+        },
+        {
+            "revealOptionData": [
+                {
+                    "id": "English",
+                    "value": "Saturday",
+                    "type": "text"
+                },
+                {
+                    "id": "Romaji",
+                    "value": "doyoubi",
+                    "type": "text"
+                },
+                {
+                    "id": "Hiragana",
+                    "value": "どようび",
+                    "type": "text"
+                },
+                {
+                    "id": "Kanji*",
+                    "value": "土曜日",
+                    "type": "text"
+                },
+                {
+                    "id": "Notes*",
+                    "type": "text"
+                }
+            ]
+        },
+        {
+            "revealOptionData": [
+                {
+                    "id": "English",
+                    "value": "Sunday",
+                    "type": "text"
+                },
+                {
+                    "id": "Romaji",
+                    "value": "nichiyoubi",
+                    "type": "text"
+                },
+                {
+                    "id": "Hiragana",
+                    "value": "にちようび",
+                    "type": "text"
+                },
+                {
+                    "id": "Kanji*",
+                    "value": "日曜日",
+                    "type": "text"
+                },
+                {
+                    "id": "Notes*",
+                    "type": "text"
+                }
+            ]
+        },
+        {
+            "revealOptionData": [
+                {
+                    "id": "English",
+                    "value": "every day",
+                    "type": "text"
+                },
+                {
+                    "id": "Romaji",
+                    "value": "mainichi",
+                    "type": "text"
+                },
+                {
+                    "id": "Hiragana",
+                    "value": "まいにち",
+                    "type": "text"
+                },
+                {
+                    "id": "Kanji*",
+                    "value": "毎日",
+                    "type": "text"
+                },
+                {
+                    "id": "Notes*",
+                    "type": "text"
+                }
+            ]
+        },
+        {
+            "revealOptionData": [
+                {
+                    "id": "English",
+                    "value": "every night",
+                    "type": "text"
+                },
+                {
+                    "id": "Romaji",
+                    "value": "maiban",
+                    "type": "text"
+                },
+                {
+                    "id": "Hiragana",
+                    "value": "まいばん",
+                    "type": "text"
+                },
+                {
+                    "id": "Kanji*",
+                    "value": "毎晩",
+                    "type": "text"
+                },
+                {
+                    "id": "Notes*",
+                    "type": "text"
+                }
+            ]
+        },
+        {
+            "revealOptionData": [
+                {
+                    "id": "English",
+                    "value": "to go (destination ni / he)",
+                    "type": "text"
+                },
+                {
+                    "id": "Romaji",
+                    "value": "iku",
+                    "type": "text"
+                },
+                {
+                    "id": "Hiragana",
+                    "value": "いく",
+                    "type": "text"
+                },
+                {
+                    "id": "Kanji*",
+                    "value": "行く",
+                    "type": "text"
+                },
+                {
+                    "id": "Notes*",
+                    "value": "U-Verb",
+                    "type": "text"
+                }
+            ]
+        },
+        {
+            "revealOptionData": [
+                {
+                    "id": "English",
+                    "value": "to go back; to return (destination ni / he)",
+                    "type": "text"
+                },
+                {
+                    "id": "Romaji",
+                    "value": "kaeru",
+                    "type": "text"
+                },
+                {
+                    "id": "Hiragana",
+                    "value": "かえる",
+                    "type": "text"
+                },
+                {
+                    "id": "Kanji*",
+                    "value": "返る",
+                    "type": "text"
+                },
+                {
+                    "id": "Notes*",
+                    "value": "U-Verb",
+                    "type": "text"
+                }
+            ]
+        },
+        {
+            "revealOptionData": [
+                {
+                    "id": "English",
+                    "value": "to listen; to hear (~wo)",
+                    "type": "text"
+                },
+                {
+                    "id": "Romaji",
+                    "value": "kiku",
+                    "type": "text"
+                },
+                {
+                    "id": "Hiragana",
+                    "value": "きく",
+                    "type": "text"
+                },
+                {
+                    "id": "Kanji*",
+                    "value": "聞く",
+                    "type": "text"
+                },
+                {
+                    "id": "Notes*",
+                    "value": "U-Verb",
+                    "type": "text"
+                }
+            ]
+        },
+        {
+            "revealOptionData": [
+                {
+                    "id": "English",
+                    "value": "to drink (~wo)",
+                    "type": "text"
+                },
+                {
+                    "id": "Romaji",
+                    "value": "nomu",
+                    "type": "text"
+                },
+                {
+                    "id": "Hiragana",
+                    "value": "のむ",
+                    "type": "text"
+                },
+                {
+                    "id": "Kanji*",
+                    "value": "飲む",
+                    "type": "text"
+                },
+                {
+                    "id": "Notes*",
+                    "value": "U-Verb",
+                    "type": "text"
+                }
+            ]
+        },
+        {
+            "revealOptionData": [
+                {
+                    "id": "English",
+                    "value": "to speak; to talk (language wo/de)",
+                    "type": "text"
+                },
+                {
+                    "id": "Romaji",
+                    "value": "hanasu",
+                    "type": "text"
+                },
+                {
+                    "id": "Hiragana",
+                    "value": "はなす",
+                    "type": "text"
+                },
+                {
+                    "id": "Kanji*",
+                    "value": "話す",
+                    "type": "text"
+                },
+                {
+                    "id": "Notes*",
+                    "value": "U-verb",
+                    "type": "text"
+                }
+            ]
+        },
+        {
+            "revealOptionData": [
+                {
+                    "id": "English",
+                    "value": "to read (~wo)",
+                    "type": "text"
+                },
+                {
+                    "id": "Romaji",
+                    "value": "yomu",
+                    "type": "text"
+                },
+                {
+                    "id": "Hiragana",
+                    "value": "よむ",
+                    "type": "text"
+                },
+                {
+                    "id": "Kanji*",
+                    "value": "読む",
+                    "type": "text"
+                },
+                {
+                    "id": "Notes*",
+                    "value": "U-verb",
+                    "type": "text"
+                }
+            ]
+        },
+        {
+            "revealOptionData": [
+                {
+                    "id": "English",
+                    "value": "to get up",
+                    "type": "text"
+                },
+                {
+                    "id": "Romaji",
+                    "value": "okiru",
+                    "type": "text"
+                },
+                {
+                    "id": "Hiragana",
+                    "value": "おきる",
+                    "type": "text"
+                },
+                {
+                    "id": "Kanji*",
+                    "value": "起きる",
+                    "type": "text"
+                },
+                {
+                    "id": "Notes*",
+                    "value": "Ru-verb",
+                    "type": "text"
+                }
+            ]
+        },
+        {
+            "revealOptionData": [
+                {
+                    "id": "English",
+                    "value": "to eat (~wo)",
+                    "type": "text"
+                },
+                {
+                    "id": "Romaji",
+                    "value": "taberu",
+                    "type": "text"
+                },
+                {
+                    "id": "Hiragana",
+                    "value": "たべる",
+                    "type": "text"
+                },
+                {
+                    "id": "Kanji*",
+                    "value": "食べる",
+                    "type": "text"
+                },
+                {
+                    "id": "Notes*",
+                    "value": "Ru-verb",
+                    "type": "text"
+                }
+            ]
+        },
+        {
+            "revealOptionData": [
+                {
+                    "id": "English",
+                    "value": "to sleep; to go to sleep",
+                    "type": "text"
+                },
+                {
+                    "id": "Romaji",
+                    "value": "neru",
+                    "type": "text"
+                },
+                {
+                    "id": "Hiragana",
+                    "value": "ねる",
+                    "type": "text"
+                },
+                {
+                    "id": "Kanji*",
+                    "value": "寝る",
+                    "type": "text"
+                },
+                {
+                    "id": "Notes*",
+                    "value": "Ru-verb",
+                    "type": "text"
+                }
+            ]
+        },
+        {
+            "revealOptionData": [
+                {
+                    "id": "English",
+                    "value": "to see; to look at; to watch (~wo)",
+                    "type": "text"
+                },
+                {
+                    "id": "Romaji",
+                    "value": "miru",
+                    "type": "text"
+                },
+                {
+                    "id": "Hiragana",
+                    "value": "みる",
+                    "type": "text"
+                },
+                {
+                    "id": "Kanji*",
+                    "value": "見る",
+                    "type": "text"
+                },
+                {
+                    "id": "Notes*",
+                    "value": "Ru-verb",
+                    "type": "text"
+                }
+            ]
+        },
+        {
+            "revealOptionData": [
+                {
+                    "id": "English",
+                    "value": "to come (destination ni/he)",
+                    "type": "text"
+                },
+                {
+                    "id": "Romaji",
+                    "value": "kuru",
+                    "type": "text"
+                },
+                {
+                    "id": "Hiragana",
+                    "value": "くる",
+                    "type": "text"
+                },
+                {
+                    "id": "Kanji*",
+                    "value": "来る",
+                    "type": "text"
+                },
+                {
+                    "id": "Notes*",
+                    "value": "Irregular Verb",
+                    "type": "text"
+                }
+            ]
+        },
+        {
+            "revealOptionData": [
+                {
+                    "id": "English",
+                    "value": "to do (~wo)",
+                    "type": "text"
+                },
+                {
+                    "id": "Romaji",
+                    "value": "suru",
+                    "type": "text"
+                },
+                {
+                    "id": "Hiragana",
+                    "value": "する",
+                    "type": "text"
+                },
+                {
+                    "id": "Kanji*",
+                    "value": "N/A",
+                    "type": "text"
+                },
+                {
+                    "id": "Notes*",
+                    "value": "N/A",
+                    "type": "text"
+                }
+            ]
+        },
+        {
+            "revealOptionData": [
+                {
+                    "id": "English",
+                    "value": "to study (~wo)",
+                    "type": "text"
+                },
+                {
+                    "id": "Romaji",
+                    "value": "benkyosuru",
+                    "type": "text"
+                },
+                {
+                    "id": "Hiragana",
+                    "value": "べんきょうする",
+                    "type": "text"
+                },
+                {
+                    "id": "Kanji*",
+                    "value": "勉強する",
+                    "type": "text"
+                },
+                {
+                    "id": "Notes*",
+                    "value": "Irregular verb",
+                    "type": "text"
+                }
+            ]
+        },
+        {
+            "revealOptionData": [
+                {
+                    "id": "English",
+                    "value": "good",
+                    "type": "text"
+                },
+                {
+                    "id": "Romaji",
+                    "value": "ii",
+                    "type": "text"
+                },
+                {
+                    "id": "Hiragana",
+                    "value": "いい ",
+                    "type": "text"
+                },
+                {
+                    "id": "Kanji*",
+                    "value": "N/A",
+                    "type": "text"
+                },
+                {
+                    "id": "Notes*",
+                    "value": "Adjective",
+                    "type": "text"
+                }
+            ]
+        },
+        {
+            "revealOptionData": [
+                {
+                    "id": "English",
+                    "value": "early",
+                    "type": "text"
+                },
+                {
+                    "id": "Romaji",
+                    "value": "hayai",
+                    "type": "text"
+                },
+                {
+                    "id": "Hiragana",
+                    "value": "はやい",
+                    "type": "text"
+                },
+                {
+                    "id": "Kanji*",
+                    "value": "早い",
+                    "type": "text"
+                },
+                {
+                    "id": "Notes*",
+                    "value": "Adjective",
+                    "type": "text"
+                }
+            ]
+        },
+        {
+            "revealOptionData": [
+                {
+                    "id": "English",
+                    "value": "not much",
+                    "type": "text"
+                },
+                {
+                    "id": "Romaji",
+                    "value": "amari + negative",
+                    "type": "text"
+                },
+                {
+                    "id": "Hiragana",
+                    "value": "あまり + negative",
+                    "type": "text"
+                },
+                {
+                    "id": "Kanji*",
+                    "value": "余り*",
+                    "type": "text"
+                },
+                {
+                    "id": "Notes*",
+                    "value": "Kanji not in Genki notes",
+                    "type": "text"
+                }
+            ]
+        },
+        {
+            "revealOptionData": [
+                {
+                    "id": "English",
+                    "value": "not at all",
+                    "type": "text"
+                },
+                {
+                    "id": "Romaji",
+                    "value": "zenzen + negative",
+                    "type": "text"
+                },
+                {
+                    "id": "Hiragana",
+                    "value": "ぜんぜん + negative",
+                    "type": "text"
+                },
+                {
+                    "id": "Kanji*",
+                    "value": "全然",
+                    "type": "text"
+                },
+                {
+                    "id": "Notes*",
+                    "type": "text"
+                }
+            ]
+        },
+        {
+            "revealOptionData": [
+                {
+                    "id": "English",
+                    "value": "usually",
+                    "type": "text"
+                },
+                {
+                    "id": "Romaji",
+                    "value": "taitei",
+                    "type": "text"
+                },
+                {
+                    "id": "Hiragana",
+                    "value": "たいてい",
+                    "type": "text"
+                },
+                {
+                    "id": "Kanji*",
+                    "value": "大抵",
+                    "type": "text"
+                },
+                {
+                    "id": "Notes*",
+                    "type": "text"
+                }
+            ]
+        },
+        {
+            "revealOptionData": [
+                {
+                    "id": "English",
+                    "value": "a little",
+                    "type": "text"
+                },
+                {
+                    "id": "Romaji",
+                    "value": "chiyoto",
+                    "type": "text"
+                },
+                {
+                    "id": "Hiragana",
+                    "value": "ちょっと",
+                    "type": "text"
+                },
+                {
+                    "id": "Kanji*",
+                    "value": "N/A",
+                    "type": "text"
+                },
+                {
+                    "id": "Notes*",
+                    "type": "text"
+                }
+            ]
+        },
+        {
+            "revealOptionData": [
+                {
+                    "id": "English",
+                    "value": "sometimes",
+                    "type": "text"
+                },
+                {
+                    "id": "Romaji",
+                    "value": "tokidoki",
+                    "type": "text"
+                },
+                {
+                    "id": "Hiragana",
+                    "value": "ときどき",
+                    "type": "text"
+                },
+                {
+                    "id": "Kanji*",
+                    "value": "時々",
+                    "type": "text"
+                },
+                {
+                    "id": "Notes*",
+                    "type": "text"
+                }
+            ]
+        },
+        {
+            "revealOptionData": [
+                {
+                    "id": "English",
+                    "value": "often; much",
+                    "type": "text"
+                },
+                {
+                    "id": "Romaji",
+                    "value": "yoku",
+                    "type": "text"
+                },
+                {
+                    "id": "Hiragana",
+                    "value": "よく",
+                    "type": "text"
+                },
+                {
+                    "id": "Kanji*",
+                    "value": "N/A",
+                    "type": "text"
+                },
+                {
+                    "id": "Notes*",
+                    "type": "text"
+                }
+            ]
+        },
+        {
+            "revealOptionData": [
+                {
+                    "id": "English",
+                    "value": "That's right.; Let me see.",
+                    "type": "text"
+                },
+                {
+                    "id": "Romaji",
+                    "value": "so des(u) ne",
+                    "type": "text"
+                },
+                {
+                    "id": "Hiragana",
+                    "value": "そうですね",
+                    "type": "text"
+                },
+                {
+                    "id": "Kanji*",
+                    "type": "text"
+                },
+                {
+                    "id": "Notes*",
+                    "type": "text"
+                }
+            ]
+        },
+        {
+            "revealOptionData": [
+                {
+                    "id": "English",
+                    "value": "but",
+                    "type": "text"
+                },
+                {
+                    "id": "Romaji",
+                    "value": "demo",
+                    "type": "text"
+                },
+                {
+                    "id": "Hiragana",
+                    "value": "でも",
+                    "type": "text"
+                },
+                {
+                    "id": "Kanji*",
+                    "type": "text"
+                },
+                {
+                    "id": "Notes*",
+                    "type": "text"
+                }
+            ]
+        },
+        {
+            "revealOptionData": [
+                {
+                    "id": "English",
+                    "value": "How about...?; How is...?",
+                    "type": "text"
+                },
+                {
+                    "id": "Romaji",
+                    "value": "dou desuka",
+                    "type": "text"
+                },
+                {
+                    "id": "Hiragana",
+                    "value": "どうですか",
+                    "type": "text"
+                },
+                {
+                    "id": "Kanji*",
+                    "type": "text"
+                },
+                {
+                    "id": "Notes*",
+                    "type": "text"
+                }
+            ]
+        }
+    ],
+    "format": {
+        "0": "English",
+        "1": "Romaji",
+        "2": "Hiragana",
+        "3": "Kanji*",
+        "4": "Notes*"
+    }
+}
