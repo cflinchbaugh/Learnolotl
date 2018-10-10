@@ -9,7 +9,7 @@ exports[`About renders and matches snapshot 1`] = `
   </p>
   <p>
     <a
-      href="https://github.com/cflinchbaugh/level-up"
+      href="https://github.com/cflinchbaugh/Learnolotl"
       rel="noopener noreferrer"
       target="_blank"
     >

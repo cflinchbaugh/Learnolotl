@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Deck from 'learn/Deck';
 import styled from 'styled-components';
 import NavigationArrow from 'buttons/NavigationArrow.js';
+import Button from 'buttons/Button.js';
 import { connect } from 'react-redux';
 import { fetchCard } from '../../actions/cardActions';
 
@@ -33,6 +34,7 @@ export class DeckNavigation extends Component {
         super(props);
 
         this.handleClickNext = this.handleClickNext.bind(this);
+        this.handleClickRandom = this.handleClickRandom.bind(this);
         this.handleClickPrevious = this.handleClickPrevious.bind(this);
     }
 
@@ -47,6 +49,13 @@ export class DeckNavigation extends Component {
         let updatedIdx = this.props.idx - 1,
             validatedIdx = this._validateIdx(updatedIdx);
 
+        this.props.fetchCard(validatedIdx);
+    }
+
+    handleClickRandom() {
+        let updatedIdx = Math.floor(Math.random() * this.props.items.length),
+            validatedIdx = this._validateIdx(updatedIdx);
+        
         this.props.fetchCard(validatedIdx);
     }
 
@@ -89,6 +98,11 @@ export class DeckNavigation extends Component {
                                 type="previous"
                                 onClickFunction={this.handleClickPrevious}/>
                         </div>
+
+                        <Button 
+                            onClickFunction={this.handleClickRandom}
+                            label="Random"
+                        />
 
                         <div className="navigation-button-wrapper">
                             <NavigationArrow 
