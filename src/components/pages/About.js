@@ -5,7 +5,7 @@ function About (props) {
         <div className='mdCard'>
             <p>Version: BETA</p>
             <p>
-                <a target="_blank" rel="noopener noreferrer" href="https://github.com/cflinchbaugh/level-up">GitHub Repo</a>
+                <a target="_blank" rel="noopener noreferrer" href="https://github.com/cflinchbaugh/Learnolotl">GitHub Repo</a>
             </p>
             <p>
                 A passion project built primarily to assist with my own study of the Japanese language, but designed to be flexible and practical for several learning use-cases.<br/><br/>
