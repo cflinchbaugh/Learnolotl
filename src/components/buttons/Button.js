@@ -2,8 +2,6 @@ import React from 'react';
 import styled from 'styled-components';
 
 const StyleWrapper = styled.div`
-    display: inline-block;
-    
     .button {
         color: ${props => props.theme.primaryColor};
         background: transparent;

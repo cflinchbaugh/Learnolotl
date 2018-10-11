@@ -99,10 +99,12 @@ export class DeckNavigation extends Component {
                                 onClickFunction={this.handleClickPrevious}/>
                         </div>
 
-                        <Button 
-                            onClickFunction={this.handleClickRandom}
-                            label="Random"
-                        />
+                        <div className="navigation-button-wrapper">
+                            <Button 
+                                onClickFunction={this.handleClickRandom}
+                                label="Random"
+                            />
+                        </div>
 
                         <div className="navigation-button-wrapper">
                             <NavigationArrow 
