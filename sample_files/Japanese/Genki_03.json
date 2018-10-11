@@ -10,12 +10,12 @@
                 },
                 {
                     "id": "Romaji",
-                    "value": "eigo",
+                    "value": "eiga",
                     "type": "text"
                 },
                 {
                     "id": "Hiragana",
-                    "value": "えいご",
+                    "value": "えいが",
                     "type": "text"
                 },
                 {
