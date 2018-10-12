@@ -2,14 +2,12 @@
 
 
 ## TL;DR
-Learnolotl is the *last flashcard application you'll ever need.*<br/>
+Learnolotl is a free *flashcard application* that lets you *read* and *create* cards with a potentially endless number of sides.<br/>
 <a href="https://cflinchbaugh.github.io/Learnolotl/">Online Demo</a><br/>
 
 
 ## Description
 <a name="description"></a>
-Learnolotl is the *last flashcard application you'll ever need.*<br/>
-<br/>
 Whether you use cards someone else made or create your own, Learnolotl is for studying anything and everything, just like writing out traditional flash cards, but better because of two key reasons:<br/>
 
 1. Learnolotl Cards Can Hold *Infinite* Answers
