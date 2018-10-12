@@ -1,16 +1,10 @@
 # [Learnolotl](https://github.com/cflinchbaugh/Learnolotl/) &middot; [![GitHub license](https://img.shields.io/badge/version-BETA-yellow.svg)]() [![PRs blocked](https://img.shields.io/badge/license-Apache2.0-blue.svg)]() [![PRs blocked](https://img.shields.io/badge/PRs-blocked-red.svg)]()
 
+
 ## TL;DR
 Learnolotl is the *last flashcard application you'll ever need.*<br/>
 <a href="https://cflinchbaugh.github.io/Learnolotl/">Online Demo</a><br/>
 
-## Table of Contents
-[Description](#description)<br/>
-[Status](#status)<br/>
-[Features](#features)<br/>
-[Motivation](#motivation)<br/>
-[Technologies](#technologies)<br/>
-[License](#license)<br/>
 
 ## Description
 <a name="description"></a>
@@ -24,44 +18,6 @@ Whether you use cards someone else made or create your own, Learnolotl is for st
 2. Learnolotl Cards Can Be Shared With Anyone
    + Learnolotl Cards are easy to create in the app and can be downloaded for easy sharing!  Because they're just files, a quick copy/paste lets you share your study materials with an entire class- no more trips to a photocopier!
 
-## Status
-<a name="status"></a>
-Current Version: BETA
-
-## Feature Status
-<a name="features"></a>
-
-1a. Learn
-    + Upload Files
-    + Default Data
-
-1b. Learn/Flashcards
-    + Default Displayed Option
-    + Reveal Option
-    + Hide Previously Reveal Option
-    + Navigate Between Flashcards
-
-2. Build
-    + Export JSON
-    
-3. About
-    + {No Features Slated}
-
-## Motivation
-<a name="motivation"></a>
-
-A passion project built to assist with my own study of the Japanese language (but designed to be flexible and practical for several learning use-cases) and provide a project to learn new tech.
-
-
-## Technologies
-<a name="technologies"></a>
-
-+ <a href="https://github.com/facebook/react">React</a>
-+ <a href="https://github.com/reduxjs/react-redux">Redux</a>
-+ <a href="https://github.com/ReactTraining/react-router">React-Router</a>
-+ <a href="https://github.com/reactjs/react-transition-group">React Transition Group</a>
-+ <a href="https://github.com/styled-components/styled-components">Styled Components</a>
-+ <a href="https://github.com/facebook/jest">Jest</a>
 
 ## License
 <a name="license"></a>
