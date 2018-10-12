@@ -1,12 +1,11 @@
 # [Learnolotl](https://cflinchbaugh.github.io/Learnolotl/) &middot; [![GitHub license](https://img.shields.io/badge/version-BETA-yellow.svg)](https://en.wikipedia.org/wiki/Software_release_life_cycle) [![PRs blocked](https://img.shields.io/badge/license-Apache2.0-blue.svg)](https://tldrlegal.com/license/apache-license-2.0-(apache-2.0)) [![PRs blocked](https://img.shields.io/badge/PRs-blocked-red.svg)](https://help.github.com/articles/about-pull-requests/)
 
-
-## TL;DR
+# TL;DR
 Learnolotl is a free *flashcard application* that lets you *read* and *create* cards with a potentially endless number of sides.<br/>
 <a href="https://cflinchbaugh.github.io/Learnolotl/">Online Demo</a><br/>
 
 
-## Description
+# Description
 <a name="description"></a>
 Whether you use cards someone else made or create your own, Learnolotl is for studying anything and everything, just like writing out traditional flash cards, but better because of two key reasons:<br/>
 
@@ -16,8 +15,10 @@ Whether you use cards someone else made or create your own, Learnolotl is for st
 2. Learnolotl Cards Can Be Shared With Anyone
    + Learnolotl Cards are easy to create in the app and can be downloaded for easy sharing!  Because they're just files, a quick copy/paste lets you share your study materials with an entire class- no more trips to a photocopier!
 
+# Learn More
+Checkout out the <a href="https://github.com/cflinchbaugh/Learnolotl/wiki">Wiki</a> to learn more.
 
-## License
+# License
 <a name="license"></a>
 Apache License 2.0
 
