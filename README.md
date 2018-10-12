@@ -1,4 +1,4 @@
-# [Learnolotl](https://github.com/cflinchbaugh/Learnolotl/) &middot; [![GitHub license](https://img.shields.io/badge/version-BETA-yellow.svg)](https://en.wikipedia.org/wiki/Software_release_life_cycle) [![PRs blocked](https://img.shields.io/badge/license-Apache2.0-blue.svg)](https://tldrlegal.com/license/apache-license-2.0-(apache-2.0)) [![PRs blocked](https://img.shields.io/badge/PRs-blocked-red.svg)](https://help.github.com/articles/about-pull-requests/)
+# [Learnolotl](https://cflinchbaugh.github.io/Learnolotl/) &middot; [![GitHub license](https://img.shields.io/badge/version-BETA-yellow.svg)](https://en.wikipedia.org/wiki/Software_release_life_cycle) [![PRs blocked](https://img.shields.io/badge/license-Apache2.0-blue.svg)](https://tldrlegal.com/license/apache-license-2.0-(apache-2.0)) [![PRs blocked](https://img.shields.io/badge/PRs-blocked-red.svg)](https://help.github.com/articles/about-pull-requests/)
 
 
 ## TL;DR
