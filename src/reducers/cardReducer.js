@@ -110,16 +110,16 @@ export default function(state = initialState, action) {
                         "1": "Romaji",
                         "2": "Hiragana"
                     },
-                    mode: 'english',
+                    mode: 'English',
                     modeOptions: [
                         {
-                            id: 'english',
+                            id: 'English',
                             value: 'English'
                         }, {
-                            id: 'romaji',
+                            id: 'Romaji',
                             value: 'Romaji'
                         }, {
-                            id: 'hiragana',
+                            id: 'Hiragana',
                             value: 'Hiragana'
                         }
                     ],
@@ -128,15 +128,15 @@ export default function(state = initialState, action) {
                             "metadata": ["101"],
                             "revealOptionData": [
                                 {
-                                    "id": "english",
+                                    "id": "English",
                                     "value": "I",
                                     "type": "text"
                                 }, {
-                                    "id": "romaji",
+                                    "id": "Romaji",
                                     "value": "watashi",
                                     "type": "text"
                                 }, {
-                                    "id": "hiragana",
+                                    "id": "Hiragana",
                                     "value": "\u308E\u305F\u3057",
                                     "type": "text"
                                 }
@@ -146,15 +146,15 @@ export default function(state = initialState, action) {
                             "metadata": ["101"],
                             "revealOptionData": [
                                 {
-                                    "id": "english",
+                                    "id": "English",
                                     "value": "you",
                                     "type": "text"
                                 }, {
-                                    "id": "romaji",
+                                    "id": "Romaji",
                                     "value": "anata",
                                     "type": "text"
                                 }, {
-                                    "id": "hiragana",
+                                    "id": "Hiragana",
                                     "value": "\u3041\u306A\u305F",
                                     "type": "text"
                                 }
