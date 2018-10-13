@@ -23,10 +23,14 @@ exports[`DeckNavigation renders and matches snapshot 1`] = `
           type="previous"
         />
       </div>
-      <Button
-        label="Random"
-        onClickFunction={[Function]}
-      />
+      <div
+        className="navigation-button-wrapper"
+      >
+        <Button
+          label="Random"
+          onClickFunction={[Function]}
+        />
+      </div>
       <div
         className="navigation-button-wrapper"
       >
