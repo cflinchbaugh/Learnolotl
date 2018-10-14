@@ -19,7 +19,7 @@ function CardFileNameBuilder (props) {
         }
 
     return (
-        <StyleWrapper className='card-file-name-builder-wrapper clearfix'>
+        <StyleWrapper className='card-file-name-builder-wrapper col-xs-12 clearfix'>
             <InputField {...props.fileIdData} />
             <NavigationArrow {...navigationArrowData} />
         </StyleWrapper>

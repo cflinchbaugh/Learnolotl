@@ -2,7 +2,7 @@
 
 exports[`CardFileNameBuilder renders and matches snapshot 1`] = `
 <styled.div
-  className="card-file-name-builder-wrapper clearfix"
+  className="card-file-name-builder-wrapper col-xs-12 clearfix"
 >
   <InputField />
   <NavigationArrow

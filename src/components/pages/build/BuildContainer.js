@@ -50,8 +50,6 @@ export class BuildContainer extends Component {
             this.setState({
                 show: 'CardFormatBuilder'
             })
-        } else {
-            alert('Filename is required');
         }
     }
 
@@ -88,25 +86,25 @@ export class BuildContainer extends Component {
 
         if (this.state.show === 'landing') {
             return (
-                <StyleWrapper className='build-container-wrapper mdCard'>
+                <StyleWrapper className='build-container-wrapper col-xs-12 clearfix mdCard'>
                     <BuildLandingView {...buildLandingViewData}/>
                 </StyleWrapper>
             )
         } else if (this.state.show === 'CardFileNameBuilder') {
             return (
-                <StyleWrapper className='build-container-wrapper mdCard'>
+                <StyleWrapper className='build-container-wrapper col-xs-12 clearfix mdCard'>
                     <CardFileNameBuilder {...cardFileNameBuilderData}/>
                 </StyleWrapper>
             )
         } else if (this.state.show === 'CardFormatBuilder') {
             return (
-                <StyleWrapper className='build-container-wrapper mdCard'>
+                <StyleWrapper className='build-container-wrapper col-xs-12 clearfix mdCard'>
                     <CardFormatBuilderContainer {...cardFormatBuilderData}/>
                 </StyleWrapper>
             );
         } else {
             return (
-                <StyleWrapper className='build-container-wrapper mdCard'>
+                <StyleWrapper className='build-container-wrapper col-xs-12 clearfix mdCard'>
                     <CardBuilderContainer {...cardBuilderData}/>
                 </StyleWrapper>
             );

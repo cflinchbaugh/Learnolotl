@@ -2,7 +2,7 @@
 
 exports[`BuildContainer renders and matches snapshot 1`] = `
 <styled.div
-  className="build-container-wrapper mdCard"
+  className="build-container-wrapper col-xs-12 clearfix mdCard"
 >
   <BuildLandingView
     handleBuildLandingViewNext={[Function]}

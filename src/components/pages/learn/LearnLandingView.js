@@ -19,7 +19,6 @@ const StyleWrapper = styled.div`
     .uploader-wrapper {
         margin-left: auto;
         margin-right: 0;
-        padding: 0 10px;
     }
 
     @media (min-width: 1200px) {
