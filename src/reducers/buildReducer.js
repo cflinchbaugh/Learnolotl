@@ -70,12 +70,7 @@ export default function(state = initialState, action) {
                 cardFormat: action.payload
             }
         case RESET_BUILD_DATA:
-            return {
-                ...state,
-                fileId: '',
-                formatFormElementData: {},
-                formElementData: {}
-            }
+            return initialState;
 
         default: 
             return state;

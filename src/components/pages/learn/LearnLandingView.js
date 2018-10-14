@@ -21,6 +21,15 @@ const StyleWrapper = styled.div`
         margin-right: 0;
     }
 
+
+    .logo-wrapper {
+        text-align: center;
+        
+        img {
+            height: 100px;
+        }
+    }
+
     @media (min-width: 1200px) {
         .demo-wrapper {
             margin-bottom: 0;
@@ -30,14 +39,21 @@ const StyleWrapper = styled.div`
 `
 
 function LearnLandingView (props) {
+    let logo = require('media/images/Learnolotl.png');
+    
     return (
         <StyleWrapper className="learn-container-wrapper mdCard col-xs-12">
+            <div className="logo-wrapper col-xs-12">
+                <img src={logo} />
+            </div>
+
             <div className="demo-wrapper
                 col-xs-12
                 col-lg-6
             ">
                 <LearnDataSelect {...props.learnDataSelectData} />
             </div>
+
             <div className="uploader-wrapper
                 col-xs-12
                 col-lg-6

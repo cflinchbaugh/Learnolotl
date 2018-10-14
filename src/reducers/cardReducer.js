@@ -376,14 +376,8 @@ export default function(state = initialState, action) {
             }
 
         case RESET_LEARN_DEMO:
-            return {
-                ...state,
-                items: [],
-                sampleData: false,
-                modeOptions: [],
-                learnData: '',
-                mode: ''
-            }
+            return initialState;
+            
         default: 
             return state;
     }

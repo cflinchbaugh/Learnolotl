@@ -7,7 +7,7 @@ body {
     background: #8b95b8; /* Ancient browsers */
     background: -moz-linear-gradient(top, #8b95b8 0%, #7787b7 52%, #535d81 91%) fixed; /* FF3.6-15 */
     background: -webkit-linear-gradient(top, #8b95b8 0%,#7787b7 52%,#535d81 91%) fixed; /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom, #8b95b8 0%,#7787b7 52%,#535d81 91%) fixed; /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    background: linear-gradient(#8b95b8 0%,#7787b7 52%,#535d81 91%) fixed; /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8b95b8', endColorstr='#535d81',GradientType=0 ); /*IE6-9*/
 }
 

@@ -8,7 +8,10 @@ exports[`CardFormatBuilder renders and matches snapshot 1`] = `
     Card Format
   </h2>
   <p>
-    The Modes built here will show as buttons on every card, when clicked the hidden answer will appear.  In the Japanese Sample, the Modes were "English", "Romaji", and "Hiragana".
+    The Modes built here will show as buttons on every card. When clicked, the hidden answer will appear.
+  </p>
+  <p>
+    In the Japanese Sample, the Modes were "English", "Romaji", and "Hiragana".  For non-language learning, you may want to set your  modes to "Question" and "Answer."
   </p>
   <DynamicFormElementFactory />
   <NavigationArrow />

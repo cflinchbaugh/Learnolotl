@@ -5,6 +5,13 @@ exports[`LearnLandingView renders and matches snapshot 1`] = `
   className="learn-container-wrapper mdCard col-xs-12"
 >
   <div
+    className="logo-wrapper col-xs-12"
+  >
+    <img
+      src="test-file-stub"
+    />
+  </div>
+  <div
     className="demo-wrapper
  col-xs-12
  col-lg-6
