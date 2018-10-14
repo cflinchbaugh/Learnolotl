@@ -19,6 +19,7 @@ exports[`DeckNavigation renders and matches snapshot 1`] = `
         className="navigation-button-wrapper"
       >
         <NavigationArrow
+          disabled={false}
           onClickFunction={[Function]}
           type="previous"
         />
@@ -35,6 +36,7 @@ exports[`DeckNavigation renders and matches snapshot 1`] = `
         className="navigation-button-wrapper"
       >
         <NavigationArrow
+          disabled={false}
           onClickFunction={[Function]}
           type="next"
         />

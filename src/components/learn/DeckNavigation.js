@@ -83,6 +83,9 @@ export class DeckNavigation extends Component {
     }
 
     render() {
+        let prevDisabled = this.props.idx === 0 ? true : false,
+            nextDisabled = this.props.idx === (this.props.items.length - 1) ? true : false;
+
         return (
             <StyleWrapper>
                 <div className="deck-navigation">
@@ -95,7 +98,8 @@ export class DeckNavigation extends Component {
                         <div className="navigation-button-wrapper">
                             <NavigationArrow 
                                 type="previous"
-                                onClickFunction={this.handleClickPrevious}/>
+                                onClickFunction={this.handleClickPrevious}
+                                disabled={prevDisabled}/>
                         </div>
 
                         <div className="navigation-button-wrapper">
@@ -108,7 +112,8 @@ export class DeckNavigation extends Component {
                         <div className="navigation-button-wrapper">
                             <NavigationArrow 
                                 type="next"
-                                onClickFunction={this.handleClickNext}/>
+                                onClickFunction={this.handleClickNext}
+                                disabled={nextDisabled}/>
                         </div>
                     </div>
                 </div>

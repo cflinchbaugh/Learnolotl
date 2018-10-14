@@ -8,7 +8,7 @@ describe('DeckNavigation', () => {
         const renderer = new ShallowRenderer();
 
         const deckNavigationData = {
-            
+            items: []
         }
 
         const tree = renderer.render(
