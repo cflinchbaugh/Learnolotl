@@ -10,12 +10,18 @@ const StyleWrapper = styled.div`
     }
     
     .RevealOptions >* {
-        float: left;
-        margin-right: 2em;
+        margin-bottom: 15px;
     }
 
     .RevealOptions >*:last-child {
         margin-right: 0;
+    }
+
+    @media (min-width: 1200px) {
+        .RevealOptions >* {
+            float: left;
+            margin-right: 2em;
+        }
     }
 
 `;

@@ -3,11 +3,14 @@
 exports[`Router renders and matches snapshot 1`] = `
 <BrowserRouter>
   <div
-    className="Router"
+    className="Router 
+ col-xs-12 col-sm-8 col-sm-offset-2 
+ col-lg-6 col-lg-offset-3
+ clearfix"
   >
     <Connect(NavigationContainer) />
     <styled.div
-      className="route-content-wrapper"
+      className="route-content-wrapper col-xs-12"
     >
       <Route
         component={[Function]}

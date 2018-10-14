@@ -13,7 +13,6 @@ const StyleWrapper = styled.div`
     }
 
     .deck {
-        width: 100%;
         display: flex;
         margin-bottom: 15px;
     }
@@ -24,7 +23,7 @@ const StyleWrapper = styled.div`
 
     .navigation-button-wrapper {
         display: inline-block;
-        margin: 0 10px;
+        margin: 0 5px;
     }
 
 `

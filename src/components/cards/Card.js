@@ -7,8 +7,6 @@ import RevealItem from './card-items/RevealItem';
 import RevealOptions from './card-items/RevealOptions';
 
 const StyleWrapper = styled.div`
-    min-width: 750px;
-    
     .active-wrapper,
     .translations-wrapper,
     .reveal-wrapper {
@@ -19,9 +17,16 @@ const StyleWrapper = styled.div`
     .reveal-wrapper {
         min-height: 200px;
     }
-
+    
     .translations-wrapper {
         min-height: 60px;
+    }
+    
+    .reveal-options-wrapper {
+        text-align: center;
+    }
+
+    @media (min-width: 1200px) {
     }
 
 `;

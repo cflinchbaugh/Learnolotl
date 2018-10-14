@@ -2,7 +2,7 @@
 
 exports[`renders and matches snapshot 1`] = `
 <div
-  className="build-landing-view-wrapper clearfix sc-bwzfXH iyuwwe"
+  className="build-landing-view-wrapper clearfix sc-bwzfXH ivtJYY"
 >
   <p>
     Create new Learnolotl cards here!

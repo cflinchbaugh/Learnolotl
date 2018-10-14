@@ -5,7 +5,6 @@ const StyleWrapper = styled.div`
     display: inline-block;
     overflow: hidden;
     background: red;
-    width: 50px;
 
     input {
         opacity: 0;

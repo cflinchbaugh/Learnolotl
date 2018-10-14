@@ -12,7 +12,9 @@ exports[`CardBuilder renders and matches snapshot 1`] = `
   >
     <Connect(FormElementFactory) />
     <Button />
-    <p>
+    <p
+      className="export-directions-wrapper"
+    >
       When you're all finished, click Download and you'll have a brand new set of Learnolotl cards to use in the Learn section!
     </p>
     <div

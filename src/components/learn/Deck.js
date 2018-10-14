@@ -13,7 +13,7 @@ export class Deck extends Component {
             deck = builtDeck.length ? builtDeck : "No Cards Loaded!";
 
         return (
-            <StyleWrapper>
+            <StyleWrapper className="col-xs-12">
                 <div className="deck-wrapper">
                     {deck}
                 </div>

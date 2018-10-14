@@ -8,7 +8,10 @@ import Button from '../buttons/Button';
 const StyleWrapper = styled.div`
     .export-button-wrapper {
         text-align: center;
-        
+    }
+    
+    .export-directions-wrapper {
+        margin: 20px;
     }
 `
 
@@ -21,7 +24,7 @@ function CardBuilder (props) {
                 <FormElementFactory {...props.formElementFactoryData}/>
                 <Button {...props.nextCardButtonData}/>
 
-                <p>
+                <p className="export-directions-wrapper">
                     When you're all finished, click Download and you'll have a brand new set of Learnolotl cards to use in the Learn section!
                 </p>
                 

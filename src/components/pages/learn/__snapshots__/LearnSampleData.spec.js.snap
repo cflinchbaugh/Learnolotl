@@ -4,7 +4,11 @@ exports[`LearnSampleData renders and matches snapshot 1`] = `
 <styled.div
   className="learn-container-wrapper mdCard"
 >
-  <Button />
+  <div
+    className="cancel-pop-button-wrapper"
+  >
+    <CancelPopButton />
+  </div>
   <Learn />
 </styled.div>
 `;

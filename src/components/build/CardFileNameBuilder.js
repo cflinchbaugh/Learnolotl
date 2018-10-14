@@ -5,8 +5,6 @@ import InputField from 'formElements/InputField';
 import NavigationArrow from 'buttons/NavigationArrow';
 
 const StyleWrapper = styled.div`
-    width: 100%;
-
     .navigation-button {
         float: right;
     }

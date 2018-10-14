@@ -2,15 +2,21 @@
 
 exports[`LearnLandingView renders and matches snapshot 1`] = `
 <styled.div
-  className="learn-container-wrapper mdCard"
+  className="learn-container-wrapper mdCard col-xs-12"
 >
   <div
-    className="demo-wrapper"
+    className="demo-wrapper
+ col-xs-12
+ col-lg-6
+ "
   >
     <LearnDataSelect />
   </div>
   <div
-    className="uploader-wrapper"
+    className="uploader-wrapper
+ col-xs-12
+ col-lg-6
+ "
   >
     <Learn />
   </div>

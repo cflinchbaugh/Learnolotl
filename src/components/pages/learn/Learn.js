@@ -7,8 +7,6 @@ import Select from 'formElements/Select';
 import NavigationArrow from 'buttons/NavigationArrow';
 
 const StyleWrapper = styled.div`
-    margin: 50px auto;
-
     .navigation-button {
         float: right;
     }

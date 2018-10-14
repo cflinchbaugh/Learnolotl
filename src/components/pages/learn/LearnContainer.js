@@ -137,8 +137,9 @@ export class LearnContainer extends Component {
             
             learnSampleDataData = {
                 cancelSampleButtonData: {
-                    label: 'Cancel Japanese Demo',
-                    onClickFunction: this.handleCancelDemoDataClick
+                    label: 'Japanese Demo',
+                    onClickFunction: this.handleCancelDemoDataClick,
+                    showX: true
                 },
                 learnData: {...learnData}
             },
