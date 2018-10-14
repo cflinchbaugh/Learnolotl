@@ -125,37 +125,248 @@ export default function(state = initialState, action) {
                     ],
                     items: [
                         {
-                            "metadata": ["101"],
                             "revealOptionData": [
                                 {
                                     "id": "English",
-                                    "value": "I",
+                                    "value": "Excuse Me",
                                     "type": "text"
-                                }, {
+                                },
+                                {
                                     "id": "Romaji",
-                                    "value": "watashi",
+                                    "value": "Sumimasen",
                                     "type": "text"
-                                }, {
+                                },
+                                {
                                     "id": "Hiragana",
-                                    "value": "\u308E\u305F\u3057",
+                                    "value": "すみません",
                                     "type": "text"
                                 }
                             ]
                         },
                         {
-                            "metadata": ["101"],
                             "revealOptionData": [
                                 {
                                     "id": "English",
-                                    "value": "you",
+                                    "value": "English (Language)",
                                     "type": "text"
-                                }, {
+                                },
+                                {
+                                    "id": "Romaji",
+                                    "value": "Eigo",
+                                    "type": "text"
+                                },
+                                {
+                                    "id": "Hiragana",
+                                    "value": "えいご",
+                                    "type": "text"
+                                }
+                            ]
+                        },
+                        {
+                            "revealOptionData": [
+                                {
+                                    "id": "English",
+                                    "value": "To understand",
+                                    "type": "text"
+                                },
+                                {
+                                    "id": "Romaji",
+                                    "value": "wakarimasu",
+                                    "type": "text"
+                                },
+                                {
+                                    "id": "Hiragana",
+                                    "value": "わかります",
+                                    "type": "text"
+                                }
+                            ]
+                        },
+                        {
+                            "revealOptionData": [
+                                {
+                                    "id": "English",
+                                    "value": "'?' (used at the end of a sentence to form a question)",
+                                    "type": "text"
+                                },
+                                {
+                                    "id": "Romaji",
+                                    "value": "ka",
+                                    "type": "text"
+                                },
+                                {
+                                    "id": "Hiragana",
+                                    "value": "か",
+                                    "type": "text"
+                                }
+                            ]
+                        },
+                        {
+                            "revealOptionData": [
+                                {
+                                    "id": "English",
+                                    "value": "No",
+                                    "type": "text"
+                                },
+                                {
+                                    "id": "Romaji",
+                                    "value": "iie",
+                                    "type": "text"
+                                },
+                                {
+                                    "id": "Hiragana",
+                                    "value": "いいえ",
+                                    "type": "text"
+                                }
+                            ]
+                        },
+                        {
+                            "revealOptionData": [
+                                {
+                                    "id": "English",
+                                    "value": "I",
+                                    "type": "text"
+                                },
+                                {
+                                    "id": "Romaji",
+                                    "value": "watashi",
+                                    "type": "text"
+                                },
+                                {
+                                    "id": "Hiragana",
+                                    "value": "わたし",
+                                    "type": "text"
+                                }
+                            ]
+                        },
+                        {
+                            "revealOptionData": [
+                                {
+                                    "id": "English",
+                                    "value": "To not know/understand",
+                                    "type": "text"
+                                },
+                                {
+                                    "id": "Romaji",
+                                    "value": "wakarimasen",
+                                    "type": "text"
+                                },
+                                {
+                                    "id": "Hiragana",
+                                    "value": "わかりません",
+                                    "type": "text"
+                                }
+                            ]
+                        },
+                        {
+                            "revealOptionData": [
+                                {
+                                    "id": "English",
+                                    "value": "Japanese (language)",
+                                    "type": "text"
+                                },
+                                {
+                                    "id": "Romaji",
+                                    "value": "nihongo",
+                                    "type": "text"
+                                },
+                                {
+                                    "id": "Hiragana",
+                                    "value": "にほんご",
+                                    "type": "text"
+                                }
+                            ]
+                        },
+                        {
+                            "revealOptionData": [
+                                {
+                                    "id": "English",
+                                    "value": "A few, a little",
+                                    "type": "text"
+                                },
+                                {
+                                    "id": "Romaji",
+                                    "value": "sukoshi",
+                                    "type": "text"
+                                },
+                                {
+                                    "id": "Hiragana",
+                                    "value": "すこし",
+                                    "type": "text"
+                                }
+                            ]
+                        },
+                        {
+                            "revealOptionData": [
+                                {
+                                    "id": "English",
+                                    "value": "American (nationality)",
+                                    "type": "text"
+                                },
+                                {
+                                    "id": "Romaji",
+                                    "value": "amerika-jin",
+                                    "type": "text"
+                                },
+                                {
+                                    "id": "Hiragana",
+                                    "value": "アメリカじん",
+                                    "type": "text"
+                                }
+                            ]
+                        },
+                        {
+                            "revealOptionData": [
+                                {
+                                    "id": "English",
+                                    "value": "You",
+                                    "type": "text"
+                                },
+                                {
                                     "id": "Romaji",
                                     "value": "anata",
                                     "type": "text"
-                                }, {
+                                },
+                                {
                                     "id": "Hiragana",
-                                    "value": "\u3041\u306A\u305F",
+                                    "value": "あなた",
+                                    "type": "text"
+                                }
+                            ]
+                        },
+                        {
+                            "revealOptionData": [
+                                {
+                                    "id": "English",
+                                    "value": "Is/Are",
+                                    "type": "text"
+                                },
+                                {
+                                    "id": "Romaji",
+                                    "value": "desu",
+                                    "type": "text"
+                                },
+                                {
+                                    "id": "Hiragana",
+                                    "value": "です",
+                                    "type": "text"
+                                }
+                            ]
+                        },
+                        {
+                            "revealOptionData": [
+                                {
+                                    "id": "English",
+                                    "value": "Yes",
+                                    "type": "text"
+                                },
+                                {
+                                    "id": "Romaji",
+                                    "value": "hai",
+                                    "type": "text"
+                                },
+                                {
+                                    "id": "Hiragana",
+                                    "value": "はい",
                                     "type": "text"
                                 }
                             ]
