@@ -2,7 +2,9 @@ import React, { Component } from 'react';
 import styled from 'styled-components';
 
 import { connect } from 'react-redux';
-import { buildCard, updateBuildFileId, updateBuildCardFormat } from '../../../actions/buildActions';
+import { buildCard, 
+        updateBuildFileId, 
+        updateBuildCardFormat } from '../../../actions/buildActions';
 
 import BuildLandingView from 'build/BuildLandingView';
 import CardFileNameBuilder from 'build/CardFileNameBuilder';
