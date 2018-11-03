@@ -26,7 +26,11 @@ const StyleWrapper = styled.div`
         text-align: center;
         
         img {
-            height: 100px;
+            height: 50px;
+            border: solid 2px;
+            border-radius: 9px;
+            padding: 2px;
+            background: purple;
         }
     }
 
@@ -45,6 +49,7 @@ function LearnLandingView (props) {
         <StyleWrapper className="learn-container-wrapper mdCard col-xs-12">
             <div className="logo-wrapper col-xs-12">
                 <img src={logo} />
+                <h1>Learnolotl</h1>
             </div>
 
             <div className="demo-wrapper
