@@ -3,7 +3,7 @@ import React from 'react';
 function About (props) {
     return (
         <div className='mdCard'>
-            <p>Version: BETA</p>
+            <p>Version: 1.0.0</p>
             <p>
                 <a target="_blank" rel="noopener noreferrer" href="https://github.com/cflinchbaugh/Learnolotl">GitHub Repo</a>
             </p>

@@ -5,7 +5,7 @@ exports[`About renders and matches snapshot 1`] = `
   className="mdCard"
 >
   <p>
-    Version: BETA
+    Version: 1.0.0
   </p>
   <p>
     <a
