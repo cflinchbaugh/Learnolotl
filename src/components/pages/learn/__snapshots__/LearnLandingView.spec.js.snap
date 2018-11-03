@@ -10,6 +10,9 @@ exports[`LearnLandingView renders and matches snapshot 1`] = `
     <img
       src="test-file-stub"
     />
+    <h1>
+      Learnolotl
+    </h1>
   </div>
   <div
     className="demo-wrapper
