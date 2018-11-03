@@ -35,7 +35,7 @@ function NavigationArrow (props) {
     let arrow = props.type === 'next' ? '=>' : '<=',
         navigationArrowData ={
             className: props.disabled ? 'navigation-button disabled' : 'navigation-button',
-            onClick: props.onClickFunction
+            onClick: props.disabled ? function() {} : props.onClickFunction
         }
 
     return (

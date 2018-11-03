@@ -11,6 +11,15 @@ const StyleWrapper = styled.div`
 `
 
 function CardFormatBuilder(props) {
+    let navigationArrowData = {
+        type: props.saveFormatButtonData.type,
+        onClickFunction: props.saveFormatButtonData.onClickFunction,
+        disabled: (props.dynamicFormElementFactoryData && 
+                props.dynamicFormElementFactoryData.formElementData[0] && 
+                props.dynamicFormElementFactoryData.formElementData[0].length)
+             ? false : true 
+    }
+    
     return (
         <StyleWrapper className='card-format-builder-wrapper clearfix'>
                 <h2>Card Format</h2>
@@ -22,7 +31,7 @@ function CardFormatBuilder(props) {
                 </p>
                     
                 <DynamicFormElementFactory {...props.dynamicFormElementFactoryData}/>
-                <NavigationArrow {...props.saveFormatButtonData}/>
+                <NavigationArrow {...navigationArrowData}/>
         </StyleWrapper>
     )
 }
