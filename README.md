@@ -8,7 +8,7 @@
 Read the front of a card, *press a button*, *see* the (corresponding) back of the card.
 
 ## Details, Details
-Learnolotl is a free *flashcard application* that lets you *read* and *create* cards with a potentially *endless* number of sides.<br/>
+Learnolotl is a free flashcard application that lets you *read* and *create* cards with a potentially *endless* number of sides.<br/>
 <a href="https://cflinchbaugh.github.io/Learnolotl/">Online Demo</a><br/>
 
 ### What Makes it Special
