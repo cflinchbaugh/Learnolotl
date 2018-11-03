@@ -22,7 +22,7 @@ Whether you use cards someone else made or create your own, Learnolotl is for st
    
 ### What It's Not
 + Search Engine: Learnolotl is a flashcard app, someone has to write the cards and it only shows that info- no more, no less
-+ Online Database: Currently (v1.0), cards are made in the app downloaded, you'll need to import them *every time* the app is started, so be sure to back up the files somewhere safe
++ Online Database: Currently (v1.0), cards are made in the app, exported/downloaded, and must be imported *every time* the app is started, so be sure to back up the files somewhere safe
 
 # Learn More
 Checkout out the <a href="https://github.com/cflinchbaugh/Learnolotl/wiki">Wiki</a> to learn more.
