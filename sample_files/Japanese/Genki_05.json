@@ -1,0 +1,1036 @@
+{
+    "id": "Genki_05",
+    "results": [
+        {
+            "revealOptionData": [
+                {
+                    "id": "English",
+                    "value": "sea",
+                    "type": "text"
+                },
+                {
+                    "id": "Romaji",
+                    "value": "umi",
+                    "type": "text"
+                },
+                {
+                    "id": "Hiragana",
+                    "value": "うみ",
+                    "type": "text"
+                }
+            ]
+        },
+        {
+            "revealOptionData": [
+                {
+                    "id": "English",
+                    "value": "stamp (postage)",
+                    "type": "text"
+                },
+                {
+                    "id": "Romaji",
+                    "value": "kitte",
+                    "type": "text"
+                },
+                {
+                    "id": "Hiragana",
+                    "value": "きって",
+                    "type": "text"
+                }
+            ]
+        },
+        {
+            "revealOptionData": [
+                {
+                    "id": "English",
+                    "value": "ticket",
+                    "type": "text"
+                },
+                {
+                    "id": "Romaji",
+                    "value": "kibbu",
+                    "type": "text"
+                },
+                {
+                    "id": "Hiragana",
+                    "value": "きっぷ",
+                    "type": "text"
+                }
+            ]
+        },
+        {
+            "revealOptionData": [
+                {
+                    "id": "English",
+                    "value": "surfing",
+                    "type": "text"
+                },
+                {
+                    "id": "Romaji",
+                    "value": "saafuin",
+                    "type": "text"
+                },
+                {
+                    "id": "Hiragana",
+                    "value": "サーフィン",
+                    "type": "text"
+                }
+            ]
+        },
+        {
+            "revealOptionData": [
+                {
+                    "id": "English",
+                    "value": "homework",
+                    "type": "text"
+                },
+                {
+                    "id": "Romaji",
+                    "value": "shukudai",
+                    "type": "text"
+                },
+                {
+                    "id": "Hiragana",
+                    "value": "しゅくだい",
+                    "type": "text"
+                }
+            ]
+        },
+        {
+            "revealOptionData": [
+                {
+                    "id": "English",
+                    "value": "food",
+                    "type": "text"
+                },
+                {
+                    "id": "Romaji",
+                    "value": "tabemono",
+                    "type": "text"
+                },
+                {
+                    "id": "Hiragana",
+                    "value": "たべもの",
+                    "type": "text"
+                }
+            ]
+        },
+        {
+            "revealOptionData": [
+                {
+                    "id": "English",
+                    "value": "birthday",
+                    "type": "text"
+                },
+                {
+                    "id": "Romaji",
+                    "value": "tanjoubi",
+                    "type": "text"
+                },
+                {
+                    "id": "Hiragana",
+                    "value": "たんじょうび",
+                    "type": "text"
+                }
+            ]
+        },
+        {
+            "revealOptionData": [
+                {
+                    "id": "English",
+                    "value": "test",
+                    "type": "text"
+                },
+                {
+                    "id": "Romaji",
+                    "value": "tesuto",
+                    "type": "text"
+                },
+                {
+                    "id": "Hiragana",
+                    "value": "テスト",
+                    "type": "text"
+                }
+            ]
+        },
+        {
+            "revealOptionData": [
+                {
+                    "id": "English",
+                    "value": "weather",
+                    "type": "text"
+                },
+                {
+                    "id": "Romaji",
+                    "value": "tenki",
+                    "type": "text"
+                },
+                {
+                    "id": "Hiragana",
+                    "value": "てんき",
+                    "type": "text"
+                }
+            ]
+        },
+        {
+            "revealOptionData": [
+                {
+                    "id": "English",
+                    "value": "drink, beverage",
+                    "type": "text"
+                },
+                {
+                    "id": "Romaji",
+                    "value": "nomimono",
+                    "type": "text"
+                },
+                {
+                    "id": "Hiragana",
+                    "value": "のみもの",
+                    "type": "text"
+                }
+            ]
+        },
+        {
+            "revealOptionData": [
+                {
+                    "id": "English",
+                    "value": "postcard",
+                    "type": "text"
+                },
+                {
+                    "id": "Romaji",
+                    "value": "hagaki",
+                    "type": "text"
+                },
+                {
+                    "id": "Hiragana",
+                    "value": "はがき",
+                    "type": "text"
+                }
+            ]
+        },
+        {
+            "revealOptionData": [
+                {
+                    "id": "English",
+                    "value": "bus",
+                    "type": "text"
+                },
+                {
+                    "id": "Romaji",
+                    "value": "basu",
+                    "type": "text"
+                },
+                {
+                    "id": "Hiragana",
+                    "value": "バス",
+                    "type": "text"
+                }
+            ]
+        },
+        {
+            "revealOptionData": [
+                {
+                    "id": "English",
+                    "value": "airplane",
+                    "type": "text"
+                },
+                {
+                    "id": "Romaji",
+                    "value": "hikouki",
+                    "type": "text"
+                },
+                {
+                    "id": "Hiragana",
+                    "value": "ひこうき",
+                    "type": "text"
+                }
+            ]
+        },
+        {
+            "revealOptionData": [
+                {
+                    "id": "English",
+                    "value": "room",
+                    "type": "text"
+                },
+                {
+                    "id": "Romaji",
+                    "value": "heya",
+                    "type": "text"
+                },
+                {
+                    "id": "Hiragana",
+                    "value": "へや",
+                    "type": "text"
+                }
+            ]
+        },
+        {
+            "revealOptionData": [
+                {
+                    "id": "English",
+                    "value": "I (male)",
+                    "type": "text"
+                },
+                {
+                    "id": "Romaji",
+                    "value": "boku",
+                    "type": "text"
+                },
+                {
+                    "id": "Hiragana",
+                    "value": "ぼく",
+                    "type": "text"
+                }
+            ]
+        },
+        {
+            "revealOptionData": [
+                {
+                    "id": "English",
+                    "value": "rest, vacation, break",
+                    "type": "text"
+                },
+                {
+                    "id": "Romaji",
+                    "value": "yasumi",
+                    "type": "text"
+                },
+                {
+                    "id": "Hiragana",
+                    "value": "やすみ",
+                    "type": "text"
+                }
+            ]
+        },
+        {
+            "revealOptionData": [
+                {
+                    "id": "English",
+                    "value": "travel",
+                    "type": "text"
+                },
+                {
+                    "id": "Romaji",
+                    "value": "ryokou",
+                    "type": "text"
+                },
+                {
+                    "id": "Hiragana",
+                    "value": "りょこう",
+                    "type": "text"
+                }
+            ]
+        },
+        {
+            "revealOptionData": [
+                {
+                    "id": "English",
+                    "value": "new",
+                    "type": "text"
+                },
+                {
+                    "id": "Romaji",
+                    "value": "atarashii",
+                    "type": "text"
+                },
+                {
+                    "id": "Hiragana",
+                    "value": "あたらしい",
+                    "type": "text"
+                }
+            ]
+        },
+        {
+            "revealOptionData": [
+                {
+                    "id": "English",
+                    "value": "hot (weather)",
+                    "type": "text"
+                },
+                {
+                    "id": "Romaji",
+                    "value": "atsui",
+                    "type": "text"
+                },
+                {
+                    "id": "Hiragana",
+                    "value": "あつい",
+                    "type": "text"
+                }
+            ]
+        },
+        {
+            "revealOptionData": [
+                {
+                    "id": "English",
+                    "value": "busy",
+                    "type": "text"
+                },
+                {
+                    "id": "Romaji",
+                    "value": "isogashii",
+                    "type": "text"
+                },
+                {
+                    "id": "Hiragana",
+                    "value": "いそがしい",
+                    "type": "text"
+                }
+            ]
+        },
+        {
+            "revealOptionData": [
+                {
+                    "id": "English",
+                    "value": "big",
+                    "type": "text"
+                },
+                {
+                    "id": "Romaji",
+                    "value": "ookii",
+                    "type": "text"
+                },
+                {
+                    "id": "Hiragana",
+                    "value": "おおきい",
+                    "type": "text"
+                }
+            ]
+        },
+        {
+            "revealOptionData": [
+                {
+                    "id": "English",
+                    "value": "interesting, funny",
+                    "type": "text"
+                },
+                {
+                    "id": "Romaji",
+                    "value": "omoshiroi",
+                    "type": "text"
+                },
+                {
+                    "id": "Hiragana",
+                    "value": "おもしろい",
+                    "type": "text"
+                }
+            ]
+        },
+        {
+            "revealOptionData": [
+                {
+                    "id": "English",
+                    "value": "handsome",
+                    "type": "text"
+                },
+                {
+                    "id": "Romaji",
+                    "value": "kakkoii",
+                    "type": "text"
+                },
+                {
+                    "id": "Hiragana",
+                    "value": "かっこいい",
+                    "type": "text"
+                }
+            ]
+        },
+        {
+            "revealOptionData": [
+                {
+                    "id": "English",
+                    "value": "scary",
+                    "type": "text"
+                },
+                {
+                    "id": "Romaji",
+                    "value": "kowai",
+                    "type": "text"
+                },
+                {
+                    "id": "Hiragana",
+                    "value": "こわい",
+                    "type": "text"
+                }
+            ]
+        },
+        {
+            "revealOptionData": [
+                {
+                    "id": "English",
+                    "value": "cold (weather)",
+                    "type": "text"
+                },
+                {
+                    "id": "Romaji",
+                    "value": "samui",
+                    "type": "text"
+                },
+                {
+                    "id": "Hiragana",
+                    "value": "さむい",
+                    "type": "text"
+                }
+            ]
+        },
+        {
+            "revealOptionData": [
+                {
+                    "id": "English",
+                    "value": "fun, enjoyable",
+                    "type": "text"
+                },
+                {
+                    "id": "Romaji",
+                    "value": "tanoshii",
+                    "type": "text"
+                },
+                {
+                    "id": "Hiragana",
+                    "value": "たのしい",
+                    "type": "text"
+                }
+            ]
+        },
+        {
+            "revealOptionData": [
+                {
+                    "id": "English",
+                    "value": "small",
+                    "type": "text"
+                },
+                {
+                    "id": "Romaji",
+                    "value": "chiisai",
+                    "type": "text"
+                },
+                {
+                    "id": "Hiragana",
+                    "value": "ちいさい",
+                    "type": "text"
+                }
+            ]
+        },
+        {
+            "revealOptionData": [
+                {
+                    "id": "English",
+                    "value": "boring",
+                    "type": "text"
+                },
+                {
+                    "id": "Romaji",
+                    "value": "tsumaranai",
+                    "type": "text"
+                },
+                {
+                    "id": "Hiragana",
+                    "value": "つまらない",
+                    "type": "text"
+                }
+            ]
+        },
+        {
+            "revealOptionData": [
+                {
+                    "id": "English",
+                    "value": "old (not person)",
+                    "type": "text"
+                },
+                {
+                    "id": "Romaji",
+                    "value": "furui",
+                    "type": "text"
+                },
+                {
+                    "id": "Hiragana",
+                    "value": "ふるい",
+                    "type": "text"
+                }
+            ]
+        },
+        {
+            "revealOptionData": [
+                {
+                    "id": "English",
+                    "value": "difficult",
+                    "type": "text"
+                },
+                {
+                    "id": "Romaji",
+                    "value": "muzukashii",
+                    "type": "text"
+                },
+                {
+                    "id": "Hiragana",
+                    "value": "むずかしい",
+                    "type": "text"
+                }
+            ]
+        },
+        {
+            "revealOptionData": [
+                {
+                    "id": "English",
+                    "value": "easy (thing), nice (person)",
+                    "type": "text"
+                },
+                {
+                    "id": "Romaji",
+                    "value": "yasashi",
+                    "type": "text"
+                },
+                {
+                    "id": "Hiragana",
+                    "value": "やさしい",
+                    "type": "text"
+                }
+            ]
+        },
+        {
+            "revealOptionData": [
+                {
+                    "id": "English",
+                    "value": "cheap, inexpensive",
+                    "type": "text"
+                },
+                {
+                    "id": "Romaji",
+                    "value": "yasui",
+                    "type": "text"
+                },
+                {
+                    "id": "Hiragana",
+                    "value": "やすい",
+                    "type": "text"
+                }
+            ]
+        },
+        {
+            "revealOptionData": [
+                {
+                    "id": "English",
+                    "value": "dislike",
+                    "type": "text"
+                },
+                {
+                    "id": "Romaji",
+                    "value": "kirai",
+                    "type": "text"
+                },
+                {
+                    "id": "Hiragana",
+                    "value": "きらい",
+                    "type": "text"
+                }
+            ]
+        },
+        {
+            "revealOptionData": [
+                {
+                    "id": "English",
+                    "value": "pretty, clean",
+                    "type": "text"
+                },
+                {
+                    "id": "Romaji",
+                    "value": "kirei",
+                    "type": "text"
+                },
+                {
+                    "id": "Hiragana",
+                    "value": "きれい",
+                    "type": "text"
+                }
+            ]
+        },
+        {
+            "revealOptionData": [
+                {
+                    "id": "English",
+                    "value": "healthy, energetic",
+                    "type": "text"
+                },
+                {
+                    "id": "Romaji",
+                    "value": "genki",
+                    "type": "text"
+                },
+                {
+                    "id": "Hiragana",
+                    "value": "げんき",
+                    "type": "text"
+                }
+            ]
+        },
+        {
+            "revealOptionData": [
+                {
+                    "id": "English",
+                    "value": "quiet",
+                    "type": "text"
+                },
+                {
+                    "id": "Romaji",
+                    "value": "shizuka",
+                    "type": "text"
+                },
+                {
+                    "id": "Hiragana",
+                    "value": "しずか",
+                    "type": "text"
+                }
+            ]
+        },
+        {
+            "revealOptionData": [
+                {
+                    "id": "English",
+                    "value": "like, fond of",
+                    "type": "text"
+                },
+                {
+                    "id": "Romaji",
+                    "value": "suki",
+                    "type": "text"
+                },
+                {
+                    "id": "Hiragana",
+                    "value": "すき",
+                    "type": "text"
+                }
+            ]
+        },
+        {
+            "revealOptionData": [
+                {
+                    "id": "English",
+                    "value": "hate",
+                    "type": "text"
+                },
+                {
+                    "id": "Romaji",
+                    "value": "daikirai",
+                    "type": "text"
+                },
+                {
+                    "id": "Hiragana",
+                    "value": "だいきらい",
+                    "type": "text"
+                }
+            ]
+        },
+        {
+            "revealOptionData": [
+                {
+                    "id": "English",
+                    "value": "love",
+                    "type": "text"
+                },
+                {
+                    "id": "Romaji",
+                    "value": "daisuki",
+                    "type": "text"
+                },
+                {
+                    "id": "Hiragana",
+                    "value": "だいすき",
+                    "type": "text"
+                }
+            ]
+        },
+        {
+            "revealOptionData": [
+                {
+                    "id": "English",
+                    "value": "lively",
+                    "type": "text"
+                },
+                {
+                    "id": "Romaji",
+                    "value": "nigiyaka",
+                    "type": "text"
+                },
+                {
+                    "id": "Hiragana",
+                    "value": "にぎやか",
+                    "type": "text"
+                }
+            ]
+        },
+        {
+            "revealOptionData": [
+                {
+                    "id": "English",
+                    "value": "spare time",
+                    "type": "text"
+                },
+                {
+                    "id": "Romaji",
+                    "value": "hima",
+                    "type": "text"
+                },
+                {
+                    "id": "Hiragana",
+                    "value": "ひま",
+                    "type": "text"
+                }
+            ]
+        },
+        {
+            "revealOptionData": [
+                {
+                    "id": "English",
+                    "value": "to swim",
+                    "type": "text"
+                },
+                {
+                    "id": "Romaji",
+                    "value": "oyogu",
+                    "type": "text"
+                },
+                {
+                    "id": "Hiragana",
+                    "value": "およぐ",
+                    "type": "text"
+                }
+            ]
+        },
+        {
+            "revealOptionData": [
+                {
+                    "id": "English",
+                    "value": "to ask",
+                    "type": "text"
+                },
+                {
+                    "id": "Romaji",
+                    "value": "kiku",
+                    "type": "text"
+                },
+                {
+                    "id": "Hiragana",
+                    "value": "きく",
+                    "type": "text"
+                }
+            ]
+        },
+        {
+            "revealOptionData": [
+                {
+                    "id": "English",
+                    "value": "to ride, to board (train, bus, etc.)",
+                    "type": "text"
+                },
+                {
+                    "id": "Romaji",
+                    "value": "noru",
+                    "type": "text"
+                },
+                {
+                    "id": "Hiragana",
+                    "value": "のる",
+                    "type": "text"
+                }
+            ]
+        },
+        {
+            "revealOptionData": [
+                {
+                    "id": "English",
+                    "value": "to do, to perform",
+                    "type": "text"
+                },
+                {
+                    "id": "Romaji",
+                    "value": "yaru",
+                    "type": "text"
+                },
+                {
+                    "id": "Hiragana",
+                    "value": "やる",
+                    "type": "text"
+                }
+            ]
+        },
+        {
+            "revealOptionData": [
+                {
+                    "id": "English",
+                    "value": "to go out",
+                    "type": "text"
+                },
+                {
+                    "id": "Romaji",
+                    "value": "dekakeru",
+                    "type": "text"
+                },
+                {
+                    "id": "Hiragana",
+                    "value": "でかける",
+                    "type": "text"
+                }
+            ]
+        },
+        {
+            "revealOptionData": [
+                {
+                    "id": "English",
+                    "value": "together",
+                    "type": "text"
+                },
+                {
+                    "id": "Romaji",
+                    "value": "isshoni",
+                    "type": "text"
+                },
+                {
+                    "id": "Hiragana",
+                    "value": "いっしょに",
+                    "type": "text"
+                }
+            ]
+        },
+        {
+            "revealOptionData": [
+                {
+                    "id": "English",
+                    "value": "extremely",
+                    "type": "text"
+                },
+                {
+                    "id": "Romaji",
+                    "value": "sugoku",
+                    "type": "text"
+                },
+                {
+                    "id": "Hiragana",
+                    "value": "すごく",
+                    "type": "text"
+                }
+            ]
+        },
+        {
+            "revealOptionData": [
+                {
+                    "id": "English",
+                    "value": "and then, after that",
+                    "type": "text"
+                },
+                {
+                    "id": "Romaji",
+                    "value": "sorekara",
+                    "type": "text"
+                },
+                {
+                    "id": "Hiragana",
+                    "value": "それから",
+                    "type": "text"
+                }
+            ]
+        },
+        {
+            "revealOptionData": [
+                {
+                    "id": "English",
+                    "value": "alright, okay",
+                    "type": "text"
+                },
+                {
+                    "id": "Romaji",
+                    "value": "daijoubu",
+                    "type": "text"
+                },
+                {
+                    "id": "Hiragana",
+                    "value": "だいじょうぶ",
+                    "type": "text"
+                }
+            ]
+        },
+        {
+            "revealOptionData": [
+                {
+                    "id": "English",
+                    "value": "very",
+                    "type": "text"
+                },
+                {
+                    "id": "Romaji",
+                    "value": "totemo",
+                    "type": "text"
+                },
+                {
+                    "id": "Hiragana",
+                    "value": "とても",
+                    "type": "text"
+                }
+            ]
+        },
+        {
+            "revealOptionData": [
+                {
+                    "id": "English",
+                    "value": "what kind of",
+                    "type": "text"
+                },
+                {
+                    "id": "Romaji",
+                    "value": "donna",
+                    "type": "text"
+                },
+                {
+                    "id": "Hiragana",
+                    "value": "どんな",
+                    "type": "text"
+                }
+            ]
+        },
+        {
+            "revealOptionData": [
+                {
+                    "id": "English",
+                    "value": "~counter for flat object",
+                    "type": "text"
+                },
+                {
+                    "id": "Romaji",
+                    "value": "~mai",
+                    "type": "text"
+                },
+                {
+                    "id": "Hiragana",
+                    "value": "～まい",
+                    "type": "text"
+                }
+            ]
+        },
+        {
+            "revealOptionData": [
+                {
+                    "id": "English",
+                    "value": "~to (a place), as far as (a place), until (a time)",
+                    "type": "text"
+                },
+                {
+                    "id": "Romaji",
+                    "value": "~made",
+                    "type": "text"
+                },
+                {
+                    "id": "Hiragana",
+                    "value": "～まで",
+                    "type": "text"
+                }
+            ]
+        }
+    ],
+    "format": {
+        "0": "English",
+        "1": "Romaji",
+        "2": "Hiragana"
+    }
+}
