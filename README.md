@@ -1,5 +1,6 @@
 # [Learnolotl](https://cflinchbaugh.github.io/Learnolotl/) &middot; [![GitHub license](https://img.shields.io/badge/version-BETA-yellow.svg)](https://en.wikipedia.org/wiki/Software_release_life_cycle) [![PRs blocked](https://img.shields.io/badge/license-Apache2.0-blue.svg)](https://tldrlegal.com/license/apache-license-2.0-(apache-2.0)) [![PRs blocked](https://img.shields.io/badge/PRs-blocked-red.svg)](https://help.github.com/articles/about-pull-requests/)
 
+# <a href="https://cflinchbaugh.github.io/Learnolotl/">Online Demo</a><br/>
 
 # Description
 <a name="description"></a>
@@ -9,7 +10,6 @@ Read the front of a card, *press a button*, *see* the (corresponding) back of th
 
 ## Details, Details
 Learnolotl is a free flashcard application that lets you *read* and *create* cards with a potentially *endless* number of sides.<br/>
-<a href="https://cflinchbaugh.github.io/Learnolotl/">Online Demo</a><br/>
 
 ### What Makes it Special
 Whether you use cards someone else made or create your own, Learnolotl is for studying anything and everything- just like writing out traditional flash cards, but *better* because of two key reasons:<br/>
